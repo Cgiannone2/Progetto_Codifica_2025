@@ -1,0 +1,21 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="./mycss.css">
+      <style>
+                    h1{
+                        color:blue;
+                    }
+                </style>
+   </head>
+   <body>
+      <div class="index">
+         <h1>INDEX</h1>
+         <ul></ul>
+      </div>
+      <div>
+         messaggio file di test in html
+         </div>
+   </body>
+</html>

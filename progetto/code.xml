@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="code.xsl"?>
+<!-- <!DOCTYPE TEI SYSTEM "tei_all.dtd"> -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <!-- Descrive il documento nel suo complesso: titolo, edizione, pubblicazione e fonti -->
+    <fileDesc>
+
+      <titleStmt>
+        <title type="main">Edizione Digitale della Rassegna Settimanale, POLITICA, SCIENZE, LETTERE, ARTI </title>
+        <title type="journalSubTitle">DI POLITICA, SCIENZE, LETTERE ED ARTI.</title>
+        <author xml:id="CGiannone">Carlo Giannone</author>
+        <respStmt>
+          <resp>Codifica e cura dell'edizione digitale</resp>
+          <name ref="#CGiannone">Carlo Giannone</name>
+        </respStmt>
+      </titleStmt>
+
+      <editionStmt>
+        <edition>
+           Edizione Digitale per il Corso di Codifica di Testi - Anno Accademico 2024-2025 - <date when="2025-09">Settembre 2025</date>
+        </edition>
+        <respStmt>
+          <resp>Progetto sviluppato sotto la guida del Prof.</resp>
+          <name xml:id="AMDG">Angelo Mario Del Grosso</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codifica realizzata da:</resp>
+          <name xml:id="CGiannone">Carlo Giannone</name>
+        </respStmt>
+      </editionStmt>
+
+      <publicationStmt>
+        <publisher>
+          <orgName>Università di Pisa</orgName>
+        </publisher>
+        <pubPlace>
+          <placeName ref="#Pisa">Pisa, Italia</placeName>
+        </pubPlace>
+        <address>
+          <country>Italia</country>
+        </address>
+        <availability>
+          <p>La presente edizione digitale è realizzata a scopo didattico e si basa su un'opera ad accesso libero.</p>
+        </availability>
+        <date when="2025-09">2025</date>
+      </publicationStmt>
+
+      <!-- Informazioni sulla pubblicazione dell’edizione digitale -->
+      <sourceDesc>
+        <biblStruct xml:id="rassegna_fascicolo_174">
+          <monogr>
+            <title type="journal">La Rassegna Settimanale</title>
+            <imprint>
+              <biblScope unit="volume">7</biblScope>
+              <biblScope unit="fascicolo">174</biblScope>
+              <date when="1881-05-01">1 Maggio 1881</date>
+              <pubPlace ref="#Roma">Roma</pubPlace>
+            </imprint>
+          </monogr>
+          <listBibl>
+            <bibl xml:id="art_carusi">
+              <title level="a">I "Carusi" in Sicilia</title>
+              <author ref="#RS">Della Rassegna Settimanale</author>
+              <biblScope unit="page" from="273" to="275">pp. 273-275</biblScope>
+            </bibl>
+            <bibl xml:id="art_commercio">
+              <title level="a">Il commercio nel primo trimestre 1881</title>
+              <author ref="#RS">Della Rassegna Settimanale</author>
+              <biblScope unit="page">p. 275</biblScope>
+            </bibl>
+            <bibl xml:id="bibl_giuseppe_colombo">
+              <title level="m">Giuseppe Colombo, Vita ed opere di Gaudenzio Ferrari</title>
+              <biblScope unit="page">p. 286</biblScope>
+              <author ref="#GiuseppeColombo"/>
+              <imprint>
+                <pubPlace ref="#Torino">Torino</pubPlace>
+                <publisher ref="#FratelliBocca">fratelli Bocca</publisher>
+                <date when="1881">1881</date>
+              </imprint>
+            </bibl>
+            <bibl xml:id="bibl_guido_padeletti">
+              <title level="m">Guido Padelletti; Scritti di diritto pubblico</title>
+              <biblScope unit="page">p. 288</biblScope>
+              <author ref="#GuidoPadeletti"/>
+              <imprint>
+                <pubPlace ref="#Firenze">Firenze</pubPlace>
+                <date when="1881">1881</date>
+              </imprint>
+            </bibl>
+            <bibl xml:id="notizie_gustavo_dugaut">
+              <title level="a">Gustavo Dugaut ha pubblicato (Parigi, Imprimerie Nationale) secondo volume: I Berberi, studio sulla conquista degli Arabi in Africa</title>
+              <biblScope unit="page">p. 288</biblScope>
+              <author ref="#GustavoDugaut"/>
+              <imprint>
+                <pubPlace ref="#Parigi">Parigi</pubPlace>
+                <publisher ref="#ImprimerieNationale">Imprimerie Nationale</publisher>
+              </imprint>
+            </bibl>
+            <bibl xml:id="notizie_errata_corrige">
+              <title level="a">ERRATA-CORRIGE:</title>
+              <biblScope unit="page">p. 288</biblScope>
+              <note>Rettifica errori nella recensione del libro "La Fiera delle Vanità"</note>
+            </bibl>
+          </listBibl>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+
+    <!-- Informazioni su lingue, soggetti e categorie tematiche -->
+    <profileDesc>
+      <langUsage>
+        <language ident="it">Italiano</language>
+        <language ident="fr">Francese</language>
+        <language ident="gr">Greco</language>
+        <language ident="la">Latino</language>
+        <language ident="en">Inglese</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="#fenomeni_notevoli">
+          <list>
+            <item>persone reali</item>
+            <item>persone immaginarie e/o personaggi</item>
+            <item>opere</item>
+            <item>luoghi geografici</item>
+            <item>luoghi naturali</item>
+            <item>casa editrice/rivista</item>
+            <item>date specifiche</item>
+            <item>Verbum</item>
+            <item>correnti letterarie</item>
+            <item>testo in lingua straniera</item>
+            <item>citazioni</item>
+            <item>organizzazioni</item>
+            <item>epithet</item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2025-07-20" who="#CGiannone">Creazione iniziale del file e inizio della codifica.</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <facsimile>
+    <surface n="273" xml:id="M_273">
+      <graphic url="progetto/img/pp273.jpg" xml:id="pag273" width="1006px" height="1450px"/>
+      <zone ulx="49" uly="44" lrx="921" lry="97" xml:id="p273_runningTitle" />
+      <zone ulx="223" uly="113" lrx="749" lry="133" xml:id="p273_subTitle"/>
+      <zone ulx="65" uly="158" lrx="127" lry="194" xml:id="p273_vol" />
+      <zone ulx="383" uly="161" lrx="591" lry="191" xml:id="p273_date" />
+      <zone ulx="842" uly="162" lrx="915" lry="192" xml:id="p273_number" />
+      <zone ulx="50" uly="110" lrx="919" lry="132" xml:id="p273_articleTitle" />
+      <zone ulx="48" uly="249" lrx="479" lry="906" xml:id="p273_par1" />
+      <!-- <zone ulx="50" uly="274" lrx="98" lry="294" xml:id="p273_par1"/> -->
+    </surface>
+  </facsimile>
+
+
+  <text>
+    <body>
+      <div type="article" xml:id="articolo_carusi_sicilia">
+        <head rend="pageHeader">
+          <orgName xml:id="p273_runningTitle" facs="#p273_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+        </head>
+        <head type="subtitle" facs="#p273_subTitle">DI <term type="Verbum" subtype="aree_disciplinari">POLITICA, SCIENZE, LETTERE ED ARTI</term>
+        </head>
+
+        <pb n="273" facs="#M_273"/>
+
+        <head type="vol" facs="#p273_vol">Vol. 7 </head>
+
+        <div type="date" facs="p273_date" xml:id="p273_date">
+          <placeName ref="#Roma">Roma</placeName>
+          <date when="2025-05-10" facs="#p273_date">1 maggio 1881</date>
+        </div>
+
+        <num type="number" value="174" facs="#p273_number">N 174</num>
+
+        <head type="articleTitle" facs="#p273_articleTitle">
+          I "<term type="Verbum" subtype="condizione_lavoratori">Carusi</term>" in <placeName ref="#Sicilia">Sicilia</placeName>.
+        </head>
+
+        <div type="paragraph" xml:id="p273_par1" facs="#p273_par1">
+          <p>Sono trascorsi oramai dieci lunghi anni da quando l'on. <persName ref="#Lanza">Lanza</persName>, essendo ministro dell'interno, presentava al <orgName ref="#ParlamentoItaliano">Senato</orgName> un progetto di codice sanitario contenente alcune disposizioni, intese a disciplinare il lavoro dei fanciulli nelle fabbriche e nelle miniere. Da quella volta numerose proposte di legge furono presentate al <orgName ref="#ParlamentoItaliano">Parlamento Italiano</orgName>, sempre collo scopo di regolare questo importante e delicato argomento. Il governo stesso si fece iniziatore di un'inchiesta, i cui risultati comparvero non ha guari in un grosso volume pubblicato dal Ministero di' agricoltura, industria e commercio, e furono adoperati dagli onorevoli <persName>Depretis</persName> e <persName>Miceli</persName> per la presentazione di un nuovo progetto di legge alquanto diverso nei particolari da quello presentato poco tempo innanzi dagli onorevoli <persName>Minghetti</persName>,            <persName>Luzzatti</persName>,            <persName>Villari</persName> e <persName>Sidney Sonnino</persName>, ma informato allo stesso concetto generale. Senonchè mentre l'urgenza di accordare una protezione legale alle donne e ai fanciulli impiegati nell'industria è riconosciuta da molti in Parlamento e fuori, senza distinzione di partito politico, le sessioni succedono alle sessioni, le legislature alle legislature senza che si giunga a prendere alcun provvedimento concreto; e, quel ch'è peggio, la Commissione parlamentare, incaricata di riferire sul progetto Depretis-Miceli, dorme ingiustamente i suoi sonni. Intanto i mali esistenti non ricevono rimedio e, trascurati come sono, inacerbiscono. Perciò, l'animo nostro rimase tristemente impressionato quando, alcuni mesi or sono, un maggiorentte dell'industria italiana, ed economista appassionato, volle dimostrare l'inopportunità di una legge regolatrice del lavoro giovanile e muliebre nell'industria recando innanzi l'argomentazione che come in Italia non s'erano prodotti ancora i gravi inconvenienti pei quali in altri paesi la libertà del contratto di lavoro era stata ristretta, così non v'era presso di noi ragione sufficiente per seguire questo esempio. <foreign xml:lang="la">*</foreign>
+            <quote>Strana teoria, secondo la quale la legge dovrebbe intervenire soltanto quando il disordine ch'essa deve impedire si fosse già manifestato in gravi proporzioni.</quote>
+          </p>
+        </div>
+      </div>
+    </body>
+  </text>
+
+  <back>
+    <listPerson>
+      <head>Persone Reali / Personaggi</head>
+      <person xml:id="TUONOME">
+        <persName>Il tuo nome</persName>
+        <note>Codificatore del progetto</note>
+      </person>
+      <person xml:id="RS">
+        <persName>Redazione La Rassegna Settimanale</persName>
+        <note>Autore implicito degli articoli non firmati</note>
+      </person>
+      <person xml:id="Lanza">
+        <persName>Lanza</persName>
+        <note>Ministro dell'Interno, politico italiano</note>
+      </person>
+      <person xml:id="GiuseppeColombo">
+        <persName>Giuseppe Colombo</persName>
+        <note>Autore dell'opera bibliografica</note>
+      </person>
+      <person xml:id="GuidoPadelletti">
+        <persName>Guido Padelletti</persName>
+        <note>Autore dell'opera bibliografica</note>
+      </person>
+      <person xml:id="GustavoDugaut">
+        <persName>Gustavo Dugaut</persName>
+        <note>Autore citato nella sezione Notizie</note>
+      </person>
+    </listPerson>
+
+    <listPlace>
+      <head>Luoghi</head>
+      <place xml:id="Sicilia">
+        <placeName>Sicilia</placeName>
+        <country>Italia</country>
+        <note>Regione italiana</note>
+      </place>
+      <place xml:id="Roma">
+        <placeName>Roma</placeName>
+        <country>Italia</country>
+        <note>Capitale d'Italia, luogo di pubblicazione della rivista</note>
+      </place>
+      <place xml:id="Parigi">
+        <placeName>Parigi</placeName>
+        <country>Francia</country>
+        <note>Città citata nella sezione Notizie</note>
+      </place>
+      <place xml:id="Torino">
+        <placeName>Torino</placeName>
+        <country>Italia</country>
+        <note>Città italiana</note>
+      </place>
+      <place xml:id="Firenze">
+        <placeName>Firenze</placeName>
+        <country>Italia</country>
+        <note>Città italiana</note>
+      </place>
+    </listPlace>
+
+    <listOrg>
+      <head>Organizzazioni / Case Editrici / Riviste</head>
+      <org xml:id="RassegnaSettimanale">
+        <orgName>La Rassegna Settimanale</orgName>
+        <orgType>Rivista letteraria/politica</orgType>
+      </org>
+      <org xml:id="ParlamentoItaliano">
+        <orgName>Parlamento Italiano</orgName>
+        <orgType>Organizzazione politica</orgType>
+      </org>
+      <org xml:id="ImprimerieNationale">
+        <orgName>Imprimerie Nationale</orgName>
+        <orgType>Casa editrice</orgType>
+        <placeName ref="#Parigi">Parigi</placeName>
+      </org>
+      <org xml:id="FratelliBocca">
+        <orgName>Fratelli Bocca</orgName>
+        <orgType>Casa editrice</orgType>
+        <placeName ref="#Torino">Torino</placeName>
+      </org>
+    </listOrg>
+
+    <listBibl>
+      <head>Opere Citata/Referenziate</head>
+      <bibl xml:id="opera_ferrari">
+        <author ref="#GiuseppeColombo">Giuseppe Colombo</author>
+        <title level="m">Vita ed opere di Gaudenzio Ferrari</title>
+      </bibl>
+      <bibl xml:id="opera_diritto_pubblico">
+        <author ref="#GuidoPadelletti">Guido Padelletti</author>
+        <title level="m">Scritti di diritto pubblico</title>
+      </bibl>
+      <bibl xml:id="opera_berberi">
+        <author ref="#GustavoDugaut">Gustavo Dugaut</author>
+        <title level="m">I Berberi, studio sulla conquista degli Arabi in Africa</title>
+      </bibl>
+      <bibl xml:id="opera_fiera_vanita">
+        <title level="m">La Fiera delle Vanità</title>
+        <author>Guglielmo Makepeace Thackeray</author>
+      </bibl>
+    </listBibl>
+
+    <div type="glossary" xml:id="glossario_fenomeni_notevoli">
+      <head>Glossario dei Fenomeni Notevoli</head>
+      <list type="terminology">
+        <label>
+          <term xml:id="persone_reali">persone reali</term>
+        </label>
+        <item>
+          <gloss>Riferimenti a individui esistenti.</gloss>
+        </item>
+        <label>
+          <term xml:id="persone_immaginarie_personaggi">persone immaginarie e/o personaggi</term>
+        </label>
+        <item>
+          <gloss>Riferimenti a figure fittizie.</gloss>
+        </item>
+        <label>
+          <term xml:id="opere_citate">opere</term>
+        </label>
+        <item>
+          <gloss>Riferimenti a libri, articoli, dipinti, composizioni musicali, ecc.</gloss>
+        </item>
+        <label>
+          <term xml:id="luoghi_geografici">luoghi geografici</term>
+        </label>
+        <item>
+          <gloss>Nomi di città, paesi, regioni, stati, ecc.</gloss>
+        </item>
+        <label>
+          <term xml:id="luoghi_naturali">luoghi naturali</term>
+        </label>
+        <item>
+          <gloss>Nomi di montagne, fiumi, mari, isole, deserti, ecc.</gloss>
+        </item>
+        <label>
+          <term xml:id="casa_editrice_rivista">casa editrice/rivista</term>
+        </label>
+        <item>
+          <gloss>Nomi di editori o pubblicazioni periodiche.</gloss>
+        </item>
+        <label>
+          <term xml:id="date_specifiche">date specifiche</term>
+        </label>
+        <item>
+          <gloss>Riferimenti a date specifiche o periodi storici.</gloss>
+        </item>
+        <label>
+          <term xml:id="Verbum">Verbum</term>
+        </label>
+        <item>
+          <gloss>Tutti quei temi che riguardano la condizione dei lavoratori, del Meridione, aspetti letterari, storici e sociali, temi tipici della corrente verista.</gloss>
+        </item>
+        <label>
+          <term xml:id="correnti_letterarie">correnti letterarie</term>
+        </label>
+        <item>
+          <gloss>Nomi di movimenti o scuole letterarie, artistiche, ecc.</gloss>
+        </item>
+        <label>
+          <term xml:id="testo_lingua_straniera">testo in lingua straniera</term>
+        </label>
+        <item>
+          <gloss>Porzioni di testo non in italiano.</gloss>
+        </item>
+        <label>
+          <term xml:id="citazioni_testuali">citazioni</term>
+        </label>
+        <item>
+          <gloss>Testo riportato direttamente da un'altra fonte.</gloss>
+        </item>
+        <label>
+          <term xml:id="organizzazioni_generali">organizzazioni</term>
+        </label>
+        <item>
+          <gloss>Entità collettive come governi, istituzioni, associazioni, ecc.</gloss>
+        </item>
+        <label>
+          <term xml:id="epithet">epithet</term>
+        </label>
+        <item>
+          <gloss>Aggettivi o frasi che descrivono una persona o cosa, spesso con una connotazione particolare.</gloss>
+        </item>
+      </list>
+    </div>
+  </back>
+</TEI>

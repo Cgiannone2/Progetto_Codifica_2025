@@ -1,0 +1,104 @@
+<!DOCTYPE HTML><html xmlns="http://www.w3.org/1999/xhtml" xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Edizione Digitale: I Carusi in Sicilia</title>
+      <link href="progetto/code.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"><script src="https://code.jquery.com/jquery-3.6.0.js"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script><script type="text/javascript" src="progetto/code.js"></script></head>
+   <body>
+      <header>
+         <nav class="navMenu"><a href="#intro">Introduzione</a><a href="#art1_carusi">I Carusi in Sicilia</a><a href="#art2_commercio">Il Commercio nel Trimestre</a><a href="#sezione_bibliografia">Bibliografia</a><a href="#sezione_notizie">Notizie</a></nav>
+      </header>
+      <div class="section-block" id="intro">
+         <h2>Introduzione al Progetto</h2>
+         <div class="indent">
+            <p><strong>Titolo Edizione Digitale:</strong>Edizione Digitale della Rassegna Settimanale, POLITICA, SCIENZE, LETTERE, ARTI </p>
+            <p><strong>Autore Edizione Digitale:</strong>Carlo Giannone</p>
+            <p><strong>Progetto sviluppato sotto la guida del Prof.:</strong>Angelo Mario Del Grosso</p>
+            <p><strong>Data Edizione:</strong>2025-09</p>
+            <p><strong>Luogo Pubblicazione Originale:</strong>Pisa, Italia</p>
+            <p><strong>Data Originale:</strong>2025-09</p>
+         </div>
+      </div>
+      <div id="art1_carusi" class="section-block">
+         <h2>Articolo: I "Carusi" in Sicilia</h2>
+         <div class="boxTrascrizione">
+            <div class="box-legenda">
+               <h3 id="legenda_title">LEGENDA</h3>
+               <p><span class="persName-legend">Persone Reali</span></p>
+               <p><span class="orgName-legend">Organizzazioni / Case Editrici / Riviste</span></p>
+               <p><span class="placeName-legend">Luoghi</span></p>
+               <p><span class="term-legend">Termini / Verbum</span></p>
+               <p><span class="date-legend">Date</span></p>
+               <p><span class="foreign-legend">Testo in Lingua Straniera</span></p>
+               <p><span class="quote-legend">Citazioni</span></p>
+            </div>
+            <div class="box-btn">
+               <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
+               <p class="rowBtn"><button type="button" class="btnPersName" onclick="togglePhenomenon('persName')">Persone</button><button type="button" class="btnOrgName" onclick="togglePhenomenon('orgName')">Organizzazioni/caseEd/Riviste</button></p>
+               <p class="rowBtn"><button type="button" class="btnPlaceName" onclick="togglePhenomenon('placeName')">Luoghi</button><button type="button" class="btnTerm" onclick="togglePhenomenon('term')">Termini/Verbum</button></p>
+               <p class="rowBtn"><button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button><button type="button" class="btnForeign" onclick="togglePhenomenon('foreign')">Straniere</button></p>
+               <p class="rowBtn"><button type="button" class="btnQuote" onclick="togglePhenomenon('quote')">Citazioni</button></p>
+            </div>
+            <div class="img-wrapper"><img src="progetto/img/pp273.jpg" id="pag273" usemap="#map_p273"><map name="map_p273"><area id="riga_p273_runningTitle" shape="rect" coords="49,44,921,97" onmouseenter="gestoreEvidenzia(&#34;p273_runningTitle&#34;)" onmouseleave="gestoreDisEvidenzia(&#34;p273_runningTitle&#34;)"><area id="riga_p273_subTitle" shape="rect" coords="223,113,749,133" onmouseenter="gestoreEvidenzia(&#34;p273_subTitle&#34;)" onmouseleave="gestoreDisEvidenzia(&#34;p273_subTitle&#34;)"><area id="riga_p273_vol" shape="rect" coords="65,158,127,194" onmouseenter="gestoreEvidenzia(&#34;p273_vol&#34;)" onmouseleave="gestoreDisEvidenzia(&#34;p273_vol&#34;)"><area id="riga_p273_date" shape="rect" coords="383,161,591,191" onmouseenter="gestoreEvidenzia(&#34;p273_date&#34;)" onmouseleave="gestoreDisEvidenzia(&#34;p273_date&#34;)"><area id="riga_p273_number" shape="rect" coords="842,162,915,192" onmouseenter="gestoreEvidenzia(&#34;p273_number&#34;)" onmouseleave="gestoreDisEvidenzia(&#34;p273_number&#34;)"><area id="riga_p273_articleTitle" shape="rect" coords="50,110,919,132" onmouseenter="gestoreEvidenzia(&#34;p273_articleTitle&#34;)" onmouseleave="gestoreDisEvidenzia(&#34;p273_articleTitle&#34;)"><area id="riga_p273_par1" shape="rect" coords="48,249,479,906" onmouseenter="gestoreEvidenzia(&#34;p273_par1&#34;)" onmouseleave="gestoreDisEvidenzia(&#34;p273_par1&#34;)"></map></div>
+            <div class="transcription-area">
+               <span class="orgName" id="p273_runningTitle" data-ref="#RassegnaSettimanale">LA RASSEGNA SETTIMANALE</span>
+               
+               <div class="flex">DI <span class="term">POLITICA, SCIENZE, LETTERE ED ARTI</span>
+                  </div>
+               <div class="date_container">
+                  <div class="flex">Vol. 7 </div>
+                  <div class="flex">
+                     <span class="placeName" data-ref="#Roma">Roma</span>
+                     <span class="date">1 maggio 1881</span>
+                     </div>
+                  <div class="flex">N 174</div>
+               </div>
+               <div class="trascrizione">
+                  <div class="col">
+                     <p class="trascrizione-paragrafo" id="p273_par1">
+                        Sono trascorsi oramai dieci lunghi anni da quando l'on. <span class="persName" data-ref="#Lanza">Lanza</span>, essendo ministro dell'interno, presentava al <span class="orgName" id="" data-ref="#ParlamentoItaliano">Senato</span> un progetto di codice sanitario contenente alcune disposizioni, intese a disciplinare
+                        il lavoro dei fanciulli nelle fabbriche e nelle miniere. Da quella volta numerose
+                        proposte di legge furono presentate al <span class="orgName" id="" data-ref="#ParlamentoItaliano">Parlamento Italiano</span>, sempre collo scopo di regolare questo importante e delicato argomento. Il governo
+                        stesso si fece iniziatore di un'inchiesta, i cui risultati comparvero non ha guari
+                        in un grosso volume pubblicato dal Ministero di' agricoltura, industria e commercio,
+                        e furono adoperati dagli onorevoli <span class="persName" data-ref="">Depretis</span> e <span class="persName" data-ref="">Miceli</span> per la presentazione di un nuovo progetto di legge alquanto diverso nei particolari
+                        da quello presentato poco tempo innanzi dagli onorevoli <span class="persName" data-ref="">Minghetti</span>,            <span class="persName" data-ref="">Luzzatti</span>,            <span class="persName" data-ref="">Villari</span> e <span class="persName" data-ref="">Sidney Sonnino</span>, ma informato allo stesso concetto generale. Senonchè mentre l'urgenza di accordare
+                        una protezione legale alle donne e ai fanciulli impiegati nell'industria è riconosciuta
+                        da molti in Parlamento e fuori, senza distinzione di partito politico, le sessioni
+                        succedono alle sessioni, le legislature alle legislature senza che si giunga a prendere
+                        alcun provvedimento concreto; e, quel ch'è peggio, la Commissione parlamentare, incaricata
+                        di riferire sul progetto Depretis-Miceli, dorme ingiustamente i suoi sonni. Intanto
+                        i mali esistenti non ricevono rimedio e, trascurati come sono, inacerbiscono. Perciò,
+                        l'animo nostro rimase tristemente impressionato quando, alcuni mesi or sono, un maggiorentte
+                        dell'industria italiana, ed economista appassionato, volle dimostrare l'inopportunità
+                        di una legge regolatrice del lavoro giovanile e muliebre nell'industria recando innanzi
+                        l'argomentazione che come in Italia non s'erano prodotti ancora i gravi inconvenienti
+                        pei quali in altri paesi la libertà del contratto di lavoro era stata ristretta, così
+                        non v'era presso di noi ragione sufficiente per seguire questo esempio. *
+                        Strana teoria, secondo la quale la legge dovrebbe intervenire soltanto quando il disordine
+                        ch'essa deve impedire si fosse già manifestato in gravi proporzioni.
+                        
+                        </p>
+                  </div>
+                  <div class="col"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section-block" id="art2_commercio">
+         <h2>Articolo 2: Il commercio nel primo trimestre 1881</h2>
+         <div class="indent"></div>
+      </div>
+      <div class="section-block" id="sezione_bibliografia">
+         <h2>Sezione Bibliografia</h2>
+         <div class="indent"></div>
+      </div>
+      <div class="section-block" id="sezione_notizie">
+         <h2>Sezione Notizie</h2>
+         <div class="indent"></div>
+      </div>
+      <footer>
+         <p style="text-align: center; margin-top: 50px; color: #aaa;">Edizione digitale creata per il corso di Codifica di Testi - Università di Pisa</p>
+      </footer>
+   </body>
+</html>
