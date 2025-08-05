@@ -409,3 +409,59 @@ strong {
   background-color: #ffeb3b; /* Giallo come il bordo di .quote */
   color: #000;
 }
+
+/* Container per sovrapporre immagine e SVG */
+.svg-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Manteniamo l'altezza automatica per la scalatura */
+  display: inline-block;
+}
+
+/* L'immagine di base */
+.svg-container img.base-image {
+  position: relative; /* Cambia da absolute a relative */
+  top: 0;
+  left: 0;
+  z-index: 1; /* L'immagine sta sotto l'SVG */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* L'SVG sovrapposto */
+.svg-container #svg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* L'SVG sta sopra l'immagine */
+  pointer-events: auto; /* Rende l'SVG sensibile al mouse */
+}
+
+/* Stili per le zone attive (rettangoli SVG) */
+.highlight-zone {
+  fill: transparent; /* Rettangoli invisibili di default */
+  stroke: none; /* Rimuovi il bordo di default */
+  transition: fill 0.2s ease-in-out;
+}
+
+/* Effetto al passaggio del mouse */
+.highlight-zone:hover {
+  fill: #4682b4; /* Evidenziazione al passaggio del mouse */
+  fill-opacity: 0.5; /* Opacità per vedere l'immagine sottostante */
+  cursor: pointer;
+}
+
+.orgName.highlighted,
+.persName.highlighted {
+  background-color: #4682b4 !important; /* Forza il colore di sfondo */
+  color: #fff !important; /* Forza il colore del testo */
+}
+
+.orgName.highlighted {
+  background-color: #ff9800 !important; /* Arancione */
+  border-radius: 3px;
+  color: #000;
+}

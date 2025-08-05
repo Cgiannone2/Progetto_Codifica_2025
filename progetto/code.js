@@ -49,22 +49,34 @@ $(document).ready(function () {
     button.toggleClass('active-phenomenon');
   };
 
-  // Evidenzia zone
-  window.gestoreEvidenzia = function (id) {
-    var targetElement = $('#' + id);
-    console.log('gestoreEvidenzia', id)
-    if (targetElement.length) {
-      targetElement.css('background-color', '#4682b4');
-      targetElement.css('color', '#fff');
+  window.gestoreEvidenziaSVG = function (id) {
+    var textElementId = id.replace('zone-', '');
+    var textElement = $('#' + textElementId);
+    var svgElement = $('#' + id);
+
+    if (textElement.length) {
+      // Applica stili inline per il colore celeste
+      textElement.css('background-color', '#4682b4');
+      textElement.css('color', '#fff');
+    }
+    if (svgElement.length) {
+      // Lasciamo che l'SVG venga gestito dal CSS :hover per lo stesso colore
+      // o potresti applicare uno stile inline anche qui
     }
   };
 
-  window.gestoreDisEvidenzia = function (id) {
-    var targetElement = $('#' + id);
-    console.log('gestoreEvidenzia', id)
-    if (targetElement.length) {
-      targetElement.css('background-color', 'transparent');
-      targetElement.css('color', '#e0e0e0');
+  window.gestoreDisEvidenziaSVG = function (id) {
+    var textElementId = id.replace('zone-', '');
+    var textElement = $('#' + textElementId);
+    var svgElement = $('#' + id);
+
+    if (textElement.length) {
+      // Rimuovi gli stili inline
+      textElement.css('background-color', 'transparent');
+      textElement.css('color', '#e0e0e0');
+    }
+    if (svgElement.length) {
+      // L'SVG tornerà al suo stato originale grazie al CSS
     }
   };
 });

@@ -143,16 +143,16 @@
         </div> -->
 
         <div class="img-wrapper">
-          <xsl:element name="img">
-            <xsl:attribute name="src">
-              <xsl:value-of select="//tei:graphic[@xml:id='pag273']/@url"/>
-            </xsl:attribute>
-            <xsl:attribute name="id">pag273</xsl:attribute>
-            <xsl:attribute name="usemap">#map_p273</xsl:attribute>
-          </xsl:element>
-          <xsl:for-each select="//tei:facsimile">
-            <xsl:apply-templates select="tei:surface[@xml:id='M_273']"/>
-          </xsl:for-each>
+          <div class="svg-container">
+            <img src="{//tei:graphic[@xml:id='pag273']/@url}" id="pag273" alt="Page 273 of La Rassegna Settimanale" class="base-image" />
+
+            <svg id="svg-overlay"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet">
+              <xsl:for-each select="//tei:facsimile/tei:surface/tei:zone">
+                <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
+              </xsl:for-each>
+            </svg>
+          </div>
         </div>
 
         <div class="transcription-area">
@@ -165,53 +165,24 @@
               <xsl:apply-templates select="tei:head[@type='vol']"/>
             </div>
             <div class="flex">
-              <!-- <xsl:apply-templates select="tei:date"/> -->
               <xsl:apply-templates select="tei:div[@xml:id='p273_date']"/>
             </div>
             <div class="flex">
               <xsl:apply-templates select="tei:num"/>
             </div>
           </div>
-
-          <!-- <xsl:apply-templates select="tei:pb[@n='273']"/>
-          <xsl:apply-templates select="tei:head[@type='articleTitle']"/> -->
           <div class="trascrizione">
             <div class="col">
               <xsl:apply-templates select="tei:div[@xml:id='p273_par1']"/>
             </div>
-
             <div class="col">
-
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </xsl:template>
 
-  <!-- GENERARE MAPPE -->
-  <xsl:template match="tei:surface">
-    <map name="map_p273">
-      <xsl:for-each select="tei:zone">
-        <xsl:element name="area">
-          <xsl:attribute name="id">
-            <xsl:value-of select="concat('riga_', @xml:id)"/>
-          </xsl:attribute>
-          <xsl:attribute name="shape">rect</xsl:attribute>
-          <xsl:attribute name="coords">
-            <xsl:value-of select="concat(@ulx, ',', @uly, ',', @lrx, ',', @lry)"/>
-          </xsl:attribute>
-          <xsl:attribute name="onmouseenter">
-            <xsl:value-of select="concat('gestoreEvidenzia(&quot;', @xml:id, '&quot;)')"/>
-          </xsl:attribute>
-          <xsl:attribute name="onmouseleave">
-            <xsl:value-of select="concat('gestoreDisEvidenzia(&quot;', @xml:id, '&quot;)')"/>
-          </xsl:attribute>
-        </xsl:element>
-      </xsl:for-each>
-    </map>
-  </xsl:template>
   <xsl:template match="tei:div[@type='paragraph']">
     <p>
       <xsl:attribute name="class">trascrizione-paragrafo</xsl:attribute>
