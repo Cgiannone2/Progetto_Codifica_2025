@@ -132,16 +132,6 @@
           </p>
         </div>
 
-        <!-- <div class="img-wrapper">
-          <xsl:element name="img">
-            <xsl:attribute name="src">
-              <xsl:value-of select="//tei:graphic[@xml:id='pag273']/@url"/>
-            </xsl:attribute>
-            <xsl:attribute name="id">pag273</xsl:attribute>
-          </xsl:element>
-
-        </div> -->
-
         <div class="img-wrapper">
           <div class="svg-container">
             <img src="{//tei:graphic[@xml:id='pag273']/@url}" id="pag273" alt="Page 273 of La Rassegna Settimanale" class="base-image" />
@@ -157,23 +147,25 @@
 
         <div class="transcription-area">
           <xsl:apply-templates select="tei:head[@rend='pageHeader']"/>
-          <div class="flex">
+          <div class="flex" id="p273_subTitle">
             <xsl:apply-templates select="tei:head[@type='subtitle']"/>
           </div>
           <div class="date_container">
-            <div class="flex">
+            <div class="flex" id="p273_vol">
               <xsl:apply-templates select="tei:head[@type='vol']"/>
             </div>
-            <div class="flex">
+            <div class="flex" id="p273_date">
               <xsl:apply-templates select="tei:div[@xml:id='p273_date']"/>
             </div>
-            <div class="flex">
+            <div class="flex" id="p273_number">
               <xsl:apply-templates select="tei:num"/>
             </div>
           </div>
+
           <div class="trascrizione">
             <div class="col">
               <xsl:apply-templates select="tei:div[@xml:id='p273_par1']"/>
+
             </div>
             <div class="col">
             </div>
@@ -183,25 +175,20 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="tei:div[@type='paragraph']">
-    <p>
-      <xsl:attribute name="class">trascrizione-paragrafo</xsl:attribute>
-      <xsl:attribute name="id">
-        <xsl:value-of select="@xml:id"/>
-      </xsl:attribute>
-      <xsl:apply-templates/>
-    </p>
+
+  <xsl:template match="tei:div[@xml:id='p273_par1']">
+    <div class="flex">
+      <span class="article-title" id="p273_articleTitle">
+        <xsl:apply-templates select="tei:span"/>
+      </span>
+    </div>
+    <xsl:for-each select="tei:p">
+      <p id="{@xml:id}">
+        <xsl:apply-templates/>
+      </p>
+    </xsl:for-each>
   </xsl:template>
-  <!-- 
-  <xsl:template match="tei:div[@type='paragraph']">
-    <p>
-      <xsl:attribute name="class">trascrizione-paragrafo</xsl:attribute>
-      <xsl:attribute name="facs">
-        <xsl:value-of select="@facs"/>
-      </xsl:attribute>
-      <xsl:apply-templates/>
-    </p>
-  </xsl:template> -->
+
 
   <xsl:template match="tei:persName">
     <span class="persName">

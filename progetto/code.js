@@ -50,6 +50,7 @@ $(document).ready(function () {
   };
 
   window.gestoreEvidenziaSVG = function (id) {
+    console.warn('gestoreEvidenziaSVG', id)
     var textElementId = id.replace('zone-', '');
     var textElement = $('#' + textElementId);
     var svgElement = $('#' + id);
@@ -66,6 +67,7 @@ $(document).ready(function () {
   };
 
   window.gestoreDisEvidenziaSVG = function (id) {
+    console.warn('gestoreDisEvidenziaSVG', id)
     var textElementId = id.replace('zone-', '');
     var textElement = $('#' + textElementId);
     var svgElement = $('#' + id);

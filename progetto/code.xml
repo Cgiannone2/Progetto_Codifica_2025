@@ -146,16 +146,137 @@
     <surface n="273" xml:id="M_273">
       <graphic url="progetto/img/pp273.jpg" xml:id="pag273" width="1006px" height="1450px"/>
       <zone ulx="49" uly="44" lrx="921" lry="97" xml:id="p273_runningTitle" />
-      <zone ulx="223" uly="113" lrx="749" lry="133" xml:id="p273_subTitle"/>
+      <zone ulx="55" uly="87" lrx="923" lry="139" xml:id="p273_subTitle"/>
       <zone ulx="65" uly="158" lrx="127" lry="194" xml:id="p273_vol" />
       <zone ulx="383" uly="161" lrx="591" lry="191" xml:id="p273_date" />
       <zone ulx="842" uly="162" lrx="915" lry="192" xml:id="p273_number" />
-      <zone ulx="50" uly="110" lrx="919" lry="132" xml:id="p273_articleTitle" />
-      <zone ulx="48" uly="249" lrx="479" lry="906" xml:id="p273_par1" />
-      <!-- <zone ulx="50" uly="274" lrx="98" lry="294" xml:id="p273_par1"/> -->
+      <zone ulx="53" uly="198" lrx="477" lry="248" xml:id="p273_articleTitle"/>
+
+      <!-- Prima colonna -->
+      <zone ulx="53" uly="247" lrx="481" lry="276" xml:id="p273_p1" />
+      <zone ulx="51" uly="273" lrx="480" lry="294" xml:id="p273_p2" />
+      <zone ulx="53" uly="293" lrx="475" lry="312" xml:id="p273_p3" />
+      <zone ulx="54" uly="312" lrx="477" lry="332" xml:id="p273_p4" />
+      <zone ulx="56" uly="333" lrx="476" lry="353" xml:id="p273_p5" />
+      <zone ulx="49" uly="351" lrx="477" lry="370" xml:id="p273_p6" />
+      <zone ulx="52" uly="367" lrx="477" lry="389" xml:id="p273_p7" />
+      <zone ulx="53" uly="385" lrx="478" lry="407" xml:id="p273_p8" />
+      <zone ulx="52" uly="406" lrx="478" lry="424" xml:id="p273_p9" />
+      <zone ulx="53" uly="424" lrx="479" lry="439" xml:id="p273_p10" />
+      <zone ulx="53" uly="439" lrx="480" lry="458" xml:id="p273_p11" />
+      <zone ulx="54" uly="455" lrx="479" lry="476" xml:id="p273_p12" />
+      <zone ulx="51" uly="475" lrx="480" lry="493" xml:id="p273_p13" />
+      <zone ulx="50" uly="493" lrx="479" lry="510" xml:id="p273_p14" />
+      <zone ulx="52" uly="512" lrx="478" lry="532" xml:id="p273_p15" />
+      <zone ulx="53" uly="531" lrx="478" lry="550" xml:id="p273_p16" />
+      <zone ulx="55" uly="548" lrx="477" lry="564" xml:id="p273_p17" />
+      <zone ulx="53" uly="565" lrx="478" lry="588" xml:id="p273_p18" />
+      <zone ulx="49" uly="586" lrx="481" lry="603" xml:id="p273_p19" />
+      <zone ulx="53" uly="604" lrx="483" lry="623" xml:id="p273_p20" />
+      <zone ulx="53" uly="621" lrx="479" lry="639" xml:id="p273_p21" />
+      <zone ulx="56" uly="640" lrx="479" lry="658" xml:id="p273_p22" />
+      <zone ulx="53" uly="656" lrx="482" lry="678" xml:id="p273_p23" />
+      <zone ulx="50" uly="678" lrx="481" lry="695" xml:id="p273_p24" />
+      <zone ulx="53" uly="692" lrx="480" lry="711" xml:id="p273_p25" />
+      <zone ulx="55" uly="707" lrx="480" lry="729" xml:id="p273_p26" />
+      <zone ulx="54" uly="724" lrx="477" lry="749" xml:id="p273_p27" />
+      <zone ulx="53" uly="745" lrx="477" lry="765" xml:id="p273_p28" />
+      <zone ulx="54" uly="763" lrx="480" lry="785" xml:id="p273_p29" />
+      <zone ulx="53" uly="785" lrx="481" lry="800" xml:id="p273_p30" />
+      <zone ulx="52" uly="799" lrx="481" lry="822" xml:id="p273_p31" />
+      <zone ulx="53" uly="819" lrx="477" lry="838" xml:id="p273_p32" />
+      <zone ulx="58" uly="837" lrx="477" lry="858" xml:id="p273_p33" />
+      <zone ulx="55" uly="858" lrx="479" lry="877" xml:id="p273_p34" />
+      <zone ulx="53" uly="878" lrx="478" lry="894" xml:id="p273_p35" />
+      <zone ulx="55" uly="894" lrx="476" lry="913" xml:id="p273_p36" />
+      <zone ulx="55" uly="911" lrx="482" lry="932" xml:id="p273_p37" />
+      <zone ulx="52" uly="929" lrx="480" lry="945" xml:id="p273_p38" />
+      <zone ulx="51" uly="948" lrx="480" lry="964" xml:id="p273_p39" />
+      <zone ulx="51" uly="964" lrx="480" lry="981" xml:id="p273_p40" />
+      <zone ulx="52" uly="984" lrx="478" lry="1003" xml:id="p273_p41" />
+      <zone ulx="52" uly="1000" lrx="483" lry="1021" xml:id="p273_p42" />
+      <zone ulx="55" uly="1020" lrx="483" lry="1036" xml:id="p273_p43" />
+      <zone ulx="55" uly="1035" lrx="484" lry="1053" xml:id="p273_p44" />
+      <zone ulx="55" uly="1055" lrx="484" lry="1071" xml:id="p273_p45" />
+      <zone ulx="55" uly="1069" lrx="480" lry="1091" xml:id="p273_p46" />
+      <zone ulx="57" uly="1092" lrx="484" lry="1112" xml:id="p273_p47" />
+      <zone ulx="52" uly="1110" lrx="485" lry="1131" xml:id="p273_p48" />
+      <zone ulx="53" uly="1131" lrx="484" lry="1146" xml:id="p273_p49" />
+      <zone ulx="55" uly="1146" lrx="486" lry="1162" xml:id="p273_p50" />
+      <zone ulx="58" uly="1164" lrx="489" lry="1184" xml:id="p273_p51" />
+      <zone ulx="56" uly="1187" lrx="487" lry="1202" xml:id="p273_p52" />
+      <zone ulx="50" uly="1202" lrx="487" lry="1220" xml:id="p273_p53" />
+      <zone ulx="53" uly="1219" lrx="488" lry="1236" xml:id="p273_p54" />
+      <zone ulx="53" uly="1235" lrx="489" lry="1257" xml:id="p273_p55" />
+      <zone ulx="53" uly="1257" lrx="492" lry="1276" xml:id="p273_p56" />
+      <zone ulx="56" uly="1282" lrx="495" lry="1311" xml:id="p273_p57" />
+
+      <!-- Seconda colonna -->
+
+      <zone ulx="488" uly="222" lrx="922" lry="237" xml:id="p273_p58" />
+      <zone ulx="492" uly="238" lrx="923" lry="260" xml:id="p273_p59" />
+      <zone ulx="491" uly="262" lrx="921" lry="274" xml:id="p273_p60" />
+      <zone ulx="494" uly="277" lrx="924" lry="294" xml:id="p273_p61" />
+      <zone ulx="491" uly="294" lrx="922" lry="315" xml:id="p273_p62" />
+      <zone ulx="491" uly="317" lrx="915" lry="332" xml:id="p273_p63" />
+      <zone ulx="494" uly="332" lrx="919" lry="350" xml:id="p273_p64" />
+      <zone ulx="495" uly="353" lrx="919" lry="368" xml:id="p273_p65" />
+      <zone ulx="495" uly="371" lrx="921" lry="386" xml:id="p273_p66" />
+      <zone ulx="492" uly="388" lrx="917" lry="405" xml:id="p273_p67" />
+      <zone ulx="495" uly="407" lrx="917" lry="426" xml:id="p273_p68" />
+      <zone ulx="493" uly="425" lrx="919" lry="441" xml:id="p273_p69" />
+      <zone ulx="492" uly="440" lrx="917" lry="462" xml:id="p273_p70" />
+      <zone ulx="494" uly="458" lrx="917" lry="476" xml:id="p273_p71" />
+      <zone ulx="495" uly="483" lrx="915" lry="493" xml:id="p273_p72" />
+      <zone ulx="493" uly="495" lrx="923" lry="512" xml:id="p273_p73" />
+      <zone ulx="494" uly="512" lrx="923" lry="530" xml:id="p273_p74" />
+      <zone ulx="496" uly="530" lrx="925" lry="548" xml:id="p273_p75" />
+      <zone ulx="498" uly="547" lrx="923" lry="566" xml:id="p273_p76" />
+      <zone ulx="495" uly="565" lrx="924" lry="586" xml:id="p273_p77" />
+      <zone ulx="497" uly="588" lrx="924" lry="605" xml:id="p273_p78" />
+      <zone ulx="495" uly="607" lrx="924" lry="620" xml:id="p273_p79" />
+      <zone ulx="497" uly="623" lrx="924" lry="642" xml:id="p273_p80" />
+      <zone ulx="495" uly="646" lrx="921" lry="657" xml:id="p273_p81" />
+      <zone ulx="494" uly="662" lrx="922" lry="678" xml:id="p273_p82" />
+      <zone ulx="493" uly="680" lrx="923" lry="695" xml:id="p273_p83" />
+      <zone ulx="497" uly="694" lrx="924" lry="708" xml:id="p273_p84" />
+      <zone ulx="494" uly="712" lrx="919" lry="730" xml:id="p273_p85" />
+      <zone ulx="496" uly="732" lrx="923" lry="747" xml:id="p273_p86" />
+      <zone ulx="499" uly="747" lrx="924" lry="767" xml:id="p273_p87" />
+      <zone ulx="498" uly="765" lrx="926" lry="783" xml:id="p273_p88" />
+      <zone ulx="497" uly="786" lrx="924" lry="805" xml:id="p273_p89" />
+      <zone ulx="497" uly="805" lrx="924" lry="821" xml:id="p273_p90" />
+      <zone ulx="496" uly="824" lrx="922" lry="842" xml:id="p273_p91" />
+      <zone ulx="499" uly="846" lrx="920" lry="858" xml:id="p273_p92" />
+      <zone ulx="495" uly="861" lrx="925" lry="879" xml:id="p273_p93" />
+      <zone ulx="497" uly="877" lrx="926" lry="892" xml:id="p273_p94" />
+      <zone ulx="494" uly="895" lrx="924" lry="912" xml:id="p273_p95" />
+      <zone ulx="495" uly="916" lrx="927" lry="930" xml:id="p273_p96" />
+      <zone ulx="496" uly="932" lrx="927" lry="950" xml:id="p273_p97" />
+      <zone ulx="495" uly="951" lrx="925" lry="965" xml:id="p273_p98" />
+      <zone ulx="495" uly="968" lrx="926" lry="986" xml:id="p273_p99" />
+      <zone ulx="499" uly="990" lrx="926" lry="1005" xml:id="p273_p100" />
+      <zone ulx="497" uly="1011" lrx="926" lry="1023" xml:id="p273_p101" />
+      <zone ulx="494" uly="1029" lrx="928" lry="1041" xml:id="p273_p102" />
+      <zone ulx="501" uly="1047" lrx="925" lry="1061" xml:id="p273_p103" />
+      <zone ulx="500" uly="1061" lrx="928" lry="1076" xml:id="p273_p104" />
+      <zone ulx="501" uly="1077" lrx="926" lry="1097" xml:id="p273_p105" />
+      <zone ulx="501" uly="1096" lrx="927" lry="1112" xml:id="p273_p106" />
+      <zone ulx="501" uly="1114" lrx="928" lry="1131" xml:id="p273_p107" />
+      <zone ulx="500" uly="1129" lrx="930" lry="1151" xml:id="p273_p108" />
+      <zone ulx="498" uly="1150" lrx="926" lry="1165" xml:id="p273_p109" />
+      <zone ulx="500" uly="1171" lrx="921" lry="1187" xml:id="p273_p110" />
+      <zone ulx="504" uly="1191" lrx="930" lry="1203" xml:id="p273_p111" />
+      <zone ulx="506" uly="1202" lrx="927" lry="1225" xml:id="p273_p112" />
+      <zone ulx="503" uly="1223" lrx="932" lry="1244" xml:id="p273_p113" />
+      <zone ulx="502" uly="1251" lrx="933" lry="1302" xml:id="p273_p114" />
     </surface>
   </facsimile>
-
+  <!-- 
+  <span facs="#p273_vol"></span>
+  <p facs="#p273_p1" xml:id="p273_p1"></p>
+  
+   -->
 
   <text>
     <body>
@@ -181,11 +302,21 @@
           I "<term type="Verbum" subtype="condizione_lavoratori">Carusi</term>" in <placeName ref="#Sicilia">Sicilia</placeName>.
         </head>
 
-        <div type="paragraph" xml:id="p273_par1" facs="#p273_par1">
-          <p>Sono trascorsi oramai dieci lunghi anni da quando l'on. <persName ref="#Lanza">Lanza</persName>, essendo ministro dell'interno, presentava al <orgName ref="#ParlamentoItaliano">Senato</orgName> un progetto di codice sanitario contenente alcune disposizioni, intese a disciplinare il lavoro dei fanciulli nelle fabbriche e nelle miniere. Da quella volta numerose proposte di legge furono presentate al <orgName ref="#ParlamentoItaliano">Parlamento Italiano</orgName>, sempre collo scopo di regolare questo importante e delicato argomento. Il governo stesso si fece iniziatore di un'inchiesta, i cui risultati comparvero non ha guari in un grosso volume pubblicato dal Ministero di' agricoltura, industria e commercio, e furono adoperati dagli onorevoli <persName>Depretis</persName> e <persName>Miceli</persName> per la presentazione di un nuovo progetto di legge alquanto diverso nei particolari da quello presentato poco tempo innanzi dagli onorevoli <persName>Minghetti</persName>,            <persName>Luzzatti</persName>,            <persName>Villari</persName> e <persName>Sidney Sonnino</persName>, ma informato allo stesso concetto generale. Senonchè mentre l'urgenza di accordare una protezione legale alle donne e ai fanciulli impiegati nell'industria è riconosciuta da molti in Parlamento e fuori, senza distinzione di partito politico, le sessioni succedono alle sessioni, le legislature alle legislature senza che si giunga a prendere alcun provvedimento concreto; e, quel ch'è peggio, la Commissione parlamentare, incaricata di riferire sul progetto Depretis-Miceli, dorme ingiustamente i suoi sonni. Intanto i mali esistenti non ricevono rimedio e, trascurati come sono, inacerbiscono. Perciò, l'animo nostro rimase tristemente impressionato quando, alcuni mesi or sono, un maggiorentte dell'industria italiana, ed economista appassionato, volle dimostrare l'inopportunità di una legge regolatrice del lavoro giovanile e muliebre nell'industria recando innanzi l'argomentazione che come in Italia non s'erano prodotti ancora i gravi inconvenienti pei quali in altri paesi la libertà del contratto di lavoro era stata ristretta, così non v'era presso di noi ragione sufficiente per seguire questo esempio. <foreign xml:lang="la">*</foreign>
-            <quote>Strana teoria, secondo la quale la legge dovrebbe intervenire soltanto quando il disordine ch'essa deve impedire si fosse già manifestato in gravi proporzioni.</quote>
+        <div class="col-1" xml:id="p273_par1" facs="#p273_par1" type="paragraph">
+          <span facs="#p273_articleTitle">
+            I "<term type="Verbum" subtype="condizione_lavoratori">Carusi</term>" in <placeName ref="#Sicilia">Sicilia</placeName>.
+          </span>
+          <p facs="#p273_p1" xml:id="p273_p1">Sono trascorsi oramai dieci lunghi anni da quando l'on.</p>
+          <p facs="#p273_p2" xml:id="p273_p2">
+            <persName ref="#Lanza">Lanza</persName>, essendo ministro dell'interno, presentava al<orgName ref="#ParlamentoItaliano">Senato</orgName>
           </p>
         </div>
+
+        <!-- <div type="paragraph" xml:id="p273_par1" facs="#p273_par1">
+            <p>Sono trascorsi oramai dieci lunghi anni da quando l'on. <persName ref="#Lanza">Lanza</persName>, essendo ministro dell'interno, presentava al <orgName ref="#ParlamentoItaliano">Senato</orgName> un progetto di codice sanitario contenente alcune disposizioni, intese a disciplinare il lavoro dei fanciulli nelle fabbriche e nelle miniere. Da quella volta numerose proposte di legge furono presentate al <orgName ref="#ParlamentoItaliano">Parlamento Italiano</orgName>, sempre collo scopo di regolare questo importante e delicato argomento. Il governo stesso si fece iniziatore di un'inchiesta, i cui risultati comparvero non ha guari in un grosso volume pubblicato dal Ministero di' agricoltura, industria e commercio, e furono adoperati dagli onorevoli <persName>Depretis</persName> e <persName>Miceli</persName> per la presentazione di un nuovo progetto di legge alquanto diverso nei particolari da quello presentato poco tempo innanzi dagli onorevoli <persName>Minghetti</persName>,              <persName>Luzzatti</persName>,              <persName>Villari</persName> e <persName>Sidney Sonnino</persName>, ma informato allo stesso concetto generale. Senonchè mentre l'urgenza di accordare una protezione legale alle donne e ai fanciulli impiegati nell'industria è riconosciuta da molti in Parlamento e fuori, senza distinzione di partito politico, le sessioni succedono alle sessioni, le legislature alle legislature senza che si giunga a prendere alcun provvedimento concreto; e, quel ch'è peggio, la Commissione parlamentare, incaricata di riferire sul progetto Depretis-Miceli, dorme ingiustamente i suoi sonni. Intanto i mali esistenti non ricevono rimedio e, trascurati come sono, inacerbiscono. Perciò, l'animo nostro rimase tristemente impressionato quando, alcuni mesi or sono, un maggiorentte dell'industria italiana, ed economista appassionato, volle dimostrare l'inopportunità di una legge regolatrice del lavoro giovanile e muliebre nell'industria recando innanzi l'argomentazione che come in Italia non s'erano prodotti ancora i gravi inconvenienti pei quali in altri paesi la libertà del contratto di lavoro era stata ristretta, così non v'era presso di noi ragione sufficiente per seguire questo esempio. <foreign xml:lang="la">*</foreign>
+              <quote>Strana teoria, secondo la quale la legge dovrebbe intervenire soltanto quando il disordine ch'essa deve impedire si fosse già manifestato in gravi proporzioni.</quote>
+            </p>
+          </div> -->
       </div>
     </body>
   </text>

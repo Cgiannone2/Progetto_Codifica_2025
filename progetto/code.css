@@ -348,12 +348,12 @@ strong {
 
 /* Stili per i titoli degli articoli e byline */
 .article-title {
-  font-size: 1.8em;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #a8e6cf;
   text-align: center;
 }
+
 .byline {
   font-style: italic;
   color: #b0b0b0;
