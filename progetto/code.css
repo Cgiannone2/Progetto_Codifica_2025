@@ -7,6 +7,8 @@ html {
 .flex {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: center;
   gap: 4px;
 }
 
@@ -163,8 +165,12 @@ strong {
 }
 
 .trascrizione p {
-  margin-bottom: 8px;
+  padding: 0px;
+  font-size: 14px;
   text-align: justify;
+  white-space: nowrap;
+  overflow: scroll;
+  margin: 0;
 }
 
 /* Legenda e Pulsanti Fenomeni */
@@ -348,9 +354,8 @@ strong {
 
 /* Stili per i titoli degli articoli e byline */
 .article-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
   text-align: center;
 }
 
