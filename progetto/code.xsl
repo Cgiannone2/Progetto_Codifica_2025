@@ -88,89 +88,110 @@
     <div id="art1_carusi" class="section-block">
       <h2>Articolo: I "Carusi" in Sicilia</h2>
       <div class="boxTrascrizione">
-        <div class='box-legenda'>
-          <h3 id="legenda_title">LEGENDA</h3>
-          <p>
-            <span class="persName-legend">Persone Reali</span>
-          </p>
-          <p>
-            <span class="orgName-legend">Organizzazioni / Case Editrici / Riviste</span>
-          </p>
-          <p>
-            <span class="placeName-legend">Luoghi</span>
-          </p>
-          <p>
-            <span class="term-legend">Termini / Verbum</span>
-          </p>
-          <p>
-            <span class="date-legend">Date</span>
-          </p>
-          <p>
-            <span class="foreign-legend">Testo in Lingua Straniera</span>
-          </p>
-          <p>
-            <span class="quote-legend">Citazioni</span>
-          </p>
-        </div>
 
-        <div class="box-btn">
-          <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
-          <p class="rowBtn">
-            <button type="button" class="btnPersName" onclick="togglePhenomenon('persName')">Persone</button>
-            <button type="button" class="btnOrgName" onclick="togglePhenomenon('orgName')">Organizzazioni/caseEd/Riviste</button>
-          </p>
-          <p class="rowBtn">
-            <button type="button" class="btnPlaceName" onclick="togglePhenomenon('placeName')">Luoghi</button>
-            <button type="button" class="btnTerm" onclick="togglePhenomenon('term')">Termini/Verbum</button>
-          </p>
-          <p class="rowBtn">
-            <button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button>
-            <button type="button" class="btnForeign" onclick="togglePhenomenon('foreign')">Straniere</button>
-          </p>
-          <p class="rowBtn">
-            <button type="button" class="btnQuote" onclick="togglePhenomenon('quote')">Citazioni</button>
-          </p>
-        </div>
+        <div class="controls-grid">
+          <div class='box-legenda'>
+            <h3 id="legenda_title">LEGENDA</h3>
+            <p>
+              <span class="persName-legend">Persone Reali</span>
+            </p>
+            <p>
+              <span class="orgName-legend">Organizzazioni / Case Editrici / Riviste</span>
+            </p>
+            <p>
+              <span class="placeName-legend">Luoghi</span>
+            </p>
+            <p>
+              <span class="term-legend">Termini / Verbum</span>
+            </p>
+            <p>
+              <span class="date-legend">Date</span>
+            </p>
+            <p>
+              <span class="foreign-legend">Testo in Lingua Straniera</span>
+            </p>
+            <p>
+              <span class="quote-legend">Citazioni</span>
+            </p>
+          </div>
 
-        <div class="img-wrapper">
-          <div class="svg-container">
-            <img src="{//tei:graphic[@xml:id='pag273']/@url}" id="pag273" alt="Page 273 of La Rassegna Settimanale" class="base-image" />
-
-            <svg id="svg-overlay"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet">
-              <xsl:for-each select="//tei:facsimile/tei:surface/tei:zone">
-                <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
-              </xsl:for-each>
-            </svg>
+          <div class="box-btn">
+            <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
+            <p class="rowBtn">
+              <button type="button" class="btnPersName" onclick="togglePhenomenon('persName')">Persone</button>
+              <button type="button" class="btnOrgName" onclick="togglePhenomenon('orgName')">Organizzazioni/caseEd/Riviste</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnPlaceName" onclick="togglePhenomenon('placeName')">Luoghi</button>
+              <button type="button" class="btnTerm" onclick="togglePhenomenon('term')">Termini/Verbum</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button>
+              <button type="button" class="btnForeign" onclick="togglePhenomenon('foreign')">Straniere</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnQuote" onclick="togglePhenomenon('quote')">Citazioni</button>
+            </p>
           </div>
         </div>
 
-        <div class="transcription-area">
-          <xsl:apply-templates select="tei:head[@rend='pageHeader']"/>
-          <div class="flex" id="p273_subTitle">
-            <xsl:apply-templates select="tei:head[@type='subtitle']"/>
-          </div>
-          <div class="date_container">
-            <div class="flex" id="p273_vol">
-              <xsl:apply-templates select="tei:head[@type='vol']"/>
-            </div>
-            <div class="flex" id="p273_date">
-              <xsl:apply-templates select="tei:div[@xml:id='p273_date']"/>
-            </div>
-            <div class="flex" id="p273_number">
-              <xsl:apply-templates select="tei:num"/>
+        <button class="carousel-prev" onclick="changeSlide(-1)">&#10094;</button>
+
+        <div class="carousel-container">
+          <div class="img-wrapper">
+            <div id="image-carousel-content">
+              <div class="carousel-slide active">
+                <div class="svg-container">
+                  <img src="{//tei:graphic[@xml:id='pag273']/@url}" alt="Pagina 1" class="base-image" />
+                  <svg id="svg-overlay"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet">
+                    <xsl:for-each select="//tei:facsimile/tei:surface/tei:zone">
+                      <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
+                    </xsl:for-each>
+                  </svg>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <h1 style="color:white;">Ciao 1</h1>
+              </div>
             </div>
           </div>
 
-          <div class="trascrizione">
-            <div class="col">
-              <xsl:apply-templates select="tei:div[@xml:id='p273_par1_col_1']"/>
-            </div>
-            <div class="col">
-              <xsl:apply-templates select="tei:div[@xml:id='p273_par1_col_2']"/>
+          <div class="transcription-area">
+            <div id="text-carousel-content">
+              <div class="carousel-slide-text active">
+                <xsl:apply-templates select="tei:head[@rend='pageHeader']"/>
+                <div class="flex" id="p273_subTitle">
+                  <xsl:apply-templates select="tei:head[@type='subtitle']"/>
+                </div>
+                <div class="date_container">
+                  <div class="flex" id="p273_vol">
+                    <xsl:apply-templates select="tei:head[@type='vol']"/>
+                  </div>
+                  <div class="flex" id="p273_date">
+                    <xsl:apply-templates select="tei:div[@xml:id='p273_date']"/>
+                  </div>
+                  <div class="flex" id="p273_number">
+                    <xsl:apply-templates select="tei:num"/>
+                  </div>
+                </div>
+                <div class="trascrizione">
+                  <div class="col">
+                    <xsl:apply-templates select="tei:div[@xml:id='p273_par1_col_1']"/>
+                  </div>
+                  <div class="col">
+                    <xsl:apply-templates select="tei:div[@xml:id='p273_par1_col_2']"/>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide-text">
+                <h1 style="color:white;">Ciao 2</h1>
+              </div>
             </div>
           </div>
         </div>
+
+        <button class="carousel-next" onclick="changeSlide(1)">&#10095;</button>
       </div>
     </div>
   </xsl:template>

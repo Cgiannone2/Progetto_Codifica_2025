@@ -441,16 +441,14 @@
           <p facs="#p273_p111" xml:id="p273_p111">ticipazione ricevuta, trovasi permanentemente indebitato</p>
           <p facs="#p273_p112" xml:id="p273_p112">verso il <term>piconiere</term>, tenuto quindi da quest'ultimo in una</p>
           <p facs="#p273_p113" xml:id="p273_p113">specie di schiavitù, e retribuito sempre di fatto in misura</p>
-          <note facs="#p273_note1" xml:id="p273_note1" type="footnotebiblio">
-            <p facs="#p273_p114" xml:id="p273_p114">
-            *              <persName ref="#Savorini">VITTORIO SAVORINI</persName>, Condizioni economiche e morali dei lavoratori
-            </p>
-            <p facs="#p273_p115" xml:id="p273_p115">nelle miniere di zolfo e degli agricoltori della provincia di <placeName ref="#Girgenti">Girgenti</placeName>,
-            </p>
-            <p facs="#p273_p116" xml:id="p273_p116">
-              <placeName ref="#Girgenti">Girgenti</placeName>,              <date>1881</date>.
-            </p>
-          </note>
+          <p facs="#p273_p114" xml:id="p273_p114">
+            *            <persName ref="#Savorini">VITTORIO SAVORINI</persName>, Condizioni economiche e morali dei lavoratori
+          </p>
+          <p facs="#p273_p115" xml:id="p273_p115">nelle miniere di zolfo e degli agricoltori della provincia di <placeName ref="#Girgenti">Girgenti</placeName>,
+          </p>
+          <p facs="#p273_p116" xml:id="p273_p116">
+            <placeName ref="#Girgenti">Girgenti</placeName>,            <date>1881</date>.
+          </p>
         </div>
       </div>
     </body>

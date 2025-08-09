@@ -81,4 +81,28 @@ $(document).ready(function () {
       // L'SVG tornerà al suo stato originale grazie al CSS
     }
   };
+
+  // --- Gestione Carosello ---
+  var currentSlide = 0;
+  var totalSlides = $('#image-carousel-content .carousel-slide').length;
+
+  window.changeSlide = function (direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) {
+      currentSlide = totalSlides - 1;
+    } else if (currentSlide >= totalSlides) {
+      currentSlide = 0;
+    }
+    updateCarousel();
+  };
+
+  function updateCarousel() {
+    $('#image-carousel-content .carousel-slide').removeClass('active');
+    $('#text-carousel-content .carousel-slide-text').removeClass('active');
+
+    $('#image-carousel-content .carousel-slide').eq(currentSlide).addClass('active');
+    $('#text-carousel-content .carousel-slide-text').eq(currentSlide).addClass('active');
+  }
+
+  updateCarousel();
 });
