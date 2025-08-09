@@ -164,10 +164,10 @@
 
           <div class="trascrizione">
             <div class="col">
-              <xsl:apply-templates select="tei:div[@xml:id='p273_par1']"/>
-
+              <xsl:apply-templates select="tei:div[@xml:id='p273_par1_col_1']"/>
             </div>
             <div class="col">
+              <xsl:apply-templates select="tei:div[@xml:id='p273_par1_col_2']"/>
             </div>
           </div>
         </div>
@@ -176,7 +176,20 @@
   </xsl:template>
 
 
-  <xsl:template match="tei:div[@xml:id='p273_par1']">
+  <xsl:template match="tei:div[@xml:id='p273_par1_col_1']">
+    <div class="flex">
+      <span class="article-title" id="p273_articleTitle">
+        <xsl:apply-templates select="tei:span"/>
+      </span>
+    </div>
+    <xsl:for-each select="tei:p">
+      <p id="{@xml:id}">
+        <xsl:apply-templates/>
+      </p>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='p273_par1_col_2']">
     <div class="flex">
       <span class="article-title" id="p273_articleTitle">
         <xsl:apply-templates select="tei:span"/>
