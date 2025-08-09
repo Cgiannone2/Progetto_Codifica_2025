@@ -1,15 +1,8 @@
-/* progetto/code.css */
-
+/* ------------------------------------
+   Impostazioni di base
+------------------------------------ */
 html {
   scroll-behavior: smooth;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  gap: 4px;
 }
 
 body {
@@ -20,10 +13,20 @@ body {
   color: #ffffff;
 }
 
-.hidden {
-  display: none;
+strong {
+  color: #ffffff;
 }
 
+/* Layout flessibile generico */
+.flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* Titoli principali */
 h1 {
   color: #a8e6cf;
   border-bottom: 2px solid #a8e6cf;
@@ -32,7 +35,10 @@ h1 {
   text-align: center;
 }
 
-/* Navigazione */
+/* ------------------------------------
+   Barra di navigazione (.navMenu)
+   - Generata da XSL nella sezione <header>
+------------------------------------ */
 .navMenu {
   padding: 20px;
   text-align: center;
@@ -65,6 +71,9 @@ h1 {
   border-radius: 5px;
 }
 
+/* ------------------------------------
+   Blocchi di sezione principali
+------------------------------------ */
 .section-block {
   background-color: #3b4255;
   border: 1px solid #4a5068;
@@ -73,7 +82,7 @@ h1 {
   margin: 25px 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #e0e0e0;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 80px; /* per l'ancoraggio da menu */
 }
 
 .section-block .indent {
@@ -95,11 +104,10 @@ h1 {
   text-align: center;
 }
 
-strong {
-  color: #ffffff;
-}
-
-/* Layout Immagine e Trascrizione */
+/* ------------------------------------
+   Layout immagine + trascrizione
+   - .boxTrascrizione generato in XSL
+------------------------------------ */
 .boxTrascrizione {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -125,7 +133,7 @@ strong {
   margin: 0 auto;
 }
 
-/* Area di trascrizione */
+/* Area trascrizione testo */
 .transcription-area {
   min-width: 300px;
   background-color: #2b3042;
@@ -141,6 +149,7 @@ strong {
   gap: 8px;
 }
 
+/* Layout a due colonne per il testo */
 .trascrizione {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -155,7 +164,7 @@ strong {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 8px 0 8px 0;
+  padding: 8px 0;
 }
 
 .trascrizione .col {
@@ -173,8 +182,9 @@ strong {
   margin: 0;
 }
 
-/* Legenda e Pulsanti Fenomeni */
-.box-legenda,
+/* ------------------------------------
+   Legenda + Pulsanti fenomeni
+------------------------------------ */
 .box-btn {
   background-color: #2b3042;
   border-radius: 8px;
@@ -209,7 +219,7 @@ strong {
   flex-wrap: wrap;
 }
 
-/* Stili per i pulsanti */
+/* Pulsanti */
 .box-btn button {
   background-color: #4682b4;
   color: white;
@@ -226,58 +236,59 @@ strong {
   background-color: #3b4255;
 }
 
-/* Stili per i fenomeni notevoli nel testo (Sempre visibili, senza evidenziazione di default) */
+/* ------------------------------------
+   Stili fenomeni notevoli nel testo
+   - Classi applicate dinamicamente dal JS
+------------------------------------ */
 .placeName,
 .persName,
 .orgName,
 .term,
-.date,
-.foreign,
-.quote {
-  font-weight: bold; /* Manteniamo la formattazione di base per distinguerli */
-  color: #e0e0e0; /* Colore del testo non evidenziato */
-  transition: all 0.3s ease; /* Transizione per il cambio di colore */
+.date {
+  font-weight: bold;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
 }
 
-/* Stili di evidenziazione da applicare con il clic del pulsante */
+/* Evidenziazioni attive */
 .persName.highlighted {
-  background-color: #ffeb3b; /* Giallo */
+  background-color: #ffeb3b;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
 .orgName.highlighted {
-  background-color: #ff9800; /* Arancione */
+  background-color: #ff9800;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
 .placeName.highlighted {
-  background-color: #00bcd4; /* Azzurro */
+  background-color: #00bcd4;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
 .term.highlighted {
-  background-color: #8bc34a; /* Verde lime */
+  background-color: #8bc34a;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
 .date.highlighted {
-  background-color: #9c27b0; /* Viola */
+  background-color: #9c27b0;
   padding: 1px 3px;
   border-radius: 3px;
   color: #fff;
 }
 .foreign.highlighted {
-  background-color: #81d4fa; /* Azzurro chiaro */
+  background-color: #81d4fa;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
 .quote.highlighted {
-  background-color: #ffeb3b; /* Giallo (per il background della citazione) */
+  background-color: #ffeb3b;
   border-left: 5px solid #ffeb3b;
   margin-left: 20px;
   padding-left: 10px;
@@ -285,7 +296,9 @@ strong {
   color: #d0d0d0;
 }
 
-/* Stili per le icone della legenda (per farli avere lo stesso colore dello span) */
+/* ------------------------------------
+   Legenda colori fenomeni
+------------------------------------ */
 .persName-legend {
   background-color: #ffeb3b;
   padding: 1px 3px;
@@ -333,17 +346,11 @@ strong {
   color: #d0d0d0;
 }
 
-/* Stili per le intestazioni di pagina della rivista (dentro .transcription-area) */
-.page-header {
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed #5a5a5a;
-  font-size: 0.9em;
-  color: #e0e0e0;
-  text-align: center;
-}
+/* ------------------------------------
+   Intestazioni di pagina
+------------------------------------ */
 .page-header h4 {
-  color: #ffaaa5; /* Titolo della sezione header */
+  color: #ffaaa5;
   border: none;
   margin: 0;
   padding: 0;
@@ -352,121 +359,94 @@ strong {
   margin: 0;
 }
 
-/* Stili per i titoli degli articoli e byline */
+/* Titoli articoli */
 .article-title {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
 
-.byline {
-  font-style: italic;
-  color: #b0b0b0;
-  margin-bottom: 20px;
-  display: block;
-  text-align: center;
-  font-size: 0.9em;
-}
-
-/* Stili per i pulsanti */
-.box-btn button {
-  background-color: #4682b4;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.9em;
-  transition: background-color 0.3s ease;
-  min-width: 100px;
-}
-
-.box-btn button:hover {
-  background-color: #3b4255;
-}
-
-/* Nuovi stili per i pulsanti attivi */
+/* ------------------------------------
+   Stato attivo pulsanti fenomeni
+------------------------------------ */
 .btnPersName.active-phenomenon {
-  background-color: #ffeb3b; /* Giallo di .persName */
+  background-color: #ffeb3b;
   color: #000;
 }
 .btnOrgName.active-phenomenon {
-  background-color: #ff9800; /* Arancione di .orgName */
+  background-color: #ff9800;
   color: #000;
 }
 .btnPlaceName.active-phenomenon {
-  background-color: #00bcd4; /* Azzurro di .placeName */
+  background-color: #00bcd4;
   color: #000;
 }
 .btnTerm.active-phenomenon {
-  background-color: #8bc34a; /* Verde lime di .term */
+  background-color: #8bc34a;
   color: #000;
 }
 .btnDate.active-phenomenon {
-  background-color: #9c27b0; /* Viola di .date */
+  background-color: #9c27b0;
   color: #fff;
 }
 .btnForeign.active-phenomenon {
-  background-color: #81d4fa; /* Azzurro chiaro di .foreign */
+  background-color: #81d4fa;
   color: #000;
 }
 .btnQuote.active-phenomenon {
-  background-color: #ffeb3b; /* Giallo come il bordo di .quote */
+  background-color: #ffeb3b;
   color: #000;
 }
 
-/* Container per sovrapporre immagine e SVG */
+/* ------------------------------------
+   Immagine + SVG sovrapposto
+------------------------------------ */
 .svg-container {
   position: relative;
   width: 100%;
-  height: auto; /* Manteniamo l'altezza automatica per la scalatura */
+  height: auto;
   display: inline-block;
 }
-
-/* L'immagine di base */
 .svg-container img.base-image {
-  position: relative; /* Cambia da absolute a relative */
+  position: relative;
   top: 0;
   left: 0;
-  z-index: 1; /* L'immagine sta sotto l'SVG */
+  z-index: 1;
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-/* L'SVG sovrapposto */
 .svg-container #svg-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2; /* L'SVG sta sopra l'immagine */
-  pointer-events: auto; /* Rende l'SVG sensibile al mouse */
+  z-index: 2;
+  pointer-events: auto;
 }
 
-/* Stili per le zone attive (rettangoli SVG) */
+/* Zone interattive SVG */
 .highlight-zone {
-  fill: transparent; /* Rettangoli invisibili di default */
-  stroke: none; /* Rimuovi il bordo di default */
+  fill: transparent;
+  stroke: none;
   transition: fill 0.2s ease-in-out;
 }
-
-/* Effetto al passaggio del mouse */
 .highlight-zone:hover {
-  fill: #4682b4; /* Evidenziazione al passaggio del mouse */
-  fill-opacity: 0.5; /* Opacità per vedere l'immagine sottostante */
+  fill: #4682b4;
+  fill-opacity: 0.5;
   cursor: pointer;
 }
 
+/* Forzatura colore per orgName/persName in evidenza */
 .orgName.highlighted,
 .persName.highlighted {
-  background-color: #4682b4 !important; /* Forza il colore di sfondo */
-  color: #fff !important; /* Forza il colore del testo */
+  background-color: #4682b4 !important;
+  color: #fff !important;
 }
 
 .orgName.highlighted {
-  background-color: #ff9800 !important; /* Arancione */
+  background-color: #ff9800 !important;
   border-radius: 3px;
   color: #000;
 }
