@@ -142,6 +142,7 @@
     </revisionDesc>
   </teiHeader>
 
+  <!-- Pagina 273 -->
   <facsimile>
     <surface n="273" xml:id="M_273">
       <graphic url="progetto/img/pp273.jpg" xml:id="pag273" width="1006px" height="1450px"/>
@@ -274,11 +275,13 @@
       <zone ulx="502" uly="1290" lrx="929" lry="1306" xml:id="p273_p116"/>
     </surface>
   </facsimile>
-  <!-- 
-  <span facs="#p273_vol"></span>
-  <p facs="#p273_p1" xml:id="p273_p1"></p>
-  
-   -->
+
+  <!-- Pagina 274 -->
+  <facsimile>
+    <surface n="274" xml:id="M_274">
+      <graphic url="progetto/img/pp274.jpg" xml:id="pag274" width='1186px' height='1744px' />
+    </surface>
+  </facsimile>
 
   <text>
     <body>

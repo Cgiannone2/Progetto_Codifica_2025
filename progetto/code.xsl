@@ -88,7 +88,6 @@
     <div id="art1_carusi" class="section-block">
       <h2>Articolo: I "Carusi" in Sicilia</h2>
       <div class="boxTrascrizione">
-
         <div class="controls-grid">
           <div class='box-legenda'>
             <h3 id="legenda_title">LEGENDA</h3>
@@ -114,7 +113,6 @@
               <span class="quote-legend">Citazioni</span>
             </p>
           </div>
-
           <div class="box-btn">
             <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
             <p class="rowBtn">
@@ -140,53 +138,63 @@
         <div class="carousel-container">
           <div class="img-wrapper">
             <div id="image-carousel-content">
-              <div class="carousel-slide active">
-                <div class="svg-container">
-                  <img src="{//tei:graphic[@xml:id='pag273']/@url}" alt="Pagina 1" class="base-image" />
-                  <svg id="svg-overlay"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet">
-                    <xsl:for-each select="//tei:facsimile/tei:surface/tei:zone">
-                      <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
-                    </xsl:for-each>
-                  </svg>
+              <xsl:for-each select="//tei:facsimile/tei:surface">
+                <div class="carousel-slide">
+                  <xsl:if test="position() = 1">
+                    <xsl:attribute name="class">carousel-slide active</xsl:attribute>
+                  </xsl:if>
+                  <div class="svg-container">
+                    <img src="{tei:graphic/@url}" class="base-image" />
+                    <svg id="svg-overlay"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet">
+                      <xsl:for-each select="tei:zone">
+                        <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
+                      </xsl:for-each>
+                    </svg>
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-slide">
-                <h1 style="color:white;">Ciao 1</h1>
-              </div>
+              </xsl:for-each>
             </div>
           </div>
 
           <div class="transcription-area">
             <div id="text-carousel-content">
-              <div class="carousel-slide-text active">
-                <xsl:apply-templates select="tei:head[@rend='pageHeader']"/>
-                <div class="flex" id="p273_subTitle">
-                  <xsl:apply-templates select="tei:head[@type='subtitle']"/>
+              <xsl:for-each select="tei:pb">
+                <div class="carousel-slide-text">
+                  <xsl:if test="position() = 1">
+                    <xsl:attribute name="class">carousel-slide-text active</xsl:attribute>
+                  </xsl:if>
+                  <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[tei:pb/@n = current()/@n]"/>
+                  <xsl:if test="@n = '273'">
+                    <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@rend='pageHeader']"/>
+                    <div class="flex" id="p273_subTitle">
+                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@type='subtitle']"/>
+                    </div>
+                    <div class="date_container">
+                      <div class="flex" id="p273_vol">
+                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@type='vol']"/>
+                      </div>
+                      <div class="flex" id="p273_date">
+                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_date']"/>
+                      </div>
+                      <div class="flex" id="p273_number">
+                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:num"/>
+                      </div>
+                    </div>
+                    <div class="trascrizione">
+                      <div class="col">
+                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_par1_col_1']"/>
+                      </div>
+                      <div class="col">
+                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_par1_col_2']"/>
+                      </div>
+                    </div>
+                  </xsl:if>
+                  <xsl:if test="@n = '274'">
+                    <h1 style="color:white;">Contenuto della Pagina 274</h1>
+                  </xsl:if>
                 </div>
-                <div class="date_container">
-                  <div class="flex" id="p273_vol">
-                    <xsl:apply-templates select="tei:head[@type='vol']"/>
-                  </div>
-                  <div class="flex" id="p273_date">
-                    <xsl:apply-templates select="tei:div[@xml:id='p273_date']"/>
-                  </div>
-                  <div class="flex" id="p273_number">
-                    <xsl:apply-templates select="tei:num"/>
-                  </div>
-                </div>
-                <div class="trascrizione">
-                  <div class="col">
-                    <xsl:apply-templates select="tei:div[@xml:id='p273_par1_col_1']"/>
-                  </div>
-                  <div class="col">
-                    <xsl:apply-templates select="tei:div[@xml:id='p273_par1_col_2']"/>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-slide-text">
-                <h1 style="color:white;">Ciao 2</h1>
-              </div>
+              </xsl:for-each>
             </div>
           </div>
         </div>
@@ -195,7 +203,6 @@
       </div>
     </div>
   </xsl:template>
-
 
   <xsl:template match="tei:div[@xml:id='p273_par1_col_1']">
     <div class="flex">
@@ -222,7 +229,6 @@
       </p>
     </xsl:for-each>
   </xsl:template>
-
 
   <xsl:template match="tei:persName">
     <span class="persName">
@@ -264,6 +270,24 @@
     <span class="date">
       <xsl:apply-templates/>
     </span>
+  </xsl:template>
+
+  <xsl:template match="tei:head">
+    <h4 class="page-header">
+      <xsl:apply-templates/>
+    </h4>
+  </xsl:template>
+
+  <xsl:template match="tei:num">
+    <p>
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='p273_date']">
+    <p>
+      <xsl:apply-templates/>
+    </p>
   </xsl:template>
 
 </xsl:stylesheet>

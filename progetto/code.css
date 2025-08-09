@@ -516,6 +516,10 @@ h1 {
   text-align: center;
 }
 
+.carousel-slide-text.active h4 {
+  margin: 6px;
+  font-size: 18px;
+}
 /* Stile per i nuovi pulsanti di navigazione */
 .boxTrascrizione > button {
   background-color: rgba(0, 0, 0, 0.5);
