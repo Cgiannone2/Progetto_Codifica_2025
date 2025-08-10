@@ -50,7 +50,7 @@
                   <p class="rowBtn"><button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera')">Testo in lingua straniera</button><button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni')">Citazioni</button></p>
                   <p class="rowBtn"><button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni')">Organizzazioni</button><button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet')">Epithet</button></p>
                </div>
-            </div><button class="carousel-prev" onclick="changeSlide(-1)">❮</button><div class="carousel-container">
+            </div><button class="carousel-prev" onclick="changeSlide1(-1)">❮</button><div class="carousel-container">
                <div class="img-wrapper">
                   <div id="image-carousel-content">
                      <div class="carousel-slide">
@@ -397,15 +397,19 @@
                               <rect id="zone-p275_date" x="28" y="56" width="159" height="38" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_date')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_date')"></rect>
                               <rect id="zone-p275_runningTitle" x="347" y="47" width="331" height="49" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_runningTitle')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_runningTitle')"></rect>
                               <rect id="zone-p275_number" x="969" y="56" width="51" height="29" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_number')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_number')"></rect>
+                              <rect id="zone-p275_date_com" x="28" y="56" width="159" height="38" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_date_com')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_date_com')"></rect>
+                              <rect id="zone-p275_runningTitle_com" x="347" y="47" width="331" height="49" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_runningTitle_com')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_runningTitle_com')"></rect>
+                              <rect id="zone-p275_number_com" x="969" y="56" width="51" height="29" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_number_com')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_number_com')"></rect>
                               <rect id="zone-p275_p1" x="32" y="111" width="485" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p1')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p1')"></rect>
                               <rect id="zone-p275_p2" x="33" y="138" width="481" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p2')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p2')"></rect>
-                              <rect id="zone-p275_p3" x="30" y="157" width="480" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p3')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p3')"></rect></svg></div>
+                              <rect id="zone-p275_p3" x="30" y="157" width="480" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p3')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p3')"></rect>
+                              <rect id="zone-p275_p4" x="38" y="188" width="475" height="32" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p4')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p4')"></rect></svg></div>
                      </div>
                   </div>
                </div>
                <div class="transcription-area">
                   <div id="text-carousel-content">
-                     <div class="carousel-slide-text active">
+                     <div class="carousel-slide-text">
                         <h4 class="page-header">
                            <span class="organizzazioni" id="p273_runningTitle" data-ref="#RassegnaSettimanale">LA RASSEGNA SETTIMANALE</span>
                            </h4>
@@ -787,12 +791,13 @@
                            </div>
                         </div>
                      </div>
+                     <div class="carousel-slide-text"></div>
                   </div>
                </div>
-            </div><button class="carousel-next" onclick="changeSlide(1)">❯</button></div>
+            </div><button class="carousel-next" onclick="changeSlide1(1)">❯</button></div>
       </div>
       <div id="art2_commercio" class="section-block">
-         <h2>Articolo: I "Carusi" in Sicilia</h2>
+         <h2>Articolo 2: Il commercio nel primo trimestre 1881</h2>
          <div class="boxTrascrizione">
             <div class="controls-grid">
                <div class="box-legenda">
@@ -822,8 +827,44 @@
                   <p class="rowBtn"><button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera')">Testo in lingua straniera</button><button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni')">Citazioni</button></p>
                   <p class="rowBtn"><button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni')">Organizzazioni</button><button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet')">Epithet</button></p>
                </div>
-            </div>
-         </div>
+            </div><button class="carousel-prev" onclick="changeSlide2(-1)">❮</button><div class="carousel-container">
+               <div class="img-wrapper">
+                  <div id="image-carousel-content-2">
+                     <div class="carousel-slide">
+                        <div class="svg-container"><img src="progetto/img/pp275.jpg" class="base-image"><svg xmlns="http://www.w3.org/2000/svg" id="svg-overlay" viewBox="0 0 1094 1636" preserveAspectRatio="xMidYMid meet">
+                              <rect id="zone-p275_date" x="28" y="56" width="159" height="38" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_date')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_date')"></rect>
+                              <rect id="zone-p275_runningTitle" x="347" y="47" width="331" height="49" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_runningTitle')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_runningTitle')"></rect>
+                              <rect id="zone-p275_number" x="969" y="56" width="51" height="29" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_number')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_number')"></rect>
+                              <rect id="zone-p275_date_com" x="28" y="56" width="159" height="38" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_date_com')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_date_com')"></rect>
+                              <rect id="zone-p275_runningTitle_com" x="347" y="47" width="331" height="49" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_runningTitle_com')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_runningTitle_com')"></rect>
+                              <rect id="zone-p275_number_com" x="969" y="56" width="51" height="29" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_number_com')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_number_com')"></rect>
+                              <rect id="zone-p275_p1" x="32" y="111" width="485" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p1')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p1')"></rect>
+                              <rect id="zone-p275_p2" x="33" y="138" width="481" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p2')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p2')"></rect>
+                              <rect id="zone-p275_p3" x="30" y="157" width="480" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p3')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p3')"></rect>
+                              <rect id="zone-p275_p4" x="38" y="188" width="475" height="32" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p275_p4')" onmouseout="gestoreDisEvidenziaSVG('zone-p275_p4')"></rect></svg></div>
+                     </div>
+                     <div class="carousel-slide">
+                        <div class="svg-container"><img src="progetto/img/pp276.jpg" class="base-image"><svg xmlns="http://www.w3.org/2000/svg" id="svg-overlay-2" viewBox="0 0 1078 1624" preserveAspectRatio="xMidYMid meet"></svg></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="transcription-area">
+                  <div id="text-carousel-content-2">
+                     <div class="carousel-slide-text active">
+                        <div class="flex-full">
+                           <p class="page-date" id="p275_date_com">1 maggio 81</p>
+                           <p class="running-title" id="p275_runningTitle_com">LA RASSEGNA SETTIMANALE</p>
+                           <p class="number-info" id="p275_number_com">275</p>
+                        </div>
+                        <div class="trascrizione">
+                           <div class="col">
+                              <p id="p275_p4">IL COMMERCIO NEL PRIMO TRIMESTRE 1881</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div><button class="carousel-next" onclick="changeSlide2(1)">❯</button></div>
       </div>
       <div class="section-block" id="sezione_bibliografia">
          <h2>Sezione Bibliografia</h2>

@@ -504,9 +504,21 @@
       <zone ulx="347" uly="47" lrx="678" lry="96" xml:id="p275_runningTitle" />
       <zone ulx="969" uly="56" lrx="1020" lry="85" xml:id="p275_number"/>
 
+      <zone ulx="28" uly="56" lrx="187" lry="94" xml:id="p275_date_com" />
+      <zone ulx="347" uly="47" lrx="678" lry="96" xml:id="p275_runningTitle_com" />
+      <zone ulx="969" uly="56" lrx="1020" lry="85" xml:id="p275_number_com"/>
+
       <zone ulx="32" uly="111" lrx="517" lry="133" xml:id="p275_p1" />
       <zone ulx="33" uly="138" lrx="514" lry="153" xml:id="p275_p2" />
       <zone ulx="30" uly="157" lrx="510" lry="176" xml:id="p275_p3" />
+      <zone ulx="38" uly="188" lrx="513" lry="220" xml:id="p275_p4"/>
+    </surface>
+  </facsimile>
+
+  <!-- Pag 276 -->
+  <facsimile>
+    <surface n="276" xml:id="M_276">
+      <graphic url='progetto/img/pp276.jpg' width='1078px' height='1624px' xml:id="pag275" />
     </surface>
   </facsimile>
 
@@ -898,7 +910,15 @@
 
 <!-- Articolo 2 -->
 <div type="article" xml:id="il_commercio">
-
+<pb n="275" facs="#M_275"/>
+<div xml:id="pageHeader_275_com">
+  <date when="1881-05-01" facs="#p275_date_com">1 maggio 81</date>
+  <orgName xml:id="p275_runningTitle_com" facs="#p275_runningTitle_com" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+  <num type="number" value="275" facs="#p275_number_com">275</num>
+</div>
+<div xml:id="p275_col_1_com" type="col" facs="#p275_col_1_com">
+  <p facs="#p275_p" xml:id="p275_p4">IL COMMERCIO NEL PRIMO TRIMESTRE 1881</p>
+</div>
 </div>
 </body>
 </text>

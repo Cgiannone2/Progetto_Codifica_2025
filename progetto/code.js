@@ -40,10 +40,10 @@ $(document).ready(function () {
   };
 
   window.gestoreEvidenziaSVG = function (id) {
-    console.warn('gestoreEvidenziaSVG', id)
     var textElementId = id.replace('zone-', '');
     var textElement = $('#' + textElementId);
     var svgElement = $('#' + id);
+    console.log("Looking for element with id:", textElementId, "Found:", textElement.length > 0 ? "Yes" : "No");
 
     if (textElement.length) {
       // Applica stili inline per il colore celeste
@@ -57,7 +57,6 @@ $(document).ready(function () {
   };
 
   window.gestoreDisEvidenziaSVG = function (id) {
-    console.warn('gestoreDisEvidenziaSVG', id)
     var textElementId = id.replace('zone-', '');
     var textElement = $('#' + textElementId);
     var svgElement = $('#' + id);
@@ -72,44 +71,56 @@ $(document).ready(function () {
     }
   };
 
-  // --- Gestione Carosello ---
-  var currentSlide = 0;
-  var totalSlides = $('#text-carousel-content .carousel-slide-text').length;
+  // --- Gestione Carosello 1 (Articolo "I Carusi in Sicilia") ---
+  var currentSlide1 = 0;
+  var totalSlides1 = $('#text-carousel-content .carousel-slide-text').length;
 
-
-  window.changeSlide = function (direction) {
-    currentSlide += direction;
-    if (currentSlide < 0) {
-      currentSlide = totalSlides - 1;
-    } else if (currentSlide >= totalSlides) {
-      currentSlide = 0;
+  window.changeSlide1 = function (direction) {
+    currentSlide1 += direction;
+    if (currentSlide1 < 0) {
+      currentSlide1 = totalSlides1 - 1;
+    } else if (currentSlide1 >= totalSlides1) {
+      currentSlide1 = 0;
     }
-    updateCarousel();
+    updateCarousel1();
   };
 
-  function updateCarousel() {
-    // Aggiorna le slide delle immagini
+  function updateCarousel1() {
     $('#image-carousel-content .carousel-slide').removeClass('active');
-
-    // Assicurati che non cerchi di attivare una slide immagine inesistente
-    if (currentSlide < $('#image-carousel-content .carousel-slide').length) {
-      $('#image-carousel-content .carousel-slide').eq(currentSlide).addClass('active');
+    if (currentSlide1 < $('#image-carousel-content .carousel-slide').length) {
+      $('#image-carousel-content .carousel-slide').eq(currentSlide1).addClass('active');
     }
-
-    // Aggiorna le slide del testo
     var textSlides = $('#text-carousel-content .carousel-slide-text');
     textSlides.removeClass('active');
-    textSlides.eq(currentSlide).addClass('active');
-
-    // Recupera e visualizza il contenuto specifico per la slide corrente (se necessario)
-    var currentPage = $('#image-carousel-content .carousel-slide.active img').attr('src');
-    if (currentPage) {
-      console.log("Visualizzazione del contenuto per la pagina " + currentPage.match(/pp(\d+)\.jpg/)[1]);
-    } else {
-      // Logica per la nuova slide testuale
-      console.log("Visualizzazione del contenuto della nuova slide testuale");
-    }
+    textSlides.eq(currentSlide1).addClass('active');
   }
 
-  updateCarousel();
+  // --- Gestione Carosello 2 (Articolo "Il commercio nel primo trimestre 1881") ---
+  var currentSlide2 = 0;
+  var totalSlides2 = $('#text-carousel-content-2 .carousel-slide-text').length;
+
+  window.changeSlide2 = function (direction) {
+    debugger
+    currentSlide2 += direction;
+    if (currentSlide2 < 0) {
+      currentSlide2 = totalSlides2 - 1;
+    } else if (currentSlide2 >= totalSlides2) {
+      currentSlide2 = 0;
+    }
+    updateCarousel2();
+  };
+
+  function updateCarousel2() {
+    $('#image-carousel-content-2 .carousel-slide').removeClass('active');
+    if (currentSlide2 < $('#image-carousel-content-2 .carousel-slide').length) {
+      $('#image-carousel-content-2 .carousel-slide').eq(currentSlide2).addClass('active');
+    }
+    var textSlides = $('#text-carousel-content-2 .carousel-slide-text');
+    textSlides.removeClass('active');
+    textSlides.eq(currentSlide2).addClass('active');
+  }
+
+  // Initialization for both carousels
+  updateCarousel1();
+  updateCarousel2();
 });

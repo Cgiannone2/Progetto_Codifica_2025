@@ -612,6 +612,10 @@ h1 {
   width: 100%;
 }
 
+#text-carousel-content {
+  width: 100%;
+}
+
 .img-wrapper,
 .transcription-area {
   flex: 1 1 0%;

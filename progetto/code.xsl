@@ -165,12 +165,12 @@
           </div>
         </div>
 
-        <button class="carousel-prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carousel-prev" onclick="changeSlide1(-1)">&#10094;</button>
 
         <div class="carousel-container">
           <div class="img-wrapper">
             <div id="image-carousel-content">
-              <xsl:for-each select="//tei:facsimile/tei:surface">
+              <xsl:for-each select="//tei:facsimile/tei:surface[contains(@n, '273') or contains(@n, '274') or contains(@n, '275')]">
                 <div class="carousel-slide">
                   <div class="svg-container">
                     <img src="{tei:graphic/@url}" class="base-image" />
@@ -210,9 +210,6 @@
             <div id="text-carousel-content">
               <xsl:for-each select="//tei:facsimile/tei:surface">
                 <div class="carousel-slide-text">
-                  <xsl:if test="position() = 1">
-                    <xsl:attribute name="class">carousel-slide-text active</xsl:attribute>
-                  </xsl:if>
                   <xsl:choose>
                     <xsl:when test="@n = '273'">
                       <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@rend='pageHeader']"/>
@@ -255,7 +252,6 @@
                       <div class="trascrizione">
                         <div class="col">
                           <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p275_container']/tei:div[@xml:id='p275_col_1']"/>
-
                         </div>
                       </div>
                     </xsl:when>
@@ -266,7 +262,7 @@
           </div>
         </div>
 
-        <button class="carousel-next" onclick="changeSlide(1)">&#10095;</button>
+        <button class="carousel-next" onclick="changeSlide1(1)">&#10095;</button>
       </div>
     </div>
   </xsl:template>
@@ -354,6 +350,56 @@
             </p>
           </div>
         </div>
+        <button class="carousel-prev" onclick="changeSlide2(-1)">&#10094;</button>
+        <div class="carousel-container">
+          <div class="img-wrapper">
+            <div id="image-carousel-content-2">
+              <xsl:for-each select="//tei:facsimile/tei:surface[contains(@n, '275') or contains(@n, '276')]">
+                <div class="carousel-slide">
+                  <div class="svg-container">
+                    <img src="{tei:graphic/@url}" class="base-image" />
+                    <xsl:choose>
+                      <xsl:when test="@n = '275'">
+                        <svg id="svg-overlay"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1094 1636" preserveAspectRatio="xMidYMid meet">
+                          <xsl:for-each select="tei:zone">
+                            <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
+                          </xsl:for-each>
+                        </svg>
+                      </xsl:when>
+                      <xsl:when test="@n = '276'">
+                        <svg id="svg-overlay-2"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1078 1624" preserveAspectRatio="xMidYMid meet">
+                          <xsl:for-each select="tei:zone">
+                            <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
+                          </xsl:for-each>
+                        </svg>
+                      </xsl:when>
+                    </xsl:choose>
+                  </div>
+                </div>
+              </xsl:for-each>
+            </div>
+          </div>
+
+
+
+          <div class="transcription-area">
+            <div id="text-carousel-content-2">
+              <xsl:for-each select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']">
+                <div class="carousel-slide-text active">
+                  <xsl:apply-templates select="tei:div[@xml:id='pageHeader_275_com']"/>
+                  <div class="trascrizione">
+                    <div class="col">
+                      <xsl:apply-templates select="tei:div[@xml:id='p275_col_1_com']"/>
+                    </div>
+                  </div>
+                </div>
+              </xsl:for-each>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-next" onclick="changeSlide2(1)">&#10095;</button>
       </div>
     </div>
   </xsl:template>
@@ -414,6 +460,14 @@
     </xsl:for-each>
   </xsl:template>
 
+  <xsl:template match="tei:div[@xml:id='p275_col_1_com']">
+    <xsl:for-each select="tei:p">
+      <p id="{@xml:id}">
+        <xsl:apply-templates/>
+      </p>
+    </xsl:for-each>
+  </xsl:template>
+
   <xsl:template match="tei:div[@xml:id='pageHeader_274']">
     <div class="flex-full">
       <p class="page-number" id="p274_number">
@@ -437,6 +491,20 @@
         <xsl:value-of select="tei:orgName"/>
       </p>
       <p class="number-info" id="p275_number">
+        <xsl:value-of select="tei:num"/>
+      </p>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='pageHeader_275_com']">
+    <div class="flex-full">
+      <p class="page-date" id="p275_date_com">
+        <xsl:value-of select="tei:date"/>
+      </p>
+      <p class="running-title" id="p275_runningTitle_com">
+        <xsl:value-of select="tei:orgName"/>
+      </p>
+      <p class="number-info" id="p275_number_com">
         <xsl:value-of select="tei:num"/>
       </p>
     </div>
