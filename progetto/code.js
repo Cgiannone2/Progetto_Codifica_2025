@@ -74,7 +74,8 @@ $(document).ready(function () {
 
   // --- Gestione Carosello ---
   var currentSlide = 0;
-  var totalSlides = $('#image-carousel-content .carousel-slide').length;
+  var totalSlides = $('#text-carousel-content .carousel-slide-text').length;
+
 
   window.changeSlide = function (direction) {
     currentSlide += direction;
@@ -89,21 +90,24 @@ $(document).ready(function () {
   function updateCarousel() {
     // Aggiorna le slide delle immagini
     $('#image-carousel-content .carousel-slide').removeClass('active');
-    $('#image-carousel-content .carousel-slide').eq(currentSlide).addClass('active');
+
+    // Assicurati che non cerchi di attivare una slide immagine inesistente
+    if (currentSlide < $('#image-carousel-content .carousel-slide').length) {
+      $('#image-carousel-content .carousel-slide').eq(currentSlide).addClass('active');
+    }
 
     // Aggiorna le slide del testo
     var textSlides = $('#text-carousel-content .carousel-slide-text');
     textSlides.removeClass('active');
     textSlides.eq(currentSlide).addClass('active');
 
-    // Recupera e visualizza il contenuto specifico per la slide corrente
-    var currentPage = $('#image-carousel-content .carousel-slide.active img').attr('src').match(/pp(\d+)\.jpg/)[1];
-
+    // Recupera e visualizza il contenuto specifico per la slide corrente (se necessario)
+    var currentPage = $('#image-carousel-content .carousel-slide.active img').attr('src');
     if (currentPage) {
-      // Chiama una funzione XSLT per ottenere il contenuto
-      // In realtà, questo è già stato generato dall'XSLT e il carosello lo gestisce
-      // Il nostro compito è solo assicurarci che i contenitori siano corretti
-      console.log("Visualizzazione del contenuto per la pagina " + currentPage);
+      console.log("Visualizzazione del contenuto per la pagina " + currentPage.match(/pp(\d+)\.jpg/)[1]);
+    } else {
+      // Logica per la nuova slide testuale
+      console.log("Visualizzazione del contenuto della nuova slide testuale");
     }
   }
 

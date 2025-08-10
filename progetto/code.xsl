@@ -59,11 +59,7 @@
 
         <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']"/>
 
-        <div class="section-block" id="art2_commercio">
-          <h2>Articolo 2: Il commercio nel primo trimestre 1881</h2>
-          <div class="indent">
-          </div>
-        </div>
+        <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:div[@xml:id='il_commercio']"/>
 
         <div class="section-block" id="sezione_bibliografia">
           <h2>Sezione Bibliografia</h2>
@@ -83,6 +79,8 @@
       </body>
     </html>
   </xsl:template>
+
+  <!-- Articolo 1 -->
 
   <xsl:template match="tei:div[@xml:id='articolo_carusi_sicilia']">
     <div id="art1_carusi" class="section-block">
@@ -193,12 +191,21 @@
                           </xsl:for-each>
                         </svg>
                       </xsl:when>
+                      <xsl:when test="@n = '275'">
+                        <svg id="svg-overlay"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1186 1744" preserveAspectRatio="xMidYMid meet">
+                          <xsl:for-each select="tei:zone">
+                            <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
+                          </xsl:for-each>
+                        </svg>
+                      </xsl:when>
                     </xsl:choose>
                   </div>
                 </div>
               </xsl:for-each>
             </div>
           </div>
+
           <div class="transcription-area">
             <div id="text-carousel-content">
               <xsl:for-each select="//tei:facsimile/tei:surface">
@@ -243,6 +250,15 @@
                         </div>
                       </div>
                     </xsl:when>
+                    <xsl:when test="@n = '275'">
+                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p275_container']/tei:div[@xml:id='pageHeader_275']"/>
+                      <div class="trascrizione">
+                        <div class="col">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p275_container']/tei:div[@xml:id='p275_col_1']"/>
+
+                        </div>
+                      </div>
+                    </xsl:when>
                   </xsl:choose>
                 </div>
               </xsl:for-each>
@@ -255,8 +271,94 @@
     </div>
   </xsl:template>
 
+  <!-- Articolo 2 -->
+  <xsl:template match="tei:div[@xml:id='il_commercio']">
+    <div id="art2_commercio" class="section-block">
+      <h2>Articolo 2: Il commercio nel primo trimestre 1881</h2>
+      <div class="boxTrascrizione">
+        <div class="controls-grid">
+          <div class='box-legenda'>
+            <h3 id="legenda_title">LEGENDA</h3>
+            <p>
+              <span class="persone-reali-legend">Persone reali</span>
+            </p>
+            <p>
+              <span class="persone-immaginarie-legend">Persone immaginarie e/o personaggi</span>
+            </p>
+            <p>
+              <span class="opere-legend">Opere</span>
+            </p>
+            <p>
+              <span class="luoghi-geografici-legend">Luoghi geografici</span>
+            </p>
+            <p>
+              <span class="luoghi-naturali-legend">Luoghi naturali</span>
+            </p>
+            <p>
+              <span class="casa-editrice-rivista-legend">Casa editrice/rivista</span>
+            </p>
+            <p>
+              <span class="date-legend">Date</span>
+            </p>
+            <p>
+              <span class="verbum-legend">Verbum</span>
+            </p>
+            <p>
+              <span class="temi-motivi-legend">Temi e/o motivi</span>
+            </p>
+            <p>
+              <span class="correnti-letterarie-legend">Correnti letterarie</span>
+            </p>
+            <p>
+              <span class="lingua-straniera-legend">Testo in lingua straniera</span>
+            </p>
+            <p>
+              <span class="citazioni-legend">Citazioni</span>
+            </p>
+            <p>
+              <span class="organizzazioni-legend">Organizzazioni</span>
+            </p>
+            <p>
+              <span class="epithet-legend">Epithet</span>
+            </p>
+          </div>
+          <div class="box-btn">
+            <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
+            <p class="rowBtn">
+              <button type="button" class="btnPersoneReali" onclick="togglePhenomenon('persone-reali')">Persone reali</button>
+              <button type="button" class="btnPersoneImmaginarie" onclick="togglePhenomenon('persone-immaginarie')">Personaggi</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnOpere" onclick="togglePhenomenon('opere')">Opere</button>
+              <button type="button" class="btnLuoghiGeografici" onclick="togglePhenomenon('luoghi-geografici')">Luoghi geografici</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnLuoghiNaturali" onclick="togglePhenomenon('luoghi-naturali')">Luoghi naturali</button>
+              <button type="button" class="btnCasaEditriceRivista" onclick="togglePhenomenon('casa-editrice-rivista')">Casa editrice/rivista</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button>
+              <button type="button" class="btnVerbum" onclick="togglePhenomenon('verbum')">Verbum</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnTemiMotivi" onclick="togglePhenomenon('temi-motivi')">Temi e/o motivi</button>
+              <button type="button" class="btnCorrentiLetterarie" onclick="togglePhenomenon('correnti-letterarie')">Correnti letterarie</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera')">Testo in lingua straniera</button>
+              <button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni')">Citazioni</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni')">Organizzazioni</button>
+              <button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet')">Epithet</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </xsl:template>
 
-
+  <!-- Templates -->
   <xsl:template match="tei:div[@xml:id='p273_par1_col_1']">
     <div class="flex">
       <span class="article-title" id="p273_articleTitle">
@@ -297,11 +399,14 @@
   </xsl:template>
 
   <xsl:template match="tei:div[@xml:id='p274_col_2']">
-    <div class="flex">
-      <span class="article-title" id="p273_articleTitle">
-        <xsl:apply-templates select="tei:span"/>
-      </span>
-    </div>
+    <xsl:for-each select="tei:p">
+      <p id="{@xml:id}">
+        <xsl:apply-templates/>
+      </p>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='p275_col_1']">
     <xsl:for-each select="tei:p">
       <p id="{@xml:id}">
         <xsl:apply-templates/>
@@ -319,6 +424,20 @@
       </p>
       <p class="volume-info" id="p274_vol">
         <xsl:value-of select="tei:p"/>
+      </p>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='pageHeader_275']">
+    <div class="flex-full">
+      <p class="page-date" id="p275_date">
+        <xsl:value-of select="tei:date"/>
+      </p>
+      <p class="running-title" id="p275_runningTitle">
+        <xsl:value-of select="tei:orgName"/>
+      </p>
+      <p class="number-info" id="p275_number">
+        <xsl:value-of select="tei:num"/>
       </p>
     </div>
   </xsl:template>

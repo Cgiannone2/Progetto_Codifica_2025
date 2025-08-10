@@ -496,6 +496,20 @@
     </surface>
   </facsimile>
 
+  <!-- Pag 275 -->
+  <facsimile>
+    <surface n="275" xml:id="M_275">
+      <graphic url='progetto/img/pp275.jpg' width='1094px' height='1636px' xml:id="pag275"/>
+      <zone ulx="28" uly="56" lrx="187" lry="94" xml:id="p275_date" />
+      <zone ulx="347" uly="47" lrx="678" lry="96" xml:id="p275_runningTitle" />
+      <zone ulx="969" uly="56" lrx="1020" lry="85" xml:id="p275_number"/>
+
+      <zone ulx="32" uly="111" lrx="517" lry="133" xml:id="p275_p1" />
+      <zone ulx="33" uly="138" lrx="514" lry="153" xml:id="p275_p2" />
+      <zone ulx="30" uly="157" lrx="510" lry="176" xml:id="p275_p3" />
+    </surface>
+  </facsimile>
+
   <text>
     <body>
       <div type="article" xml:id="articolo_carusi_sicilia">
@@ -781,7 +795,6 @@
     </p>
   </div>
 
-
   <div xml:id="p274_col_2" type="col" facs="#p274_col_2">
     <p facs="#p274_p142" xml:id="p274_p142">tralora, trovandosi le miniere molto lontane dall'abitato,</p>
     <p facs="#p274_p143" xml:id="p274_p143">fosse necessario l'impianto di un magazzino in prossimità</p>
@@ -860,6 +873,32 @@
     </p>
   </div>
 </div>
+
+<!-- Pag 275 -->
+<div class="container" xml:id="p275_container" facs="#p275_container" type="paragraph">
+  <pb n="275" facs="#M_275"/>
+  <div xml:id="pageHeader_275">
+    <date when="1881-05-01" facs="#p275_date">1 maggio 81</date>
+    <orgName xml:id="p275_runningTitle" facs="#p275_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+    <num type="number" value="275" facs="#p275_number">275</num>
+  </div>
+  <div xml:id="p275_col_1" type="col" facs="#p275_col_1">
+    <p facs="#p275_p1" xml:id="p275_p1">
+      <quote>riori. Ove ciò non faccia, l'edifizio sociale, ricco di merla-</quote>
+    </p>
+    <p facs="#p275_p2" xml:id="p275_p2">
+      <quote>ture e di ornamenti squisiti nelle parti più alte, si logora</quote>
+    </p>
+    <p facs="#p275_p3" xml:id="p275_p3">
+      <quote>invece continuamente alla base.</quote>
+    </p>
+  </div>
+</div>
+</div>
+
+<!-- Articolo 2 -->
+<div type="article" xml:id="il_commercio">
+
 </div>
 </body>
 </text>
