@@ -26,6 +26,13 @@ strong {
   gap: 4px;
 }
 
+.flex-full {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
 /* Titoli principali */
 h1 {
   color: #a8e6cf;
@@ -254,117 +261,215 @@ h1 {
 
 /* ------------------------------------
    Stili fenomeni notevoli nel testo
-   - Classi applicate dinamicamente dal JS
 ------------------------------------ */
-.placeName,
-.persName,
-.orgName,
-.term,
+.persone-reali,
+.persone-immaginarie,
+.opere,
+.luoghi-geografici,
+.luoghi-naturali,
+.casa-editrice-rivista,
 .date,
-.foreign,
-.quote {
+.verbum,
+.temi-motivi,
+.correnti-letterarie,
+.lingua-straniera,
+.citazioni,
+.organizzazioni,
+.epithet {
   font-weight: bold;
   color: #e0e0e0;
   transition: all 0.3s ease;
 }
 
 /* Evidenziazioni attive */
-.persName.highlighted {
-  background-color: #8a2be2; /* Blu-viola */
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #fff;
-}
-.orgName.highlighted {
-  background-color: #ff7f50; /* Corallo */
+.persone-reali.highlighted {
+  background-color: #a8e6cf;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
-.placeName.highlighted {
-  background-color: #20b2aa; /* Verde acqua */
+.persone-immaginarie.highlighted {
+  background-color: #ffaaa5;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
-.term.highlighted {
-  background-color: #ffa500; /* Arancione */
+.opere.highlighted {
+  background-color: #deb887;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+}
+.luoghi-geografici.highlighted {
+  background-color: #20b2aa;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+}
+.luoghi-naturali.highlighted {
+  background-color: #ffd3b6;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+}
+.casa-editrice-rivista.highlighted {
+  background-color: #ff7f50;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
 .date.highlighted {
-  background-color: #deb887; /* Marrone chiaro */
+  background-color: #87cefa;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
-.foreign.highlighted {
-  background-color: #f08080; /* Rosso chiaro */
+.verbum.highlighted {
+  background-color: #ff6347;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
-.quote.highlighted {
-  background-color: #d22d2d; /* Verde pastello */
+.temi-motivi.highlighted {
+  background-color: #b0e0e6;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+}
+.correnti-letterarie.highlighted {
+  background-color: #6a5acd;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #fff;
+}
+.lingua-straniera.highlighted {
+  background-color: #4682b4;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #fff;
+}
+.citazioni.highlighted {
+  background-color: #d22d2d;
   border-left: 5px solid #d22d2d;
   margin-left: 20px;
   padding-left: 10px;
   font-style: italic;
   color: #d0d0d0;
 }
+.organizzazioni.highlighted {
+  background-color: #8a2be2;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #fff;
+}
+.epithet.highlighted {
+  background-color: #7fffd4;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+}
 
 /* ------------------------------------
    Legenda colori fenomeni
 ------------------------------------ */
-.persName-legend {
-  background-color: #8a2be2; /* Blu-viola */
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: bold;
-}
-.orgName-legend {
-  background-color: #ff7f50; /* Corallo */
+.persone-reali-legend {
+  background-color: #a8e6cf;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
   font-weight: bold;
 }
-.placeName-legend {
-  background-color: #20b2aa; /* Verde acqua */
+.persone-immaginarie-legend {
+  background-color: #ffaaa5;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
   font-weight: bold;
 }
-.term-legend {
-  background-color: #ffa500; /* Arancione */
+.opere-legend {
+  background-color: #deb887;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
+}
+.luoghi-geografici-legend {
+  background-color: #20b2aa;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
+}
+.luoghi-naturali-legend {
+  background-color: #ffd3b6;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
+}
+.casa-editrice-rivista-legend {
+  background-color: #ff7f50;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
   font-weight: bold;
 }
 .date-legend {
-  background-color: #deb887; /* Marrone chiaro */
+  background-color: #87cefa;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
   font-weight: bold;
 }
-.foreign-legend {
-  background-color: #f08080; /* Rosso chiaro */
+.verbum-legend {
+  background-color: #ff6347;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
   font-weight: bold;
 }
-.quote-legend {
-  border-left: 5px solid #d22d2d; /* Verde pastello */
+.temi-motivi-legend {
+  background-color: #b0e0e6;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
+}
+.correnti-letterarie-legend {
+  background-color: #6a5acd;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+.lingua-straniera-legend {
+  background-color: #4682b4;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+.citazioni-legend {
+  border-left: 5px solid #d22d2d;
   margin-left: 20px;
   padding-left: 10px;
   font-style: italic;
   color: #d0d0d0;
+  font-weight: bold;
+}
+.organizzazioni-legend {
+  background-color: #8a2be2;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+.epithet-legend {
+  background-color: #7fffd4;
+  padding: 1px 3px;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
 }
 
 /* ------------------------------------
@@ -390,60 +495,66 @@ h1 {
 /* ------------------------------------
    Stato attivo pulsanti fenomeni
 ------------------------------------ */
-.btnPersName {
-  background-color: #8a2be2; /* Blu-viola */
-}
-.btnOrgName {
-  background-color: #ff7f50; /* Corallo */
-}
-.btnPlaceName {
-  background-color: #20b2aa; /* Verde acqua */
-}
-.btnTerm {
-  background-color: #ffa500; /* Arancione */
-}
-.btnDate {
-  background-color: #deb887; /* Marrone chiaro */
-}
-.btnForeign {
-  background-color: #f08080; /* Rosso chiaro */
-}
-.btnQuote {
-  background-color: #d22d2d; /* Verde pastello */
-}
-
-/* Pulsanti al passaggio del mouse e attivi */
-.box-btn button:hover {
-  background-color: #20b2aa; /* Verde pastello */
-}
-
-.btnPersName.active-phenomenon {
-  background-color: #8a2be2;
-  color: #fff;
-}
-.btnOrgName.active-phenomenon {
-  background-color: #ff7f50;
+.btnPersoneReali.active-phenomenon {
+  background-color: #a8e6cf;
   color: #000;
 }
-.btnPlaceName.active-phenomenon {
-  background-color: #20b2aa;
+.btnPersoneImmaginarie.active-phenomenon {
+  background-color: #ffaaa5;
   color: #000;
 }
-.btnTerm.active-phenomenon {
-  background-color: #ffa500;
-  color: #000;
-}
-.btnDate.active-phenomenon {
+.btnOpere.active-phenomenon {
   background-color: #deb887;
   color: #000;
 }
-.btnForeign.active-phenomenon {
-  background-color: #f08080;
+.btnLuoghiGeografici.active-phenomenon {
+  background-color: #20b2aa;
   color: #000;
 }
-.btnQuote.active-phenomenon {
-  background-color: #d22d2d;
+.btnLuoghiNaturali.active-phenomenon {
+  background-color: #ffd3b6;
   color: #000;
+}
+.btnCasaEditriceRivista.active-phenomenon {
+  background-color: #ff7f50;
+  color: #000;
+}
+.btnDate.active-phenomenon {
+  background-color: #87cefa;
+  color: #000;
+}
+.btnVerbum.active-phenomenon {
+  background-color: #ff6347;
+  color: #000;
+}
+.btnTemiMotivi.active-phenomenon {
+  background-color: #b0e0e6;
+  color: #000;
+}
+.btnCorrentiLetterarie.active-phenomenon {
+  background-color: #6a5acd;
+  color: #fff;
+}
+.btnLinguaStraniera.active-phenomenon {
+  background-color: #4682b4;
+  color: #fff;
+}
+.btnCitazioni.active-phenomenon {
+  background-color: #d22d2d;
+  color: #fff;
+}
+.btnOrganizzazioni.active-phenomenon {
+  background-color: #8a2be2;
+  color: #fff;
+}
+.btnEpithet.active-phenomenon {
+  background-color: #7fffd4;
+  color: #000;
+}
+
+/* Pulsanti al passaggio del mouse */
+.box-btn button:hover {
+  filter: brightness(1.2);
 }
 
 /* ------------------------------------
@@ -491,17 +602,19 @@ h1 {
 ------------------------------------ */
 .carousel-container {
   display: flex;
-  align-items: stretch; /* This is key to making items fill the container's height */
+  align-items: stretch;
   justify-content: center;
   gap: 10px;
   width: 100%;
 }
 
+#text-carousel-content {
+  width: 100%;
+}
+
 .img-wrapper,
 .transcription-area {
-  /* Set flex-basis to 0 to make the elements share available space equally */
   flex: 1 1 0%;
-  /* You may want to remove the fixed min-width to allow for more flexible resizing */
 }
 
 .carousel-slide,
@@ -534,9 +647,9 @@ h1 {
 }
 
 .boxTrascrizione .carousel-prev {
-  left: -20px; /* Posiziona a sinistra del container principale */
+  left: -20px;
 }
 
 .boxTrascrizione .carousel-next {
-  right: -20px; /* Posiziona a destra del container principale */
+  right: -20px;
 }

@@ -92,43 +92,77 @@
           <div class='box-legenda'>
             <h3 id="legenda_title">LEGENDA</h3>
             <p>
-              <span class="persName-legend">Persone Reali</span>
+              <span class="persone-reali-legend">Persone reali</span>
             </p>
             <p>
-              <span class="orgName-legend">Organizzazioni / Case Editrici / Riviste</span>
+              <span class="persone-immaginarie-legend">Persone immaginarie e/o personaggi</span>
             </p>
             <p>
-              <span class="placeName-legend">Luoghi</span>
+              <span class="opere-legend">Opere</span>
             </p>
             <p>
-              <span class="term-legend">Termini / Verbum</span>
+              <span class="luoghi-geografici-legend">Luoghi geografici</span>
+            </p>
+            <p>
+              <span class="luoghi-naturali-legend">Luoghi naturali</span>
+            </p>
+            <p>
+              <span class="casa-editrice-rivista-legend">Casa editrice/rivista</span>
             </p>
             <p>
               <span class="date-legend">Date</span>
             </p>
             <p>
-              <span class="foreign-legend">Testo in Lingua Straniera</span>
+              <span class="verbum-legend">Verbum</span>
             </p>
             <p>
-              <span class="quote-legend">Citazioni</span>
+              <span class="temi-motivi-legend">Temi e/o motivi</span>
+            </p>
+            <p>
+              <span class="correnti-letterarie-legend">Correnti letterarie</span>
+            </p>
+            <p>
+              <span class="lingua-straniera-legend">Testo in lingua straniera</span>
+            </p>
+            <p>
+              <span class="citazioni-legend">Citazioni</span>
+            </p>
+            <p>
+              <span class="organizzazioni-legend">Organizzazioni</span>
+            </p>
+            <p>
+              <span class="epithet-legend">Epithet</span>
             </p>
           </div>
           <div class="box-btn">
             <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
             <p class="rowBtn">
-              <button type="button" class="btnPersName" onclick="togglePhenomenon('persName')">Persone</button>
-              <button type="button" class="btnOrgName" onclick="togglePhenomenon('orgName')">Organizzazioni/caseEd/Riviste</button>
+              <button type="button" class="btnPersoneReali" onclick="togglePhenomenon('persone-reali')">Persone reali</button>
+              <button type="button" class="btnPersoneImmaginarie" onclick="togglePhenomenon('persone-immaginarie')">Personaggi</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnPlaceName" onclick="togglePhenomenon('placeName')">Luoghi</button>
-              <button type="button" class="btnTerm" onclick="togglePhenomenon('term')">Termini/Verbum</button>
+              <button type="button" class="btnOpere" onclick="togglePhenomenon('opere')">Opere</button>
+              <button type="button" class="btnLuoghiGeografici" onclick="togglePhenomenon('luoghi-geografici')">Luoghi geografici</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnLuoghiNaturali" onclick="togglePhenomenon('luoghi-naturali')">Luoghi naturali</button>
+              <button type="button" class="btnCasaEditriceRivista" onclick="togglePhenomenon('casa-editrice-rivista')">Casa editrice/rivista</button>
             </p>
             <p class="rowBtn">
               <button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button>
-              <button type="button" class="btnForeign" onclick="togglePhenomenon('foreign')">Straniere</button>
+              <button type="button" class="btnVerbum" onclick="togglePhenomenon('verbum')">Verbum</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnQuote" onclick="togglePhenomenon('quote')">Citazioni</button>
+              <button type="button" class="btnTemiMotivi" onclick="togglePhenomenon('temi-motivi')">Temi e/o motivi</button>
+              <button type="button" class="btnCorrentiLetterarie" onclick="togglePhenomenon('correnti-letterarie')">Correnti letterarie</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera')">Testo in lingua straniera</button>
+              <button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni')">Citazioni</button>
+            </p>
+            <p class="rowBtn">
+              <button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni')">Organizzazioni</button>
+              <button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet')">Epithet</button>
             </p>
           </div>
         </div>
@@ -140,59 +174,76 @@
             <div id="image-carousel-content">
               <xsl:for-each select="//tei:facsimile/tei:surface">
                 <div class="carousel-slide">
-                  <xsl:if test="position() = 1">
-                    <xsl:attribute name="class">carousel-slide active</xsl:attribute>
-                  </xsl:if>
                   <div class="svg-container">
                     <img src="{tei:graphic/@url}" class="base-image" />
-                    <svg id="svg-overlay"
-                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet">
-                      <xsl:for-each select="tei:zone">
-                        <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
-                      </xsl:for-each>
-                    </svg>
+                    <xsl:choose>
+                      <xsl:when test="@n = '273'">
+                        <svg id="svg-overlay"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet">
+                          <xsl:for-each select="tei:zone">
+                            <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
+                          </xsl:for-each>
+                        </svg>
+                      </xsl:when>
+                      <xsl:when test="@n = '274'">
+                        <svg id="svg-overlay"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1186 1744" preserveAspectRatio="xMidYMid meet">
+                          <xsl:for-each select="tei:zone">
+                            <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
+                          </xsl:for-each>
+                        </svg>
+                      </xsl:when>
+                    </xsl:choose>
                   </div>
                 </div>
               </xsl:for-each>
             </div>
           </div>
-
           <div class="transcription-area">
             <div id="text-carousel-content">
-              <xsl:for-each select="tei:pb">
+              <xsl:for-each select="//tei:facsimile/tei:surface">
                 <div class="carousel-slide-text">
                   <xsl:if test="position() = 1">
                     <xsl:attribute name="class">carousel-slide-text active</xsl:attribute>
                   </xsl:if>
-                  <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[tei:pb/@n = current()/@n]"/>
-                  <xsl:if test="@n = '273'">
-                    <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@rend='pageHeader']"/>
-                    <div class="flex" id="p273_subTitle">
-                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@type='subtitle']"/>
-                    </div>
-                    <div class="date_container">
-                      <div class="flex" id="p273_vol">
-                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@type='vol']"/>
+                  <xsl:choose>
+                    <xsl:when test="@n = '273'">
+                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@rend='pageHeader']"/>
+                      <div class="flex" id="p273_subTitle">
+                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@type='subtitle']"/>
                       </div>
-                      <div class="flex" id="p273_date">
-                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_date']"/>
+                      <div class="date_container">
+                        <div class="flex" id="p273_vol">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@type='vol']"/>
+                        </div>
+                        <div class="flex" id="p273_date">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_date']"/>
+                        </div>
+                        <div class="flex" id="p273_number">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:num"/>
+                        </div>
                       </div>
-                      <div class="flex" id="p273_number">
-                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:num"/>
+                      <div class="trascrizione">
+                        <div class="col">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_par1_col_1']"/>
+                        </div>
+                        <div class="col">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_par1_col_2']"/>
+                        </div>
                       </div>
-                    </div>
-                    <div class="trascrizione">
-                      <div class="col">
-                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_par1_col_1']"/>
+                    </xsl:when>
+                    <xsl:when test="@n = '274'">
+                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p274_container']/tei:div[@xml:id='pageHeader_274']"/>
+                      <div class="trascrizione">
+                        <div class="col">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p274_container']/tei:div[@xml:id='p274_col_1']"/>
+                        </div>
+                        <div class="col">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p274_container']/tei:div[@xml:id='p274_col_2']"/>
+                        </div>
                       </div>
-                      <div class="col">
-                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_par1_col_2']"/>
-                      </div>
-                    </div>
-                  </xsl:if>
-                  <xsl:if test="@n = '274'">
-                    <h1 style="color:white;">Contenuto della Pagina 274</h1>
-                  </xsl:if>
+                    </xsl:when>
+                  </xsl:choose>
                 </div>
               </xsl:for-each>
             </div>
@@ -203,6 +254,8 @@
       </div>
     </div>
   </xsl:template>
+
+
 
   <xsl:template match="tei:div[@xml:id='p273_par1_col_1']">
     <div class="flex">
@@ -230,8 +283,48 @@
     </xsl:for-each>
   </xsl:template>
 
+  <xsl:template match="tei:div[@xml:id='p274_col_1']">
+    <div class="flex">
+      <span class="article-title" id="p273_articleTitle">
+        <xsl:apply-templates select="tei:span"/>
+      </span>
+    </div>
+    <xsl:for-each select="tei:p">
+      <p id="{@xml:id}">
+        <xsl:apply-templates/>
+      </p>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='p274_col_2']">
+    <div class="flex">
+      <span class="article-title" id="p273_articleTitle">
+        <xsl:apply-templates select="tei:span"/>
+      </span>
+    </div>
+    <xsl:for-each select="tei:p">
+      <p id="{@xml:id}">
+        <xsl:apply-templates/>
+      </p>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='pageHeader_274']">
+    <div class="flex-full">
+      <p class="page-number" id="p274_number">
+        <xsl:value-of select="tei:num"/>
+      </p>
+      <p class="running-title" id="p274_runningTitle">
+        <xsl:value-of select="tei:orgName"/>
+      </p>
+      <p class="volume-info" id="p274_vol">
+        <xsl:value-of select="tei:p"/>
+      </p>
+    </div>
+  </xsl:template>
+
   <xsl:template match="tei:persName">
-    <span class="persName">
+    <span class="persone-reali">
       <xsl:attribute name="data-ref">
         <xsl:value-of select="@ref"/>
       </xsl:attribute>
@@ -240,7 +333,7 @@
   </xsl:template>
 
   <xsl:template match="tei:orgName">
-    <span class="orgName">
+    <span class="organizzazioni">
       <xsl:attribute name="id">
         <xsl:value-of select="@xml:id"/>
       </xsl:attribute>
@@ -252,7 +345,7 @@
   </xsl:template>
 
   <xsl:template match="tei:placeName">
-    <span class="placeName">
+    <span class="luoghi-geografici">
       <xsl:attribute name="data-ref">
         <xsl:value-of select="@ref"/>
       </xsl:attribute>
@@ -261,7 +354,27 @@
   </xsl:template>
 
   <xsl:template match="tei:term">
-    <span class="term">
+    <xsl:choose>
+      <xsl:when test="@type = 'Verbum' or @type = 'verbum'">
+        <span class="verbum">
+          <xsl:apply-templates/>
+        </span>
+      </xsl:when>
+      <xsl:when test="@type = 'temi_motivi'">
+        <span class="temi-motivi">
+          <xsl:apply-templates/>
+        </span>
+      </xsl:when>
+      <xsl:otherwise>
+        <span class="term">
+          <xsl:apply-templates/>
+        </span>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="tei:title">
+    <span class="opere">
       <xsl:apply-templates/>
     </span>
   </xsl:template>
@@ -288,6 +401,42 @@
     <p>
       <xsl:apply-templates/>
     </p>
+  </xsl:template>
+
+  <xsl:template match="tei:bibl">
+    <span class="opere">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:quote">
+    <span class="citazioni">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:rs[@type='epithet']">
+    <span class="epithet">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:rs[@type='correnti_letterarie']">
+    <span class="correnti-letterarie">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:rs[@type='temi_motivi']">
+    <span class="temi-motivi">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:rs[@type='luoghi_naturali']">
+    <span class="luoghi-naturali">
+      <xsl:apply-templates/>
+    </span>
   </xsl:template>
 
 </xsl:stylesheet>

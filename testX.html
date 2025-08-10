@@ -25,25 +25,35 @@
             <div class="controls-grid">
                <div class="box-legenda">
                   <h3 id="legenda_title">LEGENDA</h3>
-                  <p><span class="persName-legend">Persone Reali</span></p>
-                  <p><span class="orgName-legend">Organizzazioni / Case Editrici / Riviste</span></p>
-                  <p><span class="placeName-legend">Luoghi</span></p>
-                  <p><span class="term-legend">Termini / Verbum</span></p>
+                  <p><span class="persone-reali-legend">Persone reali</span></p>
+                  <p><span class="persone-immaginarie-legend">Persone immaginarie e/o personaggi</span></p>
+                  <p><span class="opere-legend">Opere</span></p>
+                  <p><span class="luoghi-geografici-legend">Luoghi geografici</span></p>
+                  <p><span class="luoghi-naturali-legend">Luoghi naturali</span></p>
+                  <p><span class="casa-editrice-rivista-legend">Casa editrice/rivista</span></p>
                   <p><span class="date-legend">Date</span></p>
-                  <p><span class="foreign-legend">Testo in Lingua Straniera</span></p>
-                  <p><span class="quote-legend">Citazioni</span></p>
+                  <p><span class="verbum-legend">Verbum</span></p>
+                  <p><span class="temi-motivi-legend">Temi e/o motivi</span></p>
+                  <p><span class="correnti-letterarie-legend">Correnti letterarie</span></p>
+                  <p><span class="lingua-straniera-legend">Testo in lingua straniera</span></p>
+                  <p><span class="citazioni-legend">Citazioni</span></p>
+                  <p><span class="organizzazioni-legend">Organizzazioni</span></p>
+                  <p><span class="epithet-legend">Epithet</span></p>
                </div>
                <div class="box-btn">
                   <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
-                  <p class="rowBtn"><button type="button" class="btnPersName" onclick="togglePhenomenon('persName')">Persone</button><button type="button" class="btnOrgName" onclick="togglePhenomenon('orgName')">Organizzazioni/caseEd/Riviste</button></p>
-                  <p class="rowBtn"><button type="button" class="btnPlaceName" onclick="togglePhenomenon('placeName')">Luoghi</button><button type="button" class="btnTerm" onclick="togglePhenomenon('term')">Termini/Verbum</button></p>
-                  <p class="rowBtn"><button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button><button type="button" class="btnForeign" onclick="togglePhenomenon('foreign')">Straniere</button></p>
-                  <p class="rowBtn"><button type="button" class="btnQuote" onclick="togglePhenomenon('quote')">Citazioni</button></p>
+                  <p class="rowBtn"><button type="button" class="btnPersoneReali" onclick="togglePhenomenon('persone-reali')">Persone reali</button><button type="button" class="btnPersoneImmaginarie" onclick="togglePhenomenon('persone-immaginarie')">Personaggi</button></p>
+                  <p class="rowBtn"><button type="button" class="btnOpere" onclick="togglePhenomenon('opere')">Opere</button><button type="button" class="btnLuoghiGeografici" onclick="togglePhenomenon('luoghi-geografici')">Luoghi geografici</button></p>
+                  <p class="rowBtn"><button type="button" class="btnLuoghiNaturali" onclick="togglePhenomenon('luoghi-naturali')">Luoghi naturali</button><button type="button" class="btnCasaEditriceRivista" onclick="togglePhenomenon('casa-editrice-rivista')">Casa editrice/rivista</button></p>
+                  <p class="rowBtn"><button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button><button type="button" class="btnVerbum" onclick="togglePhenomenon('verbum')">Verbum</button></p>
+                  <p class="rowBtn"><button type="button" class="btnTemiMotivi" onclick="togglePhenomenon('temi-motivi')">Temi e/o motivi</button><button type="button" class="btnCorrentiLetterarie" onclick="togglePhenomenon('correnti-letterarie')">Correnti letterarie</button></p>
+                  <p class="rowBtn"><button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera')">Testo in lingua straniera</button><button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni')">Citazioni</button></p>
+                  <p class="rowBtn"><button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni')">Organizzazioni</button><button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet')">Epithet</button></p>
                </div>
             </div><button class="carousel-prev" onclick="changeSlide(-1)">❮</button><div class="carousel-container">
                <div class="img-wrapper">
                   <div id="image-carousel-content">
-                     <div class="carousel-slide active">
+                     <div class="carousel-slide">
                         <div class="svg-container"><img src="progetto/img/pp273.jpg" class="base-image"><svg xmlns="http://www.w3.org/2000/svg" id="svg-overlay" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet">
                               <rect id="zone-p273_runningTitle" x="49" y="44" width="872" height="53" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p273_runningTitle')" onmouseout="gestoreDisEvidenziaSVG('zone-p273_runningTitle')"></rect>
                               <rect id="zone-p273_subTitle" x="55" y="87" width="868" height="52" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p273_subTitle')" onmouseout="gestoreDisEvidenziaSVG('zone-p273_subTitle')"></rect>
@@ -169,7 +179,218 @@
                               <rect id="zone-p273_p116" x="502" y="1290" width="427" height="16" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p273_p116')" onmouseout="gestoreDisEvidenziaSVG('zone-p273_p116')"></rect></svg></div>
                      </div>
                      <div class="carousel-slide">
-                        <div class="svg-container"><img src="progetto/img/pp274.jpg" class="base-image"><svg xmlns="http://www.w3.org/2000/svg" id="svg-overlay" viewBox="0 0 1006 1450" preserveAspectRatio="xMidYMid meet"></svg></div>
+                        <div class="svg-container"><img src="progetto/img/pp274.jpg" class="base-image"><svg xmlns="http://www.w3.org/2000/svg" id="svg-overlay" viewBox="0 0 1186 1744" preserveAspectRatio="xMidYMid meet">
+                              <rect id="zone-p274_number" x="83" y="52" width="60" height="40" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_number')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_number')"></rect>
+                              <rect id="zone-p274_runningTitle" x="440" y="48" width="373" height="41" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_runningTitle')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_runningTitle')"></rect>
+                              <rect id="zone-p274_vol" x="964" y="44" width="172" height="57" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_vol')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_vol')"></rect>
+                              <rect id="zone-p274_p1" x="92" y="112" width="513" height="27" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p1')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p1')"></rect>
+                              <rect id="zone-p274_p2" x="92" y="140" width="515" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p2')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p2')"></rect>
+                              <rect id="zone-p274_p3" x="89" y="161" width="517" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p3')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p3')"></rect>
+                              <rect id="zone-p274_p4" x="91" y="184" width="511" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p4')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p4')"></rect>
+                              <rect id="zone-p274_p5" x="90" y="209" width="513" height="17" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p5')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p5')"></rect>
+                              <rect id="zone-p274_p6" x="88" y="227" width="519" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p6')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p6')"></rect>
+                              <rect id="zone-p274_p7" x="89" y="255" width="512" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p7')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p7')"></rect>
+                              <rect id="zone-p274_p8" x="90" y="273" width="513" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p8')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p8')"></rect>
+                              <rect id="zone-p274_p9" x="86" y="293" width="520" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p9')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p9')"></rect>
+                              <rect id="zone-p274_p10" x="86" y="314" width="519" height="26" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p10')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p10')"></rect>
+                              <rect id="zone-p274_p11" x="83" y="340" width="523" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p11')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p11')"></rect>
+                              <rect id="zone-p274_p12" x="82" y="359" width="527" height="25" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p12')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p12')"></rect>
+                              <rect id="zone-p274_p13" x="83" y="387" width="524" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p13')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p13')"></rect>
+                              <rect id="zone-p274_p14" x="83" y="408" width="524" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p14')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p14')"></rect>
+                              <rect id="zone-p274_p15" x="84" y="429" width="520" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p15')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p15')"></rect>
+                              <rect id="zone-p274_p16" x="83" y="454" width="518" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p16')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p16')"></rect>
+                              <rect id="zone-p274_p17" x="87" y="471" width="515" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p17')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p17')"></rect>
+                              <rect id="zone-p274_p18" x="87" y="495" width="518" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p18')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p18')"></rect>
+                              <rect id="zone-p274_p19" x="88" y="514" width="516" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p19')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p19')"></rect>
+                              <rect id="zone-p274_p20" x="87" y="540" width="521" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p20')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p20')"></rect>
+                              <rect id="zone-p274_p21" x="86" y="560" width="520" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p21')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p21')"></rect>
+                              <rect id="zone-p274_p22" x="91" y="586" width="518" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p22')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p22')"></rect>
+                              <rect id="zone-p274_p23" x="86" y="606" width="522" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p23')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p23')"></rect>
+                              <rect id="zone-p274_p24" x="86" y="628" width="523" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p24')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p24')"></rect>
+                              <rect id="zone-p274_p25" x="89" y="650" width="513" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p25')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p25')"></rect>
+                              <rect id="zone-p274_p26" x="86" y="672" width="519" height="28" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p26')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p26')"></rect>
+                              <rect id="zone-p274_p27" x="88" y="703" width="515" height="14" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p27')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p27')"></rect>
+                              <rect id="zone-p274_p28" x="88" y="720" width="517" height="16" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p28')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p28')"></rect>
+                              <rect id="zone-p274_p29" x="85" y="737" width="524" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p29')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p29')"></rect>
+                              <rect id="zone-p274_p30" x="88" y="761" width="515" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p30')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p30')"></rect>
+                              <rect id="zone-p274_p31" x="88" y="780" width="517" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p31')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p31')"></rect>
+                              <rect id="zone-p274_p32" x="87" y="802" width="518" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p32')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p32')"></rect>
+                              <rect id="zone-p274_p33" x="87" y="825" width="518" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p33')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p33')"></rect>
+                              <rect id="zone-p274_p34" x="88" y="846" width="512" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p34')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p34')"></rect>
+                              <rect id="zone-p274_p35" x="89" y="871" width="516" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p35')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p35')"></rect>
+                              <rect id="zone-p274_p36" x="90" y="893" width="510" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p36')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p36')"></rect>
+                              <rect id="zone-p274_p37" x="91" y="914" width="515" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p37')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p37')"></rect>
+                              <rect id="zone-p274_p38" x="90" y="936" width="512" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p38')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p38')"></rect>
+                              <rect id="zone-p274_p39" x="90" y="958" width="516" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p39')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p39')"></rect>
+                              <rect id="zone-p274_p40" x="90" y="982" width="517" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p40')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p40')"></rect>
+                              <rect id="zone-p274_p41" x="89" y="1001" width="514" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p41')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p41')"></rect>
+                              <rect id="zone-p274_p42" x="91" y="1026" width="510" height="16" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p42')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p42')"></rect>
+                              <rect id="zone-p274_p43" x="92" y="1047" width="514" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p43')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p43')"></rect>
+                              <rect id="zone-p274_p44" x="89" y="1066" width="517" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p44')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p44')"></rect>
+                              <rect id="zone-p274_p45" x="91" y="1085" width="514" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p45')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p45')"></rect>
+                              <rect id="zone-p274_p46" x="87" y="1111" width="518" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p46')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p46')"></rect>
+                              <rect id="zone-p274_p47" x="93" y="1138" width="510" height="17" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p47')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p47')"></rect>
+                              <rect id="zone-p274_p48" x="92" y="1153" width="509" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p48')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p48')"></rect>
+                              <rect id="zone-p274_p49" x="89" y="1176" width="519" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p49')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p49')"></rect>
+                              <rect id="zone-p274_p50" x="89" y="1200" width="517" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p50')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p50')"></rect>
+                              <rect id="zone-p274_p51" x="87" y="1220" width="516" height="25" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p51')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p51')"></rect>
+                              <rect id="zone-p274_p52" x="88" y="1246" width="512" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p52')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p52')"></rect>
+                              <rect id="zone-p274_p53" x="88" y="1267" width="516" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p53')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p53')"></rect>
+                              <rect id="zone-p274_p54" x="88" y="1288" width="515" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p54')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p54')"></rect>
+                              <rect id="zone-p274_p55" x="90" y="1313" width="512" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p55')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p55')"></rect>
+                              <rect id="zone-p274_p56" x="89" y="1337" width="516" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p56')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p56')"></rect>
+                              <rect id="zone-p274_p57" x="90" y="1357" width="515" height="16" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p57')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p57')"></rect>
+                              <rect id="zone-p274_p58" x="90" y="1375" width="513" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p58')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p58')"></rect>
+                              <rect id="zone-p274_p59" x="89" y="1397" width="514" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p59')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p59')"></rect>
+                              <rect id="zone-p274_p60" x="88" y="1416" width="519" height="26" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p60')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p60')"></rect>
+                              <rect id="zone-p274_p61" x="88" y="1441" width="516" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p61')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p61')"></rect>
+                              <rect id="zone-p274_p62" x="86" y="1464" width="515" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p62')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p62')"></rect>
+                              <rect id="zone-p274_p63" x="86" y="1484" width="523" height="26" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p63')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p63')"></rect>
+                              <rect id="zone-p274_p64" x="90" y="1523" width="514" height="25" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p64')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p64')"></rect>
+                              <rect id="zone-p274_p65" x="89" y="1548" width="515" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p65')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p65')"></rect>
+                              <rect id="zone-p274_p66" x="87" y="1570" width="513" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p66')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p66')"></rect>
+                              <rect id="zone-p274_p67" x="629" y="113" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p67')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p67')"></rect>
+                              <rect id="zone-p274_p68" x="629" y="133" width="501" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p68')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p68')"></rect>
+                              <rect id="zone-p274_p69" x="627" y="154" width="506" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p69')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p69')"></rect>
+                              <rect id="zone-p274_p70" x="626" y="176" width="506" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p70')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p70')"></rect>
+                              <rect id="zone-p274_p71" x="625" y="198" width="508" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p71')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p71')"></rect>
+                              <rect id="zone-p274_p72" x="627" y="220" width="505" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p72')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p72')"></rect>
+                              <rect id="zone-p274_p73" x="627" y="240" width="500" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p73')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p73')"></rect>
+                              <rect id="zone-p274_p74" x="626" y="262" width="506" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p74')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p74')"></rect>
+                              <rect id="zone-p274_p75" x="628" y="282" width="504" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p75')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p75')"></rect>
+                              <rect id="zone-p274_p76" x="626" y="303" width="504" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p76')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p76')"></rect>
+                              <rect id="zone-p274_p77" x="627" y="324" width="503" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p77')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p77')"></rect>
+                              <rect id="zone-p274_p78" x="627" y="345" width="503" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p78')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p78')"></rect>
+                              <rect id="zone-p274_p79" x="627" y="367" width="502" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p79')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p79')"></rect>
+                              <rect id="zone-p274_p80" x="627" y="389" width="504" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p80')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p80')"></rect>
+                              <rect id="zone-p274_p81" x="626" y="410" width="504" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p81')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p81')"></rect>
+                              <rect id="zone-p274_p82" x="626" y="430" width="503" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p82')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p82')"></rect>
+                              <rect id="zone-p274_p83" x="628" y="451" width="501" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p83')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p83')"></rect>
+                              <rect id="zone-p274_p84" x="626" y="472" width="504" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p84')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p84')"></rect>
+                              <rect id="zone-p274_p85" x="627" y="493" width="505" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p85')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p85')"></rect>
+                              <rect id="zone-p274_p86" x="628" y="513" width="500" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p86')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p86')"></rect>
+                              <rect id="zone-p274_p87" x="627" y="535" width="502" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p87')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p87')"></rect>
+                              <rect id="zone-p274_p88" x="626" y="555" width="502" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p88')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p88')"></rect>
+                              <rect id="zone-p274_p89" x="629" y="578" width="501" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p89')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p89')"></rect>
+                              <rect id="zone-p274_p90" x="628" y="598" width="502" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p90')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p90')"></rect>
+                              <rect id="zone-p274_p91" x="628" y="620" width="500" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p91')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p91')"></rect>
+                              <rect id="zone-p274_p92" x="628" y="642" width="500" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p92')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p92')"></rect>
+                              <rect id="zone-p274_p93" x="627" y="662" width="503" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p93')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p93')"></rect>
+                              <rect id="zone-p274_p94" x="627" y="685" width="501" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p94')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p94')"></rect>
+                              <rect id="zone-p274_p95" x="627" y="706" width="501" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p95')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p95')"></rect>
+                              <rect id="zone-p274_p96" x="627" y="728" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p96')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p96')"></rect>
+                              <rect id="zone-p274_p97" x="627" y="751" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p97')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p97')"></rect>
+                              <rect id="zone-p274_p98" x="629" y="771" width="501" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p98')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p98')"></rect>
+                              <rect id="zone-p274_p99" x="627" y="793" width="503" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p99')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p99')"></rect>
+                              <rect id="zone-p274_p100" x="627" y="816" width="503" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p100')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p100')"></rect>
+                              <rect id="zone-p274_p101" x="629" y="837" width="500" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p101')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p101')"></rect>
+                              <rect id="zone-p274_p102" x="629" y="858" width="501" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p102')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p102')"></rect>
+                              <rect id="zone-p274_p103" x="627" y="879" width="504" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p103')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p103')"></rect>
+                              <rect id="zone-p274_p104" x="626" y="900" width="505" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p104')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p104')"></rect>
+                              <rect id="zone-p274_p105" x="626" y="921" width="506" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p105')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p105')"></rect>
+                              <rect id="zone-p274_p106" x="627" y="940" width="504" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p106')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p106')"></rect>
+                              <rect id="zone-p274_p107" x="627" y="962" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p107')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p107')"></rect>
+                              <rect id="zone-p274_p108" x="627" y="984" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p108')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p108')"></rect>
+                              <rect id="zone-p274_p109" x="628" y="1005" width="501" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p109')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p109')"></rect>
+                              <rect id="zone-p274_p110" x="628" y="1025" width="503" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p110')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p110')"></rect>
+                              <rect id="zone-p274_p111" x="628" y="1047" width="503" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p111')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p111')"></rect>
+                              <rect id="zone-p274_p112" x="627" y="1068" width="501" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p112')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p112')"></rect>
+                              <rect id="zone-p274_p113" x="627" y="1090" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p113')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p113')"></rect>
+                              <rect id="zone-p274_p114" x="627" y="1110" width="501" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p114')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p114')"></rect>
+                              <rect id="zone-p274_p115" x="626" y="1132" width="501" height="23" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p115')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p115')"></rect>
+                              <rect id="zone-p274_p116" x="628" y="1154" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p116')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p116')"></rect>
+                              <rect id="zone-p274_p117" x="627" y="1177" width="504" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p117')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p117')"></rect>
+                              <rect id="zone-p274_p118" x="627" y="1198" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p118')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p118')"></rect>
+                              <rect id="zone-p274_p119" x="628" y="1218" width="502" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p119')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p119')"></rect>
+                              <rect id="zone-p274_p120" x="627" y="1242" width="500" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p120')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p120')"></rect>
+                              <rect id="zone-p274_p121" x="627" y="1264" width="503" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p121')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p121')"></rect>
+                              <rect id="zone-p274_p122" x="627" y="1284" width="500" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p122')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p122')"></rect>
+                              <rect id="zone-p274_p123" x="627" y="1309" width="500" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p123')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p123')"></rect>
+                              <rect id="zone-p274_p124" x="627" y="1329" width="504" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p124')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p124')"></rect>
+                              <rect id="zone-p274_p125" x="627" y="1349" width="503" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p125')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p125')"></rect>
+                              <rect id="zone-p274_p126" x="626" y="1371" width="506" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p126')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p126')"></rect>
+                              <rect id="zone-p274_p127" x="628" y="1394" width="504" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p127')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p127')"></rect>
+                              <rect id="zone-p274_p128" x="628" y="1415" width="500" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p128')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p128')"></rect>
+                              <rect id="zone-p274_p129" x="627" y="1437" width="504" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p129')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p129')"></rect>
+                              <rect id="zone-p274_p130" x="627" y="1458" width="503" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p130')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p130')"></rect>
+                              <rect id="zone-p274_p131" x="627" y="1479" width="502" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p131')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p131')"></rect>
+                              <rect id="zone-p274_p132" x="629" y="1501" width="502" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p132')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p132')"></rect>
+                              <rect id="zone-p274_p133" x="629" y="1523" width="502" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p133')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p133')"></rect>
+                              <rect id="zone-p274_p134" x="628" y="1544" width="501" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p134')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p134')"></rect>
+                              <rect id="zone-p274_p135" x="628" y="1565" width="500" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p135')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p135')"></rect>
+                              <rect id="zone-p274_p136" x="629" y="1586" width="499" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p136')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p136')"></rect>
+                              <rect id="zone-p274_p137" x="629" y="1607" width="500" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p137')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p137')"></rect>
+                              <rect id="zone-p274_p138" x="628" y="1628" width="500" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p138')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p138')"></rect>
+                              <rect id="zone-p274_p139" x="629" y="1650" width="501" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p139')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p139')"></rect>
+                              <rect id="zone-p274_p140" x="627" y="1670" width="502" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p140')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p140')"></rect>
+                              <rect id="zone-p274_p141" x="627" y="1691" width="502" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p141')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p141')"></rect>
+                              <rect id="zone-p274_p142" x="624" y="117" width="509" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p142')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p142')"></rect>
+                              <rect id="zone-p274_p143" x="625" y="140" width="504" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p143')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p143')"></rect>
+                              <rect id="zone-p274_p144" x="624" y="162" width="511" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p144')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p144')"></rect>
+                              <rect id="zone-p274_p145" x="625" y="186" width="507" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p145')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p145')"></rect>
+                              <rect id="zone-p274_p146" x="624" y="211" width="508" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p146')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p146')"></rect>
+                              <rect id="zone-p274_p147" x="621" y="231" width="509" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p147')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p147')"></rect>
+                              <rect id="zone-p274_p148" x="622" y="252" width="509" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p148')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p148')"></rect>
+                              <rect id="zone-p274_p149" x="619" y="270" width="517" height="27" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p149')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p149')"></rect>
+                              <rect id="zone-p274_p150" x="620" y="300" width="515" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p150')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p150')"></rect>
+                              <rect id="zone-p274_p151" x="621" y="321" width="511" height="14" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p151')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p151')"></rect>
+                              <rect id="zone-p274_p152" x="621" y="343" width="510" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p152')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p152')"></rect>
+                              <rect id="zone-p274_p153" x="621" y="363" width="509" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p153')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p153')"></rect>
+                              <rect id="zone-p274_p154" x="623" y="384" width="507" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p154')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p154')"></rect>
+                              <rect id="zone-p274_p155" x="621" y="405" width="510" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p155')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p155')"></rect>
+                              <rect id="zone-p274_p156" x="623" y="426" width="507" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p156')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p156')"></rect>
+                              <rect id="zone-p274_p157" x="625" y="449" width="502" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p157')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p157')"></rect>
+                              <rect id="zone-p274_p158" x="624" y="472" width="510" height="17" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p158')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p158')"></rect>
+                              <rect id="zone-p274_p159" x="625" y="494" width="505" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p159')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p159')"></rect>
+                              <rect id="zone-p274_p160" x="625" y="516" width="507" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p160')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p160')"></rect>
+                              <rect id="zone-p274_p161" x="623" y="539" width="509" height="17" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p161')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p161')"></rect>
+                              <rect id="zone-p274_p162" x="624" y="559" width="512" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p162')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p162')"></rect>
+                              <rect id="zone-p274_p163" x="623" y="579" width="513" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p163')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p163')"></rect>
+                              <rect id="zone-p274_p164" x="625" y="600" width="511" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p164')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p164')"></rect>
+                              <rect id="zone-p274_p165" x="622" y="625" width="512" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p165')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p165')"></rect>
+                              <rect id="zone-p274_p166" x="621" y="650" width="516" height="16" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p166')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p166')"></rect>
+                              <rect id="zone-p274_p167" x="624" y="672" width="515" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p167')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p167')"></rect>
+                              <rect id="zone-p274_p168" x="622" y="693" width="517" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p168')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p168')"></rect>
+                              <rect id="zone-p274_p169" x="623" y="718" width="508" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p169')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p169')"></rect>
+                              <rect id="zone-p274_p170" x="622" y="742" width="515" height="13" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p170')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p170')"></rect>
+                              <rect id="zone-p274_p171" x="622" y="760" width="515" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p171')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p171')"></rect>
+                              <rect id="zone-p274_p172" x="622" y="783" width="514" height="17" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p172')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p172')"></rect>
+                              <rect id="zone-p274_p173" x="622" y="807" width="511" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p173')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p173')"></rect>
+                              <rect id="zone-p274_p174" x="625" y="830" width="511" height="13" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p174')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p174')"></rect>
+                              <rect id="zone-p274_p175" x="627" y="847" width="508" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p175')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p175')"></rect>
+                              <rect id="zone-p274_p176" x="628" y="870" width="507" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p176')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p176')"></rect>
+                              <rect id="zone-p274_p177" x="628" y="892" width="504" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p177')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p177')"></rect>
+                              <rect id="zone-p274_p178" x="620" y="914" width="516" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p178')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p178')"></rect>
+                              <rect id="zone-p274_p179" x="620" y="938" width="513" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p179')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p179')"></rect>
+                              <rect id="zone-p274_p180" x="621" y="960" width="512" height="13" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p180')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p180')"></rect>
+                              <rect id="zone-p274_p181" x="622" y="974" width="513" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p181')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p181')"></rect>
+                              <rect id="zone-p274_p182" x="625" y="1001" width="508" height="17" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p182')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p182')"></rect>
+                              <rect id="zone-p274_p183" x="621" y="1019" width="513" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p183')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p183')"></rect>
+                              <rect id="zone-p274_p184" x="623" y="1046" width="509" height="20" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p184')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p184')"></rect>
+                              <rect id="zone-p274_p185" x="623" y="1069" width="506" height="16" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p185')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p185')"></rect>
+                              <rect id="zone-p274_p186" x="621" y="1092" width="511" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p186')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p186')"></rect>
+                              <rect id="zone-p274_p187" x="620" y="1110" width="509" height="24" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p187')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p187')"></rect>
+                              <rect id="zone-p274_p188" x="622" y="1136" width="505" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p188')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p188')"></rect>
+                              <rect id="zone-p274_p189" x="625" y="1156" width="507" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p189')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p189')"></rect>
+                              <rect id="zone-p274_p190" x="625" y="1181" width="504" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p190')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p190')"></rect>
+                              <rect id="zone-p274_p191" x="621" y="1197" width="506" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p191')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p191')"></rect>
+                              <rect id="zone-p274_p192" x="619" y="1221" width="511" height="17" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p192')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p192')"></rect>
+                              <rect id="zone-p274_p193" x="620" y="1242" width="509" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p193')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p193')"></rect>
+                              <rect id="zone-p274_p194" x="620" y="1262" width="510" height="21" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p194')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p194')"></rect>
+                              <rect id="zone-p274_p195" x="622" y="1284" width="502" height="19" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p195')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p195')"></rect>
+                              <rect id="zone-p274_p196" x="623" y="1308" width="503" height="16" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p196')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p196')"></rect>
+                              <rect id="zone-p274_p197" x="622" y="1329" width="510" height="22" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p197')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p197')"></rect>
+                              <rect id="zone-p274_p198" x="625" y="1356" width="506" height="14" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p198')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p198')"></rect>
+                              <rect id="zone-p274_p199" x="619" y="1379" width="514" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p199')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p199')"></rect>
+                              <rect id="zone-p274_p200" x="618" y="1397" width="514" height="13" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p200')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p200')"></rect>
+                              <rect id="zone-p274_p201" x="624" y="1419" width="503" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p201')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p201')"></rect>
+                              <rect id="zone-p274_p202" x="618" y="1442" width="506" height="14" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p202')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p202')"></rect>
+                              <rect id="zone-p274_p203" x="615" y="1462" width="516" height="17" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p203')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p203')"></rect>
+                              <rect id="zone-p274_p204" x="618" y="1484" width="512" height="16" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p204')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p204')"></rect>
+                              <rect id="zone-p274_p205" x="615" y="1509" width="513" height="15" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p205')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p205')"></rect>
+                              <rect id="zone-p274_p206" x="617" y="1526" width="509" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p206')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p206')"></rect>
+                              <rect id="zone-p274_p207" x="617" y="1549" width="509" height="18" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p207')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p207')"></rect>
+                              <rect id="zone-p274_p208" x="618" y="1573" width="506" height="14" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-p274_p208')" onmouseout="gestoreDisEvidenziaSVG('zone-p274_p208')"></rect></svg></div>
                      </div>
                   </div>
                </div>
@@ -177,10 +398,10 @@
                   <div id="text-carousel-content">
                      <div class="carousel-slide-text active">
                         <h4 class="page-header">
-                           <span class="orgName" id="p273_runningTitle" data-ref="#RassegnaSettimanale">LA RASSEGNA SETTIMANALE</span>
+                           <span class="organizzazioni" id="p273_runningTitle" data-ref="#RassegnaSettimanale">LA RASSEGNA SETTIMANALE</span>
                            </h4>
                         <div class="flex" id="p273_subTitle">
-                           <h4 class="page-header">DI <span class="term">POLITICA, SCIENZE, LETTERE ED ARTI</span>
+                           <h4 class="page-header">DI <span class="verbum">POLITICA, SCIENZE, LETTERE ED ARTI</span>
                               </h4>
                         </div>
                         <div class="date_container">
@@ -189,7 +410,7 @@
                            </div>
                            <div class="flex" id="p273_date">
                               <p>
-                                 <span class="placeName" data-ref="#Roma">Roma</span>
+                                 <span class="luoghi-geografici" data-ref="#Roma">Roma</span>
                                  <span class="date">1 maggio 1881</span>
                                  </p>
                            </div>
@@ -200,92 +421,112 @@
                         <div class="trascrizione">
                            <div class="col">
                               <div class="flex"><span class="article-title" id="p273_articleTitle">
-                                    I "<span class="term">Carusi</span>" in <span class="placeName" data-ref="#Sicilia">Sicilia</span>.
+                                    I "<span class="verbum">Carusi</span>" in <span class="luoghi-geografici" data-ref="#luogo_Sicilia">Sicilia</span>.
                                     </span></div>
-                              <p id="p273_p1">Sono trascorsi oramai dieci lunghi anni da quando l'on.</p>
-                              <p id="p273_p2">
-                                 <span class="persName" data-ref="#Lanza">Lanza</span>, essendo ministro dell'interno, presentava al<span class="orgName" id="" data-ref="#ParlamentoItaliano">Senato</span>
+                              <p id="p273_p1">Sono trascorsi oramai dieci lunghi anni da quando l'<span class="persone-reali" data-ref="#pers_Lanza">on. Lanza</span>
                                  </p>
-                              <p id="p273_p3">un progetto di codice sanitario contenente alcune disposi-</p>
-                              <p id="p273_p4">zioni, intese a disciplinare il lavoro dei fanciulli nelle fab-</p>
-                              <p id="p273_p5">briche e nelle miniere. Da quella volta numerose proposte</p>
-                              <p id="p273_p6">di legge furono presentate al <span class="orgName" id="" data-ref="#ParlamentoItaliano">Parlamento Italiano</span>, sempre</p>
-                              <p id="p273_p7">collo scopo di regolare questo importante e delicato argo-</p>
-                              <p id="p273_p8">mento. Il governo stesso si fece iniziatore di un'inchiesta,</p>
-                              <p id="p273_p9">i cui risultati comparvero non ha guari in un grosso vo-</p>
-                              <p id="p273_p10">lume pubblicato dal Ministero di' agricoltura, industria e</p>
-                              <p id="p273_p11">commercio, e furono adoperati dagli onorevoli <span class="persName" data-ref="#Depretis">Depretis</span> e</p>
+                              <p id="p273_p2">
+                                 , essendo ministro dell'interno, presentava al <span class="organizzazioni" id="" data-ref="#org_SenatoRegno">Senato</span>
+                                 </p>
+                              <p id="p273_p3">un <span class="opere">progetto di codice sanitario</span> contenente alcune disposizioni,</p>
+                              <p id="p273_p4">intese a disciplinare il <span class="temi-motivi">lavoro dei fanciulli nelle fabbriche e nelle miniere</span>.
+                                 </p>
+                              <p id="p273_p5">Da quella volta numerose proposte</p>
+                              <p id="p273_p6">di legge furono presentate al <span class="organizzazioni" id="" data-ref="#org_ParlamentoItaliano">Parlamento Italiano</span>, sempre</p>
+                              <p id="p273_p7">collo scopo di regolare questo importante e delicato argomento.</p>
+                              <p id="p273_p8">Il <span class="organizzazioni" id="" data-ref="#org_Stato">governo</span> stesso si fece iniziatore di un'inchiesta,</p>
+                              <p id="p273_p9">i cui risultati comparvero non ha guari in un grosso volume</p>
+                              <p id="p273_p10">pubblicato dal <span class="organizzazioni" id="" data-ref="#org_MinisteroAgricolturaIndustriaCommercio">Ministero di Agricoltura, Industria e Commercio</span>,
+                                 </p>
+                              <p id="p273_p11">e furono adoperati dagli onorevoli <span class="persone-reali" data-ref="#pers_Depretis">Depretis</span> e</p>
                               <p id="p273_p12">
-                                 <span class="persName" data-ref="#Miceli">Miceli</span> per la presentazione di un nuovo progetto di legge
+                                 <span class="persone-reali" data-ref="#pers_Miceli">Miceli</span> per la presentazione di un <span class="opere">nuovo progetto di legge</span>
                                  </p>
                               <p id="p273_p13">alquanto diverso nei particolari da quello presentato poco</p>
-                              <p id="p273_p14">tempo innanzi dagli onorevoli <span class="persName" data-ref="#Minghetti">Minghetti</span>,
-                                 <span class="persName" data-ref="#Luzzatti">Luzzatti</span>,
-                                 <span class="persName" data-ref="#Villari">Villari</span> e
+                              <p id="p273_p14">tempo innanzi dagli onorevoli <span class="persone-reali" data-ref="#pers_Minghetti">Minghetti</span>,
+                                 <span class="persone-reali" data-ref="#pers_Luzzatti">Luzzatti</span>,
+                                 <span class="persone-reali" data-ref="#pers_Villari">Villari</span> e
                                  </p>
                               <p id="p273_p15">
-                                 <span class="persName" data-ref="#Sidney">Sidney Sonnino</span>,
+                                 <span class="persone-reali" data-ref="#pers_SidneySonnino">Sidney Sonnino</span>,
                                  ma informato allo stesso concetto generale.
                                  </p>
                               <p id="p273_p16">Senonchè mentre l'urgenza di accordare una protezione</p>
-                              <p id="p273_p17">legale alle donne e ai fanciulli impiegati nell'industria è rico-</p>
-                              <p id="p273_p18">nosciuta da molti in Parlamento e fuori, senza distinzione di</p>
-                              <p id="p273_p19">partito politico, le sessioni succedono alle sessioni, le legis-</p>
-                              <p id="p273_p20">lature alle legislature senza che si giunga a prendere</p>
-                              <p id="p273_p21">alcun provvedimento concreto; e, quel ch'è peggio, la Com-</p>
-                              <p id="p273_p22">missione parlamentare, incaricata di riferire sul progetto</p>
-                              <p id="p273_p23">Depretis-Miceli, dorme ingiustamente i suoi sonni. Intanto i</p>
+                              <p id="p273_p17">legale alle donne e ai fanciulli impiegati nell'industria è riconosciuta</p>
+                              <p id="p273_p18">da molti in <span class="organizzazioni" id="" data-ref="#org_ParlamentoItaliano">Parlamento</span> e fuori, senza distinzione di</p>
+                              <p id="p273_p19">partito politico, le sessioni succedono alle sessioni, le legislature</p>
+                              <p id="p273_p20">alle legislature senza che si giunga a prendere</p>
+                              <p id="p273_p21">alcun provvedimento concreto; e, quel ch'è peggio, la</p>
+                              <p id="p273_p22">Commissione parlamentare, incaricata di riferire sul <span class="opere">progetto</span>
+                                 </p>
+                              <p id="p273_p23">
+                                 <span class="opere">Depretis-Miceli</span>, dorme ingiustamente i suoi sonni. Intanto i</p>
                               <p id="p273_p24">mali esistenti non ricevono rimedio e, trascurati come sono,</p>
-                              <p id="p273_p25">inacerbiscono. Perciò, l'animo nostro rimase tristemente im-</p>
-                              <p id="p273_p26">pressionato quando, alcuni mesi or sono, un maggiorentte del-</p>
-                              <p id="p273_p27">l'industria italiana, ed economista appassionato, volle dimo-</p>
-                              <p id="p273_p28">strare l'inopportunità di una legge regolatrice del lavoro gio-</p>
-                              <p id="p273_p29">vanile e muliebre nell'industria recando innanzi l'argomenta-</p>
-                              <p id="p273_p30">zione che come in Italia non s'erano prodotti ancora i gravi</p>
+                              <p id="p273_p25">inacerbiscono. Perciò, l'animo nostro rimase tristemente</p>
+                              <p id="p273_p26">impressionato quando, alcuni mesi or sono, un maggiorente dell'</p>
+                              <p id="p273_p27">industria italiana, ed <span class="epithet">economista appassionato</span>, volle dimostrare</p>
+                              <p id="p273_p28">l'inopportunità di una legge regolatrice del lavoro giovanile e muliebre</p>
+                              <p id="p273_p29">nell'industria recando innanzi l'argomentazione che come in</p>
+                              <p id="p273_p30">
+                                 <span class="luoghi-geografici" data-ref="#luogo_Italia">Italia</span> non s'erano prodotti ancora i gravi</p>
                               <p id="p273_p31">inconvenienti pei quali in altri paesi la libertà del contratto</p>
-                              <p id="p273_p32">di lavoro era stata ristretta, così non v'era presso di noi ra-</p>
-                              <p id="p273_p33">gione sufficiente per seguire questo esempio. *Strana teo-</p>
-                              <p id="p273_p34">ria, secondo la quale la legge dovrebbe intervenire soltanto</p>
-                              <p id="p273_p35">quando il disordine ch'essa deve impedire si fosse già ma-</p>
-                              <p id="p273_p36">nifestato in gravi proporzioni.</p>
-                              <p id="p273_p37">Non è vero d'altronde che in Italia non esistano i mali</p>
+                              <p id="p273_p32">di lavoro era stata ristretta, così non v'era presso di noi</p>
+                              <p id="p273_p33">ragione sufficiente per seguire questo esempio. * Strana teoria,</p>
+                              <p id="p273_p34">secondo la quale la legge dovrebbe intervenire soltanto</p>
+                              <p id="p273_p35">quando il disordine ch'essa deve impedire si fosse già</p>
+                              <p id="p273_p36">manifestato in gravi proporzioni.</p>
+                              <p id="p273_p37">Non è vero d'altronde che in <span class="luoghi-geografici" data-ref="#luogo_Italia">Italia</span> non esistano i mali</p>
                               <p id="p273_p38">altrove lamentati. Anche presso di noi si trova impiegato</p>
-                              <p id="p273_p39">nell'industria un gran numero di donne e di fanciulli. Se-</p>
-                              <p id="p273_p40">condo le cifre recate dalla Statistica di alcune industrie ita-</p>
-                              <p id="p273_p41">liane, sopra 382,131 operai delle manifatture si avrebbero</p>
-                              <p id="p273_p42">in Italia 188,486 donne adulte e 90,083 fanciulli d'ambo i</p>
-                              <p id="p273_p43">sessi. Altre notizie raccolte dagli ingegneri delle miniere</p>
+                              <p id="p273_p39">nell'industria un gran numero di donne e di fanciulli.</p>
+                              <p id="p273_p40">Secondo le cifre recate dalla Statistica di alcune industrie italiane,</p>
+                              <p id="p273_p41">sopra 382,131 operai delle manifatture si avrebbero</p>
+                              <p id="p273_p42">in <span class="luoghi-geografici" data-ref="#luogo_Italia">Italia</span> 188,486 donne adulte e 90,083 fanciulli d'ambo i sessi.</p>
+                              <p id="p273_p43">Altre notizie raccolte dagli ingegneri delle miniere</p>
                               <p id="p273_p44">recano che nell'<span class="date">anno 1878</span> su 40,556 operai addetti ai lavori</p>
                               <p id="p273_p45">minerari (non comprese le cave) si contavano 6138 fanciulli</p>
                               <p id="p273_p46">(d'età inferiore a 14 anni) e 1722 donne.</p>
-                              <p id="p273_p47">Ora, le ricerche fatte negli anni scorsi dal Ministero</p>
-                              <p id="p273_p48">d'agricoltura, industria e commercio e l'inchiesta ordinata</p>
-                              <p id="p273_p49">dall'onorevole Cairoli (allorchè aveva l'interim di quel mi-</p>
-                              <p id="p273_p50">nistero), valgono a testimoniare che quei fanciulli sono,</p>
-                              <p id="p273_p51">per una gran parte, di età inferiore non solo a 10 o 9</p>
-                              <p id="p273_p52">anni, ma sovente anche ad 8 e a 7, talvolta a 6 e perfino</p>
-                              <p id="p273_p53">a 5 anni, e che, oltre a ciò, non pochi sono i casi in cui</p>
-                              <p id="p273_p54">donne e fanciulli sono sottoposti ad un lavoro eccessivo,</p>
-                              <p id="p273_p55">deleterio per le loro forze fisiche e intellettuali, mentre</p>
-                              <p id="p273_p56">devono prestar l'opera propria in condizioni pericolose</p>
+                              <p id="p273_p47">Ora, le ricerche fatte negli anni scorsi dal
+                                 <span class="organizzazioni" id="" data-ref="#org_MinisteroAgricolturaIndustriaCommercio">Ministero di Agricoltura, Industria e Commercio</span>
+                                 </p>
+                              <p id="p273_p48">e l'inchiesta ordinata dall'<span class="persone-reali" data-ref="#pers_Cairoli">onorevole Cairoli</span>
+                                 (allorchè aveva l'interim di quel ministero),
+                                 </p>
+                              <p id="p273_p49">valgono a testimoniare che quei fanciulli sono,</p>
+                              <p id="p273_p50">per una gran parte, di età inferiore non solo a 10 o 9</p>
+                              <p id="p273_p51">anni, ma sovente anche ad 8 e a 7, talvolta a 6 e perfino</p>
+                              <p id="p273_p52">a 5 anni, e che, oltre a ciò, non pochi sono i casi in cui</p>
+                              <p id="p273_p53">donne e fanciulli sono sottoposti ad un <span class="temi-motivi">lavoro eccessivo</span>,
+                                 </p>
+                              <p id="p273_p54">deleterio per le loro forze fisiche e intellettuali, mentre</p>
+                              <p id="p273_p55">devono prestar l'opera propria in condizioni pericolose</p>
+                              <p id="p273_p56"></p>
                               <p id="p273_p57">
-                                 *            <span class="persName" data-ref="#Rossi">ALESSANDRO ROSSI</span>, Perchè una Legge? — Il Risorgimento, vol. V, pag: 414.
+                                 <span class="persone-reali" data-ref="#pers_Rossi">ALESSANDRO ROSSI</span>,
+                                 <span class="opere">Perchè una Legge?</span> —
+                                 <span class="organizzazioni" id="" data-ref="#org_IlRisorgimento">Il Risorgimento</span>, vol. V, pag. 414.
                                  </p>
                            </div>
                            <div class="col">
                               <div class="flex"><span class="article-title" id="p273_articleTitle"></span></div>
-                              <p id="p273_p58">per la loro moralità. Specialmente in alcune miniere di zolfo</p>
-                              <p id="p273_p59">della <span class="placeName" data-ref="#Sicilia">Sicilia</span> il lavoro dei fanciulli trae seco conseguenze</p>
+                              <p id="p273_p58">per la loro moralità. Specialmente in alcune <span class="verbum">miniére di zolfo</span>
+                                 </p>
+                              <p id="p273_p59">della <span class="luoghi-geografici" data-ref="#luogo_Sicilia">Sicilia</span> il lavoro dei fanciulli trae seco conseguenze</p>
                               <p id="p273_p60">disastrose. Esso fu fatto particolare oggetto di accurati studi</p>
-                              <p id="p273_p61">dovuti all'iniziativa privata o a quella del governo. Così re-</p>
-                              <p id="p273_p62">centemente il senatore <span class="persName" data-ref="#Tamaio">Tamaio</span>, prefetto di <span class="placeName" data-ref="#Girgenti">Girgenti</span>, indi-</p>
-                              <p id="p273_p63">rizzò al governo alcune proposte intese al miglioramento</p>
+                              <p id="p273_p61">dovuti all'iniziativa privata o a quella del <span class="organizzazioni" id="" data-ref="#org_Stato">governo</span>. Così re-</p>
+                              <p id="p273_p62">centemente il senatore <span class="persone-reali" data-ref="#pers_Tamajo">
+                                    
+                                    Tamaio
+                                    Tamajo
+                                    
+                                    </span>, prefetto di <span class="luoghi-geografici" data-ref="#luogo_Girgenti">Girgenti</span>, indi-</p>
+                              <p id="p273_p63">rizzò al <span class="organizzazioni" id="" data-ref="#org_Stato">governo</span> alcune proposte intese al <span class="temi-motivi">miglioramento</span>
+                                 </p>
                               <p id="p273_p64">delle condizioni in cui versano gli operai minatori, e in ispe-</p>
                               <p id="p273_p65">cie i più giovani, di quella provincia. Uno studio teorico pub-</p>
-                              <p id="p273_p66">blicato dal sig. <span class="persName" data-ref="#Savorini">Vittorio Savorini</span>, raccoglie i risultati ot-</p>
+                              <p id="p273_p66">blicato dal sig. <span class="persone-reali" data-ref="#pers_VittorioSavorini">Vittorio Savorini</span>, raccoglie i risultati ot-</p>
                               <p id="p273_p67">tenuti da una inchiesta ordinata e presieduta dallo stesso</p>
                               <p id="p273_p68">prefetto. Questi ha fatto ispezionare minutamente, comin-</p>
-                              <p id="p273_p69">ciando dal novembre ultimo, 72 miniere situate nelle due</p>
+                              <p id="p273_p69">ciando dal <span class="date">novembre ultimo</span>, 72 miniere situate nelle due</p>
                               <p id="p273_p70">isole stesso. Tali miniere danno occupazione a 3878 operai.</p>
                               <p id="p273_p71">69 dei quali sono capi maestri o sorveglianti dell'escava-</p>
                               <p id="p273_p72">zione; 110 sono catatori, pesatori o scrivani, specie di magaz-</p>
@@ -296,17 +537,16 @@
                               <p id="p273_p77">fondo della miniera fino al piano dell'apertura. Vi hanno poi 11</p>
                               <p id="p273_p78">donne incaricate ordinariamente di trasportare lo zolfo dalle</p>
                               <p id="p273_p79">bocche della miniera fino alla catasta. L'età dei <span class="term">carusi</span> nelle</p>
-                              <p id="p273_p80">miniere di <span class="placeName" data-ref="#Licata">Licata</span> varia dai 10 a 18 anni; in quelle di <span class="placeName" data-ref="#Ganciana">Gian-</span>
+                              <p id="p273_p80">miniere di <span class="luoghi-geografici" data-ref="#luogo_Licata">Licata</span> varia dai 10 a 18 anni; in quelle di <span class="luoghi-geografici" data-ref="#luogo_Ganciana">Ganciana</span>
                                  </p>
-                              <p id="p273_p81">
-                                 <span class="placeName" data-ref="#Ganciana">ciana</span> dai 6 ai 20; in quelle di <span class="placeName" data-ref="#Palma">Palma</span> e <span class="placeName" data-ref="#Aragona">d'Aragona</span> dai 7</p>
-                              <p id="p273_p82">ai 18; in quelle di <span class="placeName" data-ref="#Bassa">Bassa</span> e <span class="placeName" data-ref="#Fermi">Fermi</span> dai 7 ai 19; in quelle di</p>
+                              <p id="p273_p81">dai 6 ai 20; in quelle di <span class="luoghi-geografici" data-ref="#luogo_Palma">Palma</span> e <span class="luoghi-geografici" data-ref="#luogo_Aragona">d'Aragona</span> dai 7</p>
+                              <p id="p273_p82">ai 18; in quelle di <span class="luoghi-geografici" data-ref="#luogo_Bassa">Bassa</span> e <span class="luoghi-geografici" data-ref="#luogo_Fermi">Fermi</span> dai 7 ai 19; in quelle di</p>
                               <p id="p273_p83">
-                                 <span class="placeName" data-ref="#Favara">Favara</span> dagli 8 ai 20. In alcune miniere si trovano però</p>
+                                 <span class="luoghi-geografici" data-ref="#luogo_Favara">Favara</span> dagli 8 ai 20. In alcune miniere si trovano però</p>
                               <p id="p273_p84">
                                  <span class="term">carusi</span> pervenuti anche ad un età superiore, e fino a 50</p>
                               <p id="p273_p85">anni.</p>
-                              <p id="p273_p86">Il <span class="term">piconiere</span> assume il lavoro a cottimo dal proprietario</p>
+                              <p id="p273_p86">Il <span class="term">piconiere</span> assume il <span class="temi-motivi">lavoro a cottimo</span> dal proprietario</p>
                               <p id="p273_p87">della miniera e prende al proprio servizio alcuni ragazzi,</p>
                               <p id="p273_p88">ai quali egli fa trasportare alla superficie del suolo il mi-</p>
                               <p id="p273_p89">nerale da lui scavato. La mercede è retribuita al <span class="term">caruso</span>
@@ -318,12 +558,12 @@
                               <p id="p273_p94">di un fanciullo sotto 10 anni varia da cent. 35 a cent. 85</p>
                               <p id="p273_p95">al giorno; quello di un giovanetto che abbia superato gli</p>
                               <p id="p273_p96">11 anni di età da cent. 85 a 1 lira e 50 cent. Ma secondo</p>
-                              <p id="p273_p97">i dati raccolti dal prefetto di <span class="placeName" data-ref="#Girgenti">Girgenti</span>, la media del salario</p>
+                              <p id="p273_p97">i dati raccolti dal prefetto di <span class="luoghi-geografici" data-ref="#luogo_Girgenti">Girgenti</span>, la media del salario</p>
                               <p id="p273_p98">giornaliero dei <span class="term">carusi</span> non raggiunge la lira. E trattasi</p>
                               <p id="p273_p99">ancora soltanto di un salario nominale o apparente. I ge-</p>
                               <p id="p273_p100">nitori spinti dalla cupidigia o dal bisogno affidano i loro</p>
                               <p id="p273_p101">figliuoli ai <span class="term">piconieri</span>, per una certa somma in danaro</p>
-                              <p id="p273_p102">chiamata soccorso morto, la quale varia ordinariamente dalle</p>
+                              <p id="p273_p102">chiamata <span class="term">soccorso morto</span>, la quale varia ordinariamente dalle</p>
                               <p id="p273_p103">cento alle trecento lire.</p>
                               <p id="p273_p104">Il <span class="term">caruso</span> ha obbligo di lavorare finchè il <span class="term">piconiere</span>
                                  </p>
@@ -337,12 +577,184 @@
                               <p id="p273_p112">verso il <span class="term">piconiere</span>, tenuto quindi da quest'ultimo in una</p>
                               <p id="p273_p113">specie di schiavitù, e retribuito sempre di fatto in misura</p>
                               <p id="p273_p114">
-                                 *            <span class="persName" data-ref="#Savorini">VITTORIO SAVORINI</span>, Condizioni economiche e morali dei lavoratori
+                                 <span class="persone-reali" data-ref="#pers_VittorioSavorini">Vittorio Savorini</span>,          <span class="opere">Condizioni economiche e morali dei lavoratori</span>
                                  </p>
-                              <p id="p273_p115">nelle miniere di zolfo e degli agricoltori della provincia di <span class="placeName" data-ref="#Girgenti">Girgenti</span>,
+                              <p id="p273_p115">nelle miniere di zolfo e degli agricoltori della provincia di <span class="luoghi-geografici" data-ref="#luogo_Girgenti">Girgenti</span>,
                                  </p>
                               <p id="p273_p116">
-                                 <span class="placeName" data-ref="#Girgenti">Girgenti</span>,            <span class="date">1881</span>.
+                                 <span class="luoghi-geografici" data-ref="#luogo_Girgenti">Girgenti</span>,          <span class="date">1881</span>.
+                                 </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-slide-text">
+                        <div class="flex-full">
+                           <p class="page-number" id="p274_number">274</p>
+                           <p class="running-title" id="p274_runningTitle">LA RASSEGNA SETTIMANALE</p>
+                           <p class="volume-info" id="p274_vol">[Vol. 7, N, 174]
+                              </p>
+                        </div>
+                        <div class="trascrizione">
+                           <div class="col">
+                              <div class="flex"><span class="article-title" id="p273_articleTitle"></span></div>
+                              <p id="p274_p1">inferiore a quella pattuita pel suo salario. Ma v'ha di</p>
+                              <p id="p274_p2">più. Il picconiere retribuisce il <span class="verbum">carasso</span> in natura anzichè</p>
+                              <p id="p274_p3">in danaro, somministrandogli il così detto <span class="verbum">speso,</span> cioè farina</p>
+                              <p id="p274_p4">di grano, olio e spesso solo pane; e da ciò si vanno gua</p>
+                              <p id="p274_p5">dagno in due modi, provvedendo il <span class="verbum">carasso</span> di generi di</p>
+                              <p id="p274_p6">pessima qualità, e conteggiandoli sui salarj di questo ad</p>
+                              <p id="p274_p7">un prezzo superiore a quello reale del mercato. Per tal</p>
+                              <p id="p274_p8">modo vige ancora in Italia quel sistema immorale di retri</p>
+                              <p id="p274_p9">buzione del lavoro che fu conosciuto in Inghilterra sotto il</p>
+                              <p id="p274_p10">nome di <span class="verbum">truck system,</span> e contro il quale quest'ultimo paese</p>
+                              <p id="p274_p11">adottò assai per tempo severe norme legislative. Il Carbo</p>
+                              <p id="p274_p12">naia della <span class="luoghi-geografici" data-ref="#luogo_Sicilia">Sicilia</span>, siccome ha altri bisogni, oltre a quelli che le</p>
+                              <p id="p274_p13">cose somministrategli dal picconiere valgono a soddisfare,</p>
+                              <p id="p274_p14">rivende alla sua volta ciò che ha ricevuto. Così un rotolo</p>
+                              <p id="p274_p15">di pane che vale trenta centesimi gli è conteggiato in ragione</p>
+                              <p id="p274_p16">di 40 ed è da lui venduto in ragione di 20.</p>
+                              <p id="p274_p17">Ora se un uomo sano e forte va avanti, quanto non sono</p>
+                              <p id="p274_p18">spessi e feri i maltrattamenti che il fanciullo operaio degli</p>
+                              <p id="p274_p19">
+                                 <span class="verbum">zolfare</span> deve subire per così triste rimunerazione? Egli</p>
+                              <p id="p274_p20">deve passare la giornata, talvolta o faticando nelle gallerie</p>
+                              <p id="p274_p21">vive e mal tagliate nel masso, unito spesso dell'acqua che</p>
+                              <p id="p274_p22">trasuda dal suolo, portando sul dorso parecchi chilogrammi</p>
+                              <p id="p274_p23">di minerale. Da ciò uno sforzo che secca e corpi ancor te</p>
+                              <p id="p274_p24">neri gravissimi nell'avvenire. Il torace si deforma, la spina</p>
+                              <p id="p274_p25">dorsale si incurva sotto la pressione di un peso eccessivo</p>
+                              <p id="p274_p26">recato sulle spalle durante lunghe ore dalla profondità della</p>
+                              <p id="p274_p27">miniera fino all' esterno. I consigli salutari delle provincie</p>
+                              <p id="p274_p28">minerarie dell' isola e i consigli di loro ebbero a constatare</p>
+                              <p id="p274_p29">i vizi di conformazione a cui i <span class="verbum">carusi</span> vanno soggetti per</p>
+                              <p id="p274_p30">effetto del proprio lavoro, lo stato di deperimento fisico,</p>
+                              <p id="p274_p31">la mancanza di sviluppo che in loro si osserva, le con</p>
+                              <p id="p274_p32">tusioni che appariscono sul loro corpo, la nisioni che pia</p>
+                              <p id="p274_p33">gano le loro membra giacché, secondo fortunatamente anco</p>
+                              <p id="p274_p34">ra i picconiere per spingere i fanciulli da essi dipendenti</p>
+                              <p id="p274_p35">ad operare più solleciti, talvolta accostano perfino la fiamma</p>
+                              <p id="p274_p36">delle loro lampade alle membra ignude di questi. *</p>
+                              <p id="p274_p37">
+                                 A uno stato di cose si trova e troverebbe certo in gran</p>
+                              <p id="p274_p38">parte rimedio una legge che proibisse l'impiego di fanciulli</p>
+                              <p id="p274_p39">nel lavoro industriale prima che essi non avessero compiuto</p>
+                              <p id="p274_p40">una certa età, e limitasse per un periodo successivo più o</p>
+                              <p id="p274_p41">meno lungo la loro giornata di lavoro. Il progetto di legge</p>
+                              <p id="p274_p42">preso in considerazione dalla Camera nella tornata 9 giu</p>
+                              <p id="p274_p43">gno 1850, il quale proibiva l'impiego di fanciulli di età in</p>
+                              <p id="p274_p44">feriore ai 16 anni in lavori pericolosi e malsani, dava certo</p>
+                              <p id="p274_p45">in tal modo, per ciò che s'attiene almeno al lavoro delle</p>
+                              <p id="p274_p46">zolfare siciliane, una disposizione più efficace di quella con</p>
+                              <p id="p274_p47">tenuta nel controprogetto Depretis-Minghetti, la quale pro</p>
+                              <p id="p274_p48">poneva che fosse impiegati in lavori notturni, sotter</p>
+                              <p id="p274_p49">ranei, insalubri o pericolosi, fanciulli di età inferiore a 12</p>
+                              <p id="p274_p50">anni, e l'opera infatti che è richiesta ai <span class="verbum">carusi,</span> è così pe</p>
+                              <p id="p274_p51">nosa, che il limite di età fissato in quest' ultimo progetto</p>
+                              <p id="p274_p52">apparisce ancora troppo basso.</p>
+                              <p id="p274_p53">
+                                 Lo stato del senatore <span class="persone-reali" data-ref="#pers_Tamajo">Tamajo</span>, alle quali abbiamo ac</p>
+                              <p id="p274_p54">cennato, tendono contemporaneamente a due fini: 1° a far chè</p>
+                              <p id="p274_p55">la legge intervenga una buona volta per porre un termine</p>
+                              <p id="p274_p56">alle enormità che si verificano tutti dì nelle miniere siciliane.</p>
+                              <p id="p274_p57">2° a interessare il <span class="organizzazioni" id="" data-ref="#org_Stato">governo</span>, perchè incoraggi e favorisca di</p>
+                              <p id="p274_p58">rettamente col suo intervento lo sviluppo dell'agricoltura nei</p>
+                              <p id="p274_p59">distretti minerarii della <span class="luoghi-geografici" data-ref="#luogo_Sicilia">Sicilia</span>. Il senatore <span class="persone-reali" data-ref="#pers_Tamajo">Tamajo</span> vorrebbe</p>
+                              <p id="p274_p60">non solo che la legge prescrivesse un limite di età per</p>
+                              <p id="p274_p61">l'impiego dei fanciulli nelle <span class="verbum">zolfare</span>, ma che fosse vietato</p>
+                              <p id="p274_p62">di ingaggiarli col sistema del <span class="verbum">soccorso morto</span>. Vorrebbe che</p>
+                              <p id="p274_p63">fosse proibita la retribuzione dei <span class="verbum">carusi</span> in generi e che</p>
+                              <p id="p274_p64">
+                                 <span class="citazioni">V. <span class="opere">
+                                       <span class="organizzazioni" id="" data-ref="#org_AnnaliIndustriaCommercio">Annali dell'industria e del commercio</span>,              <span class="date">1880</span> n. 15</span>. — Inchiesta</span>
+                                 </p>
+                              <p id="p274_p65">
+                                 <span class="citazioni">sul lavoro dei fanciulli e delle donne. — <span class="opere">
+                                       <span class="temi-motivi">Deposizione del dott. Lombardi</span>
+                                       </span>
+                                    </span>
+                                 </p>
+                              <p id="p274_p66">
+                                 <span class="citazioni">pel <span class="organizzazioni" id="" data-ref="#org_ConsiglioSanitarioCaltanissetta">consiglio sanitario di <span class="luoghi-geografici" data-ref="#luogo_Caltanissetta">Caltanissetta</span>
+                                       </span>
+                                    </span>.
+                                 </p>
+                           </div>
+                           <div class="col">
+                              <div class="flex"><span class="article-title" id="p273_articleTitle"></span></div>
+                              <p id="p274_p142">tralora, trovandosi le miniere molto lontane dall'abitato,</p>
+                              <p id="p274_p143">fosse necessario l'impianto di un magazzino in prossimità</p>
+                              <p id="p274_p144">di esse, i generi vi fossero venduti al prezzo stabilito dal</p>
+                              <p id="p274_p145">calmiere, che è ancora in uso nella <span class="luoghi-geografici" data-ref="#luogo_Sicilia">Sicilia</span> occidentale, per</p>
+                              <p id="p274_p146">pane e per altri commestibili. Vorrebbe che fosse rimediato</p>
+                              <p id="p274_p147">al grave inconveniente che i minatori dormono nell'interno</p>
+                              <p id="p274_p148">delle <span class="verbum">solfare</span> per la troppo lontananza di queste dall'abitato.</p>
+                              <p id="p274_p149">Egli proporrebbe quindi che gli utili del magazzino e le</p>
+                              <p id="p274_p150">multe inflitte agli operai fossero destinate a provvedere a</p>
+                              <p id="p274_p151">questi di più ampi alberghi, scopri a cui potrebbero con-</p>
+                              <p id="p274_p152">correre le stesse contribuzioni libere dei minatori, le quali</p>
+                              <p id="p274_p153">si farebbero tanto più abbondanti quanto più l'istruzione</p>
+                              <p id="p274_p154">e la civiltà, e con essi il <span class="temi-motivi">sentimento del risparmio e del</span>
+                                 </p>
+                              <p id="p274_p155">soccorso mutuo, si diffonderebbe fra quelle popolazioni.</p>
+                              <p id="p274_p156">Contemporaneamente e perchè le famiglie povere delle</p>
+                              <p id="p274_p157">provincie possano procurarsi altrove quei proventi che la</p>
+                              <p id="p274_p158">produzione delle immagini e di quelle delle materie fossili</p>
+                              <p id="p274_p159">cessare, il senatore <span class="persone-reali" data-ref="#pers_Tamajo">Tamaio</span> chiede i soccorsi governativi pel</p>
+                              <p id="p274_p160">miglioramento delle condizioni agricole delle provincie.</p>
+                              <p id="p274_p161">Questo progetto del prefetto di <span class="luoghi-geografici" data-ref="#luogo_Girgenti">Girgenti</span> accettato</p>
+                              <p id="p274_p162">esso stesso favorevolmente in esame. Soltanto ci sembra</p>
+                              <p id="p274_p163">che il loro centro di gravità sia un pochino spostato.</p>
+                              <p id="p274_p164">È il senatore <span class="persone-reali" data-ref="#pers_Tamajo">Tamaio</span> insiste molto sull'opportunità che</p>
+                              <p id="p274_p165">il governo venga in aiuto dell'agricoltura girgentina che</p>
+                              <p id="p274_p166">nella condizione in cui sono oggi le cose, ai rimedi lenti,</p>
+                              <p id="p274_p167">alla evoluzioni più o meno dolci non si può in coscienza</p>
+                              <p id="p274_p168">pensare. Ciò che duole di più è l'invervento di una legge</p>
+                              <p id="p274_p169">regolatrice del <span class="temi-motivi">lavoro industriale</span> ed è su questo punto che</p>
+                              <p id="p274_p170">avrebbero dovuto principalmente convergere le proposte del</p>
+                              <p id="p274_p171">senatore <span class="persone-reali" data-ref="#pers_Tamajo">Tamaio</span>. Certo le condizioni dell'agricoltura nella</p>
+                              <p id="p274_p172">provincia di <span class="luoghi-geografici" data-ref="#luogo_Girgenti">Girgenti</span> meritano pure che il <span class="organizzazioni" id="" data-ref="#org_Stato">governo</span> se ne</p>
+                              <p id="p274_p173">prenda qualche pensiero noi non vogliamo qui disconoscere</p>
+                              <p id="p274_p174">del tutto. Soltanto ci preme di far notare che questo rime-</p>
+                              <p id="p274_p175">dio va in una camerale e non essenzialmente sussidiario.</p>
+                              <p id="p274_p176">Non ci associamo poi affatto all'altra proposta del se-</p>
+                              <p id="p274_p177">natore <span class="persone-reali" data-ref="#pers_Tamajo">Tamaio</span>, per cui egli vorrebbe che la esecuzione</p>
+                              <p id="p274_p178">delle legge fosse sorvegliata da tribunali d'arbitri, simili ai</p>
+                              <p id="p274_p179">
+                                 Prud'hommes della <span class="luoghi-geografici" data-ref="#luogo_Francia">Francia</span>, agli Equitable Conciels dell'<span class="luoghi-geografici" data-ref="#luogo_Inghilterra">Inghilterra</span> e ai Schiedsgerichte della <span class="luoghi-geografici" data-ref="#luogo_Germania">Germania</span>. Questi tribunali,</p>
+                              <p id="p274_p181">che possono servire ad applicare qualche volta le differenze</p>
+                              <p id="p274_p182">insorte fra i padroni e gli operai, non bastano a garantire</p>
+                              <p id="p274_p183">la rigorosa esecuzione della legge; anzi la escludono, perchè</p>
+                              <p id="p274_p184">gl'interessi locali degli imprenditori d'industria prevalgono</p>
+                              <p id="p274_p185">fino a far violare la legge stessa. E non è punto dimentica</p>
+                              <p id="p274_p186">che per tale rigorosa esecuzione della legge l'<span class="luoghi-geografici" data-ref="#luogo_Inghilterra">Inghilterra</span>,
+                                 </p>
+                              <p id="p274_p187">la <span class="luoghi-geografici" data-ref="#luogo_Germania">Germania</span> e la <span class="luoghi-geografici" data-ref="#luogo_Francia">Francia</span> hanno riconosciuta la necessità</p>
+                              <p id="p274_p188">degli ispettori governativi.</p>
+                              <p id="p274_p189">Partendo queste massime, l'ultima delle quali è per noi gra-</p>
+                              <p id="p274_p190">vissima ed essenzialissima, non può disconoscersi al Prefetto</p>
+                              <p id="p274_p191">di <span class="luoghi-geografici" data-ref="#luogo_Girgenti">Girgenti</span> il merito di avere consumato una di quelle quistioni</p>
+                              <p id="p274_p192">etiche del lavoro era a tempo sdegnosamente si attende in</p>
+                              <p id="p274_p193">
+                                 <span class="luoghi-geografici" data-ref="#luogo_Italia">Italia</span>, di aver risposto a galla una quistione troppo ormai</p>
+                              <p id="p274_p194">trascurata e di aver suggerito qualche espedienti, mentre che</p>
+                              <p id="p274_p195">la legge dovrebbe prevalere per regolare il lavoro dei <span class="verbum">carusi</span>
+                                 </p>
+                              <p id="p274_p196">nelle miniere siciliane. Si smarriranno queste proposte, co-</p>
+                              <p id="p274_p197">me frequentemente avviene, per gli intricati meandri del</p>
+                              <p id="p274_p198">servizio amministrativo, o verranno fatte oggetto di esame</p>
+                              <p id="p274_p199">o servono o sollecitò? Si ponga fine agli indugi e la</p>
+                              <p id="p274_p200">legislazione sulle fabbriche divenga un fatto compiuto an-</p>
+                              <p id="p274_p201">che in <span class="luoghi-geografici" data-ref="#luogo_Italia">Italia</span>. Sarebbe tempo invece di dare un po' la</p>
+                              <p id="p274_p202">somma degli studi compiuti e di por mano ai rimedi. Lo</p>
+                              <p id="p274_p203">
+                                 <span class="organizzazioni" id="" data-ref="#org_Stato">Stato</span> solisoffa ad un'alta missione di civiltà quando prov-</p>
+                              <p id="p274_p204">vede con ingenti spese al progresso della <span class="term">scienze</span> e delle <span class="term">arti</span>,
+                                 </p>
+                              <p id="p274_p205">ma l'azione sua deve egualmente distribuire ovunque sorga</p>
+                              <p id="p274_p206">richiesta. Nelle <span class="temi-motivi">condizioni attuali della società</span> è indispensabile che il potere pubblico provveda a tempo per arre-</p>
+                              <p id="p274_p207">care <span class="temi-motivi">l'ordine e la tranquillità degli anni nelle classi inferiori</span>.
+                                 </p>
+                              <p id="p274_p208">care <span class="temi-motivi">l'ordine e la tranquillità degli anni nelle classi inf</span>.
                                  </p>
                            </div>
                         </div>

@@ -26,21 +26,11 @@ $(document).ready(function () {
     }
   });
 
-  window.togglePhenomenon = function (className) {
-    $('.' + className).toggleClass('highlighted');
-
-    var button = $('.btn' + className.charAt(0).toUpperCase() + className.slice(1));
-
-    if (button.length) {
-      button.toggleClass('active-phenomenon');
-    }
-  };
-
-
   // Funzione per l'evidenziazione dei fenomeni notevoli
   window.togglePhenomenon = function (className) {
     var elements = $('.' + className);
-    var button = $('.btn' + className.charAt(0).toUpperCase() + className.slice(1));
+    var button = $('.btn' + className.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('')); // This creates a camel-case button class name
+
     if (button.hasClass('active-phenomenon')) {
       elements.removeClass('highlighted');
     } else {
@@ -97,11 +87,24 @@ $(document).ready(function () {
   };
 
   function updateCarousel() {
+    // Aggiorna le slide delle immagini
     $('#image-carousel-content .carousel-slide').removeClass('active');
-    $('#text-carousel-content .carousel-slide-text').removeClass('active');
-
     $('#image-carousel-content .carousel-slide').eq(currentSlide).addClass('active');
-    $('#text-carousel-content .carousel-slide-text').eq(currentSlide).addClass('active');
+
+    // Aggiorna le slide del testo
+    var textSlides = $('#text-carousel-content .carousel-slide-text');
+    textSlides.removeClass('active');
+    textSlides.eq(currentSlide).addClass('active');
+
+    // Recupera e visualizza il contenuto specifico per la slide corrente
+    var currentPage = $('#image-carousel-content .carousel-slide.active img').attr('src').match(/pp(\d+)\.jpg/)[1];
+
+    if (currentPage) {
+      // Chiama una funzione XSLT per ottenere il contenuto
+      // In realtà, questo è già stato generato dall'XSLT e il carosello lo gestisce
+      // Il nostro compito è solo assicurarci che i contenitori siano corretti
+      console.log("Visualizzazione del contenuto per la pagina " + currentPage);
+    }
   }
 
   updateCarousel();
