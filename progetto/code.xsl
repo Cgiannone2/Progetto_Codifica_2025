@@ -80,8 +80,6 @@
     </html>
   </xsl:template>
 
-  <!-- Articolo 1 -->
-
   <xsl:template match="tei:div[@xml:id='articolo_carusi_sicilia']">
     <div id="art1_carusi" class="section-block">
       <h2>Articolo: I "Carusi" in Sicilia</h2>
@@ -135,32 +133,32 @@
           <div class="box-btn">
             <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
             <p class="rowBtn">
-              <button type="button" class="btnPersoneReali" onclick="togglePhenomenon('persone-reali')">Persone reali</button>
-              <button type="button" class="btnPersoneImmaginarie" onclick="togglePhenomenon('persone-immaginarie')">Personaggi</button>
+              <button type="button" class="btnPersoneReali" onclick="togglePhenomenon('persone-reali', 'art1_carusi')">Persone reali</button>
+              <button type="button" class="btnPersoneImmaginarie" onclick="togglePhenomenon('persone-immaginarie', 'art1_carusi')">Personaggi</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnOpere" onclick="togglePhenomenon('opere')">Opere</button>
-              <button type="button" class="btnLuoghiGeografici" onclick="togglePhenomenon('luoghi-geografici')">Luoghi geografici</button>
+              <button type="button" class="btnOpere" onclick="togglePhenomenon('opere', 'art1_carusi')">Opere</button>
+              <button type="button" class="btnLuoghiGeografici" onclick="togglePhenomenon('luoghi-geografici', 'art1_carusi')">Luoghi geografici</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnLuoghiNaturali" onclick="togglePhenomenon('luoghi-naturali')">Luoghi naturali</button>
-              <button type="button" class="btnCasaEditriceRivista" onclick="togglePhenomenon('casa-editrice-rivista')">Casa editrice/rivista</button>
+              <button type="button" class="btnLuoghiNaturali" onclick="togglePhenomenon('luoghi-naturali', 'art1_carusi')">Luoghi naturali</button>
+              <button type="button" class="btnCasaEditriceRivista" onclick="togglePhenomenon('casa-editrice-rivista', 'art1_carusi')">Casa editrice/rivista</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button>
-              <button type="button" class="btnVerbum" onclick="togglePhenomenon('verbum')">Verbum</button>
+              <button type="button" class="btnDate" onclick="togglePhenomenon('date', 'art1_carusi')">Date</button>
+              <button type="button" class="btnVerbum" onclick="togglePhenomenon('verbum', 'art1_carusi')">Verbum</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnTemiMotivi" onclick="togglePhenomenon('temi-motivi')">Temi e/o motivi</button>
-              <button type="button" class="btnCorrentiLetterarie" onclick="togglePhenomenon('correnti-letterarie')">Correnti letterarie</button>
+              <button type="button" class="btnTemiMotivi" onclick="togglePhenomenon('temi-motivi', 'art1_carusi')">Temi e/o motivi</button>
+              <button type="button" class="btnCorrentiLetterarie" onclick="togglePhenomenon('correnti-letterarie', 'art1_carusi')">Correnti letterarie</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera')">Testo in lingua straniera</button>
-              <button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni')">Citazioni</button>
+              <button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera', 'art1_carusi')">Testo in lingua straniera</button>
+              <button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni', 'art1_carusi')">Citazioni</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni')">Organizzazioni</button>
-              <button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet')">Epithet</button>
+              <button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni', 'art1_carusi')">Organizzazioni</button>
+              <button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet', 'art1_carusi')">Epithet</button>
             </p>
           </div>
         </div>
@@ -205,10 +203,9 @@
               </xsl:for-each>
             </div>
           </div>
-
           <div class="transcription-area">
             <div id="text-carousel-content">
-              <xsl:for-each select="//tei:facsimile/tei:surface">
+              <xsl:for-each select="//tei:facsimile/tei:surface[contains(@n, '273') or contains(@n, '274') or contains(@n, '275')]">
                 <div class="carousel-slide-text">
                   <xsl:choose>
                     <xsl:when test="@n = '273'">
@@ -261,13 +258,11 @@
             </div>
           </div>
         </div>
-
         <button class="carousel-next" onclick="changeSlide1(1)">&#10095;</button>
       </div>
     </div>
   </xsl:template>
 
-  <!-- Articolo 2 -->
   <xsl:template match="tei:div[@xml:id='il_commercio']">
     <div id="art2_commercio" class="section-block">
       <h2>Articolo 2: Il commercio nel primo trimestre 1881</h2>
@@ -321,32 +316,32 @@
           <div class="box-btn">
             <h3 class="bntTitoloLeg">VISUALIZZA / NASCONDI FENOMENI</h3>
             <p class="rowBtn">
-              <button type="button" class="btnPersoneReali" onclick="togglePhenomenon('persone-reali')">Persone reali</button>
-              <button type="button" class="btnPersoneImmaginarie" onclick="togglePhenomenon('persone-immaginarie')">Personaggi</button>
+              <button type="button" class="btnPersoneReali" onclick="togglePhenomenon('persone-reali', 'art2_commercio')">Persone reali</button>
+              <button type="button" class="btnPersoneImmaginarie" onclick="togglePhenomenon('persone-immaginarie', 'art2_commercio')">Personaggi</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnOpere" onclick="togglePhenomenon('opere')">Opere</button>
-              <button type="button" class="btnLuoghiGeografici" onclick="togglePhenomenon('luoghi-geografici')">Luoghi geografici</button>
+              <button type="button" class="btnOpere" onclick="togglePhenomenon('opere', 'art2_commercio')">Opere</button>
+              <button type="button" class="btnLuoghiGeografici" onclick="togglePhenomenon('luoghi-geografici', 'art2_commercio')">Luoghi geografici</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnLuoghiNaturali" onclick="togglePhenomenon('luoghi-naturali')">Luoghi naturali</button>
-              <button type="button" class="btnCasaEditriceRivista" onclick="togglePhenomenon('casa-editrice-rivista')">Casa editrice/rivista</button>
+              <button type="button" class="btnLuoghiNaturali" onclick="togglePhenomenon('luoghi-naturali', 'art2_commercio')">Luoghi naturali</button>
+              <button type="button" class="btnCasaEditriceRivista" onclick="togglePhenomenon('casa-editrice-rivista', 'art2_commercio')">Casa editrice/rivista</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnDate" onclick="togglePhenomenon('date')">Date</button>
-              <button type="button" class="btnVerbum" onclick="togglePhenomenon('verbum')">Verbum</button>
+              <button type="button" class="btnDate" onclick="togglePhenomenon('date', 'art2_commercio')">Date</button>
+              <button type="button" class="btnVerbum" onclick="togglePhenomenon('verbum', 'art2_commercio')">Verbum</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnTemiMotivi" onclick="togglePhenomenon('temi-motivi')">Temi e/o motivi</button>
-              <button type="button" class="btnCorrentiLetterarie" onclick="togglePhenomenon('correnti-letterarie')">Correnti letterarie</button>
+              <button type="button" class="btnTemiMotivi" onclick="togglePhenomenon('temi-motivi', 'art2_commercio')">Temi e/o motivi</button>
+              <button type="button" class="btnCorrentiLetterarie" onclick="togglePhenomenon('correnti-letterarie', 'art2_commercio')">Correnti letterarie</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera')">Testo in lingua straniera</button>
-              <button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni')">Citazioni</button>
+              <button type="button" class="btnLinguaStraniera" onclick="togglePhenomenon('lingua-straniera', 'art2_commercio')">Testo in lingua straniera</button>
+              <button type="button" class="btnCitazioni" onclick="togglePhenomenon('citazioni', 'art2_commercio')">Citazioni</button>
             </p>
             <p class="rowBtn">
-              <button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni')">Organizzazioni</button>
-              <button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet')">Epithet</button>
+              <button type="button" class="btnOrganizzazioni" onclick="togglePhenomenon('organizzazioni', 'art2_commercio')">Organizzazioni</button>
+              <button type="button" class="btnEpithet" onclick="togglePhenomenon('epithet', 'art2_commercio')">Epithet</button>
             </p>
           </div>
         </div>
@@ -419,7 +414,6 @@
     </div>
   </xsl:template>
 
-  <!-- Templates -->
   <xsl:template match="tei:div[@xml:id='p273_par1_col_1']">
     <div class="flex">
       <span class="article-title" id="p273_articleTitle">

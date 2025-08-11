@@ -27,9 +27,9 @@ $(document).ready(function () {
   });
 
   // Funzione per l'evidenziazione dei fenomeni notevoli
-  window.togglePhenomenon = function (className) {
-    var elements = $('.' + className);
-    var button = $('.btn' + className.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('')); // This creates a camel-case button class name
+  window.togglePhenomenon = function (className, articleId) {
+    var elements = $('#' + articleId + ' .' + className);
+    var button = $('#' + articleId + ' .btn' + className.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(''));
 
     if (button.hasClass('active-phenomenon')) {
       elements.removeClass('highlighted');
@@ -100,7 +100,6 @@ $(document).ready(function () {
   var totalSlides2 = $('#text-carousel-content-2 .carousel-slide-text').length;
 
   window.changeSlide2 = function (direction) {
-    debugger
     currentSlide2 += direction;
     if (currentSlide2 < 0) {
       currentSlide2 = totalSlides2 - 1;
