@@ -512,13 +512,182 @@
       <zone ulx="33" uly="138" lrx="514" lry="153" xml:id="p275_p2" />
       <zone ulx="30" uly="157" lrx="510" lry="176" xml:id="p275_p3" />
       <zone ulx="38" uly="188" lrx="513" lry="220" xml:id="p275_p4"/>
+      <!-- Colonna 1 -->
+      <zone ulx="43" uly="214" lrx="515" lry="238" xml:id="p275_p5"/>
+      <zone ulx="34" uly="234" lrx="518" lry="261" xml:id="p275_p6"/>
+      <zone ulx="36" uly="262" lrx="516" lry="281" xml:id="p275_p7"/>
+      <zone ulx="33" uly="282" lrx="513" lry="303" xml:id="p275_p8"/>
+      <zone ulx="36" uly="307" lrx="514" lry="320" xml:id="p275_p9"/>
+      <zone ulx="31" uly="324" lrx="514" lry="348" xml:id="p275_p10"/>
+      <zone ulx="30" uly="348" lrx="513" lry="365" xml:id="p275_p11"/>
+      <zone ulx="29" uly="367" lrx="518" lry="385" xml:id="p275_p12"/>
+      <zone ulx="32" uly="387" lrx="516" lry="403" xml:id="p275_p13"/>
+      <zone ulx="30" uly="404" lrx="512" lry="426" xml:id="p275_p14"/>
+      <zone ulx="29" uly="430" lrx="512" lry="448" xml:id="p275_p15"/>
+      <zone ulx="31" uly="450" lrx="511" lry="466" xml:id="p275_p16"/>
+      <zone ulx="31" uly="469" lrx="512" lry="484" xml:id="p275_p17"/>
+      <zone ulx="33" uly="487" lrx="515" lry="505" xml:id="p275_p18"/>
+      <zone ulx="32" uly="507" lrx="512" lry="529" xml:id="p275_p19"/>
+      <zone ulx="36" uly="530" lrx="514" lry="545" xml:id="p275_p20"/>
+      <zone ulx="32" uly="549" lrx="513" lry="569" xml:id="p275_p21"/>
+      <zone ulx="30" uly="569" lrx="513" lry="588" xml:id="p275_p22"/>
+      <zone ulx="34" uly="592" lrx="513" lry="606" xml:id="p275_p23"/>
+      <zone ulx="34" uly="610" lrx="513" lry="629" xml:id="p275_p24"/>
+      <zone ulx="32" uly="635" lrx="514" lry="648" xml:id="p275_p25"/>
+      <zone ulx="36" uly="649" lrx="515" lry="670" xml:id="p275_p26"/>
+      <zone ulx="33" uly="673" lrx="520" lry="690" xml:id="p275_p27"/>
+      <zone ulx="31" uly="695" lrx="517" lry="712" xml:id="p275_p28"/>
+      <zone ulx="33" uly="715" lrx="519" lry="733" xml:id="p275_p29"/>
+      <zone ulx="32" uly="736" lrx="517" lry="756" xml:id="p275_p30"/>
+      <zone ulx="32" uly="758" lrx="513" lry="773" xml:id="p275_p31"/>
+      <zone ulx="35" uly="778" lrx="517" lry="794" xml:id="p275_p32"/>
+      <zone ulx="35" uly="798" lrx="511" lry="815" xml:id="p275_p33"/>
+      <zone ulx="33" uly="817" lrx="516" lry="834" xml:id="p275_p34"/>
+      <zone ulx="35" uly="836" lrx="515" lry="852" xml:id="p275_p35"/>
+      <zone ulx="35" uly="859" lrx="515" lry="875" xml:id="p275_p36"/>
+      <zone ulx="36" uly="879" lrx="516" lry="895" xml:id="p275_p37"/>
+      <zone ulx="35" uly="900" lrx="514" lry="914" xml:id="p275_p38"/>
+      <zone ulx="36" uly="917" lrx="513" lry="938" xml:id="p275_p39"/>
+      <zone ulx="35" uly="938" lrx="513" lry="959" xml:id="p275_p40"/>
+      <zone ulx="34" uly="963" lrx="516" lry="983" xml:id="p275_p41"/>
+      <zone ulx="34" uly="985" lrx="515" lry="999" xml:id="p275_p42"/>
+      <zone ulx="38" uly="999" lrx="517" lry="1017" xml:id="p275_p43"/>
+      <zone ulx="35" uly="1020" lrx="511" lry="1039" xml:id="p275_p44"/>
+      <zone ulx="36" uly="1042" lrx="513" lry="1064" xml:id="p275_p45"/>
+      <zone ulx="37" uly="1068" lrx="514" lry="1083" xml:id="p275_p46"/>
+      <zone ulx="38" uly="1084" lrx="514" lry="1102" xml:id="p275_p47"/>
+      <zone ulx="34" uly="1107" lrx="512" lry="1122" xml:id="p275_p48"/>
+      <zone ulx="38" uly="1125" lrx="514" lry="1142" xml:id="p275_p49"/>
+      <zone ulx="37" uly="1143" lrx="510" lry="1164" xml:id="p275_p50"/>
+      <zone ulx="36" uly="1163" lrx="508" lry="1189" xml:id="p275_p51"/>
+      <zone ulx="36" uly="1189" lrx="517" lry="1203" xml:id="p275_p52"/>
+      <zone ulx="37" uly="1203" lrx="516" lry="1221" xml:id="p275_p53"/>
+      <zone ulx="37" uly="1224" lrx="517" lry="1243" xml:id="p275_p54"/>
+      <zone ulx="35" uly="1243" lrx="512" lry="1265" xml:id="p275_p55"/>
+      <zone ulx="35" uly="1268" lrx="511" lry="1286" xml:id="p275_p56"/>
+      <zone ulx="37" uly="1288" lrx="518" lry="1306" xml:id="p275_p57"/>
+      <zone ulx="35" uly="1310" lrx="516" lry="1326" xml:id="p275_p58"/>
+      <zone ulx="36" uly="1326" lrx="514" lry="1349" xml:id="p275_p59"/>
+      <zone ulx="34" uly="1351" lrx="516" lry="1369" xml:id="p275_p60"/>
+      <zone ulx="35" uly="1372" lrx="515" lry="1388" xml:id="p275_p61"/>
+      <zone ulx="34" uly="1389" lrx="516" lry="1407" xml:id="p275_p62"/>
+      <zone ulx="34" uly="1411" lrx="516" lry="1431" xml:id="p275_p63"/>
+      <zone ulx="33" uly="1431" lrx="519" lry="1447" xml:id="p275_p64"/>
+      <zone ulx="39" uly="1458" lrx="508" lry="1485" xml:id="p275_p65"/>
+
+      <!-- Colonna 2 -->
+      <zone ulx="534" uly="108" lrx="1019" lry="131" xml:id="p275_p66"/>
+      <zone ulx="532" uly="134" lrx="1017" lry="154" xml:id="p275_p67"/>
+      <zone ulx="533" uly="156" lrx="1015" lry="175" xml:id="p275_p68"/>
+      <zone ulx="534" uly="176" lrx="1014" lry="194" xml:id="p275_p69"/>
+      <zone ulx="534" uly="199" lrx="1015" lry="216" xml:id="p275_p70"/>
+      <zone ulx="533" uly="220" lrx="1016" lry="240" xml:id="p275_p71"/>
+      <zone ulx="534" uly="243" lrx="1017" lry="257" xml:id="p275_p72"/>
+      <zone ulx="533" uly="262" lrx="1016" lry="280" xml:id="p275_p73"/>
+      <zone ulx="532" uly="284" lrx="1016" lry="301" xml:id="p275_p74"/>
+      <zone ulx="531" uly="304" lrx="1014" lry="322" xml:id="p275_p75"/>
+      <zone ulx="531" uly="325" lrx="1015" lry="342" xml:id="p275_p76"/>
+      <zone ulx="532" uly="349" lrx="1014" lry="360" xml:id="p275_p77"/>
+      <zone ulx="538" uly="363" lrx="1017" lry="378" xml:id="p275_p78"/>
+      <zone ulx="536" uly="387" lrx="1014" lry="399" xml:id="p275_p79"/>
+      <zone ulx="533" uly="402" lrx="1012" lry="422" xml:id="p275_p80"/>
+      <zone ulx="532" uly="426" lrx="1014" lry="446" xml:id="p275_p81"/>
+      <zone ulx="536" uly="448" lrx="1013" lry="464" xml:id="p275_p82"/>
+      <zone ulx="535" uly="466" lrx="1015" lry="480" xml:id="p275_p83"/>
+      <zone ulx="537" uly="485" lrx="1013" lry="502" xml:id="p275_p84"/>
+      <zone ulx="537" uly="506" lrx="1016" lry="525" xml:id="p275_p85"/>
+      <zone ulx="538" uly="526" lrx="1014" lry="547" xml:id="p275_p86"/>
+      <zone ulx="529" uly="551" lrx="1017" lry="568" xml:id="p275_p87"/>
+      <zone ulx="534" uly="568" lrx="1019" lry="584" xml:id="p275_p88"/>
+      <zone ulx="536" uly="588" lrx="1016" lry="602" xml:id="p275_p89"/>
+      <zone ulx="538" uly="608" lrx="1015" lry="626" xml:id="p275_p90"/>
+      <zone ulx="536" uly="626" lrx="1015" lry="644" xml:id="p275_p91"/>
+      <zone ulx="537" uly="648" lrx="1016" lry="668" xml:id="p275_p92"/>
+      <zone ulx="534" uly="671" lrx="1019" lry="684" xml:id="p275_p93"/>
+      <zone ulx="537" uly="689" lrx="1016" lry="708" xml:id="p275_p94"/>
+      <zone ulx="536" uly="709" lrx="1017" lry="725" xml:id="p275_p95"/>
+      <zone ulx="536" uly="733" lrx="1018" lry="747" xml:id="p275_p96"/>
+      <zone ulx="537" uly="751" lrx="1018" lry="767" xml:id="p275_p97"/>
+      <zone ulx="540" uly="772" lrx="1017" lry="787" xml:id="p275_p98"/>
+      <zone ulx="536" uly="792" lrx="1015" lry="810" xml:id="p275_p99"/>
+      <zone ulx="535" uly="814" lrx="1016" lry="829" xml:id="p275_p100"/>
+      <zone ulx="539" uly="835" lrx="1016" lry="850" xml:id="p275_p101"/>
+      <zone ulx="537" uly="848" lrx="1013" lry="872" xml:id="p275_p102"/>
+      <zone ulx="534" uly="879" lrx="1015" lry="896" xml:id="p275_p103"/>
+      <zone ulx="533" uly="898" lrx="1011" lry="911" xml:id="p275_p104"/>
+      <zone ulx="536" uly="915" lrx="1014" lry="932" xml:id="p275_p105"/>
+      <zone ulx="536" uly="936" lrx="1017" lry="955" xml:id="p275_p106"/>
+      <zone ulx="538" uly="960" lrx="1021" lry="977" xml:id="p275_p107"/>
+      <zone ulx="536" uly="979" lrx="1014" lry="994" xml:id="p275_p108"/>
+      <zone ulx="537" uly="1001" lrx="1015" lry="1016" xml:id="p275_p109"/>
+      <zone ulx="537" uly="1019" lrx="1021" lry="1039" xml:id="p275_p110"/>
+      <zone ulx="536" uly="1041" lrx="1012" lry="1058" xml:id="p275_p111"/>
+      <zone ulx="538" uly="1062" lrx="1014" lry="1074" xml:id="p275_p112"/>
+      <zone ulx="538" uly="1077" lrx="1019" lry="1099" xml:id="p275_p113"/>
+      <zone ulx="537" uly="1096" lrx="1017" lry="1117" xml:id="p275_p114"/>
+      <zone ulx="539" uly="1121" lrx="1015" lry="1139" xml:id="p275_p115"/>
+      <zone ulx="535" uly="1139" lrx="1014" lry="1162" xml:id="p275_p116"/>
+      <zone ulx="539" uly="1165" lrx="1015" lry="1177" xml:id="p275_p117"/>
+      <zone ulx="536" uly="1181" lrx="1017" lry="1200" xml:id="p275_p118"/>
+      <zone ulx="536" uly="1202" lrx="1015" lry="1218" xml:id="p275_p119"/>
+      <zone ulx="537" uly="1222" lrx="1021" lry="1239" xml:id="p275_p120"/>
+      <zone ulx="537" uly="1244" lrx="1018" lry="1257" xml:id="p275_p121"/>
+      <zone ulx="537" uly="1262" lrx="1017" lry="1280" xml:id="p275_p122"/>
+      <zone ulx="535" uly="1286" lrx="1018" lry="1304" xml:id="p275_p123"/>
+      <zone ulx="537" uly="1307" lrx="1015" lry="1321" xml:id="p275_p124"/>
+      <zone ulx="536" uly="1324" lrx="1018" lry="1342" xml:id="p275_p125"/>
+      <zone ulx="537" uly="1349" lrx="1018" lry="1364" xml:id="p275_p126"/>
+      <zone ulx="537" uly="1370" lrx="1016" lry="1380" xml:id="p275_p127"/>
+      <zone ulx="539" uly="1387" lrx="1019" lry="1403" xml:id="p275_p128"/>
+      <zone ulx="542" uly="1406" lrx="1016" lry="1424" xml:id="p275_p129"/>
+      <zone ulx="542" uly="1427" lrx="1016" lry="1446" xml:id="p275_p130"/>
+      <zone ulx="541" uly="1449" lrx="1015" lry="1467" xml:id="p275_p131"/>
+      <zone ulx="541" uly="1471" lrx="1019" lry="1488" xml:id="p275_p132"/>
     </surface>
   </facsimile>
 
   <!-- Pag 276 -->
   <facsimile>
     <surface n="276" xml:id="M_276">
-      <graphic url='progetto/img/pp276.jpg' width='1078px' height='1624px' xml:id="pag275" />
+      <graphic url='progetto/img/pp276.jpg' width='1078px' height='1624px' xml:id="pag276" />
+      <zone ulx="60" uly="37" lrx="128" lry="78" xml:id="p276_number" />
+      <zone ulx="388" uly="30" lrx="724" lry="74" xml:id="p276_runningTitle" />
+      <zone ulx="876" uly="32" lrx="1043" lry="78" xml:id="p276_vol"/>
+      <zone ulx="66" uly="102" lrx="548" lry="121" xml:id="p276_p1" />
+      <zone ulx="67" uly="122" lrx="551" lry="138" xml:id="p276_p2" />
+      <zone ulx="67" uly="146" lrx="544" lry="164" xml:id="p276_p3" />
+      <zone ulx="69" uly="166" lrx="544" lry="182" xml:id="p276_p4" />
+      <zone ulx="72" uly="185" lrx="546" lry="205" xml:id="p276_p5" />
+      <zone ulx="68" uly="204" lrx="547" lry="227" xml:id="p276_p6" />
+      <zone ulx="66" uly="227" lrx="554" lry="244" xml:id="p276_p7" />
+      <zone ulx="68" uly="248" lrx="552" lry="264" xml:id="p276_p8" />
+      <zone ulx="70" uly="267" lrx="550" lry="284" xml:id="p276_p9" />
+      <zone ulx="68" uly="287" lrx="552" lry="305" xml:id="p276_p10" />
+      <zone ulx="69" uly="307" lrx="548" lry="328" xml:id="p276_p11" />
+      <zone ulx="68" uly="330" lrx="543" lry="346" xml:id="p276_p12" />
+      <zone ulx="68" uly="345" lrx="547" lry="368" xml:id="p276_p13" />
+      <zone ulx="67" uly="369" lrx="549" lry="389" xml:id="p276_p14" />
+      <zone ulx="68" uly="389" lrx="550" lry="407" xml:id="p276_p15" />
+      <zone ulx="70" uly="409" lrx="547" lry="433" xml:id="p276_p16" />
+      <zone ulx="70" uly="429" lrx="550" lry="450" xml:id="p276_p17" />
+      <zone ulx="71" uly="450" lrx="549" lry="469" xml:id="p276_p18" />
+      <zone ulx="67" uly="471" lrx="549" lry="491" xml:id="p276_p19" />
+      <zone ulx="68" uly="495" lrx="549" lry="509" xml:id="p276_p20" />
+      <zone ulx="73" uly="512" lrx="552" lry="530" xml:id="p276_p21" />
+      <zone ulx="70" uly="529" lrx="552" lry="547" xml:id="p276_p22" />
+      <zone ulx="71" uly="551" lrx="550" lry="573" xml:id="p276_p23" />
+      <zone ulx="72" uly="578" lrx="545" lry="595" xml:id="p276_p24" />
+      <zone ulx="70" uly="595" lrx="547" lry="616" xml:id="p276_p25" />
+      <zone ulx="69" uly="615" lrx="545" lry="634" xml:id="p276_p26" />
+      <zone ulx="74" uly="638" lrx="552" lry="653" xml:id="p276_p27" />
+      <zone ulx="70" uly="654" lrx="554" lry="678" xml:id="p276_p28" />
+      <zone ulx="69" uly="679" lrx="553" lry="696" xml:id="p276_p29" />
+      <zone ulx="68" uly="700" lrx="551" lry="712" xml:id="p276_p30" />
+      <zone ulx="69" uly="716" lrx="547" lry="735" xml:id="p276_p31" />
+      <zone ulx="71" uly="738" lrx="546" lry="754" xml:id="p276_p32" />
+      <zone ulx="71" uly="758" lrx="552" lry="777" xml:id="p276_p33" />
+      <zone ulx="71" uly="777" lrx="551" lry="798" xml:id="p276_p34" />
+      <zone ulx="71" uly="801" lrx="551" lry="818" xml:id="p276_p35" />
     </surface>
   </facsimile>
 
