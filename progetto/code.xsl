@@ -368,7 +368,7 @@
                         </svg>
                       </xsl:when>
                       <xsl:when test="@n = '276'">
-                        <svg id="svg-overlay-2"
+                        <svg id="svg-overlay"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1078 1624" preserveAspectRatio="xMidYMid meet">
                           <xsl:for-each select="tei:zone">
                             <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
