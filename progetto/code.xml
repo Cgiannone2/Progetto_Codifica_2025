@@ -1055,7 +1055,7 @@
   </div>
 </div>
 
-<!-- Pag 275 Articolo -->
+<!-- Pag 275 Articolo 1 -->
 <div class="container" xml:id="p275_container" facs="#p275_container" type="paragraph">
   <pb n="275" facs="#M_275"/>
   <div xml:id="pageHeader_275">
@@ -1226,6 +1226,57 @@
   <p facs="#p275_p131" xml:id="p275_p131">altresì che non si ponga un confine alla loro forza alcolica,</p>
   <p facs="#p275_p132" xml:id="p275_p132">perchè altrimenti i prodotti del mezzogiorno sarebbero, si</p>
 </div>
+
+<div class="col-1" xml:id="p276_container" facs="#p276_col_1" type="paragraph">
+  <pb n="276" facs="#M_276"/>
+  <div xml:id="pageHeader_276">
+    <num type="number" value="276" facs="#p276_number">276</num>
+    <orgName xml:id="p276_runningTitle" facs="#p276_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+    <p facs="#p276_vol" xml:id="p276_vol">[Vol. 7, N, <num type="number" value="174">174</num>]
+    </p>
+  </div>
+  <div xml:id="p276_col_1" type="col" facs="#p276_col_1">
+    <p facs="#p276_p1" xml:id="p276_p1">può dire, proibiti dalle tasse esorbitanti, cui è sottoposto</p>
+    <p facs="#p276_p2" xml:id="p276_p2">lo spirito all’entrata presso i nostri vicini. Poi, come già</p>
+    <p facs="#p276_p3" xml:id="p276_p3">abbiamo avvertito, conviene che i dazi del bestiame, in-</p>
+    <p facs="#p276_p4" xml:id="p276_p4">iscritti nella nuova tariffa generale, siano ridotti a più com-</p>
+    <p facs="#p276_p5" xml:id="p276_p5">portabile misura e soprattutto che siano compresi nel trat-</p>
+    <p facs="#p276_p6" xml:id="p276_p6">tato, per non lasciarli in balia del <orgName ref="#org_SenatoFrancese">Senato francese</orgName>, la</p>
+    <p facs="#p276_p7" xml:id="p276_p7">cui tenerezza per gli interessi della grande proprietà deve</p>
+    <p facs="#p276_p8" xml:id="p276_p8">tenerci in continuo sospetto. E vero che il signor <persName ref="#pers_Tirard">Tirard</persName>
+    </p>
+    <p facs="#p276_p9" xml:id="p276_p9">ha manifestato il pensiero di mantenere libere le voci che</p>
+    <p facs="#p276_p10" xml:id="p276_p10">riguardano il bestiame; ma egli dovrà persuadersi che l'<placeName ref="#luogo_Italia">I-</placeName>
+    </p>
+    <p facs="#p276_p11" xml:id="p276_p11">talia non può stringere nuove convenzioni commerciali colla</p>
+    <p facs="#p276_p12" xml:id="p276_p12">
+      <placeName ref="#luogo_Francia">Francia</placeName>, se non è rassicurata intorno a questo importantissi-</p>
+    <p facs="#p276_p13" xml:id="p276_p13">mo soggetto. E superfluo dire che si dovranno ottenere con-</p>
+    <p facs="#p276_p14" xml:id="p276_p14">cessioni soddisfacenti rispetto ad altri prodotti agrari, che</p>
+    <p facs="#p276_p15" xml:id="p276_p15">hanno parte più o meno cospicua nella nostra esportazione,</p>
+    <p facs="#p276_p16" xml:id="p276_p16">come gli agrumi, le frutta fresche e secche, gli ortaggi,</p>
+    <p facs="#p276_p17" xml:id="p276_p17">il riso, il burro, il formaggio, ecc. Non sarà meno necessario</p>
+    <p facs="#p276_p18" xml:id="p276_p18">di tutelare gli interessi delle industrie, che già hanno ini-</p>
+    <p facs="#p276_p19" xml:id="p276_p19">ziato o possono intraprendere un fecondo <rs type="temi_motivi" ref="#tema_commercio">commercio</rs> di</p>
+    <p facs="#p276_p20" xml:id="p276_p20">esportazione con la <placeName ref="#luogo_Francia">Francia</placeName>. Occorrerà pattuire un equo</p>
+    <p facs="#p276_p21" xml:id="p276_p21">trattamento, per gli olii volatili, l’acido borico, gli allumi,</p>
+    <p facs="#p276_p22" xml:id="p276_p22">la magnesia, il solfato di chinino, il tartaro, i fiammiferi, i fi-</p>
+    <p facs="#p276_p23" xml:id="p276_p23">lati grossi di canapa, i cordami, le tele grossolane, i cappelli di</p>
+    <p facs="#p276_p24" xml:id="p276_p24">paglia, la carta, i guanti, i lavori di corallo. Come si vede,</p>
+    <p facs="#p276_p25" xml:id="p276_p25">la lista degli interessi che si debbono difendere, non è breve.</p>
+    <p facs="#p276_p26" xml:id="p276_p26">E la cosa appare naturale a chi pensi che con la <placeName ref="#luogo_Francia">Francia</placeName> ha</p>
+    <p facs="#p276_p27" xml:id="p276_p27">luogo la metà quasi de' nostri scambi internazionali e che</p>
+    <p facs="#p276_p28" xml:id="p276_p28">la meravigliosa ricchezza di quel mercato, l’affinità di razza</p>
+    <p facs="#p276_p29" xml:id="p276_p29">e la comunanza di abitudini tendono ad accrescere sempre</p>
+    <p facs="#p276_p30" xml:id="p276_p30">più i rapporti commerciali tra i due paesi. E ciò sia detto,</p>
+    <p facs="#p276_p31" xml:id="p276_p31">senza parlare delle difficoltà per le cose marittime, difficoltà</p>
+    <p facs="#p276_p32" xml:id="p276_p32">già gravi in passato per i viziosi accordi rispetto al ca-</p>
+    <p facs="#p276_p33" xml:id="p276_p33">botaggio e al <foreign xml:lang="fr">droit d'entrepot</foreign> e aumentate ora a dismisura</p>
+    <p facs="#p276_p34" xml:id="p276_p34">a cagione della legge sui premi. E dunque necessario di</p>
+    <p facs="#p276_p35" xml:id="p276_p35">pensar presto a questa importante e ardua trattativa.</p>
+  </div>
+</div>
+
 </div>
 </body>
 </text>

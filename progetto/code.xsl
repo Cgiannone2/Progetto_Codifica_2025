@@ -381,22 +381,34 @@
               </xsl:for-each>
             </div>
           </div>
-
-
-
           <div class="transcription-area">
             <div id="text-carousel-content-2">
-              <xsl:for-each select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']">
-                <div class="carousel-slide-text active">
-                  <xsl:apply-templates select="tei:div[@xml:id='pageHeader_275_com']"/>
-                  <div class="trascrizione">
-                    <div class="col">
-                      <xsl:apply-templates select="tei:div[@xml:id='p275_col_1_com']"/>
-                    </div>
-                    <div class="col">
-                      <xsl:apply-templates select="tei:div[@xml:id='p275_col_2_com']"/>
-                    </div>
-                  </div>
+              <xsl:for-each select="//tei:facsimile/tei:surface[contains(@n, '275') or contains(@n, '276')]">
+                <div class="carousel-slide-text">
+                  <xsl:if test="position() = 1">
+                    <xsl:attribute name="class">carousel-slide-text active</xsl:attribute>
+                  </xsl:if>
+                  <xsl:choose>
+                    <xsl:when test="@n = '275'">
+                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='pageHeader_275_com']"/>
+                      <div class="trascrizione">
+                        <div class="col">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='p275_col_1_com']"/>
+                        </div>
+                        <div class="col">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='p275_col_2_com']"/>
+                        </div>
+                      </div>
+                    </xsl:when>
+                    <xsl:when test="@n = '276'">
+                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='p276_container']/tei:div[@xml:id='pageHeader_276']"/>
+                      <div class="trascrizione">
+                        <div class="col">
+                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='p276_container']/tei:div[@xml:id='p276_col_1']"/>
+                        </div>
+                      </div>
+                    </xsl:when>
+                  </xsl:choose>
                 </div>
               </xsl:for-each>
             </div>
@@ -463,6 +475,14 @@
     </xsl:for-each>
   </xsl:template>
 
+  <xsl:template match="tei:div[@xml:id='p276_col_1']">
+    <xsl:for-each select="tei:p">
+      <p id="{@xml:id}">
+        <xsl:apply-templates/>
+      </p>
+    </xsl:for-each>
+  </xsl:template>
+
   <xsl:template match="tei:div[@xml:id='p275_col_1_com']">
     <xsl:for-each select="tei:p">
       <p id="{@xml:id}">
@@ -488,6 +508,20 @@
         <xsl:value-of select="tei:orgName"/>
       </p>
       <p class="volume-info" id="p274_vol">
+        <xsl:value-of select="tei:p"/>
+      </p>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='pageHeader_276']">
+    <div class="flex-full">
+      <p class="page-number" id="p276_number">
+        <xsl:value-of select="tei:num"/>
+      </p>
+      <p class="running-title" id="p276_runningTitle">
+        <xsl:value-of select="tei:orgName"/>
+      </p>
+      <p class="volume-info" id="p276_vol">
         <xsl:value-of select="tei:p"/>
       </p>
     </div>
