@@ -393,6 +393,9 @@
                     <div class="col">
                       <xsl:apply-templates select="tei:div[@xml:id='p275_col_1_com']"/>
                     </div>
+                    <div class="col">
+                      <xsl:apply-templates select="tei:div[@xml:id='p275_col_2_com']"/>
+                    </div>
                   </div>
                 </div>
               </xsl:for-each>
@@ -461,6 +464,14 @@
   </xsl:template>
 
   <xsl:template match="tei:div[@xml:id='p275_col_1_com']">
+    <xsl:for-each select="tei:p">
+      <p id="{@xml:id}">
+        <xsl:apply-templates/>
+      </p>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@xml:id='p275_col_2_com']">
     <xsl:for-each select="tei:p">
       <p id="{@xml:id}">
         <xsl:apply-templates/>
