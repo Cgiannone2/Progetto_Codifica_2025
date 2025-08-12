@@ -70,10 +70,10 @@
               <author ref="#RS">Della Rassegna Settimanale</author>
               <biblScope unit="page">p. 275</biblScope>
             </bibl>
-            <bibl xml:id="bibl_giuseppe_colombo">
+         <bibl xml:id="bibl_giuseppe_colombo">
               <title level="m">Giuseppe Colombo, Vita ed opere di Gaudenzio Ferrari</title>
               <biblScope unit="page">p. 286</biblScope>
-              <author ref="#GiuseppeColombo"/>
+              <author ref="#GiuseppeColombo">Giuseppe Colombo</author>
               <imprint>
                 <pubPlace ref="#Torino">Torino</pubPlace>
                 <publisher ref="#FratelliBocca">fratelli Bocca</publisher>
@@ -83,7 +83,7 @@
             <bibl xml:id="bibl_guido_padeletti">
               <title level="m">Guido Padelletti; Scritti di diritto pubblico</title>
               <biblScope unit="page">p. 288</biblScope>
-              <author ref="#GuidoPadeletti"/>
+              <author ref="#GuidoPadeletti">Guido Padelletti</author>
               <imprint>
                 <pubPlace ref="#Firenze">Firenze</pubPlace>
                 <date when="1881">1881</date>

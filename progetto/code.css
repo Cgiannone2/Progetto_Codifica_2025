@@ -89,7 +89,8 @@ h1 {
   margin: 25px 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #e0e0e0;
-  scroll-margin-top: 80px; /* per l'ancoraggio da menu */
+  scroll-margin-top: 80px;
+  /* per l'ancoraggio da menu */
 }
 
 .section-block .indent {
@@ -288,66 +289,77 @@ h1 {
   border-radius: 3px;
   color: #000;
 }
+
 .persone-immaginarie.highlighted {
   background-color: #ffaaa5;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
+
 .opere.highlighted {
   background-color: #deb887;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
+
 .luoghi-geografici.highlighted {
   background-color: #20b2aa;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
+
 .luoghi-naturali.highlighted {
   background-color: #ffd3b6;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
+
 .casa-editrice-rivista.highlighted {
   background-color: #ff7f50;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
+
 .date.highlighted {
   background-color: #87cefa;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
+
 .verbum.highlighted {
   background-color: #ff6347;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
+
 .temi-motivi.highlighted {
   background-color: #b0e0e6;
   padding: 1px 3px;
   border-radius: 3px;
   color: #000;
 }
+
 .correnti-letterarie.highlighted {
   background-color: #6a5acd;
   padding: 1px 3px;
   border-radius: 3px;
   color: #fff;
 }
+
 .lingua-straniera.highlighted {
   background-color: #4682b4;
   padding: 1px 3px;
   border-radius: 3px;
   color: #fff;
 }
+
 .citazioni.highlighted {
   background-color: #d22d2d;
   border-left: 5px solid #d22d2d;
@@ -356,12 +368,14 @@ h1 {
   font-style: italic;
   color: #d0d0d0;
 }
+
 .organizzazioni.highlighted {
   background-color: #8a2be2;
   padding: 1px 3px;
   border-radius: 3px;
   color: #fff;
 }
+
 .epithet.highlighted {
   background-color: #7fffd4;
   padding: 1px 3px;
@@ -379,6 +393,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .persone-immaginarie-legend {
   background-color: #ffaaa5;
   padding: 1px 3px;
@@ -386,6 +401,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .opere-legend {
   background-color: #deb887;
   padding: 1px 3px;
@@ -393,6 +409,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .luoghi-geografici-legend {
   background-color: #20b2aa;
   padding: 1px 3px;
@@ -400,6 +417,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .luoghi-naturali-legend {
   background-color: #ffd3b6;
   padding: 1px 3px;
@@ -407,6 +425,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .casa-editrice-rivista-legend {
   background-color: #ff7f50;
   padding: 1px 3px;
@@ -414,6 +433,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .date-legend {
   background-color: #87cefa;
   padding: 1px 3px;
@@ -421,6 +441,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .verbum-legend {
   background-color: #ff6347;
   padding: 1px 3px;
@@ -428,6 +449,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .temi-motivi-legend {
   background-color: #b0e0e6;
   padding: 1px 3px;
@@ -435,6 +457,7 @@ h1 {
   color: #000;
   font-weight: bold;
 }
+
 .correnti-letterarie-legend {
   background-color: #6a5acd;
   padding: 1px 3px;
@@ -442,6 +465,7 @@ h1 {
   color: #fff;
   font-weight: bold;
 }
+
 .lingua-straniera-legend {
   background-color: #4682b4;
   padding: 1px 3px;
@@ -449,6 +473,7 @@ h1 {
   color: #fff;
   font-weight: bold;
 }
+
 .citazioni-legend {
   border-left: 5px solid #d22d2d;
   margin-left: 20px;
@@ -457,6 +482,7 @@ h1 {
   color: #d0d0d0;
   font-weight: bold;
 }
+
 .organizzazioni-legend {
   background-color: #8a2be2;
   padding: 1px 3px;
@@ -464,6 +490,7 @@ h1 {
   color: #fff;
   font-weight: bold;
 }
+
 .epithet-legend {
   background-color: #7fffd4;
   padding: 1px 3px;
@@ -481,6 +508,7 @@ h1 {
   margin: 0;
   padding: 0;
 }
+
 .page-header p {
   margin: 0;
 }
@@ -499,54 +527,67 @@ h1 {
   background-color: #a8e6cf;
   color: #000;
 }
+
 .btnPersoneImmaginarie.active-phenomenon {
   background-color: #ffaaa5;
   color: #000;
 }
+
 .btnOpere.active-phenomenon {
   background-color: #deb887;
   color: #000;
 }
+
 .btnLuoghiGeografici.active-phenomenon {
   background-color: #20b2aa;
   color: #000;
 }
+
 .btnLuoghiNaturali.active-phenomenon {
   background-color: #ffd3b6;
   color: #000;
 }
+
 .btnCasaEditriceRivista.active-phenomenon {
   background-color: #ff7f50;
   color: #000;
 }
+
 .btnDate.active-phenomenon {
   background-color: #87cefa;
   color: #000;
 }
+
 .btnVerbum.active-phenomenon {
   background-color: #ff6347;
   color: #000;
 }
+
 .btnTemiMotivi.active-phenomenon {
   background-color: #b0e0e6;
   color: #000;
 }
+
 .btnCorrentiLetterarie.active-phenomenon {
   background-color: #6a5acd;
   color: #fff;
 }
+
 .btnLinguaStraniera.active-phenomenon {
   background-color: #4682b4;
   color: #fff;
 }
+
 .btnCitazioni.active-phenomenon {
   background-color: #d22d2d;
   color: #fff;
 }
+
 .btnOrganizzazioni.active-phenomenon {
   background-color: #8a2be2;
   color: #fff;
 }
+
 .btnEpithet.active-phenomenon {
   background-color: #7fffd4;
   color: #000;
@@ -566,6 +607,7 @@ h1 {
   height: auto;
   display: inline-block;
 }
+
 .svg-container img.base-image {
   position: relative;
   top: 0;
@@ -575,6 +617,7 @@ h1 {
   height: auto;
   display: block;
 }
+
 .svg-container #svg-overlay {
   position: absolute;
   top: 0;
@@ -591,6 +634,7 @@ h1 {
   stroke: none;
   transition: fill 0.2s ease-in-out;
 }
+
 .highlight-zone:hover {
   fill: #4682b4;
   fill-opacity: 0.5;
@@ -605,10 +649,6 @@ h1 {
   align-items: stretch;
   justify-content: center;
   gap: 10px;
-  width: 100%;
-}
-
-#text-carousel-content {
   width: 100%;
 }
 
@@ -637,8 +677,9 @@ h1 {
   margin: 6px;
   font-size: 18px;
 }
+
 /* Stile per i nuovi pulsanti di navigazione */
-.boxTrascrizione > button {
+.boxTrascrizione>button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -656,4 +697,46 @@ h1 {
 
 .boxTrascrizione .carousel-next {
   right: -20px;
+}
+
+/* ------------------------------------
+   Stili aggiunti per la Sezione Bibliografia
+------------------------------------ */
+.bibliographic-entry {
+  margin-bottom: 25px; /* Aumenta lo spazio tra le voci bibliografiche */
+  padding: 15px;
+  border-left: 5px solid #a8e6cf; /* Aggiunge una barra laterale per distinguere le voci */
+  background-color: #2b3042;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bibliographic-title {
+  color: #a8e6cf; /* Titolo in risalto */
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bibliographic-entry p {
+  margin: 0;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.bibliographic-author,
+.bibliographic-publication,
+.bibliographic-pages,
+.bibliographic-note {
+  font-weight: normal;
+}
+
+.opere {
+  font-style: italic; /* Rende il titolo dell'opera in corsivo */
+}
+
+.opere-legend {
+  /* Rimuovi il background-color per evitare la colorazione dell'intera riga */
+  background-color: transparent;
+  color: #e0e0e0;
 }

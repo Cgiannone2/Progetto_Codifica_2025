@@ -61,15 +61,19 @@
 
         <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:div[@xml:id='il_commercio']"/>
 
-        <div class="section-block" id="sezione_bibliografia">
+     <div class="section-block" id="sezione_bibliografia">
           <h2>Sezione Bibliografia</h2>
           <div class="indent">
+            <xsl:apply-templates select="//tei:listBibl/tei:bibl[@xml:id='bibl_giuseppe_colombo']"/>
+            <xsl:apply-templates select="//tei:listBibl/tei:bibl[@xml:id='bibl_guido_padeletti']"/>
           </div>
         </div>
 
-        <div class="section-block" id="sezione_notizie">
+       <div class="section-block" id="sezione_notizie">
           <h2>Sezione Notizie</h2>
           <div class="indent">
+            <xsl:apply-templates select="//tei:listBibl/tei:bibl[@xml:id='notizie_gustavo_dugaut']"/>
+            <xsl:apply-templates select="//tei:listBibl/tei:bibl[@xml:id='notizie_errata_corrige']"/>
           </div>
         </div>
 
@@ -605,6 +609,7 @@
     </span>
   </xsl:template>
 
+
   <xsl:template match="tei:date">
     <span class="date">
       <xsl:apply-templates/>
@@ -629,7 +634,7 @@
     </p>
   </xsl:template>
 
-  <xsl:template match="tei:bibl">
+  <xsl:template match="tei:bibl[not(ancestor::tei:listBibl)]">
     <span class="opere">
       <xsl:apply-templates/>
     </span>
@@ -664,5 +669,105 @@
       <xsl:apply-templates/>
     </span>
   </xsl:template>
+
+  <xsl:template match="tei:bibl[ancestor::tei:listBibl]" priority="1">
+    <div class="bibliographic-entry">
+      <h3 class="bibliographic-title">
+        <xsl:apply-templates select="tei:title"/>
+      </h3>
+      <p>
+        <xsl:if test="tei:author and normalize-space(tei:author) != ''">
+          <span class="bibliographic-author">
+            <xsl:text>Autore: </xsl:text>
+            <xsl:apply-templates select="tei:author"/>
+          </span>
+          <xsl:text>. </xsl:text>
+        </xsl:if>
+        <xsl:if test="tei:imprint">
+          <span class="bibliographic-publication">
+            <xsl:if test="tei:imprint/tei:pubPlace and normalize-space(tei:imprint/tei:pubPlace) != ''">
+              <xsl:text>Pubblicato a </xsl:text>
+              <xsl:apply-templates select="tei:imprint/tei:pubPlace/tei:placeName"/>
+            </xsl:if>
+            <xsl:if test="tei:imprint/tei:publisher and normalize-space(tei:imprint/tei:publisher) != ''">
+              <xsl:text> da </xsl:text>
+              <xsl:apply-templates select="tei:imprint/tei:publisher/tei:orgName"/>
+            </xsl:if>
+            <xsl:if test="tei:imprint/tei:date and normalize-space(tei:imprint/tei:date) != ''">
+              <xsl:text> in data </xsl:text>
+              <xsl:apply-templates select="tei:imprint/tei:date"/>
+            </xsl:if>
+          </span>
+          <xsl:text>. </xsl:text>
+        </xsl:if>
+        <xsl:if test="tei:biblScope[@unit='page'] and normalize-space(tei:biblScope[@unit='page']) != ''">
+          <span class="bibliographic-pages">
+            <xsl:text>Pagine: </xsl:text>
+            <xsl:apply-templates select="tei:biblScope[@unit='page']"/>
+          </span>
+          <xsl:text>. </xsl:text>
+        </xsl:if>
+        <xsl:if test="tei:note and normalize-space(tei:note) != ''">
+          <span class="bibliographic-note">
+            <xsl:text>Note: </xsl:text>
+            <xsl:apply-templates select="tei:note"/>
+          </span>
+        </xsl:if>
+      </p>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="tei:bibl[@xml:id='notizie_gustavo_dugaut']">
+    <div class="notizie-entry">
+      <h3 class="notizie-title">
+        <xsl:value-of select="tei:title"/>
+      </h3>
+      <p>
+        <xsl:text>Autore: </xsl:text>
+        <span class="notizie-author">
+          <xsl:apply-templates select="tei:author"/>
+        </span>
+        <xsl:text>. Pubblicato a </xsl:text>
+        <span class="notizie-publication">
+          <xsl:apply-templates select="tei:imprint/tei:pubPlace/tei:placeName"/>
+        </span>
+        <xsl:text> da </xsl:text>
+        <span class="notizie-publisher">
+          <xsl:apply-templates select="tei:imprint/tei:publisher/tei:orgName"/>
+        </span>
+        <xsl:text>. Pagine: </xsl:text>
+        <span class="notizie-pages">
+          <xsl:value-of select="tei:biblScope"/>
+        </span>
+      </p>
+    </div>
+</xsl:template>
+
+<xsl:template match="tei:bibl[@xml:id='notizie_errata_corrige']">
+    <div class="notizie-entry">
+      <h3 class="notizie-title">
+        <xsl:value-of select="tei:title"/>
+      </h3>
+      <p>
+        <xsl:text>Pagine: </xsl:text>
+        <span class="notizie-pages">
+          <xsl:value-of select="tei:biblScope"/>
+        </span>
+        <xsl:text>. </xsl:text>
+        <span class="notizie-note">
+          <xsl:apply-templates select="tei:note"/>
+        </span>
+      </p>
+    </div>
+</xsl:template>
+
+  <xsl:template match="tei:pubPlace">
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <xsl:template match="tei:publisher">
+    <xsl:apply-templates/>
+  </xsl:template>
+  
 
 </xsl:stylesheet>
