@@ -5,6 +5,7 @@
   xmlns="http://www.w3.org/1999/xhtml">
 
   <xsl:output method="html" indent="yes" encoding="UTF-8" omit-xml-declaration="yes"/>
+  <xsl:key name="zone-by-id" match="tei:zone" use="@xml:id" />
 
   <xsl:template match="/">
     <html>
@@ -61,7 +62,7 @@
 
         <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:div[@xml:id='il_commercio']"/>
 
-     <div class="section-block" id="sezione_bibliografia">
+        <div class="section-block" id="sezione_bibliografia">
           <h2>Sezione Bibliografia</h2>
           <div class="indent">
             <xsl:apply-templates select="//tei:listBibl/tei:bibl[@xml:id='bibl_giuseppe_colombo']"/>
@@ -69,7 +70,7 @@
           </div>
         </div>
 
-       <div class="section-block" id="sezione_notizie">
+        <div class="section-block" id="sezione_notizie">
           <h2>Sezione Notizie</h2>
           <div class="indent">
             <xsl:apply-templates select="//tei:listBibl/tei:bibl[@xml:id='notizie_gustavo_dugaut']"/>
@@ -195,7 +196,7 @@
                       </xsl:when>
                       <xsl:when test="@n = '275'">
                         <svg id="svg-overlay"
-                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1186 1744" preserveAspectRatio="xMidYMid meet">
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1094 1636" preserveAspectRatio="xMidYMid meet">
                           <xsl:for-each select="tei:zone">
                             <rect id="zone-{@xml:id}" x="{@ulx}" y="{@uly}" width="{number(@lrx) - number(@ulx)}" height="{number(@lry) - number(@uly)}" class="highlight-zone" onmouseover="gestoreEvidenziaSVG('zone-{@xml:id}')" onmouseout="gestoreDisEvidenziaSVG('zone-{@xml:id}')" />
                           </xsl:for-each>
@@ -211,48 +212,47 @@
             <div id="text-carousel-content">
               <xsl:for-each select="//tei:facsimile/tei:surface[contains(@n, '273') or contains(@n, '274') or contains(@n, '275')]">
                 <div class="carousel-slide-text">
+                  <xsl:if test="position() = 1">
+                    <xsl:attribute name="class">carousel-slide-text active</xsl:attribute>
+                  </xsl:if>
                   <xsl:choose>
                     <xsl:when test="@n = '273'">
-                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@rend='pageHeader']"/>
-                      <div class="flex" id="p273_subTitle">
-                        <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@type='subtitle']"/>
-                      </div>
+                      <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia']/tei:head[@rend='pageHeader']"/>
+                      <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia']/tei:fw[@facs='#p273_subTitle']"/>
                       <div class="date_container">
-                        <div class="flex" id="p273_vol">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:head[@type='vol']"/>
-                        </div>
-                        <div class="flex" id="p273_date">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_date']"/>
-                        </div>
-                        <div class="flex" id="p273_number">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:num"/>
-                        </div>
+                        <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia']/tei:fw[@facs='#p273_vol']"/>
+                        <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia']/tei:opener/tei:dateline"/>
                       </div>
+
                       <div class="trascrizione">
                         <div class="col">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_par1_col_1']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia']/tei:p[key('zone-by-id', substring-after(@facs, '#'))[parent::tei:surface[@n='273'] and @ulx &lt; 485]]"/>
                         </div>
                         <div class="col">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@type='article']/tei:div[@xml:id='p273_par1_col_2']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia']/tei:p[key('zone-by-id', substring-after(@facs, '#'))[parent::tei:surface[@n='273'] and @ulx > 485]]"/>
                         </div>
                       </div>
                     </xsl:when>
+
                     <xsl:when test="@n = '274'">
-                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p274_container']/tei:div[@xml:id='pageHeader_274']"/>
+                      <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia_pp274']/tei:head[@rend='pageHeader_pp274']"/>
+
                       <div class="trascrizione">
                         <div class="col">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p274_container']/tei:div[@xml:id='p274_col_1']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia_pp274']/tei:p[key('zone-by-id', substring-after(@facs, '#'))[parent::tei:surface[@n='274'] and @ulx &lt; 610]]"/>
                         </div>
                         <div class="col">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p274_container']/tei:div[@xml:id='p274_col_2']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia_pp274']/tei:p[key('zone-by-id', substring-after(@facs, '#'))[parent::tei:surface[@n='274'] and @ulx > 610]]"/>
                         </div>
                       </div>
                     </xsl:when>
+
                     <xsl:when test="@n = '275'">
-                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p275_container']/tei:div[@xml:id='pageHeader_275']"/>
+                      <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia_pp775']/tei:head[@rend='pageHeader_pp275_art1']"/>
+
                       <div class="trascrizione">
                         <div class="col">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='articolo_carusi_sicilia']/tei:div[@xml:id='p275_container']/tei:div[@xml:id='p275_col_1']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='articolo_carusi_sicilia_pp775']/tei:p[key('zone-by-id', substring-after(@facs, '#'))[parent::tei:surface[@n='275'] and @ulx &lt; 520]]"/>
                         </div>
                       </div>
                     </xsl:when>
@@ -387,23 +387,28 @@
                   <xsl:if test="position() = 1">
                     <xsl:attribute name="class">carousel-slide-text active</xsl:attribute>
                   </xsl:if>
+
                   <xsl:choose>
                     <xsl:when test="@n = '275'">
-                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='pageHeader_275_com']"/>
+                      <xsl:apply-templates select="//tei:div[@xml:id='il_commercio']/tei:head[1]"/>
+
                       <div class="trascrizione">
                         <div class="col">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='p275_col_1_com']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='il_commercio']/tei:fw[@facs='#p275_p4']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='il_commercio']/tei:p[key('zone-by-id', substring-after(@facs, '#'))[parent::tei:surface[@n='275'] and @ulx &lt; 520]]"/>
                         </div>
                         <div class="col">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='p275_col_2_com']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='il_commercio']/tei:p[key('zone-by-id', substring-after(@facs, '#'))[parent::tei:surface[@n='275'] and @ulx > 520]]"/>
                         </div>
                       </div>
                     </xsl:when>
+
                     <xsl:when test="@n = '276'">
-                      <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='p276_container']/tei:div[@xml:id='pageHeader_276']"/>
+                      <xsl:apply-templates select="//tei:div[@xml:id='il_commercio_pp276']/tei:head[1]"/>
+
                       <div class="trascrizione">
                         <div class="col">
-                          <xsl:apply-templates select="//tei:text/tei:body/tei:div[@xml:id='il_commercio']/tei:div[@xml:id='p276_container']/tei:div[@xml:id='p276_col_1']"/>
+                          <xsl:apply-templates select="//tei:div[@xml:id='il_commercio_pp276']/tei:p[starts-with(@facs, '#p276_')]"/>
                         </div>
                       </div>
                     </xsl:when>
@@ -418,140 +423,7 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="tei:div[@xml:id='p273_par1_col_1']">
-    <div class="flex">
-      <span class="article-title" id="p273_articleTitle">
-        <xsl:apply-templates select="tei:span"/>
-      </span>
-    </div>
-    <xsl:for-each select="tei:p">
-      <p id="{@xml:id}">
-        <xsl:apply-templates/>
-      </p>
-    </xsl:for-each>
-  </xsl:template>
 
-  <xsl:template match="tei:div[@xml:id='p273_par1_col_2']">
-    <div class="flex">
-      <span class="article-title" id="p273_articleTitle">
-        <xsl:apply-templates select="tei:span"/>
-      </span>
-    </div>
-    <xsl:for-each select="tei:p">
-      <p id="{@xml:id}">
-        <xsl:apply-templates/>
-      </p>
-    </xsl:for-each>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='p274_col_1']">
-    <div class="flex">
-      <span class="article-title" id="p273_articleTitle">
-        <xsl:apply-templates select="tei:span"/>
-      </span>
-    </div>
-    <xsl:for-each select="tei:p">
-      <p id="{@xml:id}">
-        <xsl:apply-templates/>
-      </p>
-    </xsl:for-each>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='p274_col_2']">
-    <xsl:for-each select="tei:p">
-      <p id="{@xml:id}">
-        <xsl:apply-templates/>
-      </p>
-    </xsl:for-each>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='p275_col_1']">
-    <xsl:for-each select="tei:p">
-      <p id="{@xml:id}">
-        <xsl:apply-templates/>
-      </p>
-    </xsl:for-each>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='p276_col_1']">
-    <xsl:for-each select="tei:p">
-      <p id="{@xml:id}">
-        <xsl:apply-templates/>
-      </p>
-    </xsl:for-each>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='p275_col_1_com']">
-    <xsl:for-each select="tei:p">
-      <p id="{@xml:id}">
-        <xsl:apply-templates/>
-      </p>
-    </xsl:for-each>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='p275_col_2_com']">
-    <xsl:for-each select="tei:p">
-      <p id="{@xml:id}">
-        <xsl:apply-templates/>
-      </p>
-    </xsl:for-each>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='pageHeader_274']">
-    <div class="flex-full">
-      <p class="page-number" id="p274_number">
-        <xsl:value-of select="tei:num"/>
-      </p>
-      <p class="running-title" id="p274_runningTitle">
-        <xsl:value-of select="tei:orgName"/>
-      </p>
-      <p class="volume-info" id="p274_vol">
-        <xsl:value-of select="tei:p"/>
-      </p>
-    </div>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='pageHeader_276']">
-    <div class="flex-full">
-      <p class="page-number" id="p276_number">
-        <xsl:value-of select="tei:num"/>
-      </p>
-      <p class="running-title" id="p276_runningTitle">
-        <xsl:value-of select="tei:orgName"/>
-      </p>
-      <p class="volume-info" id="p276_vol">
-        <xsl:value-of select="tei:p"/>
-      </p>
-    </div>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='pageHeader_275']">
-    <div class="flex-full">
-      <p class="page-date" id="p275_date">
-        <xsl:value-of select="tei:date"/>
-      </p>
-      <p class="running-title" id="p275_runningTitle">
-        <xsl:value-of select="tei:orgName"/>
-      </p>
-      <p class="number-info" id="p275_number">
-        <xsl:value-of select="tei:num"/>
-      </p>
-    </div>
-  </xsl:template>
-
-  <xsl:template match="tei:div[@xml:id='pageHeader_275_com']">
-    <div class="flex-full">
-      <p class="page-date" id="p275_date_com">
-        <xsl:value-of select="tei:date"/>
-      </p>
-      <p class="running-title" id="p275_runningTitle_com">
-        <xsl:value-of select="tei:orgName"/>
-      </p>
-      <p class="number-info" id="p275_number_com">
-        <xsl:value-of select="tei:num"/>
-      </p>
-    </div>
-  </xsl:template>
 
   <xsl:template match="tei:persName">
     <span class="persone-reali">
@@ -565,7 +437,7 @@
   <xsl:template match="tei:orgName">
     <span class="organizzazioni">
       <xsl:attribute name="id">
-        <xsl:value-of select="@xml:id"/>
+        <xsl:value-of select="substring-after(@facs, '#')" />
       </xsl:attribute>
       <xsl:attribute name="data-ref">
         <xsl:value-of select="@ref"/>
@@ -609,9 +481,11 @@
     </span>
   </xsl:template>
 
-
   <xsl:template match="tei:date">
     <span class="date">
+      <xsl:attribute name="id">
+        <xsl:value-of select="substring-after(@facs, '#')" />
+      </xsl:attribute>
       <xsl:apply-templates/>
     </span>
   </xsl:template>
@@ -624,6 +498,9 @@
 
   <xsl:template match="tei:num">
     <p>
+      <xsl:attribute name="id">
+        <xsl:value-of select="substring-after(@facs, '#')" />
+      </xsl:attribute>
       <xsl:apply-templates/>
     </p>
   </xsl:template>
@@ -741,9 +618,9 @@
         </span>
       </p>
     </div>
-</xsl:template>
+  </xsl:template>
 
-<xsl:template match="tei:bibl[@xml:id='notizie_errata_corrige']">
+  <xsl:template match="tei:bibl[@xml:id='notizie_errata_corrige']">
     <div class="notizie-entry">
       <h3 class="notizie-title">
         <xsl:value-of select="tei:title"/>
@@ -759,7 +636,7 @@
         </span>
       </p>
     </div>
-</xsl:template>
+  </xsl:template>
 
   <xsl:template match="tei:pubPlace">
     <xsl:apply-templates/>
@@ -768,6 +645,32 @@
   <xsl:template match="tei:publisher">
     <xsl:apply-templates/>
   </xsl:template>
-  
+
+  <xsl:template match="tei:p">
+    <p>
+      <xsl:attribute name="id">
+        <xsl:value-of select="substring-after(@facs, '#')" />
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="tei:fw">
+    <span>
+      <xsl:attribute name="id">
+        <xsl:value-of select="substring-after(@facs, '#')" />
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:seg">
+    <span class="volume-info">
+      <xsl:attribute name="id">
+        <xsl:value-of select="substring-after(@facs, '#')" />
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
 
 </xsl:stylesheet>

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="code.xsl"?>
-<!-- <!DOCTYPE TEI SYSTEM "tei_all.dtd"> -->
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <!-- Descrive il documento nel suo complesso: titolo, edizione, pubblicazione e fonti -->
     <fileDesc>
-
       <titleStmt>
         <title type="main">Edizione Digitale della Rassegna Settimanale, POLITICA, SCIENZE, LETTERE, ARTI </title>
         <title type="journalSubTitle">DI POLITICA, SCIENZE, LETTERE ED ARTI.</title>
@@ -16,10 +14,9 @@
           <name ref="#CGiannone">Carlo Giannone</name>
         </respStmt>
       </titleStmt>
-
       <editionStmt>
         <edition>
-           Edizione Digitale per il Corso di Codifica di Testi - Anno Accademico 2024-2025 - <date when="2025-09">Settembre 2025</date>
+          Edizione Digitale per il Corso di Codifica di Testi - Anno Accademico 2024-2025 - <date when="2025-09">Settembre 2025</date>
         </edition>
         <respStmt>
           <resp>Progetto sviluppato sotto la guida del Prof.</resp>
@@ -27,10 +24,9 @@
         </respStmt>
         <respStmt>
           <resp>Codifica realizzata da:</resp>
-          <name xml:id="CGiannone">Carlo Giannone</name>
+          <name xml:id="CGiannone_resp">Carlo Giannone</name>
         </respStmt>
       </editionStmt>
-
       <publicationStmt>
         <publisher>
           <orgName>Università di Pisa</orgName>
@@ -46,8 +42,6 @@
         </availability>
         <date when="2025-09">2025</date>
       </publicationStmt>
-
-      <!-- Informazioni sulla pubblicazione dell’edizione digitale -->
       <sourceDesc>
         <biblStruct xml:id="rassegna_fascicolo_174">
           <monogr>
@@ -59,56 +53,48 @@
               <pubPlace ref="#Roma">Roma</pubPlace>
             </imprint>
           </monogr>
-          <listBibl>
-            <bibl xml:id="art_carusi">
-              <title level="a">I "Carusi" in Sicilia</title>
-              <author ref="#RS">Della Rassegna Settimanale</author>
-              <biblScope unit="page" from="273" to="275">pp. 273-275</biblScope>
-            </bibl>
-            <bibl xml:id="art_commercio">
-              <title level="a">Il commercio nel primo trimestre 1881</title>
-              <author ref="#RS">Della Rassegna Settimanale</author>
-              <biblScope unit="page">p. 275</biblScope>
-            </bibl>
-         <bibl xml:id="bibl_giuseppe_colombo">
-              <title level="m">Giuseppe Colombo, Vita ed opere di Gaudenzio Ferrari</title>
-              <biblScope unit="page">p. 286</biblScope>
-              <author ref="#GiuseppeColombo">Giuseppe Colombo</author>
-              <imprint>
-                <pubPlace ref="#Torino">Torino</pubPlace>
-                <publisher ref="#FratelliBocca">fratelli Bocca</publisher>
-                <date when="1881">1881</date>
-              </imprint>
-            </bibl>
-            <bibl xml:id="bibl_guido_padeletti">
-              <title level="m">Guido Padelletti; Scritti di diritto pubblico</title>
-              <biblScope unit="page">p. 288</biblScope>
-              <author ref="#GuidoPadeletti">Guido Padelletti</author>
-              <imprint>
-                <pubPlace ref="#Firenze">Firenze</pubPlace>
-                <date when="1881">1881</date>
-              </imprint>
-            </bibl>
-            <bibl xml:id="notizie_gustavo_dugaut">
-              <title level="a">Gustavo Dugaut ha pubblicato (Parigi, Imprimerie Nationale) secondo volume: I Berberi, studio sulla conquista degli Arabi in Africa</title>
-              <biblScope unit="page">p. 288</biblScope>
-              <author ref="#GustavoDugaut"/>
-              <imprint>
-                <pubPlace ref="#Parigi">Parigi</pubPlace>
-                <publisher ref="#ImprimerieNationale">Imprimerie Nationale</publisher>
-              </imprint>
-            </bibl>
-            <bibl xml:id="notizie_errata_corrige">
-              <title level="a">ERRATA-CORRIGE:</title>
-              <biblScope unit="page">p. 288</biblScope>
-              <note>Rettifica errori nella recensione del libro "La Fiera delle Vanità"</note>
-            </bibl>
-          </listBibl>
         </biblStruct>
+        <listBibl>
+          <bibl xml:id="art_carusi">
+            <title level="a">I "Carusi" in Sicilia</title>
+            <author ref="#RS">Della Rassegna Settimanale</author>
+            <biblScope unit="page" from="273" to="275">pp. 273-275</biblScope>
+          </bibl>
+          <bibl xml:id="art_commercio">
+            <title level="a">Il commercio nel primo trimestre 1881</title>
+            <author ref="#RS">Della Rassegna Settimanale</author>
+            <biblScope unit="page">p. 275</biblScope>
+          </bibl>
+          <bibl xml:id="bibl_giuseppe_colombo">
+            <title level="m">Giuseppe Colombo, Vita ed opere di Gaudenzio Ferrari</title>
+            <biblScope unit="page">p. 286</biblScope>
+            <author ref="#GiuseppeColombo">Giuseppe Colombo</author>
+            <pubPlace ref="#Torino">Torino</pubPlace>
+            <publisher ref="#FratelliBocca">fratelli Bocca</publisher>
+            <date when="1881">1881</date>
+          </bibl>
+          <bibl xml:id="bibl_guido_padeletti">
+            <title level="m">Guido Padelletti; Scritti di diritto pubblico</title>
+            <biblScope unit="page">p. 288</biblScope>
+            <author ref="#GuidoPadeletti">Guido Padeletti</author>
+            <pubPlace ref="#Firenze">Firenze</pubPlace>
+            <date when="1881">1881</date>
+          </bibl>
+          <bibl xml:id="notizie_gustavo_dugaut">
+            <title level="a">Gustavo Dugaut ha pubblicato (Parigi, Imprimerie Nationale) secondo volume: I Berberi, studio sulla conquista degli Arabi in Africa</title>
+            <biblScope unit="page">p. 288</biblScope>
+            <author ref="#GustavoDugaut"/>
+            <pubPlace ref="#Parigi">Parigi</pubPlace>
+            <publisher ref="#ImprimerieNationale">Imprimerie Nationale</publisher>
+          </bibl>
+          <bibl xml:id="notizie_errata_corrige">
+            <title level="a">ERRATA-CORRIGE:</title>
+            <biblScope unit="page">p. 288</biblScope>
+            <note>Rettifica errori nella recensione del libro "La Fiera delle Vanità"</note>
+          </bibl>
+        </listBibl>
       </sourceDesc>
     </fileDesc>
-
-    <!-- Informazioni su lingue, soggetti e categorie tematiche -->
     <profileDesc>
       <langUsage>
         <language ident="it">Italiano</language>
@@ -119,21 +105,21 @@
       </langUsage>
       <textClass>
         <keywords scheme="#fenomeni_notevoli">
-          <list>
-            <item>persone reali</item>
-            <item>persone immaginarie e/o personaggi</item>
-            <item>opere</item>
-            <item>luoghi geografici</item>
-            <item>luoghi naturali</item>
-            <item>casa editrice/rivista</item>
-            <item>date specifiche</item>
-            <item>Verbum</item>
-            <item>correnti letterarie</item>
-            <item>testo in lingua straniera</item>
-            <item>citazioni</item>
-            <item>organizzazioni</item>
-            <item>epithet</item>
-          </list>
+            <list>
+                <item>persone reali</item>
+                <item>persone immaginarie e/o personaggi</item>
+                <item>opere</item>
+                <item>luoghi geografici</item>
+                <item>luoghi naturali</item>
+                <item>casa editrice/rivista</item>
+                <item>date specifiche</item>
+                <item>Verbum</item>
+                <item>correnti letterarie</item>
+                <item>testo in lingua straniera</item>
+                <item>citazioni</item>
+                <item>organizzazioni</item>
+                <item>epithet</item>
+            </list>
         </keywords>
       </textClass>
     </profileDesc>
@@ -141,150 +127,139 @@
       <change when="2025-07-20" who="#CGiannone">Creazione iniziale del file e inizio della codifica.</change>
     </revisionDesc>
   </teiHeader>
-
-  <!-- Pagina 273 -->
   <facsimile>
     <surface n="273" xml:id="M_273">
       <graphic url="progetto/img/pp273.jpg" xml:id="pag273" width="1006px" height="1450px"/>
-      <zone ulx="49" uly="44" lrx="921" lry="97" xml:id="p273_runningTitle" />
+      <zone ulx="49" uly="44" lrx="921" lry="97" xml:id="p273_runningTitle"/>
       <zone ulx="55" uly="87" lrx="923" lry="139" xml:id="p273_subTitle"/>
-      <zone ulx="65" uly="158" lrx="127" lry="194" xml:id="p273_vol" />
-      <zone ulx="383" uly="161" lrx="591" lry="191" xml:id="p273_date" />
-      <zone ulx="842" uly="162" lrx="915" lry="192" xml:id="p273_number" />
+      <zone ulx="65" uly="158" lrx="127" lry="194" xml:id="p273_vol"/>
+      <zone ulx="383" uly="161" lrx="591" lry="191" xml:id="p273_date"/>
+      <zone ulx="842" uly="162" lrx="915" lry="192" xml:id="p273_number"/>
       <zone ulx="53" uly="198" lrx="477" lry="248" xml:id="p273_articleTitle"/>
-
-      <!-- Prima colonna -->
-      <zone ulx="53" uly="247" lrx="481" lry="276" xml:id="p273_p1" />
-      <zone ulx="51" uly="273" lrx="480" lry="294" xml:id="p273_p2" />
-      <zone ulx="53" uly="293" lrx="475" lry="312" xml:id="p273_p3" />
-      <zone ulx="54" uly="312" lrx="477" lry="332" xml:id="p273_p4" />
-      <zone ulx="56" uly="333" lrx="476" lry="353" xml:id="p273_p5" />
-      <zone ulx="49" uly="351" lrx="477" lry="370" xml:id="p273_p6" />
-      <zone ulx="52" uly="367" lrx="477" lry="389" xml:id="p273_p7" />
-      <zone ulx="53" uly="385" lrx="478" lry="407" xml:id="p273_p8" />
-      <zone ulx="52" uly="406" lrx="478" lry="424" xml:id="p273_p9" />
-      <zone ulx="53" uly="424" lrx="479" lry="439" xml:id="p273_p10" />
-      <zone ulx="53" uly="439" lrx="480" lry="458" xml:id="p273_p11" />
-      <zone ulx="54" uly="455" lrx="479" lry="476" xml:id="p273_p12" />
-      <zone ulx="51" uly="475" lrx="480" lry="493" xml:id="p273_p13" />
-      <zone ulx="50" uly="493" lrx="479" lry="510" xml:id="p273_p14" />
-      <zone ulx="52" uly="512" lrx="478" lry="532" xml:id="p273_p15" />
-      <zone ulx="53" uly="531" lrx="478" lry="550" xml:id="p273_p16" />
-      <zone ulx="55" uly="548" lrx="477" lry="564" xml:id="p273_p17" />
-      <zone ulx="53" uly="565" lrx="478" lry="588" xml:id="p273_p18" />
-      <zone ulx="49" uly="586" lrx="481" lry="603" xml:id="p273_p19" />
-      <zone ulx="53" uly="604" lrx="483" lry="623" xml:id="p273_p20" />
-      <zone ulx="53" uly="621" lrx="479" lry="639" xml:id="p273_p21" />
-      <zone ulx="56" uly="640" lrx="479" lry="658" xml:id="p273_p22" />
-      <zone ulx="53" uly="656" lrx="482" lry="678" xml:id="p273_p23" />
-      <zone ulx="50" uly="678" lrx="481" lry="695" xml:id="p273_p24" />
-      <zone ulx="53" uly="692" lrx="480" lry="711" xml:id="p273_p25" />
-      <zone ulx="55" uly="707" lrx="480" lry="729" xml:id="p273_p26" />
-      <zone ulx="54" uly="724" lrx="477" lry="749" xml:id="p273_p27" />
-      <zone ulx="53" uly="745" lrx="477" lry="765" xml:id="p273_p28" />
-      <zone ulx="54" uly="763" lrx="480" lry="785" xml:id="p273_p29" />
-      <zone ulx="53" uly="785" lrx="481" lry="800" xml:id="p273_p30" />
-      <zone ulx="52" uly="799" lrx="481" lry="822" xml:id="p273_p31" />
-      <zone ulx="53" uly="819" lrx="477" lry="838" xml:id="p273_p32" />
-      <zone ulx="58" uly="837" lrx="477" lry="858" xml:id="p273_p33" />
-      <zone ulx="55" uly="858" lrx="479" lry="877" xml:id="p273_p34" />
-      <zone ulx="53" uly="878" lrx="478" lry="894" xml:id="p273_p35" />
-      <zone ulx="55" uly="894" lrx="476" lry="913" xml:id="p273_p36" />
-      <zone ulx="55" uly="911" lrx="482" lry="932" xml:id="p273_p37" />
-      <zone ulx="52" uly="929" lrx="480" lry="945" xml:id="p273_p38" />
-      <zone ulx="51" uly="948" lrx="480" lry="964" xml:id="p273_p39" />
-      <zone ulx="51" uly="964" lrx="480" lry="981" xml:id="p273_p40" />
-      <zone ulx="52" uly="984" lrx="478" lry="1003" xml:id="p273_p41" />
-      <zone ulx="52" uly="1000" lrx="483" lry="1021" xml:id="p273_p42" />
-      <zone ulx="55" uly="1020" lrx="483" lry="1036" xml:id="p273_p43" />
-      <zone ulx="55" uly="1035" lrx="484" lry="1053" xml:id="p273_p44" />
-      <zone ulx="55" uly="1055" lrx="484" lry="1071" xml:id="p273_p45" />
-      <zone ulx="55" uly="1069" lrx="480" lry="1091" xml:id="p273_p46" />
-      <zone ulx="57" uly="1092" lrx="484" lry="1112" xml:id="p273_p47" />
-      <zone ulx="52" uly="1110" lrx="485" lry="1131" xml:id="p273_p48" />
-      <zone ulx="53" uly="1131" lrx="484" lry="1146" xml:id="p273_p49" />
-      <zone ulx="55" uly="1146" lrx="486" lry="1162" xml:id="p273_p50" />
-      <zone ulx="58" uly="1164" lrx="489" lry="1184" xml:id="p273_p51" />
-      <zone ulx="56" uly="1187" lrx="487" lry="1202" xml:id="p273_p52" />
-      <zone ulx="50" uly="1202" lrx="487" lry="1220" xml:id="p273_p53" />
-      <zone ulx="53" uly="1219" lrx="488" lry="1236" xml:id="p273_p54" />
-      <zone ulx="53" uly="1235" lrx="489" lry="1257" xml:id="p273_p55" />
-      <zone ulx="53" uly="1257" lrx="492" lry="1276" xml:id="p273_p56" />
-      <zone ulx="56" uly="1282" lrx="495" lry="1311" xml:id="p273_p57" />
-
-      <!-- Seconda colonna -->
-
-      <zone ulx="488" uly="222" lrx="922" lry="237" xml:id="p273_p58" />
-      <zone ulx="492" uly="238" lrx="923" lry="260" xml:id="p273_p59" />
-      <zone ulx="491" uly="262" lrx="921" lry="274" xml:id="p273_p60" />
-      <zone ulx="494" uly="277" lrx="924" lry="294" xml:id="p273_p61" />
-      <zone ulx="491" uly="294" lrx="922" lry="315" xml:id="p273_p62" />
-      <zone ulx="491" uly="317" lrx="915" lry="332" xml:id="p273_p63" />
-      <zone ulx="494" uly="332" lrx="919" lry="350" xml:id="p273_p64" />
-      <zone ulx="495" uly="353" lrx="919" lry="368" xml:id="p273_p65" />
-      <zone ulx="495" uly="371" lrx="921" lry="386" xml:id="p273_p66" />
-      <zone ulx="492" uly="388" lrx="917" lry="405" xml:id="p273_p67" />
-      <zone ulx="495" uly="407" lrx="917" lry="426" xml:id="p273_p68" />
-      <zone ulx="493" uly="425" lrx="919" lry="441" xml:id="p273_p69" />
-      <zone ulx="492" uly="440" lrx="917" lry="462" xml:id="p273_p70" />
-      <zone ulx="494" uly="458" lrx="917" lry="476" xml:id="p273_p71" />
-      <zone ulx="495" uly="483" lrx="915" lry="493" xml:id="p273_p72" />
-      <zone ulx="493" uly="495" lrx="923" lry="512" xml:id="p273_p73" />
-      <zone ulx="494" uly="512" lrx="923" lry="530" xml:id="p273_p74" />
-      <zone ulx="496" uly="530" lrx="925" lry="548" xml:id="p273_p75" />
-      <zone ulx="498" uly="547" lrx="923" lry="566" xml:id="p273_p76" />
-      <zone ulx="495" uly="565" lrx="924" lry="586" xml:id="p273_p77" />
-      <zone ulx="497" uly="588" lrx="924" lry="605" xml:id="p273_p78" />
-      <zone ulx="495" uly="607" lrx="924" lry="620" xml:id="p273_p79" />
-      <zone ulx="497" uly="623" lrx="924" lry="642" xml:id="p273_p80" />
-      <zone ulx="495" uly="646" lrx="921" lry="657" xml:id="p273_p81" />
-      <zone ulx="494" uly="662" lrx="922" lry="678" xml:id="p273_p82" />
-      <zone ulx="493" uly="680" lrx="923" lry="695" xml:id="p273_p83" />
-      <zone ulx="497" uly="694" lrx="924" lry="708" xml:id="p273_p84" />
-      <zone ulx="494" uly="712" lrx="919" lry="730" xml:id="p273_p85" />
-      <zone ulx="496" uly="732" lrx="923" lry="747" xml:id="p273_p86" />
-      <zone ulx="499" uly="747" lrx="924" lry="767" xml:id="p273_p87" />
-      <zone ulx="498" uly="765" lrx="926" lry="783" xml:id="p273_p88" />
-      <zone ulx="497" uly="786" lrx="924" lry="805" xml:id="p273_p89" />
-      <zone ulx="497" uly="805" lrx="924" lry="821" xml:id="p273_p90" />
-      <zone ulx="496" uly="824" lrx="922" lry="842" xml:id="p273_p91" />
-      <zone ulx="499" uly="846" lrx="920" lry="858" xml:id="p273_p92" />
-      <zone ulx="495" uly="861" lrx="925" lry="879" xml:id="p273_p93" />
-      <zone ulx="497" uly="877" lrx="926" lry="892" xml:id="p273_p94" />
-      <zone ulx="494" uly="895" lrx="924" lry="912" xml:id="p273_p95" />
-      <zone ulx="495" uly="916" lrx="927" lry="930" xml:id="p273_p96" />
-      <zone ulx="496" uly="932" lrx="927" lry="950" xml:id="p273_p97" />
-      <zone ulx="495" uly="951" lrx="925" lry="965" xml:id="p273_p98" />
-      <zone ulx="495" uly="968" lrx="926" lry="986" xml:id="p273_p99" />
-      <zone ulx="499" uly="990" lrx="926" lry="1005" xml:id="p273_p100" />
-      <zone ulx="497" uly="1011" lrx="926" lry="1023" xml:id="p273_p101" />
-      <zone ulx="494" uly="1029" lrx="928" lry="1041" xml:id="p273_p102" />
-      <zone ulx="501" uly="1047" lrx="925" lry="1061" xml:id="p273_p103" />
-      <zone ulx="500" uly="1061" lrx="928" lry="1076" xml:id="p273_p104" />
-      <zone ulx="501" uly="1077" lrx="926" lry="1097" xml:id="p273_p105" />
-      <zone ulx="501" uly="1096" lrx="927" lry="1112" xml:id="p273_p106" />
-      <zone ulx="501" uly="1114" lrx="928" lry="1131" xml:id="p273_p107" />
-      <zone ulx="500" uly="1129" lrx="930" lry="1151" xml:id="p273_p108" />
-      <zone ulx="498" uly="1150" lrx="926" lry="1165" xml:id="p273_p109" />
-      <zone ulx="500" uly="1171" lrx="921" lry="1187" xml:id="p273_p110" />
-      <zone ulx="504" uly="1191" lrx="930" lry="1203" xml:id="p273_p111" />
-      <zone ulx="506" uly="1202" lrx="927" lry="1225" xml:id="p273_p112" />
-      <zone ulx="503" uly="1223" lrx="932" lry="1244" xml:id="p273_p113" />
-      <zone ulx="498" uly="1254" lrx="932" lry="1272" xml:id="p273_p114" />
-      <zone ulx="500" uly="1273" lrx="931" lry="1289" xml:id="p273_p115" />
+      <zone ulx="53" uly="247" lrx="481" lry="276" xml:id="p273_p1"/>
+      <zone ulx="51" uly="273" lrx="480" lry="294" xml:id="p273_p2"/>
+      <zone ulx="53" uly="293" lrx="475" lry="312" xml:id="p273_p3"/>
+      <zone ulx="54" uly="312" lrx="477" lry="332" xml:id="p273_p4"/>
+      <zone ulx="56" uly="333" lrx="476" lry="353" xml:id="p273_p5"/>
+      <zone ulx="49" uly="351" lrx="477" lry="370" xml:id="p273_p6"/>
+      <zone ulx="52" uly="367" lrx="477" lry="389" xml:id="p273_p7"/>
+      <zone ulx="53" uly="385" lrx="478" lry="407" xml:id="p273_p8"/>
+      <zone ulx="52" uly="406" lrx="478" lry="424" xml:id="p273_p9"/>
+      <zone ulx="53" uly="424" lrx="479" lry="439" xml:id="p273_p10"/>
+      <zone ulx="53" uly="439" lrx="480" lry="458" xml:id="p273_p11"/>
+      <zone ulx="54" uly="455" lrx="479" lry="476" xml:id="p273_p12"/>
+      <zone ulx="51" uly="475" lrx="480" lry="493" xml:id="p273_p13"/>
+      <zone ulx="50" uly="493" lrx="479" lry="510" xml:id="p273_p14"/>
+      <zone ulx="52" uly="512" lrx="478" lry="532" xml:id="p273_p15"/>
+      <zone ulx="53" uly="531" lrx="478" lry="550" xml:id="p273_p16"/>
+      <zone ulx="55" uly="548" lrx="477" lry="564" xml:id="p273_p17"/>
+      <zone ulx="53" uly="565" lrx="478" lry="588" xml:id="p273_p18"/>
+      <zone ulx="49" uly="586" lrx="481" lry="603" xml:id="p273_p19"/>
+      <zone ulx="53" uly="604" lrx="483" lry="623" xml:id="p273_p20"/>
+      <zone ulx="53" uly="621" lrx="479" lry="639" xml:id="p273_p21"/>
+      <zone ulx="56" uly="640" lrx="479" lry="658" xml:id="p273_p22"/>
+      <zone ulx="53" uly="656" lrx="482" lry="678" xml:id="p273_p23"/>
+      <zone ulx="50" uly="678" lrx="481" lry="695" xml:id="p273_p24"/>
+      <zone ulx="53" uly="692" lrx="480" lry="711" xml:id="p273_p25"/>
+      <zone ulx="55" uly="707" lrx="480" lry="729" xml:id="p273_p26"/>
+      <zone ulx="54" uly="724" lrx="477" lry="749" xml:id="p273_p27"/>
+      <zone ulx="53" uly="745" lrx="477" lry="765" xml:id="p273_p28"/>
+      <zone ulx="54" uly="763" lrx="480" lry="785" xml:id="p273_p29"/>
+      <zone ulx="53" uly="785" lrx="481" lry="800" xml:id="p273_p30"/>
+      <zone ulx="52" uly="799" lrx="481" lry="822" xml:id="p273_p31"/>
+      <zone ulx="53" uly="819" lrx="477" lry="838" xml:id="p273_p32"/>
+      <zone ulx="58" uly="837" lrx="477" lry="858" xml:id="p273_p33"/>
+      <zone ulx="55" uly="858" lrx="479" lry="877" xml:id="p273_p34"/>
+      <zone ulx="53" uly="878" lrx="478" lry="894" xml:id="p273_p35"/>
+      <zone ulx="55" uly="894" lrx="476" lry="913" xml:id="p273_p36"/>
+      <zone ulx="55" uly="911" lrx="482" lry="932" xml:id="p273_p37"/>
+      <zone ulx="52" uly="929" lrx="480" lry="945" xml:id="p273_p38"/>
+      <zone ulx="51" uly="948" lrx="480" lry="964" xml:id="p273_p39"/>
+      <zone ulx="51" uly="964" lrx="480" lry="981" xml:id="p273_p40"/>
+      <zone ulx="52" uly="984" lrx="478" lry="1003" xml:id="p273_p41"/>
+      <zone ulx="52" uly="1000" lrx="483" lry="1021" xml:id="p273_p42"/>
+      <zone ulx="55" uly="1020" lrx="483" lry="1036" xml:id="p273_p43"/>
+      <zone ulx="55" uly="1035" lrx="484" lry="1053" xml:id="p273_p44"/>
+      <zone ulx="55" uly="1055" lrx="484" lry="1071" xml:id="p273_p45"/>
+      <zone ulx="55" uly="1069" lrx="480" lry="1091" xml:id="p273_p46"/>
+      <zone ulx="57" uly="1092" lrx="484" lry="1112" xml:id="p273_p47"/>
+      <zone ulx="52" uly="1110" lrx="485" lry="1131" xml:id="p273_p48"/>
+      <zone ulx="53" uly="1131" lrx="484" lry="1146" xml:id="p273_p49"/>
+      <zone ulx="55" uly="1146" lrx="486" lry="1162" xml:id="p273_p50"/>
+      <zone ulx="58" uly="1164" lrx="489" lry="1184" xml:id="p273_p51"/>
+      <zone ulx="56" uly="1187" lrx="487" lry="1202" xml:id="p273_p52"/>
+      <zone ulx="50" uly="1202" lrx="487" lry="1220" xml:id="p273_p53"/>
+      <zone ulx="53" uly="1219" lrx="488" lry="1236" xml:id="p273_p54"/>
+      <zone ulx="53" uly="1235" lrx="489" lry="1257" xml:id="p273_p55"/>
+      <zone ulx="53" uly="1257" lrx="492" lry="1276" xml:id="p273_p56"/>
+      <zone ulx="56" uly="1282" lrx="495" lry="1311" xml:id="p273_p57"/>
+      <zone ulx="488" uly="222" lrx="922" lry="237" xml:id="p273_p58"/>
+      <zone ulx="492" uly="238" lrx="923" lry="260" xml:id="p273_p59"/>
+      <zone ulx="491" uly="262" lrx="921" lry="274" xml:id="p273_p60"/>
+      <zone ulx="494" uly="277" lrx="924" lry="294" xml:id="p273_p61"/>
+      <zone ulx="491" uly="294" lrx="922" lry="315" xml:id="p273_p62"/>
+      <zone ulx="491" uly="317" lrx="915" lry="332" xml:id="p273_p63"/>
+      <zone ulx="494" uly="332" lrx="919" lry="350" xml:id="p273_p64"/>
+      <zone ulx="495" uly="353" lrx="919" lry="368" xml:id="p273_p65"/>
+      <zone ulx="495" uly="371" lrx="921" lry="386" xml:id="p273_p66"/>
+      <zone ulx="492" uly="388" lrx="917" lry="405" xml:id="p273_p67"/>
+      <zone ulx="495" uly="407" lrx="917" lry="426" xml:id="p273_p68"/>
+      <zone ulx="493" uly="425" lrx="919" lry="441" xml:id="p273_p69"/>
+      <zone ulx="492" uly="440" lrx="917" lry="462" xml:id="p273_p70"/>
+      <zone ulx="494" uly="458" lrx="917" lry="476" xml:id="p273_p71"/>
+      <zone ulx="495" uly="483" lrx="915" lry="493" xml:id="p273_p72"/>
+      <zone ulx="493" uly="495" lrx="923" lry="512" xml:id="p273_p73"/>
+      <zone ulx="494" uly="512" lrx="923" lry="530" xml:id="p273_p74"/>
+      <zone ulx="496" uly="530" lrx="925" lry="548" xml:id="p273_p75"/>
+      <zone ulx="498" uly="547" lrx="923" lry="566" xml:id="p273_p76"/>
+      <zone ulx="495" uly="565" lrx="924" lry="586" xml:id="p273_p77"/>
+      <zone ulx="497" uly="588" lrx="924" lry="605" xml:id="p273_p78"/>
+      <zone ulx="495" uly="607" lrx="924" lry="620" xml:id="p273_p79"/>
+      <zone ulx="497" uly="623" lrx="924" lry="642" xml:id="p273_p80"/>
+      <zone ulx="495" uly="646" lrx="921" lry="657" xml:id="p273_p81"/>
+      <zone ulx="494" uly="662" lrx="922" lry="678" xml:id="p273_p82"/>
+      <zone ulx="493" uly="680" lrx="923" lry="695" xml:id="p273_p83"/>
+      <zone ulx="497" uly="694" lrx="924" lry="708" xml:id="p273_p84"/>
+      <zone ulx="494" uly="712" lrx="919" lry="730" xml:id="p273_p85"/>
+      <zone ulx="496" uly="732" lrx="923" lry="747" xml:id="p273_p86"/>
+      <zone ulx="499" uly="747" lrx="924" lry="767" xml:id="p273_p87"/>
+      <zone ulx="498" uly="765" lrx="926" lry="783" xml:id="p273_p88"/>
+      <zone ulx="497" uly="786" lrx="924" lry="805" xml:id="p273_p89"/>
+      <zone ulx="497" uly="805" lrx="924" lry="821" xml:id="p273_p90"/>
+      <zone ulx="496" uly="824" lrx="922" lry="842" xml:id="p273_p91"/>
+      <zone ulx="499" uly="846" lrx="920" lry="858" xml:id="p273_p92"/>
+      <zone ulx="495" uly="861" lrx="925" lry="879" xml:id="p273_p93"/>
+      <zone ulx="497" uly="877" lrx="926" lry="892" xml:id="p273_p94"/>
+      <zone ulx="494" uly="895" lrx="924" lry="912" xml:id="p273_p95"/>
+      <zone ulx="495" uly="916" lrx="927" lry="930" xml:id="p273_p96"/>
+      <zone ulx="496" uly="932" lrx="927" lry="950" xml:id="p273_p97"/>
+      <zone ulx="495" uly="951" lrx="925" lry="965" xml:id="p273_p98"/>
+      <zone ulx="495" uly="968" lrx="926" lry="986" xml:id="p273_p99"/>
+      <zone ulx="499" uly="990" lrx="926" lry="1005" xml:id="p273_p100"/>
+      <zone ulx="497" uly="1011" lrx="926" lry="1023" xml:id="p273_p101"/>
+      <zone ulx="494" uly="1029" lrx="928" lry="1041" xml:id="p273_p102"/>
+      <zone ulx="501" uly="1047" lrx="925" lry="1061" xml:id="p273_p103"/>
+      <zone ulx="500" uly="1061" lrx="928" lry="1076" xml:id="p273_p104"/>
+      <zone ulx="501" uly="1077" lrx="926" lry="1097" xml:id="p273_p105"/>
+      <zone ulx="501" uly="1096" lrx="927" lry="1112" xml:id="p273_p106"/>
+      <zone ulx="501" uly="1114" lrx="928" lry="1131" xml:id="p273_p107"/>
+      <zone ulx="500" uly="1129" lrx="930" lry="1151" xml:id="p273_p108"/>
+      <zone ulx="498" uly="1150" lrx="926" lry="1165" xml:id="p273_p109"/>
+      <zone ulx="500" uly="1171" lrx="921" lry="1187" xml:id="p273_p110"/>
+      <zone ulx="504" uly="1191" lrx="930" lry="1203" xml:id="p273_p111"/>
+      <zone ulx="506" uly="1202" lrx="927" lry="1225" xml:id="p273_p112"/>
+      <zone ulx="503" uly="1223" lrx="932" lry="1244" xml:id="p273_p113"/>
+      <zone ulx="498" uly="1254" lrx="932" lry="1272" xml:id="p273_p114"/>
+      <zone ulx="500" uly="1273" lrx="931" lry="1289" xml:id="p273_p115"/>
       <zone ulx="502" uly="1290" lrx="929" lry="1306" xml:id="p273_p116"/>
     </surface>
-  </facsimile>
-
-  <!-- Pagina 274 -->
-  <facsimile>
     <surface n="274" xml:id="M_274">
-      <graphic url="progetto/img/pp274.jpg" xml:id="pag274" width='1186px' height='1744px' />
-      <zone ulx="83" uly="52" lrx="143" lry="92" xml:id="p274_number" />
-      <zone ulx="440" uly="48" lrx="813" lry="89" xml:id="p274_runningTitle" />
-      <zone ulx="964" uly="44" lrx="1136" lry="101" xml:id="p274_vol" />
+      <graphic url="progetto/img/pp274.jpg" xml:id="pag274" width="1186px" height="1744px"/>
+      <zone ulx="83" uly="52" lrx="143" lry="92" xml:id="p274_number"/>
+      <zone ulx="440" uly="48" lrx="813" lry="89" xml:id="p274_runningTitle"/>
+      <zone ulx="964" uly="44" lrx="1136" lry="101" xml:id="p274_vol"/>
       <zone ulx="92" uly="112" lrx="605" lry="139" xml:id="p274_p1"/>
-      <zone ulx="92" uly="140" lrx="607" lry="160" xml:id="p274_p2" />
+      <zone ulx="92" uly="140" lrx="607" lry="160" xml:id="p274_p2"/>
       <zone ulx="89" uly="161" lrx="606" lry="184" xml:id="p274_p3"/>
       <zone ulx="91" uly="184" lrx="602" lry="207" xml:id="p274_p4"/>
       <zone ulx="90" uly="209" lrx="603" lry="226" xml:id="p274_p5"/>
@@ -424,8 +399,6 @@
       <zone ulx="629" uly="1650" lrx="1130" lry="1670" xml:id="p274_p139"/>
       <zone ulx="627" uly="1670" lrx="1129" lry="1692" xml:id="p274_p140"/>
       <zone ulx="627" uly="1691" lrx="1129" lry="1712" xml:id="p274_p141"/>
-
-      <!-- Col2 -->
       <zone ulx="624" uly="117" lrx="1133" lry="141" xml:id="p274_p142"/>
       <zone ulx="625" uly="140" lrx="1129" lry="162" xml:id="p274_p143"/>
       <zone ulx="624" uly="162" lrx="1135" lry="182" xml:id="p274_p144"/>
@@ -494,25 +467,15 @@
       <zone ulx="617" uly="1549" lrx="1126" lry="1567" xml:id="p274_p207"/>
       <zone ulx="618" uly="1573" lrx="1124" lry="1587" xml:id="p274_p208"/>
     </surface>
-  </facsimile>
-
-  <!-- Pag 275 -->
-  <facsimile>
     <surface n="275" xml:id="M_275">
-      <graphic url='progetto/img/pp275.jpg' width='1094px' height='1636px' xml:id="pag275"/>
-      <zone ulx="28" uly="56" lrx="187" lry="94" xml:id="p275_date" />
-      <zone ulx="347" uly="47" lrx="678" lry="96" xml:id="p275_runningTitle" />
+      <graphic url="progetto/img/pp275.jpg" width="1094px" height="1636px" xml:id="pag275"/>
+      <zone ulx="28" uly="56" lrx="187" lry="94" xml:id="p275_date"/>
+      <zone ulx="347" uly="47" lrx="678" lry="96" xml:id="p275_runningTitle"/>
       <zone ulx="969" uly="56" lrx="1020" lry="85" xml:id="p275_number"/>
-
-      <zone ulx="28" uly="56" lrx="187" lry="94" xml:id="p275_date_com" />
-      <zone ulx="347" uly="47" lrx="678" lry="96" xml:id="p275_runningTitle_com" />
-      <zone ulx="969" uly="56" lrx="1020" lry="85" xml:id="p275_number_com"/>
-
-      <zone ulx="32" uly="111" lrx="517" lry="133" xml:id="p275_p1" />
-      <zone ulx="33" uly="138" lrx="514" lry="153" xml:id="p275_p2" />
-      <zone ulx="30" uly="157" lrx="510" lry="176" xml:id="p275_p3" />
+      <zone ulx="32" uly="111" lrx="517" lry="133" xml:id="p275_p1"/>
+      <zone ulx="33" uly="138" lrx="514" lry="153" xml:id="p275_p2"/>
+      <zone ulx="30" uly="157" lrx="510" lry="176" xml:id="p275_p3"/>
       <zone ulx="38" uly="188" lrx="513" lry="220" xml:id="p275_p4"/>
-      <!-- Colonna 1 -->
       <zone ulx="43" uly="214" lrx="515" lry="238" xml:id="p275_p5"/>
       <zone ulx="34" uly="234" lrx="518" lry="261" xml:id="p275_p6"/>
       <zone ulx="36" uly="262" lrx="516" lry="281" xml:id="p275_p7"/>
@@ -574,8 +537,6 @@
       <zone ulx="34" uly="1411" lrx="516" lry="1431" xml:id="p275_p63"/>
       <zone ulx="33" uly="1431" lrx="519" lry="1447" xml:id="p275_p64"/>
       <zone ulx="39" uly="1458" lrx="508" lry="1485" xml:id="p275_p65"/>
-
-      <!-- Colonna 2 -->
       <zone ulx="534" uly="108" lrx="1019" lry="131" xml:id="p275_p66"/>
       <zone ulx="532" uly="134" lrx="1017" lry="154" xml:id="p275_p67"/>
       <zone ulx="533" uly="156" lrx="1015" lry="175" xml:id="p275_p68"/>
@@ -644,888 +605,840 @@
       <zone ulx="541" uly="1449" lrx="1015" lry="1467" xml:id="p275_p131"/>
       <zone ulx="541" uly="1471" lrx="1019" lry="1488" xml:id="p275_p132"/>
     </surface>
-  </facsimile>
-
-  <!-- Pag 276 -->
-  <facsimile>
     <surface n="276" xml:id="M_276">
-      <graphic url='progetto/img/pp276.jpg' width='1078px' height='1624px' xml:id="pag276" />
-      <zone ulx="60" uly="37" lrx="128" lry="78" xml:id="p276_number" />
-      <zone ulx="388" uly="30" lrx="724" lry="74" xml:id="p276_runningTitle" />
+      <graphic url="progetto/img/pp276.jpg" width="1078px" height="1624px" xml:id="pag276"/>
+      <zone ulx="60" uly="37" lrx="128" lry="78" xml:id="p276_number"/>
+      <zone ulx="388" uly="30" lrx="724" lry="74" xml:id="p276_runningTitle"/>
       <zone ulx="876" uly="32" lrx="1043" lry="78" xml:id="p276_vol"/>
-      <zone ulx="66" uly="102" lrx="548" lry="121" xml:id="p276_p1" />
-      <zone ulx="67" uly="122" lrx="551" lry="138" xml:id="p276_p2" />
-      <zone ulx="67" uly="146" lrx="544" lry="164" xml:id="p276_p3" />
-      <zone ulx="69" uly="166" lrx="544" lry="182" xml:id="p276_p4" />
-      <zone ulx="72" uly="185" lrx="546" lry="205" xml:id="p276_p5" />
-      <zone ulx="68" uly="204" lrx="547" lry="227" xml:id="p276_p6" />
-      <zone ulx="66" uly="227" lrx="554" lry="244" xml:id="p276_p7" />
-      <zone ulx="68" uly="248" lrx="552" lry="264" xml:id="p276_p8" />
-      <zone ulx="70" uly="267" lrx="550" lry="284" xml:id="p276_p9" />
-      <zone ulx="68" uly="287" lrx="552" lry="305" xml:id="p276_p10" />
-      <zone ulx="69" uly="307" lrx="548" lry="328" xml:id="p276_p11" />
-      <zone ulx="68" uly="330" lrx="543" lry="346" xml:id="p276_p12" />
-      <zone ulx="68" uly="345" lrx="547" lry="368" xml:id="p276_p13" />
-      <zone ulx="67" uly="369" lrx="549" lry="389" xml:id="p276_p14" />
-      <zone ulx="68" uly="389" lrx="550" lry="407" xml:id="p276_p15" />
-      <zone ulx="70" uly="409" lrx="547" lry="433" xml:id="p276_p16" />
-      <zone ulx="70" uly="429" lrx="550" lry="450" xml:id="p276_p17" />
-      <zone ulx="71" uly="450" lrx="549" lry="469" xml:id="p276_p18" />
-      <zone ulx="67" uly="471" lrx="549" lry="491" xml:id="p276_p19" />
-      <zone ulx="68" uly="495" lrx="549" lry="509" xml:id="p276_p20" />
-      <zone ulx="73" uly="512" lrx="552" lry="530" xml:id="p276_p21" />
-      <zone ulx="70" uly="529" lrx="552" lry="547" xml:id="p276_p22" />
-      <zone ulx="71" uly="551" lrx="550" lry="573" xml:id="p276_p23" />
-      <zone ulx="72" uly="578" lrx="545" lry="595" xml:id="p276_p24" />
-      <zone ulx="70" uly="595" lrx="547" lry="616" xml:id="p276_p25" />
-      <zone ulx="69" uly="615" lrx="545" lry="634" xml:id="p276_p26" />
-      <zone ulx="74" uly="638" lrx="552" lry="653" xml:id="p276_p27" />
-      <zone ulx="70" uly="654" lrx="554" lry="678" xml:id="p276_p28" />
-      <zone ulx="69" uly="679" lrx="553" lry="696" xml:id="p276_p29" />
-      <zone ulx="68" uly="700" lrx="551" lry="712" xml:id="p276_p30" />
-      <zone ulx="69" uly="716" lrx="547" lry="735" xml:id="p276_p31" />
-      <zone ulx="71" uly="738" lrx="546" lry="754" xml:id="p276_p32" />
-      <zone ulx="71" uly="758" lrx="552" lry="777" xml:id="p276_p33" />
-      <zone ulx="71" uly="777" lrx="551" lry="798" xml:id="p276_p34" />
-      <zone ulx="71" uly="801" lrx="551" lry="818" xml:id="p276_p35" />
+      <zone ulx="66" uly="102" lrx="548" lry="121" xml:id="p276_p1"/>
+      <zone ulx="67" uly="122" lrx="551" lry="138" xml:id="p276_p2"/>
+      <zone ulx="67" uly="146" lrx="544" lry="164" xml:id="p276_p3"/>
+      <zone ulx="69" uly="166" lrx="544" lry="182" xml:id="p276_p4"/>
+      <zone ulx="72" uly="185" lrx="546" lry="205" xml:id="p276_p5"/>
+      <zone ulx="68" uly="204" lrx="547" lry="227" xml:id="p276_p6"/>
+      <zone ulx="66" uly="227" lrx="554" lry="244" xml:id="p276_p7"/>
+      <zone ulx="68" uly="248" lrx="552" lry="264" xml:id="p276_p8"/>
+      <zone ulx="70" uly="267" lrx="550" lry="284" xml:id="p276_p9"/>
+      <zone ulx="68" uly="287" lrx="552" lry="305" xml:id="p276_p10"/>
+      <zone ulx="69" uly="307" lrx="548" lry="328" xml:id="p276_p11"/>
+      <zone ulx="68" uly="330" lrx="543" lry="346" xml:id="p276_p12"/>
+      <zone ulx="68" uly="345" lrx="547" lry="368" xml:id="p276_p13"/>
+      <zone ulx="67" uly="369" lrx="549" lry="389" xml:id="p276_p14"/>
+      <zone ulx="68" uly="389" lrx="550" lry="407" xml:id="p276_p15"/>
+      <zone ulx="70" uly="409" lrx="547" lry="433" xml:id="p276_p16"/>
+      <zone ulx="70" uly="429" lrx="550" lry="450" xml:id="p276_p17"/>
+      <zone ulx="71" uly="450" lrx="549" lry="469" xml:id="p276_p18"/>
+      <zone ulx="67" uly="471" lrx="549" lry="491" xml:id="p276_p19"/>
+      <zone ulx="68" uly="495" lrx="549" lry="509" xml:id="p276_p20"/>
+      <zone ulx="73" uly="512" lrx="552" lry="530" xml:id="p276_p21"/>
+      <zone ulx="70" uly="529" lrx="552" lry="547" xml:id="p276_p22"/>
+      <zone ulx="71" uly="551" lrx="550" lry="573" xml:id="p276_p23"/>
+      <zone ulx="72" uly="578" lrx="545" lry="595" xml:id="p276_p24"/>
+      <zone ulx="70" uly="595" lrx="547" lry="616" xml:id="p276_p25"/>
+      <zone ulx="69" uly="615" lrx="545" lry="634" xml:id="p276_p26"/>
+      <zone ulx="74" uly="638" lrx="552" lry="653" xml:id="p276_p27"/>
+      <zone ulx="70" uly="654" lrx="554" lry="678" xml:id="p276_p28"/>
+      <zone ulx="69" uly="679" lrx="553" lry="696" xml:id="p276_p29"/>
+      <zone ulx="68" uly="700" lrx="551" lry="712" xml:id="p276_p30"/>
+      <zone ulx="69" uly="716" lrx="547" lry="735" xml:id="p276_p31"/>
+      <zone ulx="71" uly="738" lrx="546" lry="754" xml:id="p276_p32"/>
+      <zone ulx="71" uly="758" lrx="552" lry="777" xml:id="p276_p33"/>
+      <zone ulx="71" uly="777" lrx="551" lry="798" xml:id="p276_p34"/>
+      <zone ulx="71" uly="801" lrx="551" lry="818" xml:id="p276_p35"/>
     </surface>
   </facsimile>
-
   <text>
     <body>
       <div type="article" xml:id="articolo_carusi_sicilia">
         <head rend="pageHeader">
-          <orgName xml:id="p273_runningTitle" facs="#p273_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+          <orgName xml:id="text_p273_runningTitle" facs="#p273_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
         </head>
-        <head type="subtitle" facs="#p273_subTitle">DI <term type="Verbum" subtype="aree_disciplinari">POLITICA, SCIENZE, LETTERE ED ARTI</term>
-        </head>
-
-        <pb n="273" facs="#M_273"/>
-
-        <head type="vol" facs="#p273_vol">Vol. 7 </head>
-
-        <div type="date" facs="p273_date" xml:id="p273_date">
-          <placeName ref="#Roma">Roma</placeName>
-          <date when="2025-05-10" facs="#p273_date">1 maggio 1881</date>
-        </div>
-
-        <num type="number" value="174" facs="#p273_number">N 174</num>
-
-        <head type="articleTitle" facs="#p273_articleTitle">
-          I "<term type="Verbum" subtype="condizione_lavoratori">Carusi</term>" in <placeName ref="#Sicilia">Sicilia</placeName>.
-        </head>
-
-        <div class="col-1" xml:id="p273_par1_col_1" facs="#p273_par1_col_1" type="paragraph">
-          <span facs="#p273_articleTitle">
-        I "<term type="verbum" subtype="condizione_lavoratori">Carusi</term>" in <placeName ref="#luogo_Sicilia">Sicilia</placeName>.
-          </span>
-          <p facs="#p273_p1" xml:id="p273_p1">Sono trascorsi oramai dieci lunghi anni da quando l'<persName ref="#pers_Lanza">on. Lanza</persName>
-          </p>
-          <p facs="#p273_p2" xml:id="p273_p2">
-        , essendo ministro dell'interno, presentava al <orgName ref="#org_SenatoRegno">Senato</orgName>
-          </p>
-          <p facs="#p273_p3" xml:id="p273_p3">un <bibl ref="#op_CodiceSanitario">progetto di codice sanitario</bibl> contenente alcune disposizioni,</p>
-          <p facs="#p273_p4" xml:id="p273_p4">intese a disciplinare il <rs type="temi_motivi" ref="#tema_condizione_lavoratori">lavoro dei fanciulli nelle fabbriche e nelle miniere</rs>.
-          </p>
-          <p facs="#p273_p5" xml:id="p273_p5">Da quella volta numerose proposte</p>
-          <p facs="#p273_p6" xml:id="p273_p6">di legge furono presentate al <orgName ref="#org_ParlamentoItaliano">Parlamento Italiano</orgName>, sempre</p>
-          <p facs="#p273_p7" xml:id="p273_p7">collo scopo di regolare questo importante e delicato argomento.</p>
-          <p facs="#p273_p8" xml:id="p273_p8">Il <orgName ref="#org_Stato">governo</orgName> stesso si fece iniziatore di un'inchiesta,</p>
-          <p facs="#p273_p9" xml:id="p273_p9">i cui risultati comparvero non ha guari in un grosso volume</p>
-          <p facs="#p273_p10" xml:id="p273_p10">pubblicato dal <orgName ref="#org_MinisteroAgricolturaIndustriaCommercio">Ministero di Agricoltura, Industria e Commercio</orgName>,
-          </p>
-          <p facs="#p273_p11" xml:id="p273_p11">e furono adoperati dagli onorevoli <persName ref="#pers_Depretis">Depretis</persName> e</p>
-          <p facs="#p273_p12" xml:id="p273_p12">
-            <persName ref="#pers_Miceli">Miceli</persName> per la presentazione di un <bibl ref="#op_ProgettoDepretisMiceli">nuovo progetto di legge</bibl>
-          </p>
-          <p facs="#p273_p13" xml:id="p273_p13">alquanto diverso nei particolari da quello presentato poco</p>
-          <p facs="#p273_p14" xml:id="p273_p14">tempo innanzi dagli onorevoli <persName ref="#pers_Minghetti">Minghetti</persName>,
-            <persName ref="#pers_Luzzatti">Luzzatti</persName>,
-            <persName ref="#pers_Villari">Villari</persName> e
-          </p>
-          <p facs="#p273_p15" xml:id="p273_p15">
-            <persName ref="#pers_SidneySonnino">Sidney Sonnino</persName>,
-        ma informato allo stesso concetto generale.
-          </p>
-          <p facs="#p273_p16" xml:id="p273_p16">Senonchè mentre l'urgenza di accordare una protezione</p>
-          <p facs="#p273_p17" xml:id="p273_p17">legale alle donne e ai fanciulli impiegati nell'industria è riconosciuta</p>
-          <p facs="#p273_p18" xml:id="p273_p18">da molti in <orgName ref="#org_ParlamentoItaliano">Parlamento</orgName> e fuori, senza distinzione di</p>
-          <p facs="#p273_p19" xml:id="p273_p19">partito politico, le sessioni succedono alle sessioni, le legislature</p>
-          <p facs="#p273_p20" xml:id="p273_p20">alle legislature senza che si giunga a prendere</p>
-          <p facs="#p273_p21" xml:id="p273_p21">alcun provvedimento concreto; e, quel ch'è peggio, la</p>
-          <p facs="#p273_p22" xml:id="p273_p22">Commissione parlamentare, incaricata di riferire sul <bibl ref="#op_ProgettoDepretisMiceli">progetto</bibl>
-          </p>
-          <p facs="#p273_p23" xml:id="p273_p23">
-            <bibl ref="#op_ProgettoDepretisMiceli">Depretis-Miceli</bibl>, dorme ingiustamente i suoi sonni. Intanto i</p>
-          <p facs="#p273_p24" xml:id="p273_p24">mali esistenti non ricevono rimedio e, trascurati come sono,</p>
-          <p facs="#p273_p25" xml:id="p273_p25">inacerbiscono. Perciò, l'animo nostro rimase tristemente</p>
-          <p facs="#p273_p26" xml:id="p273_p26">impressionato quando, alcuni mesi or sono, un maggiorente dell'</p>
-          <p facs="#p273_p27" xml:id="p273_p27">industria italiana, ed <rs type="epithet" ref="#epithet_appassionato">economista appassionato</rs>, volle dimostrare</p>
-          <p facs="#p273_p28" xml:id="p273_p28">l'inopportunità di una legge regolatrice del lavoro giovanile e muliebre</p>
-          <p facs="#p273_p29" xml:id="p273_p29">nell'industria recando innanzi l'argomentazione che come in</p>
-          <p facs="#p273_p30" xml:id="p273_p30">
-            <placeName ref="#luogo_Italia">Italia</placeName> non s'erano prodotti ancora i gravi</p>
-          <p facs="#p273_p31" xml:id="p273_p31">inconvenienti pei quali in altri paesi la libertà del contratto</p>
-          <p facs="#p273_p32" xml:id="p273_p32">di lavoro era stata ristretta, così non v'era presso di noi</p>
-          <p facs="#p273_p33" xml:id="p273_p33">ragione sufficiente per seguire questo esempio. <foreign xml:lang="la">*</foreign> Strana teoria,</p>
-          <p facs="#p273_p34" xml:id="p273_p34">secondo la quale la legge dovrebbe intervenire soltanto</p>
-          <p facs="#p273_p35" xml:id="p273_p35">quando il disordine ch'essa deve impedire si fosse già</p>
-          <p facs="#p273_p36" xml:id="p273_p36">manifestato in gravi proporzioni.</p>
-          <p facs="#p273_p37" xml:id="p273_p37">Non è vero d'altronde che in <placeName ref="#luogo_Italia">Italia</placeName> non esistano i mali</p>
-          <p facs="#p273_p38" xml:id="p273_p38">altrove lamentati. Anche presso di noi si trova impiegato</p>
-          <p facs="#p273_p39" xml:id="p273_p39">nell'industria un gran numero di donne e di fanciulli.</p>
-          <p facs="#p273_p40" xml:id="p273_p40">Secondo le cifre recate dalla Statistica di alcune industrie italiane,</p>
-          <p facs="#p273_p41" xml:id="p273_p41">sopra 382,131 operai delle manifatture si avrebbero</p>
-          <p facs="#p273_p42" xml:id="p273_p42">in <placeName ref="#luogo_Italia">Italia</placeName> 188,486 donne adulte e 90,083 fanciulli d'ambo i sessi.</p>
-          <p facs="#p273_p43" xml:id="p273_p43">Altre notizie raccolte dagli ingegneri delle miniere</p>
-          <p facs="#p273_p44" xml:id="p273_p44">recano che nell'<date when="1878">anno 1878</date> su 40,556 operai addetti ai lavori</p>
-          <p facs="#p273_p45" xml:id="p273_p45">minerari (non comprese le cave) si contavano 6138 fanciulli</p>
-          <p facs="#p273_p46" xml:id="p273_p46">(d'età inferiore a 14 anni) e 1722 donne.</p>
-          <p facs="#p273_p47" xml:id="p273_p47">Ora, le ricerche fatte negli anni scorsi dal
-            <orgName ref="#org_MinisteroAgricolturaIndustriaCommercio">Ministero di Agricoltura, Industria e Commercio</orgName>
-          </p>
-          <p facs="#p273_p48" xml:id="p273_p48">e l'inchiesta ordinata dall'<persName ref="#pers_Cairoli">onorevole Cairoli</persName>
-        (allorchè aveva l'interim di quel ministero),
-          </p>
-          <p facs="#p273_p49" xml:id="p273_p49">valgono a testimoniare che quei fanciulli sono,</p>
-          <p facs="#p273_p50" xml:id="p273_p50">per una gran parte, di età inferiore non solo a 10 o 9</p>
-          <p facs="#p273_p51" xml:id="p273_p51">anni, ma sovente anche ad 8 e a 7, talvolta a 6 e perfino</p>
-          <p facs="#p273_p52" xml:id="p273_p52">a 5 anni, e che, oltre a ciò, non pochi sono i casi in cui</p>
-          <p facs="#p273_p53" xml:id="p273_p53">donne e fanciulli sono sottoposti ad un <rs type="temi_motivi" ref="#tema_condizione_lavoratori">lavoro eccessivo</rs>,
-          </p>
-          <p facs="#p273_p54" xml:id="p273_p54">deleterio per le loro forze fisiche e intellettuali, mentre</p>
-          <p facs="#p273_p55" xml:id="p273_p55">devono prestar l'opera propria in condizioni pericolose</p>
-          <p facs="#p273_p56" xml:id="p273_p56"></p>
-          <p facs="#p273_p57" xml:id="p273_p57">
-            <persName ref="#pers_Rossi">ALESSANDRO ROSSI</persName>,
-            <bibl ref="#op_PercheUnaLegge">Perchè una Legge?</bibl> —
-            <orgName ref="#org_IlRisorgimento">Il Risorgimento</orgName>, vol. V, pag. 414.
-          </p>
-        </div>
-
-        <div class="col-2" xml:id="p273_par1_col_2" facs="#p273_par1_col_2" type="paragraph">
-          <p facs="#p273_p58" xml:id="p273_p58">per la loro moralità. Specialmente in alcune <term type="verbum" ref="#term_Zolfare">miniére di zolfo</term>
-          </p>
-          <p facs="#p273_p59" xml:id="p273_p59">della <placeName ref="#luogo_Sicilia">Sicilia</placeName> il lavoro dei fanciulli trae seco conseguenze</p>
-          <p facs="#p273_p60" xml:id="p273_p60">disastrose. Esso fu fatto particolare oggetto di accurati studi</p>
-          <p facs="#p273_p61" xml:id="p273_p61">dovuti all'iniziativa privata o a quella del <orgName ref="#org_Stato">governo</orgName>. Così re-</p>
-          <p facs="#p273_p62" xml:id="p273_p62">centemente il senatore <persName ref="#pers_Tamajo">
+    
+        <opener>
+          <pb n="273" facs="#M_273"/>
+          <dateline>
+              <date when="1881-05-01" facs="#p273_date"><placeName ref="#Roma">Roma</placeName> 1 maggio 1881</date> 
+              <num type="number" value="174" facs="#p273_number">N. 174</num>
+          </dateline>
+        </opener>
+        <fw type="volume" facs="#p273_vol">Vol. 7</fw>
+        <fw type="subtitle" facs="#p273_subTitle">DI <term type="Verbum" subtype="aree_disciplinari">POLITICA, SCIENZE, LETTERE ED ARTI</term>
+        </fw>
+        <p facs="#p273_articleTitle">
+            I "<term type="verbum" subtype="condizione_lavoratori">CARUSI</term>" IN <placeName ref="#luogo_Sicilia">SICILIA</placeName>.
+        </p>
+        <p facs="#p273_p1" xml:id="text_p273_p1">Sono trascorsi oramai dieci lunghi anni da quando l'<persName ref="#pers_Lanza">on. Lanza</persName>
+        </p>
+        <p facs="#p273_p2" xml:id="text_p273_p2">
+          , essendo ministro dell'interno, presentava al <orgName ref="#org_SenatoRegno">Senato</orgName>
+        </p>
+        <p facs="#p273_p3" xml:id="text_p273_p3">un <ref target="#op_CodiceSanitario">progetto di codice sanitario</ref> contenente alcune disposizioni,</p>
+        <p facs="#p273_p4" xml:id="text_p273_p4">intese a disciplinare il <rs type="temi_motivi" ref="#tema_condizione_lavoratori">lavoro dei fanciulli nelle fabbriche e nelle miniere</rs>.
+        </p>
+        <p facs="#p273_p5" xml:id="text_p273_p5">Da quella volta numerose proposte</p>
+        <p facs="#p273_p6" xml:id="text_p273_p6">di legge furono presentate al <orgName ref="#org_ParlamentoItaliano">Parlamento Italiano</orgName>, sempre</p>
+        <p facs="#p273_p7" xml:id="text_p273_p7">collo scopo di regolare questo importante e delicato argomento.</p>
+        <p facs="#p273_p8" xml:id="text_p273_p8">Il <orgName ref="#org_Stato">governo</orgName> stesso si fece iniziatore di un'inchiesta,</p>
+        <p facs="#p273_p9" xml:id="text_p273_p9">i cui risultati comparvero non ha guari in un grosso volume</p>
+        <p facs="#p273_p10" xml:id="text_p273_p10">pubblicato dal <orgName ref="#org_MinisteroAgricolturaIndustriaCommercio">Ministero di Agricoltura, Industria e Commercio</orgName>,
+        </p>
+        <p facs="#p273_p11" xml:id="text_p273_p11">e furono adoperati dagli onorevoli <persName ref="#pers_Depretis">Depretis</persName> e</p>
+        <p facs="#p273_p12" xml:id="text_p273_p12">
+          <persName ref="#pers_Miceli">Miceli</persName> per la presentazione di un <ref target="#op_ProgettoDepretisMiceli">nuovo progetto di legge</ref>
+        </p>
+        <p facs="#p273_p13" xml:id="text_p273_p13">alquanto diverso nei particolari da quello presentato poco</p>
+        <p facs="#p273_p14" xml:id="text_p273_p14">tempo innanzi dagli onorevoli <persName ref="#pers_Minghetti">Minghetti</persName>,
+          <persName ref="#pers_Luzzatti">Luzzatti</persName>,
+          <persName ref="#pers_Villari">Villari</persName> e
+        </p>
+        <p facs="#p273_p15" xml:id="text_p273_p15">
+          <persName ref="#pers_SidneySonnino">Sidney Sonnino</persName>,
+          ma informato allo stesso concetto generale.
+        </p>
+        <p facs="#p273_p16" xml:id="text_p273_p16">Senonchè mentre l'urgenza di accordare una protezione</p>
+        <p facs="#p273_p17" xml:id="text_p273_p17">legale alle donne e ai fanciulli impiegati nell'industria è riconosciuta</p>
+        <p facs="#p273_p18" xml:id="text_p273_p18">da molti in <orgName ref="#org_ParlamentoItaliano">Parlamento</orgName> e fuori, senza distinzione di</p>
+        <p facs="#p273_p19" xml:id="text_p273_p19">partito politico, le sessioni succedono alle sessioni, le legislature</p>
+        <p facs="#p273_p20" xml:id="text_p273_p20">alle legislature senza che si giunga a prendere</p>
+        <p facs="#p273_p21" xml:id="text_p273_p21">alcun provvedimento concreto; e, quel ch'è peggio, la</p>
+        <p facs="#p273_p22" xml:id="text_p273_p22">Commissione parlamentare, incaricata di riferire sul <ref target="#op_ProgettoDepretisMiceli">progetto</ref>
+        </p>
+        <p facs="#p273_p23" xml:id="text_p273_p23">
+          <ref target="#op_ProgettoDepretisMiceli">Depretis-Miceli</ref>, dorme ingiustamente i suoi sonni. Intanto i</p>
+        <p facs="#p273_p24" xml:id="text_p273_p24">mali esistenti non ricevono rimedio e, trascurati come sono,</p>
+        <p facs="#p273_p25" xml:id="text_p273_p25">inacerbiscono. Perciò, l'animo nostro rimase tristemente</p>
+        <p facs="#p273_p26" xml:id="text_p273_p26">impressionato quando, alcuni mesi or sono, un maggiorente dell'</p>
+        <p facs="#p273_p27" xml:id="text_p273_p27">industria italiana, ed <rs type="epithet" ref="#epithet_appassionato">economista appassionato</rs>, volle dimostrare</p>
+        <p facs="#p273_p28" xml:id="text_p273_p28">l'inopportunità di una legge regolatrice del lavoro giovanile e muliebre</p>
+        <p facs="#p273_p29" xml:id="text_p273_p29">nell'industria recando innanzi l'argomentazione che come in</p>
+        <p facs="#p273_p30" xml:id="text_p273_p30">
+          <placeName ref="#luogo_Italia">Italia</placeName> non s'erano prodotti ancora i gravi</p>
+        <p facs="#p273_p31" xml:id="text_p273_p31">inconvenienti pei quali in altri paesi la libertà del contratto</p>
+        <p facs="#p273_p32" xml:id="text_p273_p32">di lavoro era stata ristretta, così non v'era presso di noi</p>
+        <p facs="#p273_p33" xml:id="text_p273_p33">ragione sufficiente per seguire questo esempio. <foreign xml:lang="la">*</foreign> Strana teoria,</p>
+        <p facs="#p273_p34" xml:id="text_p273_p34">secondo la quale la legge dovrebbe intervenire soltanto</p>
+        <p facs="#p273_p35" xml:id="text_p273_p35">quando il disordine ch'essa deve impedire si fosse già</p>
+        <p facs="#p273_p36" xml:id="text_p273_p36">manifestato in gravi proporzioni.</p>
+        <p facs="#p273_p37" xml:id="text_p273_p37">Non è vero d'altronde che in <placeName ref="#luogo_Italia">Italia</placeName> non esistano i mali</p>
+        <p facs="#p273_p38" xml:id="text_p273_p38">altrove lamentati. Anche presso di noi si trova impiegato</p>
+        <p facs="#p273_p39" xml:id="text_p273_p39">nell'industria un gran numero di donne e di fanciulli.</p>
+        <p facs="#p273_p40" xml:id="text_p273_p40">Secondo le cifre recate dalla Statistica di alcune industrie italiane,</p>
+        <p facs="#p273_p41" xml:id="text_p273_p41">sopra 382,131 operai delle manifatture si avrebbero</p>
+        <p facs="#p273_p42" xml:id="text_p273_p42">in <placeName ref="#luogo_Italia">Italia</placeName> 188,486 donne adulte e 90,083 fanciulli d'ambo i sessi.</p>
+        <p facs="#p273_p43" xml:id="text_p273_p43">Altre notizie raccolte dagli ingegneri delle miniere</p>
+        <p facs="#p273_p44" xml:id="text_p273_p44">recano che nell'<date when="1878">anno 1878</date> su 40,556 operai addetti ai lavori</p>
+        <p facs="#p273_p45" xml:id="text_p273_p45">minerari (non comprese le cave) si contavano 6138 fanciulli</p>
+        <p facs="#p273_p46" xml:id="text_p273_p46">(d'età inferiore a 14 anni) e 1722 donne.</p>
+        <p facs="#p273_p47" xml:id="text_p273_p47">Ora, le ricerche fatte negli anni scorsi dal
+          <orgName ref="#org_MinisteroAgricolturaIndustriaCommercio">Ministero di Agricoltura, Industria e Commercio</orgName>
+        </p>
+        <p facs="#p273_p48" xml:id="text_p273_p48">e l'inchiesta ordinata dall'<persName ref="#pers_Cairoli">onorevole Cairoli</persName>
+          (allorchè aveva l'interim di quel ministero),
+        </p>
+        <p facs="#p273_p49" xml:id="text_p273_p49">valgono a testimoniare che quei fanciulli sono,</p>
+        <p facs="#p273_p50" xml:id="text_p273_p50">per una gran parte, di età inferiore non solo a 10 o 9</p>
+        <p facs="#p273_p51" xml:id="text_p273_p51">anni, ma sovente anche ad 8 e a 7, talvolta a 6 e perfino</p>
+        <p facs="#p273_p52" xml:id="text_p273_p52">a 5 anni, e che, oltre a ciò, non pochi sono i casi in cui</p>
+        <p facs="#p273_p53" xml:id="text_p273_p53">donne e fanciulli sono sottoposti ad un <rs type="temi_motivi" ref="#tema_condizione_lavoratori">lavoro eccessivo</rs>,
+        </p>
+        <p facs="#p273_p54" xml:id="text_p273_p54">deleterio per le loro forze fisiche e intellettuali, mentre</p>
+        <p facs="#p273_p55" xml:id="text_p273_p55">devono prestar l'opera propria in condizioni pericolose</p>
+        <p facs="#p273_p56" xml:id="text_p273_p56"></p>
+        <p facs="#p273_p57" xml:id="text_p273_p57">
+          <persName ref="#pers_Rossi">ALESSANDRO ROSSI</persName>,
+          <ref target="#op_PercheUnaLegge">Perchè una Legge?</ref> —
+          <orgName ref="#org_IlRisorgimento">Il Risorgimento</orgName>, vol. V, pag. 414.
+        </p>
+        <p facs="#p273_p58" xml:id="text_p273_p58">per la loro moralità. Specialmente in alcune <term type="verbum" ref="#term_Zolfare">miniére di zolfo</term>
+        </p>
+        <p facs="#p273_p59" xml:id="text_p273_p59">della <placeName ref="#luogo_Sicilia">Sicilia</placeName> il lavoro dei fanciulli trae seco conseguenze</p>
+        <p facs="#p273_p60" xml:id="text_p273_p60">disastrose. Esso fu fatto particolare oggetto di accurati studi</p>
+        <p facs="#p273_p61" xml:id="text_p273_p61">dovuti all'iniziativa privata o a quella del <orgName ref="#org_Stato">governo</orgName>. Così re-</p>
+        <p facs="#p273_p62" xml:id="text_p273_p62">centemente il senatore <persName ref="#pers_Tamajo">
             <choice>
               <orig>Tamaio</orig>
               <reg>Tamajo</reg>
             </choice>
           </persName>, prefetto di <placeName ref="#luogo_Girgenti">Girgenti</placeName>, indi-</p>
-        <p facs="#p273_p63" xml:id="p273_p63">rizzò al <orgName ref="#org_Stato">governo</orgName> alcune proposte intese al <rs type="temi_motivi" ref="#tema_condizione_lavoratori">miglioramento</rs>
+        <p facs="#p273_p63" xml:id="text_p273_p63">rizzò al <orgName ref="#org_Stato">governo</orgName> alcune proposte intese al <rs type="temi_motivi" ref="#tema_condizione_lavoratori">miglioramento</rs>
         </p>
-        <p facs="#p273_p64" xml:id="p273_p64">delle condizioni in cui versano gli operai minatori, e in ispe-</p>
-        <p facs="#p273_p65" xml:id="p273_p65">cie i più giovani, di quella provincia. Uno studio teorico pub-</p>
-        <p facs="#p273_p66" xml:id="p273_p66">blicato dal sig. <persName ref="#pers_VittorioSavorini">Vittorio Savorini</persName>, raccoglie i risultati ot-</p>
-        <p facs="#p273_p67" xml:id="p273_p67">tenuti da una inchiesta ordinata e presieduta dallo stesso</p>
-        <p facs="#p273_p68" xml:id="p273_p68">prefetto. Questi ha fatto ispezionare minutamente, comin-</p>
-        <p facs="#p273_p69" xml:id="p273_p69">ciando dal <date when="ultimo_novembre">novembre ultimo</date>, 72 miniere situate nelle due</p>
-        <p facs="#p273_p70" xml:id="p273_p70">isole stesso. Tali miniere danno occupazione a 3878 operai.</p>
-        <p facs="#p273_p71" xml:id="p273_p71">69 dei quali sono capi maestri o sorveglianti dell'escava-</p>
-        <p facs="#p273_p72" xml:id="p273_p72">zione; 110 sono catatori, pesatori o scrivani, specie di magaz-</p>
-        <p facs="#p273_p73" xml:id="p273_p73">zinieri e speditori; 358 sono <term ref="#term_piconiere">piconieri</term>, ossia operai occupati</p>
-        <p facs="#p273_p74" xml:id="p273_p74">nella escavazione dello zolfo dalla miniera, 2056 sono per la</p>
-        <p facs="#p273_p75" xml:id="p273_p75">maggior parte fanciulli o giovanetti, chiamati <term ref="#term_caruso">carusi</term>, i quali</p>
-        <p facs="#p273_p76" xml:id="p273_p76">hanno il compito di trasportare a spalla lo zolfo scavato dal</p>
-        <p facs="#p273_p77" xml:id="p273_p77">fondo della miniera fino al piano dell'apertura. Vi hanno poi 11</p>
-        <p facs="#p273_p78" xml:id="p273_p78">donne incaricate ordinariamente di trasportare lo zolfo dalle</p>
-        <p facs="#p273_p79" xml:id="p273_p79">bocche della miniera fino alla catasta. L'età dei <term ref="#term_caruso">carusi</term> nelle</p>
-        <p facs="#p273_p80" xml:id="p273_p80">miniere di <placeName ref="#luogo_Licata">Licata</placeName> varia dai 10 a 18 anni; in quelle di <placeName ref="#luogo_Ganciana">Ganciana</placeName>
+        <p facs="#p273_p64" xml:id="text_p273_p64">delle condizioni in cui versano gli operai minatori, e in ispe-</p>
+        <p facs="#p273_p65" xml:id="text_p273_p65">cie i più giovani, di quella provincia. Uno studio teorico pub-</p>
+        <p facs="#p273_p66" xml:id="text_p273_p66">blicato dal sig. <persName ref="#pers_VittorioSavorini">Vittorio Savorini</persName>, raccoglie i risultati ot-</p>
+        <p facs="#p273_p67" xml:id="text_p273_p67">tenuti da una inchiesta ordinata e presieduta dallo stesso</p>
+        <p facs="#p273_p68" xml:id="text_p273_p68">prefetto. Questi ha fatto ispezionare minutamente, comin-</p>
+        <p facs="#p273_p69" xml:id="text_p273_p69">ciando dal <date when="ultimo_novembre">novembre ultimo</date>, 72 miniere situate nelle due</p>
+        <p facs="#p273_p70" xml:id="text_p273_p70">isole stesso. Tali miniere danno occupazione a 3878 operai.</p>
+        <p facs="#p273_p71" xml:id="text_p273_p71">69 dei quali sono capi maestri o sorveglianti dell'escava-</p>
+        <p facs="#p273_p72" xml:id="text_p273_p72">zione; 110 sono catatori, pesatori o scrivani, specie di magaz-</p>
+        <p facs="#p273_p73" xml:id="text_p273_p73">zinieri e speditori; 358 sono <term ref="#term_piconiere">piconieri</term>, ossia operai occupati</p>
+        <p facs="#p273_p74" xml:id="text_p273_p74">nella escavazione dello zolfo dalla miniera, 2056 sono per la</p>
+        <p facs="#p273_p75" xml:id="text_p273_p75">maggior parte fanciulli o giovanetti, chiamati <term ref="#term_caruso">carusi</term>, i quali</p>
+        <p facs="#p273_p76" xml:id="text_p273_p76">hanno il compito di trasportare a spalla lo zolfo scavato dal</p>
+        <p facs="#p273_p77" xml:id="text_p273_p77">fondo della miniera fino al piano dell'apertura. Vi hanno poi 11</p>
+        <p facs="#p273_p78" xml:id="text_p273_p78">donne incaricate ordinariamente di trasportare lo zolfo dalle</p>
+        <p facs="#p273_p79" xml:id="text_p273_p79">bocche della miniera fino alla catasta. L'età dei <term ref="#term_caruso">carusi</term> nelle</p>
+        <p facs="#p273_p80" xml:id="text_p273_p80">miniere di <placeName ref="#luogo_Licata">Licata</placeName> varia dai 10 a 18 anni; in quelle di <placeName ref="#luogo_Ganciana">Ganciana</placeName>
         </p>
-        <p facs="#p273_p81" xml:id="p273_p81">dai 6 ai 20; in quelle di <placeName ref="#luogo_Palma">Palma</placeName> e <placeName ref="#luogo_Aragona">d'Aragona</placeName> dai 7</p>
-        <p facs="#p273_p82" xml:id="p273_p82">ai 18; in quelle di <placeName ref="#luogo_Bassa">Bassa</placeName> e <placeName ref="#luogo_Fermi">Fermi</placeName> dai 7 ai 19; in quelle di</p>
-        <p facs="#p273_p83" xml:id="p273_p83">
+        <p facs="#p273_p81" xml:id="text_p273_p81">dai 6 ai 20; in quelle di <placeName ref="#luogo_Palma">Palma</placeName> e <placeName ref="#luogo_Aragona">d'Aragona</placeName> dai 7</p>
+        <p facs="#p273_p82" xml:id="text_p273_p82">ai 18; in quelle di <placeName ref="#luogo_Bassa">Bassa</placeName> e <placeName ref="#luogo_Fermi">Fermi</placeName> dai 7 ai 19; in quelle di</p>
+        <p facs="#p273_p83" xml:id="text_p273_p83">
           <placeName ref="#luogo_Favara">Favara</placeName> dagli 8 ai 20. In alcune miniere si trovano però</p>
-        <p facs="#p273_p84" xml:id="p273_p84">
+        <p facs="#p273_p84" xml:id="text_p273_p84">
           <term ref="#term_caruso">carusi</term> pervenuti anche ad un età superiore, e fino a 50</p>
-        <p facs="#p273_p85" xml:id="p273_p85">anni.</p>
-        <p facs="#p273_p86" xml:id="p273_p86">Il <term ref="#term_piconiere">piconiere</term> assume il <rs type="temi_motivi" ref="#tema_condizione_lavoratori">lavoro a cottimo</rs> dal proprietario</p>
-        <p facs="#p273_p87" xml:id="p273_p87">della miniera e prende al proprio servizio alcuni ragazzi,</p>
-        <p facs="#p273_p88" xml:id="p273_p88">ai quali egli fa trasportare alla superficie del suolo il mi-</p>
-        <p facs="#p273_p89" xml:id="p273_p89">nerale da lui scavato. La mercede è retribuita al <term ref="#term_caruso">caruso</term>
+        <p facs="#p273_p85" xml:id="text_p273_p85">anni.</p>
+        <p facs="#p273_p86" xml:id="text_p273_p86">Il <term ref="#term_piconiere">piconiere</term> assume il <rs type="temi_motivi" ref="#tema_condizione_lavoratori">lavoro a cottimo</rs> dal proprietario</p>
+        <p facs="#p273_p87" xml:id="text_p273_p87">della miniera e prende al proprio servizio alcuni ragazzi,</p>
+        <p facs="#p273_p88" xml:id="text_p273_p88">ai quali egli fa trasportare alla superficie del suolo il mi-</p>
+        <p facs="#p273_p89" xml:id="text_p273_p89">nerale da lui scavato. La mercede è retribuita al <term ref="#term_caruso">caruso</term>
         </p>
-        <p facs="#p273_p90" xml:id="p273_p90">dal <term ref="#term_piconiere">piconiere</term> sul prezzo che questi ha pattuito per l'opera</p>
-        <p facs="#p273_p91" xml:id="p273_p91">propria. Il <term ref="#term_piconiere">piconiere</term> ha dunque tutto l'interesse di eccitare</p>
-        <p facs="#p273_p92" xml:id="p273_p92">quanto più può di lavoro ciascun fanciullo da lui dipen-</p>
-        <p facs="#p273_p93" xml:id="p273_p93">dente, perchè così risparmia sulla mano d'opera. Il salario</p>
-        <p facs="#p273_p94" xml:id="p273_p94">di un fanciullo sotto 10 anni varia da cent. 35 a cent. 85</p>
-        <p facs="#p273_p95" xml:id="p273_p95">al giorno; quello di un giovanetto che abbia superato gli</p>
-        <p facs="#p273_p96" xml:id="p273_p96">11 anni di età da cent. 85 a 1 lira e 50 cent. Ma secondo</p>
-        <p facs="#p273_p97" xml:id="p273_p97">i dati raccolti dal prefetto di <placeName ref="#luogo_Girgenti">Girgenti</placeName>, la media del salario</p>
-        <p facs="#p273_p98" xml:id="p273_p98">giornaliero dei <term ref="#term_caruso">carusi</term> non raggiunge la lira. E trattasi</p>
-        <p facs="#p273_p99" xml:id="p273_p99">ancora soltanto di un salario nominale o apparente. I ge-</p>
-        <p facs="#p273_p100" xml:id="p273_p100">nitori spinti dalla cupidigia o dal bisogno affidano i loro</p>
-        <p facs="#p273_p101" xml:id="p273_p101">figliuoli ai <term ref="#term_piconiere">piconieri</term>, per una certa somma in danaro</p>
-        <p facs="#p273_p102" xml:id="p273_p102">chiamata <term ref="#term_soccorso_morto">soccorso morto</term>, la quale varia ordinariamente dalle</p>
-        <p facs="#p273_p103" xml:id="p273_p103">cento alle trecento lire.</p>
-        <p facs="#p273_p104" xml:id="p273_p104">Il <term ref="#term_caruso">caruso</term> ha obbligo di lavorare finchè il <term ref="#term_piconiere">piconiere</term>
+        <p facs="#p273_p90" xml:id="text_p273_p90">dal <term ref="#term_piconiere">piconiere</term> sul prezzo che questi ha pattuito per l'opera</p>
+        <p facs="#p273_p91" xml:id="text_p273_p91">propria. Il <term ref="#term_piconiere">piconiere</term> ha dunque tutto l'interesse di eccitare</p>
+        <p facs="#p273_p92" xml:id="text_p273_p92">quanto più può di lavoro ciascun fanciullo da lui dipen-</p>
+        <p facs="#p273_p93" xml:id="text_p273_p93">dente, perchè così risparmia sulla mano d'opera. Il salario</p>
+        <p facs="#p273_p94" xml:id="text_p273_p94">di un fanciullo sotto 10 anni varia da cent. 35 a cent. 85</p>
+        <p facs="#p273_p95" xml:id="text_p273_p95">al giorno; quello di un giovanetto che abbia superato gli</p>
+        <p facs="#p273_p96" xml:id="text_p273_p96">11 anni di età da cent. 85 a 1 lira e 50 cent. Ma secondo</p>
+        <p facs="#p273_p97" xml:id="text_p273_p97">i dati raccolti dal prefetto di <placeName ref="#luogo_Girgenti">Girgenti</placeName>, la media del salario</p>
+        <p facs="#p273_p98" xml:id="text_p273_p98">giornaliero dei <term ref="#term_caruso">carusi</term> non raggiunge la lira. E trattasi</p>
+        <p facs="#p273_p99" xml:id="text_p273_p99">ancora soltanto di un salario nominale o apparente. I ge-</p>
+        <p facs="#p273_p100" xml:id="text_p273_p100">nitori spinti dalla cupidigia o dal bisogno affidano i loro</p>
+        <p facs="#p273_p101" xml:id="text_p273_p101">figliuoli ai <term ref="#term_piconiere">piconieri</term>, per una certa somma in danaro</p>
+        <p facs="#p273_p102" xml:id="text_p273_p102">chiamata <term ref="#term_soccorso_morto">soccorso morto</term>, la quale varia ordinariamente dalle</p>
+        <p facs="#p273_p103" xml:id="text_p273_p103">cento alle trecento lire.</p>
+        <p facs="#p273_p104" xml:id="text_p273_p104">Il <term ref="#term_caruso">caruso</term> ha obbligo di lavorare finchè il <term ref="#term_piconiere">piconiere</term>
         </p>
-        <p facs="#p273_p105" xml:id="p273_p105">siasi ripagato di questa anticipazione mediante ritenuta</p>
-        <p facs="#p273_p106" xml:id="p273_p106">sul salario del primo. Siccome poi il <term ref="#term_caruso">caruso</term> deve spesso</p>
-        <p facs="#p273_p107" xml:id="p273_p107">non solo mantenere se medesimo, ma soccorrere la propria</p>
-        <p facs="#p273_p108" xml:id="p273_p108">famiglia con suoi guadagni, i quali, ridotti nel modo indicato,</p>
-        <p facs="#p273_p109" xml:id="p273_p109">sembrano insufficienti al mantenimento di un solo, così suc-</p>
-        <p facs="#p273_p110" xml:id="p273_p110">cede ch'egli, non giungendo mai a soddisfare del tutto l'an-</p>
-        <p facs="#p273_p111" xml:id="p273_p111">ticipazione ricevuta, trovasi permanentemente indebitato</p>
-        <p facs="#p273_p112" xml:id="p273_p112">verso il <term ref="#term_piconiere">piconiere</term>, tenuto quindi da quest'ultimo in una</p>
-        <p facs="#p273_p113" xml:id="p273_p113">specie di schiavitù, e retribuito sempre di fatto in misura</p>
-        <p facs="#p273_p114" xml:id="p273_p114">
-          <persName ref="#pers_VittorioSavorini">Vittorio Savorini</persName>,          <bibl ref="#op_CondizioniLavoratoriMiniereGirgenti">Condizioni economiche e morali dei lavoratori</bibl>
+        <p facs="#p273_p105" xml:id="text_p273_p105">siasi ripagato di questa anticipazione mediante ritenuta</p>
+        <p facs="#p273_p106" xml:id="text_p273_p106">sul salario del primo. Siccome poi il <term ref="#term_caruso">caruso</term> deve spesso</p>
+        <p facs="#p273_p107" xml:id="text_p273_p107">non solo mantenere se medesimo, ma soccorrere la propria</p>
+        <p facs="#p273_p108" xml:id="text_p273_p108">famiglia con suoi guadagni, i quali, ridotti nel modo indicato,</p>
+        <p facs="#p273_p109" xml:id="text_p273_p109">sembrano insufficienti al mantenimento di un solo, così suc-</p>
+        <p facs="#p273_p110" xml:id="text_p273_p110">cede ch'egli, non giungendo mai a soddisfare del tutto l'an-</p>
+        <p facs="#p273_p111" xml:id="text_p273_p111">ticipazione ricevuta, trovasi permanentemente indebitato</p>
+        <p facs="#p273_p112" xml:id="text_p273_p112">verso il <term ref="#term_piconiere">piconiere</term>, tenuto quindi da quest'ultimo in una</p>
+        <p facs="#p273_p113" xml:id="text_p273_p113">specie di schiavitù, e retribuito sempre di fatto in misura</p>
+        <p facs="#p273_p114" xml:id="text_p273_p114">
+          <persName ref="#pers_VittorioSavorini">Vittorio Savorini</persName>, <ref target="#op_CondizioniLavoratoriMiniereGirgenti">Condizioni economiche e morali dei lavoratori</ref>
         </p>
-        <p facs="#p273_p115" xml:id="p273_p115">nelle miniere di zolfo e degli agricoltori della provincia di <placeName ref="#luogo_Girgenti">Girgenti</placeName>,
+        <p facs="#p273_p115" xml:id="text_p273_p115">nelle miniere di zolfo e degli agricoltori della provincia di <placeName ref="#luogo_Girgenti">Girgenti</placeName>,
         </p>
-        <p facs="#p273_p116" xml:id="p273_p116">
-          <placeName ref="#luogo_Girgenti">Girgenti</placeName>,          <date when="1881">1881</date>.
+        <p facs="#p273_p116" xml:id="text_p273_p116">
+          <placeName ref="#luogo_Girgenti">Girgenti</placeName>, <date when="1881">1881</date>.
+        </p>
+      </div>
+      <div type="article" xml:id="articolo_carusi_sicilia_pp274">
+        <pb n="274" facs="#M_274"/>
+        <head rend="pageHeader_pp274">
+          <num type="number" value="274" facs="#p274_number">274</num>
+          <orgName xml:id="text_p274_runningTitle" facs="#p274_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+          <seg facs="#p274_vol" xml:id="text_p274_vol">[Vol. 7, N, <num type="number" value="174">174</num>]</seg>
+        </head>
+        <p facs="#p274_p1" xml:id="text_p274_p1">inferiore a quella pattuita pel suo salario. Ma v'ha di</p>
+        <p facs="#p274_p2" xml:id="text_p274_p2">più. Il picconiere retribuisce il <term type="verbum" ref="#term_carasso">carasso</term> in natura anzichè</p>
+        <p facs="#p274_p3" xml:id="text_p274_p3">in danaro, somministrandogli il così detto <term type="verbum" ref="#term_speso">speso,</term> cioè farina</p>
+        <p facs="#p274_p4" xml:id="text_p274_p4">di grano, olio e spesso solo pane; e da ciò si vanno gua</p>
+        <p facs="#p274_p5" xml:id="text_p274_p5">dagno in due modi, provvedendo il <term type="verbum" ref="#term_carasso">carasso</term> di generi di</p>
+        <p facs="#p274_p6" xml:id="text_p274_p6">pessima qualità, e conteggiandoli sui salarj di questo ad</p>
+        <p facs="#p274_p7" xml:id="text_p274_p7">un prezzo superiore a quello reale del mercato. Per tal</p>
+        <p facs="#p274_p8" xml:id="text_p274_p8">modo vige ancora in Italia quel sistema immorale di retri</p>
+        <p facs="#p274_p9" xml:id="text_p274_p9">buzione del lavoro che fu conosciuto in Inghilterra sotto il</p>
+        <p facs="#p274_p10" xml:id="text_p274_p10">nome di <term type="verbum" ref="#term_truck_system">truck system,</term> e contro il quale quest'ultimo paese</p>
+        <p facs="#p274_p11" xml:id="text_p274_p11">adottò assai per tempo severe norme legislative. Il Carbo</p>
+        <p facs="#p274_p12" xml:id="text_p274_p12">naia della <placeName ref="#luogo_Sicilia">Sicilia</placeName>, siccome ha altri bisogni, oltre a quelli che le</p>
+        <p facs="#p274_p13" xml:id="text_p274_p13">cose somministrategli dal picconiere valgono a soddisfare,</p>
+        <p facs="#p274_p14" xml:id="text_p274_p14">rivende alla sua volta ciò che ha ricevuto. Così un rotolo</p>
+        <p facs="#p274_p15" xml:id="text_p274_p15">di pane che vale trenta centesimi gli è conteggiato in ragione</p>
+        <p facs="#p274_p16" xml:id="text_p274_p16">di 40 ed è da lui venduto in ragione di 20.</p>
+        <p facs="#p274_p17" xml:id="text_p274_p17">Ora se un uomo sano e forte va avanti, quanto non sono</p>
+        <p facs="#p274_p18" xml:id="text_p274_p18">spessi e feri i maltrattamenti che il fanciullo operaio degli</p>
+        <p facs="#p274_p19" xml:id="text_p274_p19">
+          <term type="verbum" ref="#term_Zolfare">zolfare</term> deve subire per così triste rimunerazione? Egli</p>
+        <p facs="#p274_p20" xml:id="text_p274_p20">deve passare la giornata, talvolta o faticando nelle gallerie</p>
+        <p facs="#p274_p21" xml:id="text_p274_p21">vive e mal tagliate nel masso, unito spesso dell'acqua che</p>
+        <p facs="#p274_p22" xml:id="text_p274_p22">trasuda dal suolo, portando sul dorso parecchi chilogrammi</p>
+        <p facs="#p274_p23" xml:id="text_p274_p23">di minerale. Da ciò uno sforzo che secca e corpi ancor te</p>
+        <p facs="#p274_p24" xml:id="text_p274_p24">neri gravissimi nell'avvenire. Il torace si deforma, la spina</p>
+        <p facs="#p274_p25" xml:id="text_p274_p25">dorsale si incurva sotto la pressione di un peso eccessivo</p>
+        <p facs="#p274_p26" xml:id="text_p274_p26">recato sulle spalle durante lunghe ore dalla profondità della</p>
+        <p facs="#p274_p27" xml:id="text_p274_p27">miniera fino all' esterno. I consigli salutari delle provincie</p>
+        <p facs="#p274_p28" xml:id="text_p274_p28">minerarie dell' isola e i consigli di loro ebbero a constatare</p>
+        <p facs="#p274_p29" xml:id="text_p274_p29">i vizi di conformazione a cui i <term type="verbum" ref="#term_carusi">carusi</term> vanno soggetti per</p>
+        <p facs="#p274_p30" xml:id="text_p274_p30">effetto del proprio lavoro, lo stato di deperimento fisico,</p>
+        <p facs="#p274_p31" xml:id="text_p274_p31">la mancanza di sviluppo che in loro si osserva, le con</p>
+        <p facs="#p274_p32" xml:id="text_p274_p32">tusioni che appariscono sul loro corpo, la nisioni che pia</p>
+        <p facs="#p274_p33" xml:id="text_p274_p33">gano le loro membra giacché, secondo fortunatamente anco</p>
+        <p facs="#p274_p34" xml:id="text_p274_p34">ra i picconiere per spingere i fanciulli da essi dipendenti</p>
+        <p facs="#p274_p35" xml:id="text_p274_p35">ad operare più solleciti, talvolta accostano perfino la fiamma</p>
+        <p facs="#p274_p36" xml:id="text_p274_p36">delle loro lampade alle membra ignude di questi. *</p>
+        <p facs="#p274_p37" xml:id="text_p274_p37">
+          <hi rend="i">A</hi> uno stato di cose si trova e troverebbe certo in gran</p>
+        <p facs="#p274_p38" xml:id="text_p274_p38">parte rimedio una legge che proibisse l'impiego di fanciulli</p>
+        <p facs="#p274_p39" xml:id="text_p274_p39">nel lavoro industriale prima che essi non avessero compiuto</p>
+        <p facs="#p274_p40" xml:id="text_p274_p40">una certa età, e limitasse per un periodo successivo più o</p>
+        <p facs="#p274_p41" xml:id="text_p274_p41">meno lungo la loro giornata di lavoro. Il progetto di legge</p>
+        <p facs="#p274_p42" xml:id="text_p274_p42">preso in considerazione dalla Camera nella tornata 9 giu</p>
+        <p facs="#p274_p43" xml:id="text_p274_p43">gno 1850, il quale proibiva l'impiego di fanciulli di età in</p>
+        <p facs="#p274_p44" xml:id="text_p274_p44">feriore ai 16 anni in lavori pericolosi e malsani, dava certo</p>
+        <p facs="#p274_p45" xml:id="text_p274_p45">in tal modo, per ciò che s'attiene almeno al lavoro delle</p>
+        <p facs="#p274_p46" xml:id="text_p274_p46">zolfare siciliane, una disposizione più efficace di quella con</p>
+        <p facs="#p274_p47" xml:id="text_p274_p47">tenuta nel controprogetto Depretis-Minghetti, la quale pro</p>
+        <p facs="#p274_p48" xml:id="text_p274_p48">poneva che fosse impiegati in lavori notturni, sotter</p>
+        <p facs="#p274_p49" xml:id="text_p274_p49">ranei, insalubri o pericolosi, fanciulli di età inferiore a 12</p>
+        <p facs="#p274_p50" xml:id="text_p274_p50">anni, e l'opera infatti che è richiesta ai <term type="verbum" ref="#term_carusi">carusi,</term> è così pe</p>
+        <p facs="#p274_p51" xml:id="text_p274_p51">nosa, che il limite di età fissato in quest' ultimo progetto</p>
+        <p facs="#p274_p52" xml:id="text_p274_p52">apparisce ancora troppo basso.</p>
+        <p facs="#p274_p53" xml:id="text_p274_p53">
+          <hi rend="i">Lo</hi> stato del senatore <persName ref="#pers_Tamajo">Tamajo</persName>, alle quali abbiamo ac</p>
+        <p facs="#p274_p54" xml:id="text_p274_p54">cennato, tendono contemporaneamente a due fini: 1° a far chè</p>
+        <p facs="#p274_p55" xml:id="text_p274_p55">la legge intervenga una buona volta per porre un termine</p>
+        <p facs="#p274_p56" xml:id="text_p274_p56">alle enormità che si verificano tutti dì nelle miniere siciliane.</p>
+        <p facs="#p274_p57" xml:id="text_p274_p57">2° a interessare il <orgName ref="#org_Stato">governo</orgName>, perchè incoraggi e favorisca di</p>
+        <p facs="#p274_p58" xml:id="text_p274_p58">rettamente col suo intervento lo sviluppo dell'agricoltura nei</p>
+        <p facs="#p274_p59" xml:id="text_p274_p59">distretti minerarii della <placeName ref="#luogo_Sicilia">Sicilia</placeName>. Il senatore <persName ref="#pers_Tamajo">Tamajo</persName> vorrebbe</p>
+        <p facs="#p274_p60" xml:id="text_p274_p60">non solo che la legge prescrivesse un limite di età per</p>
+        <p facs="#p274_p61" xml:id="text_p274_p61">l'impiego dei fanciulli nelle <term type="verbum" ref="#term_Zolfare">zolfare</term>, ma che fosse vietato</p>
+        <p facs="#p274_p62" xml:id="text_p274_p62">di ingaggiarli col sistema del <term type="verbum" ref="#term_soccorso_morto">soccorso morto</term>. Vorrebbe che</p>
+        <p facs="#p274_p63" xml:id="text_p274_p63">fosse proibita la retribuzione dei <term type="verbum" ref="#term_carusi">carusi</term> in generi e che</p>
+        <p facs="#p274_p64" xml:id="text_p274_p64">
+          <quote>V. <ref target="#op_AnnaliIndustriaCommercio_1880n15">
+              <orgName ref="#org_AnnaliIndustriaCommercio">Annali dell'industria e del commercio</orgName>, <date when="1880">1880</date> n. 15</ref>. — Inchiesta</quote>
+        </p>
+        <p facs="#p274_p65" xml:id="text_p274_p65">
+          <quote>sul lavoro dei fanciulli e delle donne. — <ref target="#op_DeposizioneLombardi">
+              <rs type="temi_motivi" ref="#tema_condizione_lavoratori">Deposizione del dott. Lombardi</rs>
+            </ref>
+          </quote>
+        </p>
+        <p facs="#p274_p66" xml:id="text_p274_p66">
+          <quote>pel <orgName ref="#org_ConsiglioSanitarioCaltanissetta">consiglio sanitario di <placeName ref="#luogo_Caltanissetta">Caltanissetta</placeName>
+            </orgName>
+          </quote>.
+        </p>
+        <p facs="#p274_p142" xml:id="text_p274_p142">tralora, trovandosi le miniere molto lontane dall'abitato,</p>
+        <p facs="#p274_p143" xml:id="text_p274_p143">fosse necessario l'impianto di un magazzino in prossimità</p>
+        <p facs="#p274_p144" xml:id="text_p274_p144">di esse, i generi vi fossero venduti al prezzo stabilito dal</p>
+        <p facs="#p274_p145" xml:id="text_p274_p145">calmiere, che è ancora in uso nella <placeName ref="#luogo_Sicilia">Sicilia</placeName> occidentale, per</p>
+        <p facs="#p274_p146" xml:id="text_p274_p146">pane e per altri commestibili. Vorrebbe che fosse rimediato</p>
+        <p facs="#p274_p147" xml:id="text_p274_p147">al grave inconveniente che i minatori dormono nell'interno</p>
+        <p facs="#p274_p148" xml:id="text_p274_p148">delle <term type="verbum" ref="#term_Zolfare">solfare</term> per la troppo lontananza di queste dall'abitato.</p>
+        <p facs="#p274_p149" xml:id="text_p274_p149">Egli proporrebbe quindi che gli utili del magazzino e le</p>
+        <p facs="#p274_p150" xml:id="text_p274_p150">multe inflitte agli operai fossero destinate a provvedere a</p>
+        <p facs="#p274_p151" xml:id="text_p274_p151">questi di più ampi alberghi, scopri a cui potrebbero con-</p>
+        <p facs="#p274_p152" xml:id="text_p274_p152">correre le stesse contribuzioni libere dei minatori, le quali</p>
+        <p facs="#p274_p153" xml:id="text_p274_p153">si farebbero tanto più abbondanti quanto più l'istruzione</p>
+        <p facs="#p274_p154" xml:id="text_p274_p154">e la civiltà, e con essi il <rs type="temi_motivi" ref="#tema_storici_sociali">sentimento del risparmio e del</rs>
+        </p>
+        <p facs="#p274_p155" xml:id="text_p274_p155">soccorso mutuo, si diffonderebbe fra quelle popolazioni.</p>
+        <p facs="#p274_p156" xml:id="text_p274_p156">Contemporaneamente e perchè le famiglie povere delle</p>
+        <p facs="#p274_p157" xml:id="text_p274_p157">provincie possano procurarsi altrove quei proventi che la</p>
+        <p facs="#p274_p158" xml:id="text_p274_p158">produzione delle immagini e di quelle delle materie fossili</p>
+        <p facs="#p274_p159" xml:id="text_p274_p159">cessare, il senatore <persName ref="#pers_Tamajo">Tamaio</persName> chiede i soccorsi governativi pel</p>
+        <p facs="#p274_p160" xml:id="text_p274_p160">miglioramento delle condizioni agricole delle provincie.</p>
+        <p facs="#p274_p161" xml:id="text_p274_p161">Questo progetto del prefetto di <placeName ref="#luogo_Girgenti">Girgenti</placeName> accettato</p>
+        <p facs="#p274_p162" xml:id="text_p274_p162">esso stesso favorevolmente in esame. Soltanto ci sembra</p>
+        <p facs="#p274_p163" xml:id="text_p274_p163">che il loro centro di gravità sia un pochino spostato.</p>
+        <p facs="#p274_p164" xml:id="text_p274_p164">È il senatore <persName ref="#pers_Tamajo">Tamaio</persName> insiste molto sull'opportunità che</p>
+        <p facs="#p274_p165" xml:id="text_p274_p165">il governo venga in aiuto dell'agricoltura girgentina che</p>
+        <p facs="#p274_p166" xml:id="text_p274_p166">nella condizione in cui sono oggi le cose, ai rimedi lenti,</p>
+        <p facs="#p274_p167" xml:id="text_p274_p167">alla evoluzioni più o meno dolci non si può in coscienza</p>
+        <p facs="#p274_p168" xml:id="text_p274_p168">pensare. Ciò che duole di più è l'invervento di una legge</p>
+        <p facs="#p274_p169" xml:id="text_p274_p169">regolatrice del <rs type="temi_motivi" ref="#tema_condizione_lavoratori">lavoro industriale</rs> ed è su questo punto che</p>
+        <p facs="#p274_p170" xml:id="text_p274_p170">avrebbero dovuto principalmente convergere le proposte del</p>
+        <p facs="#p274_p171" xml:id="text_p274_p171">senatore <persName ref="#pers_Tamajo">Tamaio</persName>. Certo le condizioni dell'agricoltura nella</p>
+        <p facs="#p274_p172" xml:id="text_p274_p172">provincia di <placeName ref="#luogo_Girgenti">Girgenti</placeName> meritano pure che il <orgName ref="#org_Stato">governo</orgName> se ne</p>
+        <p facs="#p274_p173" xml:id="text_p274_p173">prenda qualche pensiero noi non vogliamo qui disconoscere</p>
+        <p facs="#p274_p174" xml:id="text_p274_p174">del tutto. Soltanto ci preme di far notare che questo rime-</p>
+        <p facs="#p274_p175" xml:id="text_p274_p175">dio va in una camerale e non essenzialmente sussidiario.</p>
+        <p facs="#p274_p176" xml:id="text_p274_p176">Non ci associamo poi affatto all'altra proposta del se-</p>
+        <p facs="#p274_p177" xml:id="text_p274_p177">natore <persName ref="#pers_Tamajo">Tamaio</persName>, per cui egli vorrebbe che la esecuzione</p>
+        <p facs="#p274_p178" xml:id="text_p274_p178">delle legge fosse sorvegliata da tribunali d'arbitri, simili ai</p>
+        <p facs="#p274_p179" xml:id="text_p274_p179">
+          <foreign xml:lang="fr">Prud'hommes</foreign> della <placeName ref="#luogo_Francia">Francia</placeName>, agli <foreign xml:lang="en">Equitable Conciels</foreign> dell'<placeName ref="#luogo_Inghilterra">Inghilterra</placeName> e ai <foreign xml:lang="de">Schiedsgerichte</foreign> della <placeName ref="#luogo_Germania">Germania</placeName>. Questi tribunali,</p>
+        <p facs="#p274_p181" xml:id="text_p274_p181">che possono servire ad applicare qualche volta le differenze</p>
+        <p facs="#p274_p182" xml:id="text_p274_p182">insorte fra i padroni e gli operai, non bastano a garantire</p>
+        <p facs="#p274_p183" xml:id="text_p274_p183">la rigorosa esecuzione della legge; anzi la escludono, perchè</p>
+        <p facs="#p274_p184" xml:id="text_p274_p184">gl'interessi locali degli imprenditori d'industria prevalgono</p>
+        <p facs="#p274_p185" xml:id="text_p274_p185">fino a far violare la legge stessa. E non è punto dimentica</p>
+        <p facs="#p274_p186" xml:id="text_p274_p186">che per tale rigorosa esecuzione della legge l'<placeName ref="#luogo_Inghilterra">Inghilterra</placeName>,
+        </p>
+        <p facs="#p274_p187" xml:id="text_p274_p187">la <placeName ref="#luogo_Germania">Germania</placeName> e la <placeName ref="#luogo_Francia">Francia</placeName> hanno riconosciuta la necessità</p>
+        <p facs="#p274_p188" xml:id="text_p274_p188">degli ispettori governativi.</p>
+        <p facs="#p274_p189" xml:id="text_p274_p189">Partendo queste massime, l'ultima delle quali è per noi gra-</p>
+        <p facs="#p274_p190" xml:id="text_p274_p190">vissima ed essenzialissima, non può disconoscersi al Prefetto</p>
+        <p facs="#p274_p191" xml:id="text_p274_p191">di <placeName ref="#luogo_Girgenti">Girgenti</placeName> il merito di avere consumato una di quelle quistioni</p>
+        <p facs="#p274_p192" xml:id="text_p274_p192">etiche del lavoro era a tempo sdegnosamente si attende in</p>
+        <p facs="#p274_p193" xml:id="text_p274_p193">
+          <placeName ref="#luogo_Italia">Italia</placeName>, di aver risposto a galla una quistione troppo ormai</p>
+        <p facs="#p274_p194" xml:id="text_p274_p194">trascurata e di aver suggerito qualche espedienti, mentre che</p>
+        <p facs="#p274_p195" xml:id="text_p274_p195">la legge dovrebbe prevalere per regolare il lavoro dei <term type="verbum" ref="#term_Carusi">carusi</term>
+        </p>
+        <p facs="#p274_p196" xml:id="text_p274_p196">nelle miniere siciliane. Si smarriranno queste proposte, co-</p>
+        <p facs="#p274_p197" xml:id="text_p274_p197">me frequentemente avviene, per gli intricati meandri del</p>
+        <p facs="#p274_p198" xml:id="text_p274_p198">servizio amministrativo, o verranno fatte oggetto di esame</p>
+        <p facs="#p274_p199" xml:id="text_p274_p199">o servono o sollecitò? Si ponga fine agli indugi e la</p>
+        <p facs="#p274_p200" xml:id="text_p274_p200">legislazione sulle fabbriche divenga un fatto compiuto an-</p>
+        <p facs="#p274_p201" xml:id="text_p274_p201">che in <placeName ref="#luogo_Italia">Italia</placeName>. Sarebbe tempo invece di dare un po' la</p>
+        <p facs="#p274_p202" xml:id="text_p274_p202">somma degli studi compiuti e di por mano ai rimedi. Lo</p>
+        <p facs="#p274_p203" xml:id="text_p274_p203">
+          <orgName ref="#org_Stato">Stato</orgName> solisoffa ad un'alta missione di civiltà quando prov-</p>
+        <p facs="#p274_p204" xml:id="text_p274_p204">vede con ingenti spese al progresso della <term ref="#term_Scienze">scienze</term> e delle <term ref="#term_Arti">arti</term>,
+        </p>
+        <p facs="#p274_p205" xml:id="text_p274_p205">ma l'azione sua deve egualmente distribuire ovunque sorga</p>
+        <p facs="#p274_p206" xml:id="text_p274_p206">richiesta. Nelle <rs type="temi_motivi" ref="#tema_SocietaCondizione">condizioni attuali della società</rs> è indispensabile che il potere pubblico provveda a tempo per arre-</p>
+        <p facs="#p274_p207" xml:id="text_p274_p207">care <rs type="temi_motivi" ref="#tema_OrdineTranquillita">l'ordine e la tranquillità degli anni nelle classi inferiori</rs>.
+        </p>
+        <p facs="#p274_p208" xml:id="text_p274_p208">care <rs type="temi_motivi" ref="#tema_OrdineTranquillita">l'ordine e la tranquillità degli anni nelle classi inf</rs>.
+        </p>        
+      </div>
+      <div type="article" xml:id="articolo_carusi_sicilia_pp775">
+        <pb n="275" facs="#M_275"/>
+        <head rend="pageHeader_pp275_art1">
+          <date when="1881-05-01" facs="#p275_date">1 maggio 81</date> 
+          <orgName xml:id="text_p275_runningTitle_art1" facs="#p275_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+          <num type="number" value="275" facs="#p275_number">275</num>
+        </head>
+        <p facs="#p275_p1" xml:id="text_p275_p1">
+          <quote>riori. Ove ciò non faccia, l'edifizio sociale, ricco di merla-</quote>
+        </p>
+        <p facs="#p275_p2" xml:id="text_p275_p2">
+          <quote>ture e di ornamenti squisiti nelle parti più alte, si logora</quote>
+        </p>
+        <p facs="#p275_p3" xml:id="text_p275_p3">
+          <quote>invece continuamente alla base.</quote>
         </p>
       </div>
 
-
-      <!-- Pag 274 -->
-      <div class="col-1" xml:id="p274_container" facs="#p274_col_1" type="paragraph">
-        <pb n="274" facs="#M_274"/>
-        <div xml:id="pageHeader_274">
-          <num type="number" value="274" facs="#p274_number">274</num>
-          <orgName xml:id="p274_runningTitle" facs="#p274_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
-          <p facs="#p274_vol" xml:id="p274_vol">[Vol. 7, N, <num type="number" value="174">174</num>]
-          </p>
-        </div>
-        <div xml:id="p274_col_1" type="col" facs="#p274_col_1">
-          <p facs="#p274_p1" xml:id="p274_p1">inferiore a quella pattuita pel suo salario. Ma v'ha di</p>
-          <p facs="#p274_p2" xml:id="p274_p2">più. Il picconiere retribuisce il <term type="verbum" ref="#term_carasso">carasso</term> in natura anzichè</p>
-          <p facs="#p274_p3" xml:id="p274_p3">in danaro, somministrandogli il così detto <term type="verbum" ref="#term_speso">speso,</term> cioè farina</p>
-          <p facs="#p274_p4" xml:id="p274_p4">di grano, olio e spesso solo pane; e da ciò si vanno gua</p>
-          <p facs="#p274_p5" xml:id="p274_p5">dagno in due modi, provvedendo il <term type="verbum" ref="#term_carasso">carasso</term> di generi di</p>
-          <p facs="#p274_p6" xml:id="p274_p6">pessima qualità, e conteggiandoli sui salarj di questo ad</p>
-          <p facs="#p274_p7" xml:id="p274_p7">un prezzo superiore a quello reale del mercato. Per tal</p>
-          <p facs="#p274_p8" xml:id="p274_p8">modo vige ancora in Italia quel sistema immorale di retri</p>
-          <p facs="#p274_p9" xml:id="p274_p9">buzione del lavoro che fu conosciuto in Inghilterra sotto il</p>
-          <p facs="#p274_p10" xml:id="p274_p10">nome di <term type="verbum" ref="#term_truck_system">truck system,</term> e contro il quale quest'ultimo paese</p>
-          <p facs="#p274_p11" xml:id="p274_p11">adottò assai per tempo severe norme legislative. Il Carbo</p>
-          <p facs="#p274_p12" xml:id="p274_p12">naia della <placeName ref="#luogo_Sicilia">Sicilia</placeName>, siccome ha altri bisogni, oltre a quelli che le</p>
-          <p facs="#p274_p13" xml:id="p274_p13">cose somministrategli dal picconiere valgono a soddisfare,</p>
-          <p facs="#p274_p14" xml:id="p274_p14">rivende alla sua volta ciò che ha ricevuto. Così un rotolo</p>
-          <p facs="#p274_p15" xml:id="p274_p15">di pane che vale trenta centesimi gli è conteggiato in ragione</p>
-          <p facs="#p274_p16" xml:id="p274_p16">di 40 ed è da lui venduto in ragione di 20.</p>
-          <p facs="#p274_p17" xml:id="p274_p17">Ora se un uomo sano e forte va avanti, quanto non sono</p>
-          <p facs="#p274_p18" xml:id="p274_p18">spessi e feri i maltrattamenti che il fanciullo operaio degli</p>
-          <p facs="#p274_p19" xml:id="p274_p19">
-            <term type="verbum" ref="#term_Zolfare">zolfare</term> deve subire per così triste rimunerazione? Egli</p>
-          <p facs="#p274_p20" xml:id="p274_p20">deve passare la giornata, talvolta o faticando nelle gallerie</p>
-          <p facs="#p274_p21" xml:id="p274_p21">vive e mal tagliate nel masso, unito spesso dell'acqua che</p>
-          <p facs="#p274_p22" xml:id="p274_p22">trasuda dal suolo, portando sul dorso parecchi chilogrammi</p>
-          <p facs="#p274_p23" xml:id="p274_p23">di minerale. Da ciò uno sforzo che secca e corpi ancor te</p>
-          <p facs="#p274_p24" xml:id="p274_p24">neri gravissimi nell'avvenire. Il torace si deforma, la spina</p>
-          <p facs="#p274_p25" xml:id="p274_p25">dorsale si incurva sotto la pressione di un peso eccessivo</p>
-          <p facs="#p274_p26" xml:id="p274_p26">recato sulle spalle durante lunghe ore dalla profondità della</p>
-          <p facs="#p274_p27" xml:id="p274_p27">miniera fino all' esterno. I consigli salutari delle provincie</p>
-          <p facs="#p274_p28" xml:id="p274_p28">minerarie dell' isola e i consigli di loro ebbero a constatare</p>
-          <p facs="#p274_p29" xml:id="p274_p29">i vizi di conformazione a cui i <term type="verbum" ref="#term_carusi">carusi</term> vanno soggetti per</p>
-          <p facs="#p274_p30" xml:id="p274_p30">effetto del proprio lavoro, lo stato di deperimento fisico,</p>
-          <p facs="#p274_p31" xml:id="p274_p31">la mancanza di sviluppo che in loro si osserva, le con</p>
-          <p facs="#p274_p32" xml:id="p274_p32">tusioni che appariscono sul loro corpo, la nisioni che pia</p>
-          <p facs="#p274_p33" xml:id="p274_p33">gano le loro membra giacché, secondo fortunatamente anco</p>
-          <p facs="#p274_p34" xml:id="p274_p34">ra i picconiere per spingere i fanciulli da essi dipendenti</p>
-          <p facs="#p274_p35" xml:id="p274_p35">ad operare più solleciti, talvolta accostano perfino la fiamma</p>
-          <p facs="#p274_p36" xml:id="p274_p36">delle loro lampade alle membra ignude di questi. *</p>
-          <p facs="#p274_p37" xml:id="p274_p37">
-            <hi rend="i">A</hi> uno stato di cose si trova e troverebbe certo in gran</p>
-          <p facs="#p274_p38" xml:id="p274_p38">parte rimedio una legge che proibisse l'impiego di fanciulli</p>
-          <p facs="#p274_p39" xml:id="p274_p39">nel lavoro industriale prima che essi non avessero compiuto</p>
-          <p facs="#p274_p40" xml:id="p274_p40">una certa età, e limitasse per un periodo successivo più o</p>
-          <p facs="#p274_p41" xml:id="p274_p41">meno lungo la loro giornata di lavoro. Il progetto di legge</p>
-          <p facs="#p274_p42" xml:id="p274_p42">preso in considerazione dalla Camera nella tornata 9 giu</p>
-          <p facs="#p274_p43" xml:id="p274_p43">gno 1850, il quale proibiva l'impiego di fanciulli di età in</p>
-          <p facs="#p274_p44" xml:id="p274_p44">feriore ai 16 anni in lavori pericolosi e malsani, dava certo</p>
-          <p facs="#p274_p45" xml:id="p274_p45">in tal modo, per ciò che s'attiene almeno al lavoro delle</p>
-          <p facs="#p274_p46" xml:id="p274_p46">zolfare siciliane, una disposizione più efficace di quella con</p>
-          <p facs="#p274_p47" xml:id="p274_p47">tenuta nel controprogetto Depretis-Minghetti, la quale pro</p>
-          <p facs="#p274_p48" xml:id="p274_p48">poneva che fosse impiegati in lavori notturni, sotter</p>
-          <p facs="#p274_p49" xml:id="p274_p49">ranei, insalubri o pericolosi, fanciulli di età inferiore a 12</p>
-          <p facs="#p274_p50" xml:id="p274_p50">anni, e l'opera infatti che è richiesta ai <term type="verbum" ref="#term_carusi">carusi,</term> è così pe</p>
-          <p facs="#p274_p51" xml:id="p274_p51">nosa, che il limite di età fissato in quest' ultimo progetto</p>
-          <p facs="#p274_p52" xml:id="p274_p52">apparisce ancora troppo basso.</p>
-          <p facs="#p274_p53" xml:id="p274_p53">
-            <hi rend="i">Lo</hi> stato del senatore <persName ref="#pers_Tamajo">Tamajo</persName>, alle quali abbiamo ac</p>
-          <p facs="#p274_p54" xml:id="p274_p54">cennato, tendono contemporaneamente a due fini: 1° a far chè</p>
-          <p facs="#p274_p55" xml:id="p274_p55">la legge intervenga una buona volta per porre un termine</p>
-          <p facs="#p274_p56" xml:id="p274_p56">alle enormità che si verificano tutti dì nelle miniere siciliane.</p>
-          <p facs="#p274_p57" xml:id="p274_p57">2° a interessare il <orgName ref="#org_Stato">governo</orgName>, perchè incoraggi e favorisca di</p>
-          <p facs="#p274_p58" xml:id="p274_p58">rettamente col suo intervento lo sviluppo dell'agricoltura nei</p>
-          <p facs="#p274_p59" xml:id="p274_p59">distretti minerarii della <placeName ref="#luogo_Sicilia">Sicilia</placeName>. Il senatore <persName ref="#pers_Tamajo">Tamajo</persName> vorrebbe</p>
-          <p facs="#p274_p60" xml:id="p274_p60">non solo che la legge prescrivesse un limite di età per</p>
-          <p facs="#p274_p61" xml:id="p274_p61">l'impiego dei fanciulli nelle <term type="verbum" ref="#term_Zolfare">zolfare</term>, ma che fosse vietato</p>
-          <p facs="#p274_p62" xml:id="p274_p62">di ingaggiarli col sistema del <term type="verbum" ref="#term_soccorso_morto">soccorso morto</term>. Vorrebbe che</p>
-          <p facs="#p274_p63" xml:id="p274_p63">fosse proibita la retribuzione dei <term type="verbum" ref="#term_carusi">carusi</term> in generi e che</p>
-          <p facs="#p274_p64" xml:id="p274_p64">
-            <quote>V. <bibl ref="#op_AnnaliIndustriaCommercio_1880n15">
-              <orgName ref="#org_AnnaliIndustriaCommercio">Annali dell'industria e del commercio</orgName>,              <date when="1880">1880</date> n. 15</bibl>. — Inchiesta</quote>
+      <div type="article" xml:id="il_commercio">
+        <pb n="275" facs="#M_275"/>
+        <head>
+          <date when="1881-05-01" facs="#p275_date">1 maggio 81</date>
+          <orgName xml:id="text_p275_runningTitle" facs="#p275_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+          <num type="number" value="275" facs="#p275_number">275</num>
+        </head>
+        <fw facs="#p275_p4" xml:id="text_p275_p4">IL COMMERCIO NEL PRIMO TRIMESTRE <date when="1881">1881</date>.</fw>
+        <p facs="#p275_p5" xml:id="text_p275_p5">Le cifre che rappresentano i nostri scambi con l'estero</p>
+        <p facs="#p275_p6" xml:id="text_p275_p6">meritano quest'anno di essere vagliate, anche più diligen-</p>
+        <p facs="#p275_p7" xml:id="text_p275_p7">temente del consueto. Cessata la <term type="tema" ref="#tema_crisi_annonaria">crisi annonaria</term>, che ci ha</p>
+        <p facs="#p275_p8" xml:id="text_p275_p8">dolorosamente provati, giova vedere come si comportino</p>
+        <p facs="#p275_p9" xml:id="text_p275_p9">que' rami di <term type="tema" ref="#tema_commercio">commercio</term>, che ne avevano risentito più di-</p>
+        <p facs="#p275_p10" xml:id="text_p275_p10">retto l'influsso. Inoltre, nel momento in cui si prepara la</p>
+        <p facs="#p275_p11" xml:id="text_p275_p11">ripresa de' pagamenti in moneta metallica, è di somma im-</p>
+        <p facs="#p275_p12" xml:id="text_p275_p12">portanza di scrutare le correnti internazionali, per ricono-</p>
+        <p facs="#p275_p13" xml:id="text_p275_p13">scere se possa esser facile di attirare e mantenere in paese</p>
+        <p facs="#p275_p14" xml:id="text_p275_p14">il danaro necessario alla circolazione. Infine, avvicinandosi</p>
+        <p facs="#p275_p15" xml:id="text_p275_p15">il giorno nel quale si dovranno riprondere i negoziati con</p>
+        <p facs="#p275_p16" xml:id="text_p275_p16">la <placeName ref="#luogo_Francia">Francia</placeName> per la stipulazione del nuovo trattato di com-</p>
+        <p facs="#p275_p17" xml:id="text_p275_p17">mercio, è bene indagare quali de' prodotti del suolo e del-</p>
+        <p facs="#p275_p18" xml:id="text_p275_p18">l'industria domandino un miglior reggimento daziario</p>
+        <p facs="#p275_p19" xml:id="text_p275_p19">presso i nostri vicini.</p>
+        <p facs="#p275_p20" xml:id="text_p275_p20">Ora, per cominciare dai prodotti alimentari, si nota,</p>
+        <p facs="#p275_p21" xml:id="text_p275_p21">come naturale, un grande rivolgimento nel <term type="tema" ref="#tema_commercio">commercio</term> dei</p>
+        <p facs="#p275_p22" xml:id="text_p275_p22">grani. Nel <date when="1880-Q1">primo trimestre del 1880</date> l'importazione dei ce-</p>
+        <p facs="#p275_p23" xml:id="text_p275_p23">reali ascendeva a 257 mila tonnellate, e l'esportazione loro</p>
+        <p facs="#p275_p24" xml:id="text_p275_p24">non toccava 25 mila tonnellate, onde l'enorme differenza</p>
+        <p facs="#p275_p25" xml:id="text_p275_p25">di 212 mila tonnellate. Quest'anno l'importazione si è ri-</p>
+        <p facs="#p275_p26" xml:id="text_p275_p26">stretta a 51 mila tonnellate, mentre l'esportazione saliva</p>
+        <p facs="#p275_p27" xml:id="text_p275_p27">a 37 mila tonnellate; la differenza dunque si riduce a 14</p>
+        <p facs="#p275_p28" xml:id="text_p275_p28">mila tonnellate. Il che mostra come negli anni buoni il <placeName ref="#luogo_Italia">paese</placeName>
         </p>
-        <p facs="#p274_p65" xml:id="p274_p65">
-          <quote>sul lavoro dei fanciulli e delle donne. — <bibl ref="#op_DeposizioneLombardi">
-            <rs type="temi_motivi" ref="#tema_condizione_lavoratori">Deposizione del dott. Lombardi</rs>
+        <p facs="#p275_p29" xml:id="text_p275_p29">possa provvedere quasi interamente ai suoi bisogni anno-</p>
+        <p facs="#p275_p30" xml:id="text_p275_p30">nari; tanto più se si nota che l'esportazione di farine e di</p>
+        <p facs="#p275_p31" xml:id="text_p275_p31">paste è di molto superiore all'importazione. Anco del com-</p>
+        <p facs="#p275_p32" xml:id="text_p275_p32">mercio delle frutta si può esser lieti: di fatto l'esportazione</p>
+        <p facs="#p275_p33" xml:id="text_p275_p33">degli agrumi aumentò di 175 mila, e quella delle frutta</p>
+        <p facs="#p275_p34" xml:id="text_p275_p34">fresche di sette mila quintali. Più vistoso fu l'aumento nel-</p>
+        <p facs="#p275_p35" xml:id="text_p275_p35">l'esportazione del vino, che da 485 mila ettolitri pervenne</p>
+        <p facs="#p275_p36" xml:id="text_p275_p36">a 636 mila, giustificando così ampiamente le nostre belle</p>
+        <p facs="#p275_p37" xml:id="text_p275_p37">speranze. Ma all'abbondanza del raccolto non corrisponde la</p>
+        <p facs="#p275_p38" xml:id="text_p275_p38">ripresa nel <term type="tema" ref="#tema_commercio">commercio</term> degli olii. Già lo scorso anno si av-</p>
+        <p facs="#p275_p39" xml:id="text_p275_p39">vertiva un certo decremento nell'esportazione dell'olio d'u-</p>
+        <p facs="#p275_p40" xml:id="text_p275_p40">va, e nello scorso trimestre essa si ridusse a 201 mila</p>
+        <p facs="#p275_p41" xml:id="text_p275_p41">quintali, cioè a un terzo meno della media ordinaria. E</p>
+        <p facs="#p275_p42" xml:id="text_p275_p42">l'importazione intanto, composta per la massima parte d'olii</p>
+        <p facs="#p275_p43" xml:id="text_p275_p43">di cotone, s'ingrossava sino a 196 mila quintali, lasciando</p>
+        <p facs="#p275_p44" xml:id="text_p275_p44">poco margine di profitto al nostro <placeName ref="#luogo_Italia">paese</placeName>, si ricco di oliveti</p>
+        <p facs="#p275_p45" xml:id="text_p275_p45">e si atto a trarne buon frutto. Anche rispetto all'uscita</p>
+        <p facs="#p275_p46" xml:id="text_p275_p46">della canapa greggia si lamenta una nuova diminuzione;</p>
+        <p facs="#p275_p47" xml:id="text_p275_p47">ma le note più dolorose riguardano il <term type="tema" ref="#tema_commercio">commercio</term> del be-</p>
+        <p facs="#p275_p48" xml:id="text_p275_p48">stiame, del quale taceremo, avendo ad esso consacrato un</p>
+        <p facs="#p275_p49" xml:id="text_p275_p49">recente articolo. <ref target="#op_LAseegna_volVII_pag24">*</ref> Ci sia consentito soltanto di soggiungere</p>
+        <p facs="#p275_p50" xml:id="text_p275_p50">che, un tempo cotesto <term type="tema" ref="#tema_commercio">commercio</term> ascendeva a una sessan-</p>
+        <p facs="#p275_p51" xml:id="text_p275_p51">tina di milioni, ed ora è ridotto a meno di dieci.</p>
+        <p facs="#p275_p52" xml:id="text_p275_p52">Se si guarda alla statistica del <term type="tema" ref="#tema_commercio">commercio</term>, nelle sue at-</p>
+        <p facs="#p275_p53" xml:id="text_p275_p53">tinenze con la <term type="tema" ref="#tema_questione_monetaria">questione monetaria</term>, si scorge che le impor-</p>
+        <p facs="#p275_p54" xml:id="text_p275_p54">tazioni sono cresciute di 33 milioni, le esportazioni di sette</p>
+        <p facs="#p275_p55" xml:id="text_p275_p55">solamente. Ma la differenza reale non è tanto ragguarde-</p>
+        <p facs="#p275_p56" xml:id="text_p275_p56">vole; imperocchè nel <date when="1880-Q1">primo trimestre del 1880</date> le importa-</p>
+        <p facs="#p275_p57" xml:id="text_p275_p57">zioni abbracciavano 8 milioni e mezzo di monete, le espor-</p>
+        <p facs="#p275_p58" xml:id="text_p275_p58">tazioni 14 milioni; laddove nei <date when="1881-Q1">tre primi mesi del 1881</date> l'en-</p>
+        <p facs="#p275_p59" xml:id="text_p275_p59">trata di monete toccò quasi undici milioni e l'uscita loro di</p>
+        <p facs="#p275_p60" xml:id="text_p275_p60">poco eccedette due milioni. Detratte queste cifre, che a rigor</p>
+        <p facs="#p275_p61" xml:id="text_p275_p61">di termini dovrebbero esser tenute distinte dal movimento</p>
+        <p facs="#p275_p62" xml:id="text_p275_p62">delle merci, l'aumento delle importazioni si restringe a 30</p>
+        <p facs="#p275_p63" xml:id="text_p275_p63">milioni, e quello delle esportazioni giunge a 19 milioni. Ciò</p>
+        <p facs="#p275_p64" xml:id="text_p275_p64">abbiamo notato, sia per dare la loro vera significazione alle</p>
+        <p facs="#p275_p65" xml:id="text_p275_p65">*    <ref target="#bibl_LAseegna_volVII_pag24">V. L'Aseegna, vol VII, pag. 24.</ref>
+        </p>
+        <p facs="#p275_p66" xml:id="text_p275_p66">cifre finali della statistica, sia perchè giova si vegga che il <placeName ref="#luogo_Italia">pae-</placeName>
+        </p>
+        <p facs="#p275_p67" xml:id="text_p275_p67">se comincia a riformivisi, per propria iniziativa, di specie me-</p>
+        <p facs="#p275_p68" xml:id="text_p275_p68">talliche e aiuta il <orgName ref="#org_governo">governo</orgName> nella grande opera del riseatto.</p>
+        <p facs="#p275_p69" xml:id="text_p275_p69">Le riscossioni della quota vinaria di quest'anno, impressa dipende par-</p>
+        <p facs="#p275_p70" xml:id="text_p275_p70">ticolarmente dalle condizioni economiche del regno, sono è</p>
+        <p facs="#p275_p71" xml:id="text_p275_p71">utile ricercare quale carattere abbiamo, in relazione alla</p>
+        <p facs="#p275_p72" xml:id="text_p275_p72">energia produttiva, gli aumenti delle importazioni e della</p>
+        <p facs="#p275_p73" xml:id="text_p275_p73">esportazioni, ai quali abbiamo accennato. Ad oltre quattro-</p>
+        <p facs="#p275_p74" xml:id="text_p275_p74">dici milioni ascendono le maggiori importazioni di zucchero</p>
+        <p facs="#p275_p75" xml:id="text_p275_p75">e di caffè, cagionate dalla ripresa del <term type="tema" ref="#tema_commercio">commercio</term>, dopochè</p>
+        <p facs="#p275_p76" xml:id="text_p275_p76">furono compiuti i depositi straordinari creati nel <date when="1879">1879</date>,
+        </p>
+        <p facs="#p275_p77" xml:id="text_p275_p77">quando i dazii di queste derrate furono sensibilmente inna-</p>
+        <p facs="#p275_p78" xml:id="text_p275_p78">cerbiti. Vero è che si contraggono quattro milioni</p>
+        <p facs="#p275_p79" xml:id="text_p275_p79">di minori importazioni di spirito e di petrolio, giacchè</p>
+        <p facs="#p275_p80" xml:id="text_p275_p80">l'anno scorso l'aumento de' diritti di confine permise,</p>
+        <p facs="#p275_p81" xml:id="text_p275_p81">come sempre accade, i negozianti a farne grossi approv-</p>
+        <p facs="#p275_p82" xml:id="text_p275_p82">vigionamenti; non restano poi sempre dieci milioni di mag-</p>
+        <p facs="#p275_p83" xml:id="text_p275_p83">giori importazioni, le quali ebbero a cagione il raddoppio</p>
+        <p facs="#p275_p84" xml:id="text_p275_p84">de' dazii. Altri accrescirnenti di importazione si scorgono nei</p>
+        <p facs="#p275_p85" xml:id="text_p275_p85">prodotti fabbricati. Così l'entrata de' filati di lino crebbe</p>
+        <p facs="#p275_p86" xml:id="text_p275_p86">di quasi 6 mila quintali, e quella de' filati di cotone di</p>
+        <p facs="#p275_p87" xml:id="text_p275_p87">circa 17 mila quintali, quella de' tessuti di cotone di pres-</p>
+        <p facs="#p275_p88" xml:id="text_p275_p88">so 11 mila. S'importarono tre mila quintali di pannilani più</p>
+        <p facs="#p275_p89" xml:id="text_p275_p89">che nel <date when="1880-Q1">primo trimestre dell'anno scorso</date>, 1400 quintali di</p>
+        <p facs="#p275_p90" xml:id="text_p275_p90">seta greggia, 25 mila chilogrammi di tessuti serici, 40 mila</p>
+        <p facs="#p275_p91" xml:id="text_p275_p91">metri cubi di legname da costruzione, 5 mila quintali di</p>
+        <p facs="#p275_p92" xml:id="text_p275_p92">pelli, 131 mila quintali di ferro, 8 mila quintali di ma-</p>
+        <p facs="#p275_p93" xml:id="text_p275_p93">chine, 95 mila tonnellate di carbone. Non è difficile trarre</p>
+        <p facs="#p275_p94" xml:id="text_p275_p94">l'oroscopo da queste cifre, che a prima giunta potrebbero</p>
+        <p facs="#p275_p95" xml:id="text_p275_p95">far dubitare che le nostre fabbriche indebolite si ritraes-</p>
+        <p facs="#p275_p96" xml:id="text_p275_p96">sero di fronte alla più poderosa concorrenza forestiera. Se</p>
+        <p facs="#p275_p97" xml:id="text_p275_p97">l'entrata de' filati di lino e de' filati e tessuti di cotone</p>
+        <p facs="#p275_p98" xml:id="text_p275_p98">aumentò, in modo notevole, se aumentò quella de' tessuti</p>
+        <p facs="#p275_p99" xml:id="text_p275_p99">di seta, non accennò la produttività interna ma l'una e l'altre</p>
+        <p facs="#p275_p100" xml:id="text_p275_p100">furono sollecitate vivamente dai crescenti consumi che sono</p>
+        <p facs="#p275_p101" xml:id="text_p275_p101">sintomo buono di rinascente prosperità. E per l'industria</p>
+        <p facs="#p275_p102" xml:id="text_p275_p102">della lana, che più tardava a rinvigorirsi, siamo lieti di</p>
+        <p facs="#p275_p103" xml:id="text_p275_p103">accennare a un eloquente indizio della maggiore opportunità</p>
+        <p facs="#p275_p104" xml:id="text_p275_p104">paesana: insieme al già registrato aumento delle importa-</p>
+        <p facs="#p275_p105" xml:id="text_p275_p105">zioni di lana, si accompagna la diminuzione di 4500 quin-</p>
+        <p facs="#p275_p106" xml:id="text_p275_p106">tali nell'esportazione, sicchè la quantità di lana rimasta a</p>
+        <p facs="#p275_p107" xml:id="text_p275_p107">disposizione de' nostri opifici crebbe di oltre a dieci mila</p>
+        <p facs="#p275_p108" xml:id="text_p275_p108">quintali. Per la seta greggia l'aumento di importazione si-</p>
+        <p facs="#p275_p109" xml:id="text_p275_p109">gnifica maggior lavoro de' nostri filatori, come gl'approv-</p>
+        <p facs="#p275_p110" xml:id="text_p275_p110">vigionamenti più copiosi di ferro, di macchine, di carbone, di</p>
+        <p facs="#p275_p111" xml:id="text_p275_p111">legname rappresentano l'incremento delle nostra <term type="tema" ref="#tema_attivita_produttiva">attività</term>
+        </p>
+        <p facs="#p275_p112" xml:id="text_p275_p112">produttiva. Il che si conferma ponendo mente che aumentò</p>
+        <p facs="#p275_p113" xml:id="text_p275_p113">grandios lo l'entrata degli acidi, dei cloruoli, di soda e di</p>
+        <p facs="#p275_p114" xml:id="text_p275_p114">altri prodotti chimici, delle sostanze tintorie e concianti del</p>
+        <p facs="#p275_p115" xml:id="text_p275_p115">cuoio, insomma di tutti i più dire, le materie prime e di</p>
+        <p facs="#p275_p116" xml:id="text_p275_p116">tutti gli istrumenti di lavoro.</p>
+        <p facs="#p275_p117" xml:id="text_p275_p117">Da ultimo, che ci dice la statistica del <term type="tema" ref="#tema_commercio">commercio</term> rispetto</p>
+        <p facs="#p275_p118" xml:id="text_p275_p118">al programma col quale si debbono intraprendere i nuovi</p>
+        <p facs="#p275_p119" xml:id="text_p275_p119">negoziati con la <placeName ref="#luogo_Francia">Francia</placeName>? Il vino è diventato uno degli ar-</p>
+        <p facs="#p275_p120" xml:id="text_p275_p120">gomentri più fruttuosi delle nostre esportazioni, l'olio d'oliva</p>
+        <p facs="#p275_p121" xml:id="text_p275_p121">è sempre oggetto di scambi, che ascendono a molte decine</p>
+        <p facs="#p275_p122" xml:id="text_p275_p122">di milioni, e questi scambi cresceranno rapidamente, se sa-</p>
+        <p facs="#p275_p123" xml:id="text_p275_p123">pranno riscofondere la nostra ostinata quanto compromesssa</p>
+        <p facs="#p275_p124" xml:id="text_p275_p124">dall'abuso delle mescolanze. Adunque su questi due prodotti</p>
+        <p facs="#p275_p125" xml:id="text_p275_p125">l'<placeName ref="#luogo_Italia">Italia</placeName> non potrebbre accettare imoserbamente di dazî, tanto</p>
+        <p facs="#p275_p126" xml:id="text_p275_p126">più che è risentito il preveggimento in virtù del quale i</p>
+        <p facs="#p275_p127" xml:id="text_p275_p127">nostri vini i quali erano ammessi in <placeName ref="#luogo_Francia">Francia</placeName> quasi libera-</p>
+        <p facs="#p275_p128" xml:id="text_p275_p128">ramente (i diritti si ristringevano a 30 centesimi per et-</p>
+        <p facs="#p275_p129" xml:id="text_p275_p129">tolitro), furono assoggettati al dazio di lire 3.50. Ma per i</p>
+        <p facs="#p275_p130" xml:id="text_p275_p130">vini non basta guardare alla misura del dazio, è mestieri</p>
+        <p facs="#p275_p131" xml:id="text_p275_p131">altresì che non si ponga un confine alla loro forza alcolica,</p>
+        <p facs="#p275_p132" xml:id="text_p275_p132">perchè altrimenti i prodotti del mezzogiorno sarebbero, si</p>
+      </div>
+
+      <div type="article" xml:id="il_commercio_pp276">
+        <pb n="276" facs="#M_276_T"/>
+        <head>
+          <num type="number" value="276" facs="#p276_number">276</num>
+          <orgName xml:id="text_p276_runningTitle" facs="#p276_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
+          <seg facs="#p276_vol" xml:id="text_p276_vol">[Vol. 7, N, <num type="number" value="174">174</num>]</seg>
+        </head>
+        <p facs="#p276_p1" xml:id="text_p276_p1">può dire, proibiti dalle tasse esorbitanti, cui è sottoposto</p>
+        <p facs="#p276_p2" xml:id="text_p276_p2">lo spirito all’entrata presso i nostri vicini. Poi, come già</p>
+        <p facs="#p276_p3" xml:id="text_p276_p3">abbiamo avvertito, conviene che i dazi del bestiame, in-</p>
+        <p facs="#p276_p4" xml:id="text_p276_p4">iscritti nella nuova tariffa generale, siano ridotti a più com-</p>
+        <p facs="#p276_p5" xml:id="text_p276_p5">portabile misura e soprattutto che siano compresi nel trat-</p>
+        <p facs="#p276_p6" xml:id="text_p276_p6">tato, per non lasciarli in balia del <orgName ref="#org_SenatoFrancese">Senato francese</orgName>, la</p>
+        <p facs="#p276_p7" xml:id="text_p276_p7">cui tenerezza per gli interessi della grande proprietà deve</p>
+        <p facs="#p276_p8" xml:id="text_p276_p8">tenerci in continuo sospetto. E vero che il signor <persName ref="#pers_Tirard">Tirard</persName>
+        </p>
+        <p facs="#p276_p9" xml:id="text_p276_p9">ha manifestato il pensiero di mantenere libere le voci che</p>
+        <p facs="#p276_p10" xml:id="text_p276_p10">riguardano il bestiame; ma egli dovrà persuadersi che l'<placeName ref="#luogo_Italia">I-</placeName>
+        </p>
+        <p facs="#p276_p11" xml:id="text_p276_p11">talia non può stringere nuove convenzioni commerciali colla</p>
+        <p facs="#p276_p12" xml:id="text_p276_p12">
+          <placeName ref="#luogo_Francia">Francia</placeName>, se non è rassicurata intorno a questo importantissi-</p>
+        <p facs="#p276_p13" xml:id="text_p276_p13">mo soggetto. E superfluo dire che si dovranno ottenere con-</p>
+        <p facs="#p276_p14" xml:id="text_p276_p14">cessioni soddisfacenti rispetto ad altri prodotti agrari, che</p>
+        <p facs="#p276_p15" xml:id="text_p276_p15">hanno parte più o meno cospicua nella nostra esportazione,</p>
+        <p facs="#p276_p16" xml:id="text_p276_p16">come gli agrumi, le frutta fresche e secche, gli ortaggi,</p>
+        <p facs="#p276_p17" xml:id="text_p276_p17">il riso, il burro, il formaggio, ecc. Non sarà meno necessario</p>
+        <p facs="#p276_p18" xml:id="text_p276_p18">di tutelare gli interessi delle industrie, che già hanno ini-</p>
+        <p facs="#p276_p19" xml:id="text_p276_p19">ziato o possono intraprendere un fecondo <rs type="temi_motivi" ref="#tema_commercio">commercio</rs> di</p>
+        <p facs="#p276_p20" xml:id="text_p276_p20">esportazione con la <placeName ref="#luogo_Francia">Francia</placeName>. Occorrerà pattuire un equo</p>
+        <p facs="#p276_p21" xml:id="text_p276_p21">trattamento, per gli olii volatili, l’acido borico, gli allumi,</p>
+        <p facs="#p276_p22" xml:id="text_p276_p22">la magnesia, il solfato di chinino, il tartaro, i fiammiferi, i fi-</p>
+        <p facs="#p276_p23" xml:id="text_p276_p23">lati grossi di canapa, i cordami, le tele grossolane, i cappelli di</p>
+        <p facs="#p276_p24" xml:id="text_p276_p24">paglia, la carta, i guanti, i lavori di corallo. Come si vede,</p>
+        <p facs="#p276_p25" xml:id="text_p276_p25">la lista degli interessi che si debbono difendere, non è breve.</p>
+        <p facs="#p276_p26" xml:id="text_p276_p26">E la cosa appare naturale a chi pensi che con la <placeName ref="#luogo_Francia">Francia</placeName> ha</p>
+        <p facs="#p276_p27" xml:id="text_p276_p27">luogo la metà quasi de' nostri scambi internazionali e che</p>
+        <p facs="#p276_p28" xml:id="text_p276_p28">la meravigliosa ricchezza di quel mercato, l’affinità di razza</p>
+        <p facs="#p276_p29" xml:id="text_p276_p29">e la comunanza di abitudini tendono ad accrescere sempre</p>
+        <p facs="#p276_p30" xml:id="text_p276_p30">più i rapporti commerciali tra i due paesi. E ciò sia detto,</p>
+        <p facs="#p276_p31" xml:id="text_p276_p31">senza parlare delle difficoltà per le cose marittime, difficoltà</p>
+        <p facs="#p276_p32" xml:id="text_p276_p32">già gravi in passato per i viziosi accordi rispetto al ca-</p>
+        <p facs="#p276_p33" xml:id="text_p276_p33">botaggio e al <foreign xml:lang="fr">droit d'entrepot</foreign> e aumentate ora a dismisura</p>
+        <p facs="#p276_p34" xml:id="text_p276_p34">a cagione della legge sui premi. E dunque necessario di</p>
+        <p facs="#p276_p35" xml:id="text_p276_p35">pensar presto a questa importante e ardua trattativa.</p>
+      </div>
+    </body>
+    <back>
+      <div>
+        <listPerson type="persone_reali">
+          <person xml:id="pers_Lanza">
+            <persName>Lanza</persName>
+            <note>Ministro dell'interno.</note>
+          </person>
+          <person xml:id="pers_Depretis">
+            <persName>Depretis</persName>
+            <note>Onorevole.</note>
+          </person>
+          <person xml:id="pers_Miceli">
+            <persName>Miceli</persName>
+            <note>Onorevole.</note>
+          </person>
+          <person xml:id="pers_Minghetti">
+            <persName>Minghetti</persName>
+            <note>Onorevole.</note>
+          </person>
+          <person xml:id="pers_Luzzatti">
+            <persName>Luzzatti</persName>
+            <note>Onorevole.</note>
+          </person>
+          <person xml:id="pers_Villari">
+            <persName>Villari</persName>
+            <note>Onorevole.</note>
+          </person>
+          <person xml:id="pers_SidneySonnino">
+            <persName>Sidney Sonnino</persName>
+            <note>Onorevole.</note>
+          </person>
+          <person xml:id="pers_Cairoli">
+            <persName>Cairoli</persName>
+            <note>Onorevole, responsabile di un'inchiesta/interim ministeriale.</note>
+          </person>
+          <person xml:id="pers_AlessandroRossi">
+            <persName>ALESSANDRO ROSSI</persName>
+            <note>Autore di "Perchè una Legge?".</note>
+          </person>
+          <person xml:id="pers_Tamajo">
+            <persName>Tamajo</persName>
+            <note>Senatore, prefetto di Girgenti. Compare anche come "Tamaio".</note>
+          </person>
+          <person xml:id="pers_VittorioSavorini">
+            <persName>Vittorio Savorini</persName>
+            <note>Autore dello studio sulle miniere di zolfo.</note>
+          </person>
+          <person xml:id="pers_Lombardi">
+            <persName>Lombardi</persName>
+            <note>Dottore; deposizione al Consiglio sanitario di Caltanissetta.</note>
+          </person>
+          <person xml:id="pers_Tirard">
+            <persName>Tirard</persName>
+          </person>
+        </listPerson>
+        <listPlace>
+          <place xml:id="luogo_Sicilia">
+            <placeName>Sicilia</placeName>
+          </place>
+          <place xml:id="luogo_Girgenti">
+            <placeName>Girgenti</placeName>
+          </place>
+          <place xml:id="luogo_Licata">
+            <placeName>Licata</placeName>
+          </place>
+          <place xml:id="luogo_Ganciana">
+            <placeName>Ganciana</placeName>
+            <note>Nel testo appare anche come "ciana" per spezzatura tipografica.</note>
+          </place>
+          <place xml:id="luogo_Palma">
+            <placeName>Palma</placeName>
+          </place>
+          <place xml:id="luogo_Aragona">
+            <placeName>Aragona</placeName>
+            <note>Compare anche come "d'Aragona".</note>
+          </place>
+          <place xml:id="luogo_Bassa">
+            <placeName>Bassa</placeName>
+          </place>
+          <place xml:id="luogo_Fermi">
+            <placeName>Fermi</placeName>
+          </place>
+          <place xml:id="luogo_Favara">
+            <placeName>Favara</placeName>
+          </place>
+          <place xml:id="luogo_Caltanissetta">
+            <placeName>Caltanissetta</placeName>
+          </place>
+          <place xml:id="luogo_Italia">
+            <placeName>Italia</placeName>
+          </place>
+          <place xml:id="luogo_Francia">
+            <placeName>Francia</placeName>
+          </place>
+          <place xml:id="luogo_Inghilterra">
+            <placeName>Inghilterra</placeName>
+          </place>
+           <place xml:id="luogo_Germania">
+            <placeName>Germania</placeName>
+          </place>
+        </listPlace>
+        <listOrg>
+          <org xml:id="org_ParlamentoItaliano">
+            <orgName>Parlamento Italiano</orgName>
+            <note>Citato anche come "Senato".</note>
+          </org>
+          <org xml:id="org_SenatoRegno">
+              <orgName>Senato del Regno</orgName>
+          </org>
+          <org xml:id="org_Stato">
+            <orgName>Stato</orgName>
+            <desc>Organizzazione governativa nazionale</desc>
+          </org>
+          <org xml:id="org_MinisteroAgricolturaIndustriaCommercio">
+            <orgName>Ministero d'agricoltura, industria e commercio</orgName>
+          </org>
+          <org xml:id="org_ConsiglioSanitarioCaltanissetta">
+            <orgName>Consiglio sanitario di Caltanissetta</orgName>
+          </org>
+          <org xml:id="org_IlRisorgimento">
+            <orgName>Il Risorgimento</orgName>
+            <note>Rivista citata per l'articolo di Alessandro Rossi.</note>
+          </org>
+          <org xml:id="org_AnnaliIndustriaCommercio">
+            <orgName>Annali dell'industria e del commercio</orgName>
+          </org>
+          <org xml:id="org_FratelliBocca">
+            <orgName>fratelli Bocca</orgName>
+            <note>Casa editrice di Torino</note>
+          </org>
+          <org xml:id="org_ImprimerieNationale">
+            <orgName>Imprimerie Nationale</orgName>
+            <note>Casa editrice di Parigi</note>
+          </org>
+          <org xml:id="org_Camera">
+            <orgName>Camera</orgName>
+            <note>Organo del Parlamento</note>
+          </org>
+          <org xml:id="org_Tribunali">
+            <orgName>tribunali</orgName>
+            <note>Tribunali d'arbitri</note>
+          </org>
+          <org xml:id="org_governo">
+            <orgName>governo</orgName>
+          </org>
+          <org xml:id="org_SenatoFrancese">
+            <orgName>Senato francese</orgName>
+          </org>
+        </listOrg>
+        <listBibl>
+          <bibl xml:id="op_CodiceSanitario">
+            <title level="m">progetto di codice sanitario</title>
+            <note>Proposta di legge dell'onorevole Lanza</note>
           </bibl>
-        </quote>
-      </p>
-      <p facs="#p274_p66" xml:id="p274_p66">
-        <quote>pel <orgName ref="#org_ConsiglioSanitarioCaltanissetta">consiglio sanitario di <placeName ref="#luogo_Caltanissetta">Caltanissetta</placeName>
-        </orgName>
-      </quote>.
-    </p>
-  </div>
-
-  <div xml:id="p274_col_2" type="col" facs="#p274_col_2">
-    <p facs="#p274_p142" xml:id="p274_p142">tralora, trovandosi le miniere molto lontane dall'abitato,</p>
-    <p facs="#p274_p143" xml:id="p274_p143">fosse necessario l'impianto di un magazzino in prossimità</p>
-    <p facs="#p274_p144" xml:id="p274_p144">di esse, i generi vi fossero venduti al prezzo stabilito dal</p>
-    <p facs="#p274_p145" xml:id="p274_p145">calmiere, che è ancora in uso nella <placeName ref="#luogo_Sicilia">Sicilia</placeName> occidentale, per</p>
-    <p facs="#p274_p146" xml:id="p274_p146">pane e per altri commestibili. Vorrebbe che fosse rimediato</p>
-    <p facs="#p274_p147" xml:id="p274_p147">al grave inconveniente che i minatori dormono nell'interno</p>
-    <p facs="#p274_p148" xml:id="p274_p148">delle <term type="verbum" ref="#term_Zolfare">solfare</term> per la troppo lontananza di queste dall'abitato.</p>
-    <p facs="#p274_p149" xml:id="p274_p149">Egli proporrebbe quindi che gli utili del magazzino e le</p>
-    <p facs="#p274_p150" xml:id="p274_p150">multe inflitte agli operai fossero destinate a provvedere a</p>
-    <p facs="#p274_p151" xml:id="p274_p151">questi di più ampi alberghi, scopri a cui potrebbero con-</p>
-    <p facs="#p274_p152" xml:id="p274_p152">correre le stesse contribuzioni libere dei minatori, le quali</p>
-    <p facs="#p274_p153" xml:id="p274_p153">si farebbero tanto più abbondanti quanto più l'istruzione</p>
-    <p facs="#p274_p154" xml:id="p274_p154">e la civiltà, e con essi il <rs type="temi_motivi" ref="#tema_storici_sociali">sentimento del risparmio e del</rs>
-    </p>
-    <p facs="#p274_p155" xml:id="p274_p155">soccorso mutuo, si diffonderebbe fra quelle popolazioni.</p>
-    <p facs="#p274_p156" xml:id="p274_p156">Contemporaneamente e perchè le famiglie povere delle</p>
-    <p facs="#p274_p157" xml:id="p274_p157">provincie possano procurarsi altrove quei proventi che la</p>
-    <p facs="#p274_p158" xml:id="p274_p158">produzione delle immagini e di quelle delle materie fossili</p>
-    <p facs="#p274_p159" xml:id="p274_p159">cessare, il senatore <persName ref="#pers_Tamajo">Tamaio</persName> chiede i soccorsi governativi pel</p>
-    <p facs="#p274_p160" xml:id="p274_p160">miglioramento delle condizioni agricole delle provincie.</p>
-    <p facs="#p274_p161" xml:id="p274_p161">Questo progetto del prefetto di <placeName ref="#luogo_Girgenti">Girgenti</placeName> accettato</p>
-    <p facs="#p274_p162" xml:id="p274_p162">esso stesso favorevolmente in esame. Soltanto ci sembra</p>
-    <p facs="#p274_p163" xml:id="p274_p163">che il loro centro di gravità sia un pochino spostato.</p>
-    <p facs="#p274_p164" xml:id="p274_p164">È il senatore <persName ref="#pers_Tamajo">Tamaio</persName> insiste molto sull'opportunità che</p>
-    <p facs="#p274_p165" xml:id="p274_p165">il governo venga in aiuto dell'agricoltura girgentina che</p>
-    <p facs="#p274_p166" xml:id="p274_p166">nella condizione in cui sono oggi le cose, ai rimedi lenti,</p>
-    <p facs="#p274_p167" xml:id="p274_p167">alla evoluzioni più o meno dolci non si può in coscienza</p>
-    <p facs="#p274_p168" xml:id="p274_p168">pensare. Ciò che duole di più è l'invervento di una legge</p>
-    <p facs="#p274_p169" xml:id="p274_p169">regolatrice del <rs type="temi_motivi" ref="#tema_condizione_lavoratori">lavoro industriale</rs> ed è su questo punto che</p>
-    <p facs="#p274_p170" xml:id="p274_p170">avrebbero dovuto principalmente convergere le proposte del</p>
-    <p facs="#p274_p171" xml:id="p274_p171">senatore <persName ref="#pers_Tamajo">Tamaio</persName>. Certo le condizioni dell'agricoltura nella</p>
-    <p facs="#p274_p172" xml:id="p274_p172">provincia di <placeName ref="#luogo_Girgenti">Girgenti</placeName> meritano pure che il <orgName ref="#org_Stato">governo</orgName> se ne</p>
-    <p facs="#p274_p173" xml:id="p274_p173">prenda qualche pensiero noi non vogliamo qui disconoscere</p>
-    <p facs="#p274_p174" xml:id="p274_p174">del tutto. Soltanto ci preme di far notare che questo rime-</p>
-    <p facs="#p274_p175" xml:id="p274_p175">dio va in una camerale e non essenzialmente sussidiario.</p>
-    <p facs="#p274_p176" xml:id="p274_p176">Non ci associamo poi affatto all'altra proposta del se-</p>
-    <p facs="#p274_p177" xml:id="p274_p177">natore <persName ref="#pers_Tamajo">Tamaio</persName>, per cui egli vorrebbe che la esecuzione</p>
-    <p facs="#p274_p178" xml:id="p274_p178">delle legge fosse sorvegliata da tribunali d'arbitri, simili ai</p>
-    <p facs="#p274_p179" xml:id="p274_p179">
-      <foreign xml:lang="fr">Prud'hommes</foreign> della <placeName ref="#luogo_Francia">Francia</placeName>, agli <foreign xml:lang="en">Equitable Conciels</foreign> dell'<placeName ref="#luogo_Inghilterra">Inghilterra</placeName> e ai <foreign xml:lang="de">Schiedsgerichte</foreign> della <placeName ref="#luogo_Germania">Germania</placeName>. Questi tribunali,</p>
-    <p facs="#p274_p181" xml:id="p274_p181">che possono servire ad applicare qualche volta le differenze</p>
-    <p facs="#p274_p182" xml:id="p274_p182">insorte fra i padroni e gli operai, non bastano a garantire</p>
-    <p facs="#p274_p183" xml:id="p274_p183">la rigorosa esecuzione della legge; anzi la escludono, perchè</p>
-    <p facs="#p274_p184" xml:id="p274_p184">gl'interessi locali degli imprenditori d'industria prevalgono</p>
-    <p facs="#p274_p185" xml:id="p274_p185">fino a far violare la legge stessa. E non è punto dimentica</p>
-    <p facs="#p274_p186" xml:id="p274_p186">che per tale rigorosa esecuzione della legge l'<placeName ref="#luogo_Inghilterra">Inghilterra</placeName>,
-    </p>
-    <p facs="#p274_p187" xml:id="p274_p187">la <placeName ref="#luogo_Germania">Germania</placeName> e la <placeName ref="#luogo_Francia">Francia</placeName> hanno riconosciuta la necessità</p>
-    <p facs="#p274_p188" xml:id="p274_p188">degli ispettori governativi.</p>
-    <p facs="#p274_p189" xml:id="p274_p189">Partendo queste massime, l'ultima delle quali è per noi gra-</p>
-    <p facs="#p274_p190" xml:id="p274_p190">vissima ed essenzialissima, non può disconoscersi al Prefetto</p>
-    <p facs="#p274_p191" xml:id="p274_p191">di <placeName ref="#luogo_Girgenti">Girgenti</placeName> il merito di avere consumato una di quelle quistioni</p>
-    <p facs="#p274_p192" xml:id="p274_p192">etiche del lavoro era a tempo sdegnosamente si attende in</p>
-    <p facs="#p274_p193" xml:id="p274_p193">
-      <placeName ref="#luogo_Italia">Italia</placeName>, di aver risposto a galla una quistione troppo ormai</p>
-    <p facs="#p274_p194" xml:id="p274_p194">trascurata e di aver suggerito qualche espedienti, mentre che</p>
-    <p facs="#p274_p195" xml:id="p274_p195">la legge dovrebbe prevalere per regolare il lavoro dei <term type="verbum" ref="#term_Carusi">carusi</term>
-    </p>
-    <p facs="#p274_p196" xml:id="p274_p196">nelle miniere siciliane. Si smarriranno queste proposte, co-</p>
-    <p facs="#p274_p197" xml:id="p274_p197">me frequentemente avviene, per gli intricati meandri del</p>
-    <p facs="#p274_p198" xml:id="p274_p198">servizio amministrativo, o verranno fatte oggetto di esame</p>
-    <p facs="#p274_p199" xml:id="p274_p199">o servono o sollecitò? Si ponga fine agli indugi e la</p>
-    <p facs="#p274_p200" xml:id="p274_p200">legislazione sulle fabbriche divenga un fatto compiuto an-</p>
-    <p facs="#p274_p201" xml:id="p274_p201">che in <placeName ref="#luogo_Italia">Italia</placeName>. Sarebbe tempo invece di dare un po' la</p>
-    <p facs="#p274_p202" xml:id="p274_p202">somma degli studi compiuti e di por mano ai rimedi. Lo</p>
-    <p facs="#p274_p203" xml:id="p274_p203">
-      <orgName ref="#org_Stato">Stato</orgName> solisoffa ad un'alta missione di civiltà quando prov-</p>
-    <p facs="#p274_p204" xml:id="p274_p204">vede con ingenti spese al progresso della <term ref="#term_Scienze">scienze</term> e delle <term ref="#term_Arti">arti</term>,
-    </p>
-    <p facs="#p274_p205" xml:id="p274_p205">ma l'azione sua deve egualmente distribuire ovunque sorga</p>
-    <p facs="#p274_p206" xml:id="p274_p206">richiesta. Nelle <rs type="temi_motivi" ref="#tema_SocietaCondizione">condizioni attuali della società</rs> è indispensabile che il potere pubblico provveda a tempo per arre-</p>
-    <p facs="#p274_p207" xml:id="p274_p207">care <rs type="temi_motivi" ref="#tema_OrdineTranquillita">l'ordine e la tranquillità degli anni nelle classi inferiori</rs>.
-    </p>
-    <p facs="#p274_p208" xml:id="p274_p208">care <rs type="temi_motivi" ref="#tema_OrdineTranquillita">l'ordine e la tranquillità degli anni nelle classi inf</rs>.
-    </p>
-  </div>
-</div>
-
-<!-- Pag 275 Articolo 1 -->
-<div class="container" xml:id="p275_container" facs="#p275_container" type="paragraph">
-  <pb n="275" facs="#M_275"/>
-  <div xml:id="pageHeader_275">
-    <date when="1881-05-01" facs="#p275_date">1 maggio 81</date>
-    <orgName xml:id="p275_runningTitle" facs="#p275_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
-    <num type="number" value="275" facs="#p275_number">275</num>
-  </div>
-  <div xml:id="p275_col_1" type="col" facs="#p275_col_1">
-    <p facs="#p275_p1" xml:id="p275_p1">
-      <quote>riori. Ove ciò non faccia, l'edifizio sociale, ricco di merla-</quote>
-    </p>
-    <p facs="#p275_p2" xml:id="p275_p2">
-      <quote>ture e di ornamenti squisiti nelle parti più alte, si logora</quote>
-    </p>
-    <p facs="#p275_p3" xml:id="p275_p3">
-      <quote>invece continuamente alla base.</quote>
-    </p>
-  </div>
-</div>
-</div>
-
-<!-- Articolo 2 -->
-<div type="article" xml:id="il_commercio">
-<pb n="275" facs="#M_275"/>
-<div xml:id="pageHeader_275_com">
-  <date when="1881-05-01" facs="#p275_date_com">1 maggio 81</date>
-  <orgName xml:id="p275_runningTitle_com" facs="#p275_runningTitle_com" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
-  <num type="number" value="275" facs="#p275_number_com">275</num>
-</div>
-<div xml:id="p275_col_1_com" type="col" facs="#p275_col_1_com">
-  <p facs="#p275_p4" xml:id="p275_p4">IL COMMERCIO NEL PRIMO TRIMESTRE <date when="1881">1881</date>.
-  </p>
-  <p facs="#p275_p5" xml:id="p275_p5">Le cifre che rappresentano i nostri scambi con l'estero</p>
-  <p facs="#p275_p6" xml:id="p275_p6">meritano quest'anno di essere vagliate, anche più diligen-</p>
-  <p facs="#p275_p7" xml:id="p275_p7">temente del consueto. Cessata la <term type="tema" ref="#tema_crisi_annonaria">crisi annonaria</term>, che ci ha</p>
-  <p facs="#p275_p8" xml:id="p275_p8">dolorosamente provati, giova vedere come si comportino</p>
-  <p facs="#p275_p9" xml:id="p275_p9">que' rami di <term type="tema" ref="#tema_commercio">commercio</term>, che ne avevano risentito più di-</p>
-  <p facs="#p275_p10" xml:id="p275_p10">retto l'influsso. Inoltre, nel momento in cui si prepara la</p>
-  <p facs="#p275_p11" xml:id="p275_p11">ripresa de' pagamenti in moneta metallica, è di somma im-</p>
-  <p facs="#p275_p12" xml:id="p275_p12">portanza di scrutare le correnti internazionali, per ricono-</p>
-  <p facs="#p275_p13" xml:id="p275_p13">scere se possa esser facile di attirare e mantenere in paese</p>
-  <p facs="#p275_p14" xml:id="p275_p14">il danaro necessario alla circolazione. Infine, avvicinandosi</p>
-  <p facs="#p275_p15" xml:id="p275_p15">il giorno nel quale si dovranno riprondere i negoziati con</p>
-  <p facs="#p275_p16" xml:id="p275_p16">la <placeName ref="#luogo_Francia">Francia</placeName> per la stipulazione del nuovo trattato di com-</p>
-  <p facs="#p275_p17" xml:id="p275_p17">mercio, è bene indagare quali de' prodotti del suolo e del-</p>
-  <p facs="#p275_p18" xml:id="p275_p18">l'industria domandino un miglior reggimento daziario</p>
-  <p facs="#p275_p19" xml:id="p275_p19">presso i nostri vicini.</p>
-  <p facs="#p275_p20" xml:id="p275_p20">Ora, per cominciare dai prodotti alimentari, si nota,</p>
-  <p facs="#p275_p21" xml:id="p275_p21">come naturale, un grande rivolgimento nel <term type="tema" ref="#tema_commercio">commercio</term> dei</p>
-  <p facs="#p275_p22" xml:id="p275_p22">grani. Nel <date when="1880-Q1">primo trimestre del 1880</date> l'importazione dei ce-</p>
-  <p facs="#p275_p23" xml:id="p275_p23">reali ascendeva a 257 mila tonnellate, e l'esportazione loro</p>
-  <p facs="#p275_p24" xml:id="p275_p24">non toccava 25 mila tonnellate, onde l'enorme differenza</p>
-  <p facs="#p275_p25" xml:id="p275_p25">di 212 mila tonnellate. Quest'anno l'importazione si è ri-</p>
-  <p facs="#p275_p26" xml:id="p275_p26">stretta a 51 mila tonnellate, mentre l'esportazione saliva</p>
-  <p facs="#p275_p27" xml:id="p275_p27">a 37 mila tonnellate; la differenza dunque si riduce a 14</p>
-  <p facs="#p275_p28" xml:id="p275_p28">mila tonnellate. Il che mostra come negli anni buoni il <placeName ref="#luogo_Italia">paese</placeName>
-  </p>
-  <p facs="#p275_p29" xml:id="p275_p29">possa provvedere quasi interamente ai suoi bisogni anno-</p>
-  <p facs="#p275_p30" xml:id="p275_p30">nari; tanto più se si nota che l'esportazione di farine e di</p>
-  <p facs="#p275_p31" xml:id="p275_p31">paste è di molto superiore all'importazione. Anco del com-</p>
-  <p facs="#p275_p32" xml:id="p275_p32">mercio delle frutta si può esser lieti: di fatto l'esportazione</p>
-  <p facs="#p275_p33" xml:id="p275_p33">degli agrumi aumentò di 175 mila, e quella delle frutta</p>
-  <p facs="#p275_p34" xml:id="p275_p34">fresche di sette mila quintali. Più vistoso fu l'aumento nel-</p>
-  <p facs="#p275_p35" xml:id="p275_p35">l'esportazione del vino, che da 485 mila ettolitri pervenne</p>
-  <p facs="#p275_p36" xml:id="p275_p36">a 636 mila, giustificando così ampiamente le nostre belle</p>
-  <p facs="#p275_p37" xml:id="p275_p37">speranze. Ma all'abbondanza del raccolto non corrisponde la</p>
-  <p facs="#p275_p38" xml:id="p275_p38">ripresa nel <term type="tema" ref="#tema_commercio">commercio</term> degli olii. Già lo scorso anno si av-</p>
-  <p facs="#p275_p39" xml:id="p275_p39">vertiva un certo decremento nell'esportazione dell'olio d'u-</p>
-  <p facs="#p275_p40" xml:id="p275_p40">va, e nello scorso trimestre essa si ridusse a 201 mila</p>
-  <p facs="#p275_p41" xml:id="p275_p41">quintali, cioè a un terzo meno della media ordinaria. E</p>
-  <p facs="#p275_p42" xml:id="p275_p42">l'importazione intanto, composta per la massima parte d'olii</p>
-  <p facs="#p275_p43" xml:id="p275_p43">di cotone, s'ingrossava sino a 196 mila quintali, lasciando</p>
-  <p facs="#p275_p44" xml:id="p275_p44">poco margine di profitto al nostro <placeName ref="#luogo_Italia">paese</placeName>, si ricco di oliveti</p>
-  <p facs="#p275_p45" xml:id="p275_p45">e si atto a trarne buon frutto. Anche rispetto all'uscita</p>
-  <p facs="#p275_p46" xml:id="p275_p46">della canapa greggia si lamenta una nuova diminuzione;</p>
-  <p facs="#p275_p47" xml:id="p275_p47">ma le note più dolorose riguardano il <term type="tema" ref="#tema_commercio">commercio</term> del be-</p>
-  <p facs="#p275_p48" xml:id="p275_p48">stiame, del quale taceremo, avendo ad esso consacrato un</p>
-  <p facs="#p275_p49" xml:id="p275_p49">recente articolo. <ref target="#op_LAseegna_volVII_pag24">*</ref> Ci sia consentito soltanto di soggiungere</p>
-  <p facs="#p275_p50" xml:id="p275_p50">che, un tempo cotesto <term type="tema" ref="#tema_commercio">commercio</term> ascendeva a una sessan-</p>
-  <p facs="#p275_p51" xml:id="p275_p51">tina di milioni, ed ora è ridotto a meno di dieci.</p>
-  <p facs="#p275_p52" xml:id="p275_p52">Se si guarda alla statistica del <term type="tema" ref="#tema_commercio">commercio</term>, nelle sue at-</p>
-  <p facs="#p275_p53" xml:id="p275_p53">tinenze con la <term type="tema" ref="#tema_questione_monetaria">questione monetaria</term>, si scorge che le impor-</p>
-  <p facs="#p275_p54" xml:id="p275_p54">tazioni sono cresciute di 33 milioni, le esportazioni di sette</p>
-  <p facs="#p275_p55" xml:id="p275_p55">solamente. Ma la differenza reale non è tanto ragguarde-</p>
-  <p facs="#p275_p56" xml:id="p275_p56">vole; imperocchè nel <date when="1880-Q1">primo trimestre del 1880</date> le importa-</p>
-  <p facs="#p275_p57" xml:id="p275_p57">zioni abbracciavano 8 milioni e mezzo di monete, le espor-</p>
-  <p facs="#p275_p58" xml:id="p275_p58">tazioni 14 milioni; laddove nei <date when="1881-Q1">tre primi mesi del 1881</date> l'en-</p>
-  <p facs="#p275_p59" xml:id="p275_p59">trata di monete toccò quasi undici milioni e l'uscita loro di</p>
-  <p facs="#p275_p60" xml:id="p275_p60">poco eccedette due milioni. Detratte queste cifre, che a rigor</p>
-  <p facs="#p275_p61" xml:id="p275_p61">di termini dovrebbero esser tenute distinte dal movimento</p>
-  <p facs="#p275_p62" xml:id="p275_p62">delle merci, l'aumento delle importazioni si restringe a 30</p>
-  <p facs="#p275_p63" xml:id="p275_p63">milioni, e quello delle esportazioni giunge a 19 milioni. Ciò</p>
-  <p facs="#p275_p64" xml:id="p275_p64">abbiamo notato, sia per dare la loro vera significazione alle</p>
-  <p facs="#p275_p65" xml:id="p275_p65">*    <quote target="#bibl_LAseegna_volVII_pag24">V. L'Aseegna, vol VII, pag. 24.</quote>
-  </p>
-
-</div>
-
-<div xml:id="p275_col_2_com" type="col" facs="#p275_col_2_com">
-  <p facs="#p275_p66" xml:id="p275_p66">cifre finali della statistica, sia perchè giova si vegga che il <placeName ref="#luogo_Italia">pae-</placeName>
-  </p>
-  <p facs="#p275_p67" xml:id="p275_p67">se comincia a riformivisi, per propria iniziativa, di specie me-</p>
-  <p facs="#p275_p68" xml:id="p275_p68">talliche e aiuta il <orgName ref="#org_governo">governo</orgName> nella grande opera del riseatto.</p>
-  <p facs="#p275_p69" xml:id="p275_p69">Le riscossioni della quota vinaria di quest'anno, impressa dipende par-</p>
-  <p facs="#p275_p70" xml:id="p275_p70">ticolarmente dalle condizioni economiche del regno, sono è</p>
-  <p facs="#p275_p71" xml:id="p275_p71">utile ricercare quale carattere abbiamo, in relazione alla</p>
-  <p facs="#p275_p72" xml:id="p275_p72">energia produttiva, gli aumenti delle importazioni e della</p>
-  <p facs="#p275_p73" xml:id="p275_p73">esportazioni, ai quali abbiamo accennato. Ad oltre quattro-</p>
-  <p facs="#p275_p74" xml:id="p275_p74">dici milioni ascendono le maggiori importazioni di zucchero</p>
-  <p facs="#p275_p75" xml:id="p275_p75">e di caffè, cagionate dalla ripresa del <term type="tema" ref="#tema_commercio">commercio</term>, dopochè</p>
-  <p facs="#p275_p76" xml:id="p275_p76">furono compiuti i depositi straordinari creati nel <date when="1879">1879</date>,
-  </p>
-  <p facs="#p275_p77" xml:id="p275_p77">quando i dazii di queste derrate furono sensibilmente inna-</p>
-  <p facs="#p275_p78" xml:id="p275_p78">cerbiti. Vero è che si contraggono quattro milioni</p>
-  <p facs="#p275_p79" xml:id="p275_p79">di minori importazioni di spirito e di petrolio, giacchè</p>
-  <p facs="#p275_p80" xml:id="p275_p80">l'anno scorso l'aumento de' diritti di confine permise,</p>
-  <p facs="#p275_p81" xml:id="p275_p81">come sempre accade, i negozianti a farne grossi approv-</p>
-  <p facs="#p275_p82" xml:id="p275_p82">vigionamenti; non restano poi sempre dieci milioni di mag-</p>
-  <p facs="#p275_p83" xml:id="p275_p83">giori importazioni, le quali ebbero a cagione il raddoppio</p>
-  <p facs="#p275_p84" xml:id="p275_p84">de' dazii. Altri accrescirnenti di importazione si scorgono nei</p>
-  <p facs="#p275_p85" xml:id="p275_p85">prodotti fabbricati. Così l'entrata de' filati di lino crebbe</p>
-  <p facs="#p275_p86" xml:id="p275_p86">di quasi 6 mila quintali, e quella de' filati di cotone di</p>
-  <p facs="#p275_p87" xml:id="p275_p87">circa 17 mila quintali, quella de' tessuti di cotone di pres-</p>
-  <p facs="#p275_p88" xml:id="p275_p88">so 11 mila. S'importarono tre mila quintali di pannilani più</p>
-  <p facs="#p275_p89" xml:id="p275_p89">che nel <date when="1880-Q1">primo trimestre dell'anno scorso</date>, 1400 quintali di</p>
-  <p facs="#p275_p90" xml:id="p275_p90">seta greggia, 25 mila chilogrammi di tessuti serici, 40 mila</p>
-  <p facs="#p275_p91" xml:id="p275_p91">metri cubi di legname da costruzione, 5 mila quintali di</p>
-  <p facs="#p275_p92" xml:id="p275_p92">pelli, 131 mila quintali di ferro, 8 mila quintali di ma-</p>
-  <p facs="#p275_p93" xml:id="p275_p93">chine, 95 mila tonnellate di carbone. Non è difficile trarre</p>
-  <p facs="#p275_p94" xml:id="p275_p94">l'oroscopo da queste cifre, che a prima giunta potrebbero</p>
-  <p facs="#p275_p95" xml:id="p275_p95">far dubitare che le nostre fabbriche indebolite si ritraes-</p>
-  <p facs="#p275_p96" xml:id="p275_p96">sero di fronte alla più poderosa concorrenza forestiera. Se</p>
-  <p facs="#p275_p97" xml:id="p275_p97">l'entrata de' filati di lino e de' filati e tessuti di cotone</p>
-  <p facs="#p275_p98" xml:id="p275_p98">aumentò, in modo notevole, se aumentò quella de' tessuti</p>
-  <p facs="#p275_p99" xml:id="p275_p99">di seta, non accennò la produttività interna ma l'una e l'altre</p>
-  <p facs="#p275_p100" xml:id="p275_p100">furono sollecitate vivamente dai crescenti consumi che sono</p>
-  <p facs="#p275_p101" xml:id="p275_p101">sintomo buono di rinascente prosperità. E per l'industria</p>
-  <p facs="#p275_p102" xml:id="p275_p102">della lana, che più tardava a rinvigorirsi, siamo lieti di</p>
-  <p facs="#p275_p103" xml:id="p275_p103">accennare a un eloquente indizio della maggiore opportunità</p>
-  <p facs="#p275_p104" xml:id="p275_p104">paesana: insieme al già registrato aumento delle importa-</p>
-  <p facs="#p275_p105" xml:id="p275_p105">zioni di lana, si accompagna la diminuzione di 4500 quin-</p>
-  <p facs="#p275_p106" xml:id="p275_p106">tali nell'esportazione, sicchè la quantità di lana rimasta a</p>
-  <p facs="#p275_p107" xml:id="p275_p107">disposizione de' nostri opifici crebbe di oltre a dieci mila</p>
-  <p facs="#p275_p108" xml:id="p275_p108">quintali. Per la seta greggia l'aumento di importazione si-</p>
-  <p facs="#p275_p109" xml:id="p275_p109">gnifica maggior lavoro de' nostri filatori, come gl'approv-</p>
-  <p facs="#p275_p110" xml:id="p275_p110">vigionamenti più copiosi di ferro, di macchine, di carbone, di</p>
-  <p facs="#p275_p111" xml:id="p275_p111">legname rappresentano l'incremento delle nostra <term type="tema" ref="#tema_attivita_produttiva">attività</term>
-  </p>
-  <p facs="#p275_p112" xml:id="p275_p112">produttiva. Il che si conferma ponendo mente che aumentò</p>
-  <p facs="#p275_p113" xml:id="p275_p113">grandios lo l'entrata degli acidi, dei cloruoli, di soda e di</p>
-  <p facs="#p275_p114" xml:id="p275_p114">altri prodotti chimici, delle sostanze tintorie e concianti del</p>
-  <p facs="#p275_p115" xml:id="p275_p115">cuoio, insomma di tutti i più dire, le materie prime e di</p>
-  <p facs="#p275_p116" xml:id="p275_p116">tutti gli istrumenti di lavoro.</p>
-  <p facs="#p275_p117" xml:id="p275_p117">Da ultimo, che ci dice la statistica del <term type="tema" ref="#tema_commercio">commercio</term> rispetto</p>
-  <p facs="#p275_p118" xml:id="p275_p118">al programma col quale si debbono intraprendere i nuovi</p>
-  <p facs="#p275_p119" xml:id="p275_p119">negoziati con la <placeName ref="#luogo_Francia">Francia</placeName>? Il vino è diventato uno degli ar-</p>
-  <p facs="#p275_p120" xml:id="p275_p120">gomentri più fruttuosi delle nostre esportazioni, l'olio d'oliva</p>
-  <p facs="#p275_p121" xml:id="p275_p121">è sempre oggetto di scambi, che ascendono a molte decine</p>
-  <p facs="#p275_p122" xml:id="p275_p122">di milioni, e questi scambi cresceranno rapidamente, se sa-</p>
-  <p facs="#p275_p123" xml:id="p275_p123">pranno riscofondere la nostra ostinata quanto compromesssa</p>
-  <p facs="#p275_p124" xml:id="p275_p124">dall'abuso delle mescolanze. Adunque su questi due prodotti</p>
-  <p facs="#p275_p125" xml:id="p275_p125">l'<placeName ref="#luogo_Italia">Italia</placeName> non potrebbre accettare imoserbamente di dazî, tanto</p>
-  <p facs="#p275_p126" xml:id="p275_p126">più che è risentito il preveggimento in virtù del quale i</p>
-  <p facs="#p275_p127" xml:id="p275_p127">nostri vini i quali erano ammessi in <placeName ref="#luogo_Francia">Francia</placeName> quasi libera-</p>
-  <p facs="#p275_p128" xml:id="p275_p128">ramente (i diritti si ristringevano a 30 centesimi per et-</p>
-  <p facs="#p275_p129" xml:id="p275_p129">tolitro), furono assoggettati al dazio di lire 3.50. Ma per i</p>
-  <p facs="#p275_p130" xml:id="p275_p130">vini non basta guardare alla misura del dazio, è mestieri</p>
-  <p facs="#p275_p131" xml:id="p275_p131">altresì che non si ponga un confine alla loro forza alcolica,</p>
-  <p facs="#p275_p132" xml:id="p275_p132">perchè altrimenti i prodotti del mezzogiorno sarebbero, si</p>
-</div>
-
-<div class="col-1" xml:id="p276_container" facs="#p276_col_1" type="paragraph">
-  <pb n="276" facs="#M_276"/>
-  <div xml:id="pageHeader_276">
-    <num type="number" value="276" facs="#p276_number">276</num>
-    <orgName xml:id="p276_runningTitle" facs="#p276_runningTitle" ref="#RassegnaSettimanale" type="casa_editrice_rivista">LA RASSEGNA SETTIMANALE</orgName>
-    <p facs="#p276_vol" xml:id="p276_vol">[Vol. 7, N, <num type="number" value="174">174</num>]
-    </p>
-  </div>
-  <div xml:id="p276_col_1" type="col" facs="#p276_col_1">
-    <p facs="#p276_p1" xml:id="p276_p1">può dire, proibiti dalle tasse esorbitanti, cui è sottoposto</p>
-    <p facs="#p276_p2" xml:id="p276_p2">lo spirito all’entrata presso i nostri vicini. Poi, come già</p>
-    <p facs="#p276_p3" xml:id="p276_p3">abbiamo avvertito, conviene che i dazi del bestiame, in-</p>
-    <p facs="#p276_p4" xml:id="p276_p4">iscritti nella nuova tariffa generale, siano ridotti a più com-</p>
-    <p facs="#p276_p5" xml:id="p276_p5">portabile misura e soprattutto che siano compresi nel trat-</p>
-    <p facs="#p276_p6" xml:id="p276_p6">tato, per non lasciarli in balia del <orgName ref="#org_SenatoFrancese">Senato francese</orgName>, la</p>
-    <p facs="#p276_p7" xml:id="p276_p7">cui tenerezza per gli interessi della grande proprietà deve</p>
-    <p facs="#p276_p8" xml:id="p276_p8">tenerci in continuo sospetto. E vero che il signor <persName ref="#pers_Tirard">Tirard</persName>
-    </p>
-    <p facs="#p276_p9" xml:id="p276_p9">ha manifestato il pensiero di mantenere libere le voci che</p>
-    <p facs="#p276_p10" xml:id="p276_p10">riguardano il bestiame; ma egli dovrà persuadersi che l'<placeName ref="#luogo_Italia">I-</placeName>
-    </p>
-    <p facs="#p276_p11" xml:id="p276_p11">talia non può stringere nuove convenzioni commerciali colla</p>
-    <p facs="#p276_p12" xml:id="p276_p12">
-      <placeName ref="#luogo_Francia">Francia</placeName>, se non è rassicurata intorno a questo importantissi-</p>
-    <p facs="#p276_p13" xml:id="p276_p13">mo soggetto. E superfluo dire che si dovranno ottenere con-</p>
-    <p facs="#p276_p14" xml:id="p276_p14">cessioni soddisfacenti rispetto ad altri prodotti agrari, che</p>
-    <p facs="#p276_p15" xml:id="p276_p15">hanno parte più o meno cospicua nella nostra esportazione,</p>
-    <p facs="#p276_p16" xml:id="p276_p16">come gli agrumi, le frutta fresche e secche, gli ortaggi,</p>
-    <p facs="#p276_p17" xml:id="p276_p17">il riso, il burro, il formaggio, ecc. Non sarà meno necessario</p>
-    <p facs="#p276_p18" xml:id="p276_p18">di tutelare gli interessi delle industrie, che già hanno ini-</p>
-    <p facs="#p276_p19" xml:id="p276_p19">ziato o possono intraprendere un fecondo <rs type="temi_motivi" ref="#tema_commercio">commercio</rs> di</p>
-    <p facs="#p276_p20" xml:id="p276_p20">esportazione con la <placeName ref="#luogo_Francia">Francia</placeName>. Occorrerà pattuire un equo</p>
-    <p facs="#p276_p21" xml:id="p276_p21">trattamento, per gli olii volatili, l’acido borico, gli allumi,</p>
-    <p facs="#p276_p22" xml:id="p276_p22">la magnesia, il solfato di chinino, il tartaro, i fiammiferi, i fi-</p>
-    <p facs="#p276_p23" xml:id="p276_p23">lati grossi di canapa, i cordami, le tele grossolane, i cappelli di</p>
-    <p facs="#p276_p24" xml:id="p276_p24">paglia, la carta, i guanti, i lavori di corallo. Come si vede,</p>
-    <p facs="#p276_p25" xml:id="p276_p25">la lista degli interessi che si debbono difendere, non è breve.</p>
-    <p facs="#p276_p26" xml:id="p276_p26">E la cosa appare naturale a chi pensi che con la <placeName ref="#luogo_Francia">Francia</placeName> ha</p>
-    <p facs="#p276_p27" xml:id="p276_p27">luogo la metà quasi de' nostri scambi internazionali e che</p>
-    <p facs="#p276_p28" xml:id="p276_p28">la meravigliosa ricchezza di quel mercato, l’affinità di razza</p>
-    <p facs="#p276_p29" xml:id="p276_p29">e la comunanza di abitudini tendono ad accrescere sempre</p>
-    <p facs="#p276_p30" xml:id="p276_p30">più i rapporti commerciali tra i due paesi. E ciò sia detto,</p>
-    <p facs="#p276_p31" xml:id="p276_p31">senza parlare delle difficoltà per le cose marittime, difficoltà</p>
-    <p facs="#p276_p32" xml:id="p276_p32">già gravi in passato per i viziosi accordi rispetto al ca-</p>
-    <p facs="#p276_p33" xml:id="p276_p33">botaggio e al <foreign xml:lang="fr">droit d'entrepot</foreign> e aumentate ora a dismisura</p>
-    <p facs="#p276_p34" xml:id="p276_p34">a cagione della legge sui premi. E dunque necessario di</p>
-    <p facs="#p276_p35" xml:id="p276_p35">pensar presto a questa importante e ardua trattativa.</p>
-  </div>
-</div>
-
-</div>
-</body>
-</text>
-
-<back>
-<listPerson type="persone_reali">
-<person xml:id="pers_Lanza">
-<persName>Lanza</persName>
-<note>Ministro dell'interno.</note>
-</person>
-<person xml:id="pers_Depretis">
-<persName>Depretis</persName>
-<note>Onorevole.</note>
-</person>
-<person xml:id="pers_Miceli">
-<persName>Miceli</persName>
-<note>Onorevole.</note>
-</person>
-<person xml:id="pers_Minghetti">
-<persName>Minghetti</persName>
-<note>Onorevole.</note>
-</person>
-<person xml:id="pers_Luzzatti">
-<persName>Luzzatti</persName>
-<note>Onorevole.</note>
-</person>
-<person xml:id="pers_Villari">
-<persName>Villari</persName>
-<note>Onorevole.</note>
-</person>
-<person xml:id="pers_SidneySonnino">
-<persName>Sidney Sonnino</persName>
-<note>Onorevole.</note>
-</person>
-<person xml:id="pers_Cairoli">
-<persName>Cairoli</persName>
-<note>Onorevole, responsabile di un'inchiesta/interim ministeriale.</note>
-</person>
-<person xml:id="pers_AlessandroRossi">
-<persName>ALESSANDRO ROSSI</persName>
-<note>Autore di "Perchè una Legge?".</note>
-</person>
-<person xml:id="pers_Tamajo">
-<persName>Tamajo</persName>
-<note>Senatore, prefetto di Girgenti. Compare anche come "Tamaio".</note>
-</person>
-<person xml:id="pers_VittorioSavorini">
-<persName>Vittorio Savorini</persName>
-<note>Autore dello studio sulle miniere di zolfo.</note>
-</person>
-<person xml:id="pers_Lombardi">
-<persName>Lombardi</persName>
-<note>Dottore; deposizione al Consiglio sanitario di Caltanissetta.</note>
-</person>
-</listPerson>
-
-<listPerson type="personaggi_invenzione"/>
-
-<listPlace>
-<place xml:id="luogo_Sicilia">
-<placeName>Sicilia</placeName>
-</place>
-<place xml:id="luogo_Girgenti">
-<placeName>Girgenti</placeName>
-</place>
-<place xml:id="luogo_Licata">
-<placeName>Licata</placeName>
-</place>
-<place xml:id="luogo_Ganciana">
-<placeName>Ganciana</placeName>
-<note>Nel testo appare anche come "ciana" per spezzatura tipografica.</note>
-</place>
-<place xml:id="luogo_Palma">
-<placeName>Palma</placeName>
-</place>
-<place xml:id="luogo_Aragona">
-<placeName>Aragona</placeName>
-<note>Compare anche come "d'Aragona".</note>
-</place>
-<place xml:id="luogo_Bassa">
-<placeName>Bassa</placeName>
-</place>
-<place xml:id="luogo_Fermi">
-<placeName>Fermi</placeName>
-</place>
-<place xml:id="luogo_Favara">
-<placeName>Favara</placeName>
-</place>
-<place xml:id="luogo_Caltanissetta">
-<placeName>Caltanissetta</placeName>
-</place>
-<place xml:id="luogo_Italia">
-<placeName>Italia</placeName>
-</place>
-<place xml:id="luogo_Francia">
-<placeName>Francia</placeName>
-</place>
-</listPlace>
-
-<listOrg>
-<org xml:id="org_ParlamentoItaliano">
-<orgName>Parlamento Italiano</orgName>
-<note>Citato anche come "Senato".</note>
-</org>
-<org xml:id="org_Stato">
-<orgName>Stato</orgName>
-<desc>Organizzazione governativa nazionale</desc>
-</org>
-<org xml:id="org_MinisteroAgricolturaIndustriaCommercio">
-<orgName>Ministero d'agricoltura, industria e commercio</orgName>
-</org>
-<org xml:id="org_ConsiglioSanitarioCaltanissetta">
-<orgName>Consiglio sanitario di Caltanissetta</orgName>
-</org>
-<org xml:id="org_IlRisorgimento">
-<orgName>Il Risorgimento</orgName>
-<note>Rivista citata per l'articolo di Alessandro Rossi.</note>
-</org>
-<org xml:id="org_AnnaliIndustriaCommercio">
-<orgName>Annali dell'industria e del commercio</orgName>
-</org>
-<org xml:id="org_FratelliBocca">
-<orgName>fratelli Bocca</orgName>
-<note>Casa editrice di Torino</note>
-</org>
-<org xml:id="org_ImprimerieNationale">
-<orgName>Imprimerie Nationale</orgName>
-<note>Casa editrice di Parigi</note>
-</org>
-<org xml:id="org_Camera">
-<orgName>Camera</orgName>
-<note>Organo del Parlamento</note>
-</org>
-<org xml:id="org_Tribunali">
-<orgName>tribunali</orgName>
-<note>Tribunali d'arbitri</note>
-</org>
-<org xml:id="org_governo">
-<orgName>governo</orgName>
-</org>
-<org xml:id="org_Francia">
-<orgName>Francia</orgName>
-</org>
-</listOrg>
-
-<listKeywords>
-<term xml:id="term_Scienze">scienze</term>
-<term xml:id="term_Arti">arti</term>
-</listKeywords>
-
-<listBibl>
-<bibl xml:id="bibl_LAseegna_volVII_pag24">
-<title level="a">L'Aseegna</title>
-<biblScope unit="vol">vol VII</biblScope>
-<biblScope unit="page">pag. 24</biblScope>
-</bibl>
-<bibl xml:id="op_CodiceSanitario">
-<title level="m">progetto di codice sanitario</title>
-<note>Proposta di legge dell'onorevole Lanza</note>
-</bibl>
-<bibl xml:id="op_ProgettoDepretisMiceli">
-<title level="m">progetto di legge Depretis-Miceli</title>
-</bibl>
-<bibl xml:id="op_PercheUnaLegge">
-<title level="a">Perchè una Legge?</title>
-<author ref="#pers_AlessandroRossi">ALESSANDRO ROSSI</author>
-<note>Citato in "Il Risorgimento", vol. V, p. 414.</note>
-</bibl>
-<bibl xml:id="op_CondizioniLavoratoriMiniereGirgenti">
-<title level="m">Condizioni economiche e morali dei lavoratori nelle miniere di zolfo e degli agricoltori della provincia di Girgenti</title>
-<author ref="#pers_VittorioSavorini">Vittorio Savorini</author>
-<note>Girgenti, 1881.</note>
-</bibl>
-<bibl xml:id="op_AnnaliIndustriaCommercio_1880n15">
-<title level="m">Annali dell'industria e del commercio</title>
-<note>1880, n. 15.</note>
-</bibl>
-<bibl xml:id="op_DeposizioneLombardi">
-<title level="m">Deposizione al Consiglio sanitario di Caltanissetta</title>
-<author ref="#pers_Lombardi">Lombardi</author>
-</bibl>
-<bibl xml:id="op_GiuseppeColombo_VitaOpere">
-<title level="m">Giuseppe Colombo, Vita ed opere di Gaudenzio Ferrari</title>
-<author ref="#GiuseppeColombo"/>
-</bibl>
-<bibl xml:id="op_GuidoPadeletti_Scritti">
-<title level="m">Guido Padelletti; Scritti di diritto pubblico</title>
-<author ref="#GuidoPadeletti"/>
-</bibl>
-<bibl xml:id="op_Iberberi">
-<title level="m">I Berberi, studio sulla conquista degli Arabi in Africa</title>
-<author ref="#GustavoDugaut"/>
-</bibl>
-<bibl xml:id="op_LaFieraVanita">
-<title level="m">La Fiera delle Vanità</title>
-<note>Citata nella rettifica.</note>
-</bibl>
-<bibl xml:id="op_PrudHommes">
-<title level="m">Prud'hommes</title>
-</bibl>
-<bibl xml:id="op_EquitableConciels">
-<title level="m">Equitable Conciels</title>
-</bibl>
-<bibl xml:id="op_Schiedsgerichte">
-<title level="m">Schiedsgerichte</title>
-</bibl>
-<bibl xml:id="op_LAseegna_volVII_pag24">
-<title level="a">L'Aseegna</title>
-<biblScope unit="vol">vol VII</biblScope>
-<biblScope unit="page">pag. 24</biblScope>
-</bibl>
-</listBibl>
-
-<list type="verbum">
-<item xml:id="term_Carusi">Carusi</item>
-<item xml:id="term_Piconieri">
-<term>piconieri</term>
-<note>Variante: picconieri, piconiere.</note>
-</item>
-<item xml:id="term_Carasso">
-<term>carasso</term>
-<note>Variante grafica: invariata, attestata in corsivo.</note>
-</item>
-<item xml:id="term_Speso">speso</item>
-<item xml:id="term_SoccorsoMorto">soccorso morto</item>
-<item xml:id="term_TruckSystem">truck system</item>
-<item xml:id="term_Zolfare">zolfare</item>
-<item xml:id="term_solisoffa">solisoffa</item>
-</list>
-
-<list type="temi_motivi">
-<item xml:id="tema_condizione_lavoratori">Condizione dei lavoratori</item>
-<item xml:id="tema_Meridione">Meridione</item>
-<item xml:id="tema_letterari">Aspetti letterari</item>
-<item xml:id="tema_storici_sociali">Aspetti storici e sociali</item>
-<item xml:id="tema_verista">temi tipici della corrente verista</item>
-<item xml:id="tema_legislazione">legislazione</item>
-<item xml:id="tema_crisi_annonaria">Crisi annonaria</item>
-<item xml:id="tema_commercio">Commercio</item>
-<item xml:id="tema_questione_monetaria">Questione monetaria</item>
-<item xml:id="tema_attivita_produttiva">Attività produttiva</item>
-</list>
-
-<list type="correnti_letterarie">
-<item xml:id="corrente_verista">Verismo</item>
-</list>
-
-<list type="epithet">
-<item xml:id="epithet_appassionato">economista appassionato</item>
-</list>
-</back>
+          <bibl xml:id="op_ProgettoDepretisMiceli">
+            <title level="m">progetto di legge Depretis-Miceli</title>
+          </bibl>
+          <bibl xml:id="op_PercheUnaLegge">
+            <title level="a">Perchè una Legge?</title>
+            <author ref="#pers_AlessandroRossi">ALESSANDRO ROSSI</author>
+            <note>Citato in "Il Risorgimento", vol. V, p. 414.</note>
+          </bibl>
+          <bibl xml:id="op_CondizioniLavoratoriMiniereGirgenti">
+            <title level="m">Condizioni economiche e morali dei lavoratori nelle miniere di zolfo e degli agricoltori della provincia di Girgenti</title>
+            <author ref="#pers_VittorioSavorini">Vittorio Savorini</author>
+            <note>Girgenti, 1881.</note>
+          </bibl>
+          <bibl xml:id="op_AnnaliIndustriaCommercio_1880n15">
+            <title level="m">Annali dell'industria e del commercio</title>
+            <note>1880, n. 15.</note>
+          </bibl>
+          <bibl xml:id="op_DeposizioneLombardi">
+            <title level="m">Deposizione al Consiglio sanitario di Caltanissetta</title>
+            <author ref="#pers_Lombardi">Lombardi</author>
+          </bibl>
+          <bibl xml:id="op_GiuseppeColombo_VitaOpere">
+            <title level="m">Giuseppe Colombo, Vita ed opere di Gaudenzio Ferrari</title>
+            <author ref="#GiuseppeColombo"/>
+          </bibl>
+          <bibl xml:id="op_GuidoPadeletti_Scritti">
+            <title level="m">Guido Padelletti; Scritti di diritto pubblico</title>
+            <author ref="#GuidoPadeletti"/>
+          </bibl>
+          <bibl xml:id="op_Iberberi">
+            <title level="m">I Berberi, studio sulla conquista degli Arabi in Africa</title>
+            <author ref="#GustavoDugaut"/>
+          </bibl>
+          <bibl xml:id="op_LaFieraVanita">
+            <title level="m">La Fiera delle Vanità</title>
+            <note>Citata nella rettifica.</note>
+          </bibl>
+          <bibl xml:id="op_PrudHommes">
+            <title level="m">Prud'hommes</title>
+          </bibl>
+          <bibl xml:id="op_EquitableConciels">
+            <title level="m">Equitable Conciels</title>
+          </bibl>
+          <bibl xml:id="op_Schiedsgerichte">
+            <title level="m">Schiedsgerichte</title>
+          </bibl>
+          <bibl xml:id="op_LAseegna_volVII_pag24">
+            <title level="a">L'Aseegna</title>
+            <biblScope unit="vol">vol VII</biblScope>
+            <biblScope unit="page">pag. 24</biblScope>
+          </bibl>
+        </listBibl>
+        <list type="verbum">
+          <item xml:id="term_Carusi">Carusi</item>
+          <item xml:id="term_Piconieri">
+            <term>piconieri</term>
+            <note>Variante: picconieri, piconiere.</note>
+          </item>
+          <item xml:id="term_Carasso">
+            <term>carasso</term>
+            <note>Variante grafica: invariata, attestata in corsivo.</note>
+          </item>
+          <item xml:id="term_Speso">speso</item>
+          <item xml:id="term_SoccorsoMorto">soccorso morto</item>
+          <item xml:id="term_TruckSystem">truck system</item>
+          <item xml:id="term_Zolfare">zolfare</item>
+          <item xml:id="term_solisoffa">solisoffa</item>
+        </list>
+        <list type="temi_motivi">
+          <item xml:id="tema_condizione_lavoratori">Condizione dei lavoratori</item>
+          <item xml:id="tema_Meridione">Meridione</item>
+          <item xml:id="tema_letterari">Aspetti letterari</item>
+          <item xml:id="tema_storici_sociali">Aspetti storici e sociali</item>
+          <item xml:id="tema_verista">temi tipici della corrente verista</item>
+          <item xml:id="tema_legislazione">legislazione</item>
+          <item xml:id="tema_crisi_annonaria">Crisi annonaria</item>
+          <item xml:id="tema_commercio">Commercio</item>
+          <item xml:id="tema_questione_monetaria">Questione monetaria</item>
+          <item xml:id="tema_attivita_produttiva">Attività produttiva</item>
+        </list>
+        <list type="correnti_letterarie">
+          <item xml:id="corrente_verista">Verismo</item>
+        </list>
+        <list type="epithet">
+          <item xml:id="epithet_appassionato">economista appassionato</item>
+        </list>
+      </div>
+    </back>
+  </text>
 </TEI>

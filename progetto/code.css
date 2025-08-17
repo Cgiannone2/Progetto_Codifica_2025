@@ -502,7 +502,7 @@ h1 {
 /* ------------------------------------
    Intestazioni di pagina
 ------------------------------------ */
-.page-header h4 {
+/* .page-header h4 {
   color: #ffaaa5;
   border: none;
   margin: 0;
@@ -511,7 +511,7 @@ h1 {
 
 .page-header p {
   margin: 0;
-}
+} */
 
 /* Titoli articoli */
 .article-title {
@@ -679,7 +679,7 @@ h1 {
 }
 
 /* Stile per i nuovi pulsanti di navigazione */
-.boxTrascrizione>button {
+.boxTrascrizione > button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -739,4 +739,17 @@ h1 {
   /* Rimuovi il background-color per evitare la colorazione dell'intera riga */
   background-color: transparent;
   color: #e0e0e0;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding: 12px;
+}
+
+.volume-info {
+  display: flex;
+  align-items: center;
 }
