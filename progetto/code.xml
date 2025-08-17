@@ -876,12 +876,12 @@
         <p facs="#p274_p39" xml:id="text_p274_p39">nel lavoro industriale prima che essi non avessero compiuto</p>
         <p facs="#p274_p40" xml:id="text_p274_p40">una certa età, e limitasse per un periodo successivo più o</p>
         <p facs="#p274_p41" xml:id="text_p274_p41">meno lungo la loro giornata di lavoro. Il progetto di legge</p>
-        <p facs="#p274_p42" xml:id="text_p274_p42">preso in considerazione dalla Camera nella tornata 9 giu</p>
-        <p facs="#p274_p43" xml:id="text_p274_p43">gno 1850, il quale proibiva l'impiego di fanciulli di età in</p>
+        <p facs="#p274_p42" xml:id="text_p274_p42">preso in considerazione dalla Camera nella tornata <date when="--06-09">9 giu</date></p>
+        <p facs="#p274_p43" xml:id="text_p274_p43"><date when="--06-09">gno</date> <date when="1850">1850</date>, il quale proibiva l'impiego di fanciulli di età in</p>
         <p facs="#p274_p44" xml:id="text_p274_p44">feriore ai 16 anni in lavori pericolosi e malsani, dava certo</p>
         <p facs="#p274_p45" xml:id="text_p274_p45">in tal modo, per ciò che s'attiene almeno al lavoro delle</p>
         <p facs="#p274_p46" xml:id="text_p274_p46">zolfare siciliane, una disposizione più efficace di quella con</p>
-        <p facs="#p274_p47" xml:id="text_p274_p47">tenuta nel controprogetto Depretis-Minghetti, la quale pro</p>
+        <p facs="#p274_p47" xml:id="text_p274_p47">tenuta nel controprogetto <ref target="#op_DepretisMinghetti">Depretis-Minghetti</ref>, la quale pro</p>
         <p facs="#p274_p48" xml:id="text_p274_p48">poneva che fosse impiegati in lavori notturni, sotter</p>
         <p facs="#p274_p49" xml:id="text_p274_p49">ranei, insalubri o pericolosi, fanciulli di età inferiore a 12</p>
         <p facs="#p274_p50" xml:id="text_p274_p50">anni, e l'opera infatti che è richiesta ai <term type="verbum" ref="#term_carusi">carusi,</term> è così pe</p>
@@ -1027,8 +1027,8 @@
         <p facs="#p275_p13" xml:id="text_p275_p13">scere se possa esser facile di attirare e mantenere in paese</p>
         <p facs="#p275_p14" xml:id="text_p275_p14">il danaro necessario alla circolazione. Infine, avvicinandosi</p>
         <p facs="#p275_p15" xml:id="text_p275_p15">il giorno nel quale si dovranno riprondere i negoziati con</p>
-        <p facs="#p275_p16" xml:id="text_p275_p16">la <placeName ref="#luogo_Francia">Francia</placeName> per la stipulazione del nuovo trattato di com-</p>
-        <p facs="#p275_p17" xml:id="text_p275_p17">mercio, è bene indagare quali de' prodotti del suolo e del-</p>
+        <p facs="#p275_p16" xml:id="text_p275_p16">la <placeName ref="#luogo_Francia">Francia</placeName> per la stipulazione del <ref target="#op_TrattatoCommercioFrancia">nuovo trattato di com-</ref></p>
+        <p facs="#p275_p17" xml:id="text_p275_p17"><ref target="#op_TrattatoCommercioFrancia">mercio</ref>, è bene indagare quali de' prodotti del suolo e del-</p>
         <p facs="#p275_p18" xml:id="text_p275_p18">l'industria domandino un miglior reggimento daziario</p>
         <p facs="#p275_p19" xml:id="text_p275_p19">presso i nostri vicini.</p>
         <p facs="#p275_p20" xml:id="text_p275_p20">Ora, per cominciare dai prodotti alimentari, si nota,</p>
@@ -1148,7 +1148,7 @@
         <p facs="#p275_p129" xml:id="text_p275_p129">tolitro), furono assoggettati al dazio di lire 3.50. Ma per i</p>
         <p facs="#p275_p130" xml:id="text_p275_p130">vini non basta guardare alla misura del dazio, è mestieri</p>
         <p facs="#p275_p131" xml:id="text_p275_p131">altresì che non si ponga un confine alla loro forza alcolica,</p>
-        <p facs="#p275_p132" xml:id="text_p275_p132">perchè altrimenti i prodotti del mezzogiorno sarebbero, si</p>
+        <p facs="#p275_p132" xml:id="text_p275_p132">perchè altrimenti i prodotti del <term type="tema" ref="#tema_Meridione">mezzogiorno</term> sarebbero, si</p>
       </div>
 
       <div type="article" xml:id="il_commercio_pp276">
@@ -1161,7 +1161,7 @@
         <p facs="#p276_p1" xml:id="text_p276_p1">può dire, proibiti dalle tasse esorbitanti, cui è sottoposto</p>
         <p facs="#p276_p2" xml:id="text_p276_p2">lo spirito all’entrata presso i nostri vicini. Poi, come già</p>
         <p facs="#p276_p3" xml:id="text_p276_p3">abbiamo avvertito, conviene che i dazi del bestiame, in-</p>
-        <p facs="#p276_p4" xml:id="text_p276_p4">iscritti nella nuova tariffa generale, siano ridotti a più com-</p>
+        <p facs="#p276_p4" xml:id="text_p276_p4">iscritti nella <ref target="#op_NuovaTariffaGenerale">nuova tariffa generale</ref>, siano ridotti a più com-</p>
         <p facs="#p276_p5" xml:id="text_p276_p5">portabile misura e soprattutto che siano compresi nel trat-</p>
         <p facs="#p276_p6" xml:id="text_p276_p6">tato, per non lasciarli in balia del <orgName ref="#org_SenatoFrancese">Senato francese</orgName>, la</p>
         <p facs="#p276_p7" xml:id="text_p276_p7">cui tenerezza per gli interessi della grande proprietà deve</p>
@@ -1187,14 +1187,14 @@
         <p facs="#p276_p24" xml:id="text_p276_p24">paglia, la carta, i guanti, i lavori di corallo. Come si vede,</p>
         <p facs="#p276_p25" xml:id="text_p276_p25">la lista degli interessi che si debbono difendere, non è breve.</p>
         <p facs="#p276_p26" xml:id="text_p276_p26">E la cosa appare naturale a chi pensi che con la <placeName ref="#luogo_Francia">Francia</placeName> ha</p>
-        <p facs="#p276_p27" xml:id="text_p276_p27">luogo la metà quasi de' nostri scambi internazionali e che</p>
+        <p facs="#p276_p27" xml:id="text_p276_p27">luogo la metà quasi de' nostri <term type="tema" ref="#tema_commercio">scambi internazionali</term> e che</p>
         <p facs="#p276_p28" xml:id="text_p276_p28">la meravigliosa ricchezza di quel mercato, l’affinità di razza</p>
         <p facs="#p276_p29" xml:id="text_p276_p29">e la comunanza di abitudini tendono ad accrescere sempre</p>
-        <p facs="#p276_p30" xml:id="text_p276_p30">più i rapporti commerciali tra i due paesi. E ciò sia detto,</p>
+        <p facs="#p276_p30" xml:id="text_p276_p30">più i <term type="tema" ref="#tema_commercio">rapporti commerciali</term> tra i due paesi. E ciò sia detto,</p>
         <p facs="#p276_p31" xml:id="text_p276_p31">senza parlare delle difficoltà per le cose marittime, difficoltà</p>
-        <p facs="#p276_p32" xml:id="text_p276_p32">già gravi in passato per i viziosi accordi rispetto al ca-</p>
-        <p facs="#p276_p33" xml:id="text_p276_p33">botaggio e al <foreign xml:lang="fr">droit d'entrepot</foreign> e aumentate ora a dismisura</p>
-        <p facs="#p276_p34" xml:id="text_p276_p34">a cagione della legge sui premi. E dunque necessario di</p>
+        <p facs="#p276_p32" xml:id="text_p276_p32">già gravi in passato per i viziosi accordi rispetto al <term type="verbum" ref="#term_Cabotaggio">ca-</term></p>
+        <p facs="#p276_p33" xml:id="text_p276_p33"><term type="verbum" ref="#term_Cabotaggio">bottaggio</term> e al <foreign xml:lang="fr">droit d'entrepot</foreign> e aumentate ora a dismisura</p>
+        <p facs="#p276_p34" xml:id="text_p276_p34">a cagione della <ref target="#op_LeggeSuiPremi">legge sui premi</ref>. E dunque necessario di</p>
         <p facs="#p276_p35" xml:id="text_p276_p35">pensar presto a questa importante e ardua trattativa.</p>
       </div>
     </body>
@@ -1348,9 +1348,25 @@
           </org>
         </listOrg>
         <listBibl>
+          <bibl xml:id="op_NuovaTariffaGenerale">
+            <title level="m">Nuova tariffa generale</title>
+            <note>Documento legislativo menzionato nell'articolo.</note>
+          </bibl>
+          <bibl xml:id="op_LeggeSuiPremi">
+            <title level="m">Legge sui premi</title>
+            <note>Documento legislativo menzionato nell'articolo.</note>
+          </bibl>
           <bibl xml:id="op_CodiceSanitario">
             <title level="m">progetto di codice sanitario</title>
             <note>Proposta di legge dell'onorevole Lanza</note>
+          </bibl>
+          <bibl xml:id="op_TrattatoCommercioFrancia">
+            <title level="m">Nuovo trattato di commercio con la Francia</title>
+            <note>Trattato in fase di negoziazione menzionato nell'articolo.</note>
+          </bibl>
+          <bibl xml:id="op_DepretisMinghetti">
+            <title level="m">Depretis-Minghetti</title>
+            <note>Proposta di legge menzionata nell'articolo.</note>
           </bibl>
           <bibl xml:id="op_ProgettoDepretisMiceli">
             <title level="m">progetto di legge Depretis-Miceli</title>
@@ -1406,6 +1422,7 @@
         </listBibl>
         <list type="verbum">
           <item xml:id="term_Carusi">Carusi</item>
+          <item xml:id="term_Cabotaggio">cabotaggio</item>
           <item xml:id="term_Piconieri">
             <term>piconieri</term>
             <note>Variante: picconieri, piconiere.</note>
