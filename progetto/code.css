@@ -1,5 +1,5 @@
 /* ------------------------------------
-   Impostazioni di base
+   [1] IMPOSTAZIONI GLOBALI E DI BASE
 ------------------------------------ */
 html {
   scroll-behavior: smooth;
@@ -17,34 +17,8 @@ strong {
   color: #ffffff;
 }
 
-/* Layout flessibile generico */
-.flex {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  gap: 4px;
-}
-
-.flex-full {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-
-/* Titoli principali */
-h1 {
-  color: #a8e6cf;
-  border-bottom: 2px solid #a8e6cf;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 /* ------------------------------------
-   Barra di navigazione (.navMenu)
-   - Generata da XSL nella sezione <header>
+   [2] HEADER E BARRA DI NAVIGAZIONE
 ------------------------------------ */
 .navMenu {
   padding: 20px;
@@ -79,7 +53,7 @@ h1 {
 }
 
 /* ------------------------------------
-   Blocchi di sezione principali
+   [3] BLOCCHI DI CONTENUTO PRINCIPALI
 ------------------------------------ */
 .section-block {
   background-color: #3b4255;
@@ -89,8 +63,16 @@ h1 {
   margin: 25px 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #e0e0e0;
-  scroll-margin-top: 80px;
-  /* per l'ancoraggio da menu */
+  scroll-margin-top: 80px; /* Offset per l'ancoraggio dal menu */
+}
+
+.section-block h2 {
+  color: #a8e6cf;
+  border-bottom: 1px solid #a8e6cf;
+  padding-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .section-block .indent {
@@ -103,30 +85,14 @@ h1 {
   margin-bottom: 10px;
 }
 
-.section-block h2 {
-  color: #a8e6cf;
-  border-bottom: 1px solid #a8e6cf;
-  padding-bottom: 5px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 /* ------------------------------------
-   Layout immagine + trascrizione
-   - .boxTrascrizione generato in XSL
+   [4] LAYOUT TRASCRIZIONE (IMMAGINE + TESTO)
 ------------------------------------ */
 .boxTrascrizione {
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: relative;
-}
-
-.controls-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
 
 .img-wrapper {
@@ -137,6 +103,7 @@ h1 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
   box-sizing: border-box;
+  flex: 1 1 0%; /* Assegna flessibilità per il layout del carosello */
 }
 
 .img-wrapper img {
@@ -147,7 +114,6 @@ h1 {
   margin: 0 auto;
 }
 
-/* Area trascrizione testo */
 .transcription-area {
   min-width: 300px;
   background-color: #2b3042;
@@ -157,28 +123,18 @@ h1 {
   overflow-y: auto;
   color: #f0f0f0;
   box-sizing: border-box;
-  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1 1 0%; /* Assegna flessibilità per il layout del carosello */
 }
 
-/* Layout a due colonne per il testo */
+/* Layout a colonne per il testo della trascrizione */
 .trascrizione {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   height: 100%;
-}
-
-.date_container {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  padding: 8px 0;
 }
 
 .trascrizione .col {
@@ -196,20 +152,43 @@ h1 {
   margin: 0;
 }
 
-/* ------------------------------------
-   Legenda + Pulsanti fenomeni
------------------------------------- */
-.box-btn {
-  background-color: #2b3042;
-  border-radius: 8px;
-  padding: 15px;
-  margin-top: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  flex-basis: 100%;
+/* Intestazioni e piè di pagina all'interno della trascrizione */
+.page-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 12px;
+  margin: 6px 0;
+  font-size: 18px;
 }
 
-.box-legenda {
+.date_container {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.volume-info {
+  display: flex;
+  align-items: center;
+}
+
+/* ------------------------------------
+   [5] CONTROLLI: LEGENDA E PULSANTI FENOMENI
+------------------------------------ */
+.controls-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.box-legenda,
+.box-btn {
   background-color: #2b3042;
   border-radius: 8px;
   padding: 15px;
@@ -243,7 +222,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* Pulsanti */
+/* Stile dei pulsanti per i fenomeni */
 .box-btn button {
   background-color: #4682b4;
   color: white;
@@ -252,17 +231,19 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, filter 0.3s;
   min-width: 100px;
 }
 
 .box-btn button:hover {
-  background-color: #3b4255;
+  filter: brightness(1.2);
 }
 
 /* ------------------------------------
-   Stili fenomeni notevoli nel testo
+   [6] STILI PER EVIDENZIAZIONE FENOMENI
 ------------------------------------ */
+
+/* Stile base per tutti i fenomeni nel testo */
 .persone-reali,
 .persone-immaginarie,
 .opere,
@@ -282,324 +263,56 @@ h1 {
   transition: all 0.3s ease;
 }
 
-/* Evidenziazioni attive */
-.persone-reali.highlighted {
-  background-color: #a8e6cf;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
+/* Evidenziazioni quando la classe .highlighted è attiva (via JS) */
+.persone-reali.highlighted { background-color: #a8e6cf; color: #000; padding: 1px 3px; border-radius: 3px; }
+.persone-immaginarie.highlighted { background-color: #ffaaa5; color: #000; padding: 1px 3px; border-radius: 3px; }
+.opere.highlighted { background-color: #deb887; color: #000; padding: 1px 3px; border-radius: 3px; }
+.luoghi-geografici.highlighted { background-color: #20b2aa; color: #000; padding: 1px 3px; border-radius: 3px; }
+.luoghi-naturali.highlighted { background-color: #ffd3b6; color: #000; padding: 1px 3px; border-radius: 3px; }
+.casa-editrice-rivista.highlighted { background-color: #ff7f50; color: #000; padding: 1px 3px; border-radius: 3px; }
+.date.highlighted { background-color: #FFD700; color: #000; padding: 1px 3px; border-radius: 3px; }
+.verbum.highlighted { background-color: #ff6347; color: #000; padding: 1px 3px; border-radius: 3px; }
+.temi-motivi.highlighted { background-color: #b0e0e6; color: #000; padding: 1px 3px; border-radius: 3px; }
+.correnti-letterarie.highlighted { background-color: #6a5acd; color: #fff; padding: 1px 3px; border-radius: 3px; }
+.lingua-straniera.highlighted { background-color: #DA70D6; color: #fff; padding: 1px 3px; border-radius: 3px; }
+.citazioni.highlighted { background-color: #d22d2d; border-left: 5px solid #d22d2d; margin-left: 20px; padding-left: 10px; font-style: italic; color: #d0d0d0; }
+.organizzazioni.highlighted { background-color: #8a2be2; color: #fff; padding: 1px 3px; border-radius: 3px; }
+.epithet.highlighted { background-color: #7fffd4; color: #000; padding: 1px 3px; border-radius: 3px; }
 
-.persone-immaginarie.highlighted {
-  background-color: #ffaaa5;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
+/* Colori corrispondenti per la legenda */
+.persone-reali-legend { background-color: #a8e6cf; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.persone-immaginarie-legend { background-color: #ffaaa5; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.opere-legend { background-color: #deb887; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.luoghi-geografici-legend { background-color: #20b2aa; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.luoghi-naturali-legend { background-color: #ffd3b6; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.casa-editrice-rivista-legend { background-color: #ff7f50; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.date-legend { background-color: #FFD700; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.verbum-legend { background-color: #ff6347; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.temi-motivi-legend { background-color: #b0e0e6; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.correnti-letterarie-legend { background-color: #6a5acd; color: #fff; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.lingua-straniera-legend { background-color: #DA70D6; color: #fff; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.citazioni-legend { border-left: 5px solid #d22d2d; margin-left: 20px; padding-left: 10px; font-style: italic; color: #d0d0d0; font-weight: bold; }
+.organizzazioni-legend { background-color: #8a2be2; color: #fff; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
+.epithet-legend { background-color: #7fffd4; color: #000; font-weight: bold; padding: 1px 3px; border-radius: 3px; }
 
-.opere.highlighted {
-  background-color: #deb887;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
-
-.luoghi-geografici.highlighted {
-  background-color: #20b2aa;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
-
-.luoghi-naturali.highlighted {
-  background-color: #ffd3b6;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
-
-.casa-editrice-rivista.highlighted {
-  background-color: #ff7f50;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
-
-.date.highlighted {
-  background-color: #87cefa;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
-
-.verbum.highlighted {
-  background-color: #ff6347;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
-
-.temi-motivi.highlighted {
-  background-color: #b0e0e6;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
-
-.correnti-letterarie.highlighted {
-  background-color: #6a5acd;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #fff;
-}
-
-.lingua-straniera.highlighted {
-  background-color: #4682b4;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #fff;
-}
-
-.citazioni.highlighted {
-  background-color: #d22d2d;
-  border-left: 5px solid #d22d2d;
-  margin-left: 20px;
-  padding-left: 10px;
-  font-style: italic;
-  color: #d0d0d0;
-}
-
-.organizzazioni.highlighted {
-  background-color: #8a2be2;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #fff;
-}
-
-.epithet.highlighted {
-  background-color: #7fffd4;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-}
+/* Stile per i pulsanti quando sono attivi */
+.btnPersoneReali.active-phenomenon { background-color: #a8e6cf; color: #000; }
+.btnPersoneImmaginarie.active-phenomenon { background-color: #ffaaa5; color: #000; }
+.btnOpere.active-phenomenon { background-color: #deb887; color: #000; }
+.btnLuoghiGeografici.active-phenomenon { background-color: #20b2aa; color: #000; }
+.btnLuoghiNaturali.active-phenomenon { background-color: #ffd3b6; color: #000; }
+.btnCasaEditriceRivista.active-phenomenon { background-color: #ff7f50; color: #000; }
+.btnDate.active-phenomenon { background-color: #FFD700; color: #000; }
+.btnVerbum.active-phenomenon { background-color: #ff6347; color: #000; }
+.btnTemiMotivi.active-phenomenon { background-color: #b0e0e6; color: #000; }
+.btnCorrentiLetterarie.active-phenomenon { background-color: #6a5acd; color: #fff; }
+.btnLinguaStraniera.active-phenomenon { background-color: #DA70D6; color: #fff; }
+.btnCitazioni.active-phenomenon { background-color: #d22d2d; color: #fff; }
+.btnOrganizzazioni.active-phenomenon { background-color: #8a2be2; color: #fff; }
+.btnEpithet.active-phenomenon { background-color: #7fffd4; color: #000; }
 
 /* ------------------------------------
-   Legenda colori fenomeni
------------------------------------- */
-.persone-reali-legend {
-  background-color: #a8e6cf;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.persone-immaginarie-legend {
-  background-color: #ffaaa5;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.opere-legend {
-  background-color: #deb887;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.luoghi-geografici-legend {
-  background-color: #20b2aa;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.luoghi-naturali-legend {
-  background-color: #ffd3b6;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.casa-editrice-rivista-legend {
-  background-color: #ff7f50;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.date-legend {
-  background-color: #87cefa;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.verbum-legend {
-  background-color: #ff6347;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.temi-motivi-legend {
-  background-color: #b0e0e6;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-.correnti-letterarie-legend {
-  background-color: #6a5acd;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: bold;
-}
-
-.lingua-straniera-legend {
-  background-color: #4682b4;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: bold;
-}
-
-.citazioni-legend {
-  border-left: 5px solid #d22d2d;
-  margin-left: 20px;
-  padding-left: 10px;
-  font-style: italic;
-  color: #d0d0d0;
-  font-weight: bold;
-}
-
-.organizzazioni-legend {
-  background-color: #8a2be2;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: bold;
-}
-
-.epithet-legend {
-  background-color: #7fffd4;
-  padding: 1px 3px;
-  border-radius: 3px;
-  color: #000;
-  font-weight: bold;
-}
-
-/* ------------------------------------
-   Intestazioni di pagina
------------------------------------- */
-/* .page-header h4 {
-  color: #ffaaa5;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.page-header p {
-  margin: 0;
-} */
-
-/* Titoli articoli */
-.article-title {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* ------------------------------------
-   Stato attivo pulsanti fenomeni
------------------------------------- */
-.btnPersoneReali.active-phenomenon {
-  background-color: #a8e6cf;
-  color: #000;
-}
-
-.btnPersoneImmaginarie.active-phenomenon {
-  background-color: #ffaaa5;
-  color: #000;
-}
-
-.btnOpere.active-phenomenon {
-  background-color: #deb887;
-  color: #000;
-}
-
-.btnLuoghiGeografici.active-phenomenon {
-  background-color: #20b2aa;
-  color: #000;
-}
-
-.btnLuoghiNaturali.active-phenomenon {
-  background-color: #ffd3b6;
-  color: #000;
-}
-
-.btnCasaEditriceRivista.active-phenomenon {
-  background-color: #ff7f50;
-  color: #000;
-}
-
-.btnDate.active-phenomenon {
-  background-color: #87cefa;
-  color: #000;
-}
-
-.btnVerbum.active-phenomenon {
-  background-color: #ff6347;
-  color: #000;
-}
-
-.btnTemiMotivi.active-phenomenon {
-  background-color: #b0e0e6;
-  color: #000;
-}
-
-.btnCorrentiLetterarie.active-phenomenon {
-  background-color: #6a5acd;
-  color: #fff;
-}
-
-.btnLinguaStraniera.active-phenomenon {
-  background-color: #4682b4;
-  color: #fff;
-}
-
-.btnCitazioni.active-phenomenon {
-  background-color: #d22d2d;
-  color: #fff;
-}
-
-.btnOrganizzazioni.active-phenomenon {
-  background-color: #8a2be2;
-  color: #fff;
-}
-
-.btnEpithet.active-phenomenon {
-  background-color: #7fffd4;
-  color: #000;
-}
-
-/* Pulsanti al passaggio del mouse */
-.box-btn button:hover {
-  filter: brightness(1.2);
-}
-
-/* ------------------------------------
-   Immagine + SVG sovrapposto
+   [7] IMMAGINE CON SVG SOVRAPPOSTO
 ------------------------------------ */
 .svg-container {
   position: relative;
@@ -628,7 +341,7 @@ h1 {
   pointer-events: auto;
 }
 
-/* Zone interattive SVG */
+/* Zone interattive dell'SVG */
 .highlight-zone {
   fill: transparent;
   stroke: none;
@@ -642,7 +355,7 @@ h1 {
 }
 
 /* ------------------------------------
-   Carosello
+   [8] CAROSELLO
 ------------------------------------ */
 .carousel-container {
   display: flex;
@@ -650,15 +363,6 @@ h1 {
   justify-content: center;
   gap: 10px;
   width: 100%;
-}
-
-#text-carousel-content {
-  width: 100%;
-}
-
-.img-wrapper,
-.transcription-area {
-  flex: 1 1 0%;
 }
 
 .carousel-slide,
@@ -673,12 +377,11 @@ h1 {
   text-align: center;
 }
 
-.carousel-slide-text.active h4 {
-  margin: 6px;
-  font-size: 18px;
+#text-carousel-content {
+  width: 100%;
 }
 
-/* Stile per i nuovi pulsanti di navigazione */
+/* Pulsanti di navigazione del carosello */
 .boxTrascrizione > button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -700,56 +403,36 @@ h1 {
 }
 
 /* ------------------------------------
-   Stili aggiunti per la Sezione Bibliografia
+   [9] SEZIONI BIBLIOGRAFIA E NOTIZIE
 ------------------------------------ */
-.bibliographic-entry {
-  margin-bottom: 25px; /* Aumenta lo spazio tra le voci bibliografiche */
+.bibliographic-entry,
+.notizie-entry {
+  margin-bottom: 25px;
   padding: 15px;
-  border-left: 5px solid #a8e6cf; /* Aggiunge una barra laterale per distinguere le voci */
+  border-left: 5px solid #a8e6cf;
   background-color: #2b3042;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.bibliographic-title {
-  color: #a8e6cf; /* Titolo in risalto */
+.bibliographic-title,
+.notizie-title {
+  color: #a8e6cf;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.bibliographic-entry p {
+.bibliographic-entry p,
+.notizie-entry p {
   margin: 0;
   line-height: 1.5;
   color: #e0e0e0;
 }
 
-.bibliographic-author,
-.bibliographic-publication,
-.bibliographic-pages,
-.bibliographic-note {
-  font-weight: normal;
-}
-
-.opere {
-  font-style: italic; /* Rende il titolo dell'opera in corsivo */
-}
-
-.opere-legend {
-  /* Rimuovi il background-color per evitare la colorazione dell'intera riga */
-  background-color: transparent;
+/* Stile specifico per i titoli delle opere citate */
+.bibliographic-entry .opere {
+  font-style: italic;
   color: #e0e0e0;
-}
-
-.page-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 1px solid;
-  padding: 12px;
-}
-
-.volume-info {
-  display: flex;
-  align-items: center;
+  background-color: transparent; /* Sovrascrive lo stile generico .opere */
 }

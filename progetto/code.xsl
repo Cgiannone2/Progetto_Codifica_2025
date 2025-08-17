@@ -673,4 +673,10 @@
     </span>
   </xsl:template>
 
+  <xsl:template match="tei:foreign">
+    <span class="lingua-straniera">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
 </xsl:stylesheet>
