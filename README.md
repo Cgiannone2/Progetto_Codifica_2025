@@ -1,4 +1,4 @@
-Istruzioni per la visualizzazione della pagina HTML
+Istruzioni per la visualizzazione della pagina HTML per l'articolo ```"I carusi in Sicilia", pp. 273-275```
 
 Per visualizzare la pagina risultante, fare clic sul file testX.html.
 
